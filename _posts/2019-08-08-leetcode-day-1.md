@@ -3,8 +3,8 @@ title: Leetcode Day 1
 description: 074 Binary Search | 27 Remove Element
 author: yoyo
 date: 2024-07-31 22:56:00 +0800
-categories: [Blogging, Demo]
-tags: [typography]
+categories: [Leetcode, Array]
+tags: [array, binary search, double pointers]
 ---
 
 **Topic**: Array[^dmsxl]
