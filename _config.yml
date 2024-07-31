@@ -16,7 +16,7 @@ timezone:
 
 title: Le Lyu # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: update # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
@@ -29,7 +29,7 @@ github:
   username: yuyulyu # change to your github username
 
 twitter:
-  username: twitter_username # change to your twitter username
+  username:  # change to your twitter username
 
 social:
   # Change to your full name.
