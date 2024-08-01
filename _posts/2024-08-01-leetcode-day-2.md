@@ -8,8 +8,8 @@ tags: [array, sliding window]
 ---
 
 **Topic**: Array[^dmsxl]
-  * [209 Minimum Size Subarray Sum](https://leetcode.cn/problems/minimum-size-subarray-sum/)
-  * [59 Spiral Matrix II](https://leetcode.cn/problems/spiral-matrix-ii/)
+  * [209 Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/)
+  * [59 Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)
 
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
@@ -69,6 +69,24 @@ class Solution(object):
             return 0
         else:
             return min_len
+```
+
+## Spiral Matrix II [^smii]
+
+[^smii]:Leetcode-59: Spiral Matrix: https://leetcode.com/problems/spiral-matrix-ii/.
+
+Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
+
+**Example 1**
+```
+Input: n = 3
+Output: [[1,2,3],[8,9,4],[7,6,5]]
+```
+
+**Example 2**
+```
+Input: n = 1
+Output: [[1]]
 ```
         
         
