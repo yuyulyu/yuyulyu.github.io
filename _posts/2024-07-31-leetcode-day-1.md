@@ -14,6 +14,7 @@ tags: [array, binary search, double pointers]
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
 # Binary Search[^binarySearch]
+ 
 [^binarySearch]:Leetcode-074 Binary Search: https://leetcode.com/problems/binary-search/.
 
 ## Description
