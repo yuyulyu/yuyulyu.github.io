@@ -14,6 +14,7 @@ tags: [array, sliding window]
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
 ## Minimum Size Subarray Sum[^msss]
+
 [^msss]:Leetcode-209 Minimum Size Subarray Sum: https://leetcode.cn/problems/minimum-size-subarray-sum/.
 
 Given an array of positive integers ```nums``` and a positive integer ```target```, return the minimal length of a 
@@ -43,7 +44,10 @@ Output: 0
 
 
 
-### Solution
+### Solution [^bsssSolution]
+
+[^bsssSolution]:代码随想录-289长度最小的子数组:https://programmercarl.com/0209.%E9%95%BF%E5%BA%A6%E6%9C%80%E5%B0%8F%E7%9A%84%E5%AD%90%E6%95%B0%E7%BB%84.html.
+
 **Python**
 ```python
 class Solution(object):
