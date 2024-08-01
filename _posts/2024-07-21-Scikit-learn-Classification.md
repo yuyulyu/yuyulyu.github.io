@@ -1,9 +1,9 @@
 ---
-title: Scikit-learn-Classification
-description: Examples of text, typography, math equations, diagrams, flowcharts, pictures, videos, and more.
+title: Scikit-learn: Classification
+description: Supervised Learning with scikit-learn
 author: yoyo
 date: 2024-07-21 11:33:00 +0800
-categories: [Machine Learning, DataCamp, Scikit-learn]
+categories: [Machine Learning, DataCamp, Supervised Learning with scikit-learn]
 tags: [scikit-learn]
 ---
 
