@@ -208,5 +208,5 @@ A detail solution explaination[^removeElementSolution] can be found [here](https
             nums.pop()
   ```
 
-##Reference
+## Reference
 
