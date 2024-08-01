@@ -74,4 +74,4 @@ class Solution(object):
         
 
 ## Reference
-[^slideWindowVideo]Sliding Window Video (Bilibili, CN): https://www.bilibili.com/video/BV1tZ4y1q7XE/.
+[^slideWindowVideo]:Sliding Window Video (Bilibili, CN): https://www.bilibili.com/video/BV1tZ4y1q7XE/.
