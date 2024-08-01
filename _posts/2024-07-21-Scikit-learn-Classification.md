@@ -1,5 +1,5 @@
 ---
-title: Scikit-learn: Classification
+title: Scikit-learn Classification
 description: Supervised Learning with scikit-learn
 author: yoyo
 date: 2024-07-21 11:33:00 +0800
