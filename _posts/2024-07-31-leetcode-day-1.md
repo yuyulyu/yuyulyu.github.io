@@ -13,7 +13,7 @@ tags: [array, binary search, double pointers]
 
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
-# Binary Search[^binarySearch]
+## Binary Search[^binarySearch]
 
 [^binarySearch]:Leetcode-074 Binary Search: https://leetcode.com/problems/binary-search/.
 
@@ -35,7 +35,7 @@ Output: -1
 Explanation: 2 does not exist in nums so return -1
 ```
 
-## Note
+### Note
 **General Idea**
 Use left and right node to define the range for exploration (Initially ```left = 0`` ``right = len(nums)```), so that ``mid`` can be used for binary search. 
 
@@ -44,7 +44,7 @@ Use left and right node to define the range for exploration (Initially ```left =
   * How to update ```left``` and ```right```.
   * Conditions of while loop.
 
-### Variable Scope and Memory Management in Java
+**Variable Scope and Memory Management in Java***
   - **Scope**: The scope of a variable determines where the variable is accessible within the program. In Java, the scope is determined by where the variable is declared.
     - <ins>Local Variables</ins>: Declared inside a method or a code block (like a while loop or for loop) and are only accessible within that block.
     - <ins>Instance Variables</ins>: Declared inside a class but outside any method, accessible to all methods within the class.
@@ -63,7 +63,7 @@ The variable mid is a local variable with a scope limited to each iteration of t
 2. **Memory Reuse**: In the next iteration, the JVM can allocate memory for mid again, potentially reusing the same memory space. This can reduce memory fragmentation and improve overall memory usage.
 3. **Avoid Unintentional Modifications**: Declaring variables inside the loop ensures they are re-initialized with each iteration, preventing accidental modifications that might occur if the variable were declared outside the loop.
 
-## Solution
+### Solution
 A detail solution explaination[^binarySearchSolution] can be found [here](https://programmercarl.com/0704.二分查找.html#思路)
   * Time complexity: O(log n)
   * Memory complexity: O(1)
@@ -113,7 +113,7 @@ class Solution {
 }
 ```
 
-# Remove Element[^removeElement]
+## Remove Element[^removeElement]
 
 [^removeElement]:LeetCode-27 Remove Element: https://leetcode.com/problems/remove-element/description/.
 
@@ -161,13 +161,13 @@ Note that the five elements can be returned in any order.
 It does not matter what you leave beyond the returned k (hence they are underscores).
 ```
 
-## Note
-### Two-pointer: fast & slow pointer [^removeElementSolution]
+### Note
+**Two-pointer: fast & slow pointer** [^removeElementSolution]
 
 **Fast pointer**: Find the element of the new array, which is the array that does not contain the target element 
 **Slow pointer**: points to the position where the new array subscript is updated
 
-## Solution
+### Solution
 A detail solution explaination[^removeElementSolution] can be found [here](https://programmercarl.com/0027.移除元素.html#思路)
 
 [^removeElementSolution]:代码随想录-27移除元素：https://programmercarl.com/0027.移除元素.html#思路.
@@ -208,4 +208,5 @@ A detail solution explaination[^removeElementSolution] can be found [here](https
             nums.pop()
   ```
 
+##Reference
 
