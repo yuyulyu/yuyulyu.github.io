@@ -14,10 +14,9 @@ tags: [array, binary search, double pointers]
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
 # Binary Search[^binarySearch]
- 
+
 [^binarySearch]:Leetcode-074 Binary Search: https://leetcode.com/problems/binary-search/.
 
-## Description
 Given an array of integers ```nums``` which is sorted in <ins>ascending order</ins>, and an integer ```target```, write a function to search ```target``` in ```nums```. If ```target``` exists, then return its index. Otherwise, return ```-1```.
 
 You must write an algorithm with O(log n) runtime complexity.
@@ -117,8 +116,6 @@ class Solution {
 # Remove Element[^removeElement]
 
 [^removeElement]:LeetCode-27 Remove Element: https://leetcode.com/problems/remove-element/description/.
-
-## Description
 
 Given an integer array ```nums``` and an integer ```val```, remove all occurrences of ```val``` in ```nums``` in-place. The order of the elements may be changed. Then return the number of elements in ```nums``` which are not equal to ```val```.
 
