@@ -6,10 +6,10 @@ date: 2024-08-01 13:26:00 +0800
 categories: [Algorithm, Leetcode]
 tags: [array, sliding window]
 ---
-
-**Topic**: Array[^dmsxl]
-  * [209 Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) ✅
-  * [59 Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)
+| **Topic**: Array[^dmsxl]                                                                  |   Python   |   Java     |
+|-------------------------------------------------------------------------------------------|------------|------------|
+| [209 Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |✅          |            |
+| [59 Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)                    |✅          |            |
 
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
