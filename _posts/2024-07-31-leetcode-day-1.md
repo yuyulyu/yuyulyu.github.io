@@ -8,8 +8,8 @@ tags: [array, binary search, double pointers]
 ---
 
 **Topic**: Array[^dmsxl]
-  * [074 Binary Search](https://leetcode.com/problems/binary-search/)
-  * [27 Remove Element](https://leetcode.com/problems/remove-element/description/)
+  * [074 Binary Search](https://leetcode.com/problems/binary-search/) ✅
+  * [27 Remove Element](https://leetcode.com/problems/remove-element/description/) ✅
 
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
