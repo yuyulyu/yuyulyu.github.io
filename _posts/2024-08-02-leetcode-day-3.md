@@ -107,4 +107,54 @@ myLinkedList.get(1);              // return 3
 ```
 
 
-## Reverse Linked List
+## Reverse Linked List[^rll]
+
+[^rll]:Leetcode-206 Reverse Linked List: https://leetcode.com/problems/reverse-linked-list/description/.
+
+Given the ···head··· of a singly linked list, reverse the list, and return the reversed list.
+
+**Example 1**
+
+```
+Input: head = [1,2,3,4,5]
+Output: [5,4,3,2,1]
+```
+
+**Example 2**
+
+```
+Input: head = []
+Output: []
+```
+
+### Solution
+
+```python
+# Definition for singly-linked list.
+# class ListNode(object):
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution(object):
+    def reverseList(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if head is not None:
+            node = head
+            prev_temp = None
+            old_head = node
+            next_head = node.next
+            while(next_head):
+                new_head = next_head
+                next_head = new_head.next
+                new_head.next = old_head
+                old_head.next = prev_temp
+                prev_temp = old_head
+                old_head = new_head
+            return old_head
+        else:
+            return None
+```
+
