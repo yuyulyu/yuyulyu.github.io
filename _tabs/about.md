@@ -8,26 +8,14 @@ Education
 ======
 ### 2022-2026: University of Bath
 **BSc(Hons) Computer Science & Artificial Intelligence with Yearlong Work Placement**
-
-#### Year 2
-- **Grade:** 75%
+- **Grade:** 73%
 - **Predicted Classification:** First class
-- **Modules:**
+
+#### Year 2 Modules:
   - Machine Learning, Foundations of Computation, Fundamentals of Visual Computing, Data Structures and Algorithms, Artificial Intelligence 2, Foundations and Frontiers of Machine Learning, Experimental Systems Project
 
-#### Year 1
-- **Grade:** 60.6%
-- **Predicted Classification:** 2:1
-- **Modules:**
+#### Year 1 Modules:
   - Artificial Intelligence 1, Discrete Mathematics and Databases & Mathematics for Computation, Principle of Programming, Computer System Architecture, Software Processing and Modelling
-
-### 2019-2022: International Baccalaureate Diploma (IBDP)
-**Guangdong Shunde Desheng School (International), Guangdong, China**
-
-- **Overall:** 37/45
-
-| Math AA (HL)          | 6/7       |English B (SL)        | 6/7       |Physics (HL)          | 5/7       |
-| Computer Science (HL) | 7/7       |Chinese A (SL)        | 6/7       |Geography (SL)        | 5/7       |
 
 Work experience
 ======
