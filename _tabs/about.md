@@ -10,11 +10,9 @@ Education
 **BSc(Hons) Computer Science & Artificial Intelligence with Yearlong Work Placement**
 - **Grade:** 73%
 - **Predicted Classification:** First class
-
-#### Year 2 Modules:
+- **Year 2 Modules:**
   - Machine Learning, Foundations of Computation, Fundamentals of Visual Computing, Data Structures and Algorithms, Artificial Intelligence 2, Foundations and Frontiers of Machine Learning, Experimental Systems Project
-
-#### Year 1 Modules:
+- **Year 1 Modules:**
   - Artificial Intelligence 1, Discrete Mathematics and Databases & Mathematics for Computation, Principle of Programming, Computer System Architecture, Software Processing and Modelling
 
 Work experience
