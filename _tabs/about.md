@@ -4,8 +4,6 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-You can find my CV [here](../assets/Le_Lyu_CV.pdf).
-
 Education
 ======
 ### 2022-2026: University of Bath
