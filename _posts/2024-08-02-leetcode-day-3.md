@@ -2,9 +2,9 @@
 title: Leetcode Day3
 description: 203  Remove Linked List Elements | 707 Design Linked List | 206 Reverse Linked List
 author: yoyo
-date: 2024-08-01 11:33:00 +0800
+date: 2024-08-02 15:50:00 +0800
 categories: [Algorithm, Leetcode]
-tags: [linked list,]
+tags: [linked list,recursion]
 ---
 
 **Topic**: Linked list[^dmsxl]
