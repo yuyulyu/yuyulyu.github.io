@@ -10,7 +10,7 @@ tags: [array, sliding window]
 |-------------------------------------------------------------|------------|------------|
 | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
 | [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
-| [ACM 59 Range Sum](#addtional-question:-range-sum)         |            |            |
+| [ACM 59 Range Sum](#range-sum)                              |            |            |
 
 ## Minimum Size Subarray Sum
 
@@ -159,7 +159,7 @@ class Solution(object):
         return nums
 ```
 
-## Addtional Question: Range Sum
+## Range Sum
 
 > [Link to Leetcode question](https://kamacoder.com/problempage.php?pid=1070)[^rs]
 
