@@ -10,7 +10,10 @@ tags: [array, sliding window]
 |-------------------------------------------------------------|------------|------------|
 | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
 | [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
+
+| Additional ACM Questions                                    |   Python   |   Java     |
 | [ACM 59 Range Sum](#range-sum)                              |            |            |
+| [ACM 44 Developer land purchase](#developer-land-purchase)  |            |            |
 
 ## Minimum Size Subarray Sum
 
@@ -161,7 +164,7 @@ class Solution(object):
 
 ## Range Sum
 
-> [Link to Leetcode question](https://kamacoder.com/problempage.php?pid=1070)[^rs]
+> [Link to ACM question](https://kamacoder.com/problempage.php?pid=1070)[^rs]
 
 **Problem Description**
 
@@ -193,7 +196,16 @@ Output the sum of the elements within each specified range.
 ```
 3
 9
-```       
+```
+
+### Solution[^rsSolution]
+
+## Developer land purchase
+
+> [Link to ACM question](https://kamacoder.com/problempage.php?pid=1044)[^dlp]
+
+### Solution[^dlpSolution]
+
 
 ## Reference
 [^dmsxl]:代码随想录-数组:[https://programmercarl.com/数组理论基础.html](https://programmercarl.com/数组理论基础.html).
@@ -203,3 +215,6 @@ Output the sum of the elements within each specified range.
 [^smiiSolution]:代码随想录-螺旋矩阵: [https://programmercarl.com/0059.螺旋矩阵II.html](https://programmercarl.com/0059.螺旋矩阵II.html).
 [^slideWindowVideo]:Sliding Window Video (Bilibili, CN): https://www.bilibili.com/video/BV1tZ4y1q7XE/.
 [^rs]:Kamacoder-59 Range Sum: [https://kamacoder.com/problempage.php?pid=1070](https://kamacoder.com/problempage.php?pid=1070).
+[^rsSolution]:代码随想录-区间和: [https://www.programmercarl.com/kamacoder/0058.区间和.html#思路](https://www.programmercarl.com/kamacoder/0058.区间和.html#思路).
+[^dlp]:Kamacoder-44 Developer land purchase: [https://kamacoder.com/problempage.php?pid=1044](https://kamacoder.com/problempage.php?pid=1044).
+[^dlpSolution]:代码随想录-开发商购买土地: [https://www.programmercarl.com/kamacoder/0044.开发商购买土地.html#思路](https://www.programmercarl.com/kamacoder/0044.开发商购买土地.html#思路).
