@@ -109,6 +109,14 @@ class Solution {
 }
 ```
 
+### Similar Questions
+
+| Similar Questions                                            |   Python   |   Java     |
+|--------------------------------------------------------------|------------|------------|
+| [2529 Maximum Count of Positive Integer and Negative Integer ](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)[^mmcopiani]                             |            |            |
+
+
+
 ## Remove Element
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-element/description/)[^removeElement]
@@ -220,9 +228,21 @@ class Solution {
 }
 ```
 
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| [26 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)[^rmdfsa]                                                                          |            |            |
+| [203 Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rlle]                                                                                                    |            |            |
+| [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)[^mz]  |            |            |
+
 ## Reference
 [^dmsxl]:代码随想录-数组:[https://programmercarl.com/数组理论基础.html](https://programmercarl.com/数组理论基础.html).
 [^binarySearch]:Leetcode-074 Binary Search: [https://leetcode.com/problems/binary-search/](https://leetcode.com/problems/binary-search/).
 [^binarySearchSolution]:代码随想录-704二分法查找：[https://programmercarl.com/0704.二分查找.html#思路](https://programmercarl.com/0704.二分查找.html#思路).
 [^removeElement]:LeetCode-27 Remove Element: [https://leetcode.com/problems/remove-element/description/](https://leetcode.com/problems/remove-element/description/).
 [^removeElementSolution]:代码随想录-27移除元素：[https://programmercarl.com/0027.移除元素.html#思路](https://programmercarl.com/0027.移除元素.html#思路).
+[^mmcopiani]:Leetcode-2529 Maximum Count of Positive Integer and Negative Integer: [https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/).
+[^rmdfsa]:Leetcode-26 Remove Duplicates from Sorted Array: [https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/).
+[^rlle]Leetcode-203 Remove Linked List Elements: [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/).
+[^mz]:Leetcode-283 Move Zeroes: [https://leetcode.com/problems/move-zeroes/description/](https://leetcode.com/problems/move-zeroes/description/).
