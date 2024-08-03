@@ -7,20 +7,21 @@ categories: [Algorithm, Leetcode]
 tags: [linked list,recursion]
 ---
 
-| **Topic**: Linked list[^dmsxl]                                                                             |  Python |  Java    |
-|------------------------------------------------------------------------------------------------------------|---------|----------|
-| [203  Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) |✅       |✅        |
-| [707 Design Linked List](#design-linked-list)                    |✅       |          |
-| [206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)                  |✅       |          |
+| **Topic**: Linked list[^dmsxl]                                    |  Python |  Java    |
+|-----------------------------------------------------------------|---------|----------|
+| [203  Remove Linked List Elements](#remove-linked-list-element) |✅       |✅        |
+| [707 Design Linked List](#design-linked-list)                   |✅       |          |
+| [206 Reverse Linked List](#reverse-linked-list)                 |✅       |          |
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
 https://leetcode.com/problems/design-linked-list/description/
 
-## Remove Linked List Elements[^rllr]
-Given the ```head``` of a linked list and an integer ```val```, remove all the nodes of the linked list that has ```Node.val == val```, and return the new head.
+## Remove Linked List Elements
 
-[^rllr]:Leetcode-203 Remove Linked List Elements: https://leetcode.com/problems/remove-linked-list-elements/description/)
+> [Link to Leetcode question](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rllr]
+
+Given the ```head``` of a linked list and an integer ```val```, remove all the nodes of the linked list that has ```Node.val == val```, and return the new head.
 
 **Example 1**
 
@@ -46,8 +47,6 @@ Output: []
 ```
 
 ### Solution[^rllrSolution]
-
-[^rllrSolution]:代码随想录-移除链表元素: [https://programmercarl.com/0203.移除链表元素.html](https://programmercarl.com/0203.移除链表元素.html).
 
 ```python
 # Definition for singly-linked list.
@@ -109,9 +108,7 @@ class Solution {
 
 ## Design Linked List
 
-[^dll]
-
-[^dll]:Leetcode-707 Design Linked List: https://leetcode.com/problems/design-linked-list/description/
+> [Link to Leetcode question](https://leetcode.com/problems/design-linked-list/description/)[^dll]
 
 Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
@@ -148,8 +145,6 @@ myLinkedList.get(1);              // return 3
 ```
 
 ### Solution[^dllSolution]
-
-[^dllSolution]:代码随想录-设计链表：[https://programmercarl.com/0707.设计链表.html#算法公开课](https://programmercarl.com/0707.设计链表.html#算法公开课)
 
 **Python**
 
@@ -270,7 +265,7 @@ lass MyLinkedList(object):
 
 ## Reverse Linked List[^rll]
 
-[^rll]:Leetcode-206 Reverse Linked List: https://leetcode.com/problems/reverse-linked-list/description/.
+> [Link to Leetcode question](https://leetcode.com/problems/reverse-linked-list/description/)[^rll]
 
 Given the ···head··· of a singly linked list, reverse the list, and return the reversed list.
 
@@ -320,3 +315,9 @@ class Solution(object):
 ```
 
 ## Reference
+[^rllr]:Leetcode-203 Remove Linked List Elements: [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/).
+[^rllrSolution]:代码随想录-移除链表元素: [https://programmercarl.com/0203.移除链表元素.html](https://programmercarl.com/0203.移除链表元素.html).
+[^dll]:Leetcode-707 Design Linked List: [https://leetcode.com/problems/design-linked-list/description/](https://leetcode.com/problems/design-linked-list/description/).
+[^dllSolution]:代码随想录-设计链表：[https://programmercarl.com/0707.设计链表.html#算法公开课](https://programmercarl.com/0707.设计链表.html#算法公开课).
+[^rll]:Leetcode-206 Reverse Linked List: [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/).
+
