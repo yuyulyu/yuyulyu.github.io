@@ -276,7 +276,7 @@ Input: head = []
 Output: []
 ```
 
-### Solution
+### Solution[^rllSolution]
 
 ```python
 class Solution(object):
@@ -323,9 +323,11 @@ class Solution {
 ```
 
 ## Reference
+[^dmsxl]:代码随想录-链表理论基础: [https://programmercarl.com/链表理论基础.html](https://programmercarl.com/链表理论基础.html)
 [^rllr]:Leetcode-203 Remove Linked List Elements: [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/).
 [^rllrSolution]:代码随想录-移除链表元素: [https://programmercarl.com/0203.移除链表元素.html](https://programmercarl.com/0203.移除链表元素.html).
 [^dll]:Leetcode-707 Design Linked List: [https://leetcode.com/problems/design-linked-list/description/](https://leetcode.com/problems/design-linked-list/description/).
 [^dllSolution]:代码随想录-设计链表：[https://programmercarl.com/0707.设计链表.html#算法公开课](https://programmercarl.com/0707.设计链表.html#算法公开课).
 [^rll]:Leetcode-206 Reverse Linked List: [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/).
+[^rllSolution]: 代码随想录-翻转链表: [https://programmercarl.com/0206.翻转链表.html](https://programmercarl.com/0206.翻转链表.html).
 
