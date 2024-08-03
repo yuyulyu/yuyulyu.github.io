@@ -12,6 +12,7 @@ tags: [array, sliding window]
 | [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
 
 | Additional ACM Questions                                    |   Python   |   Java     |
+|-------------------------------------------------------------|------------|------------|
 | [ACM 59 Range Sum](#range-sum)                              |            |            |
 | [ACM 44 Developer land purchase](#developer-land-purchase)  |            |            |
 
