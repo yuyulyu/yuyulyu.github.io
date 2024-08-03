@@ -109,6 +109,51 @@ Output: [[1]]
 ### Note [^smiiSolution]
 ![Desktop View](/assets/image/leetcode-day2-2.jpg){: width="210" height="210" }
 
+
+### Solution
+
+**Python**
+
+```python
+class Solution(object):
+    def generateMatrix(self, n):
+        """
+        :type n: int
+        :rtype: List[List[int]]
+        """
+        if n == 0:
+            return []
+
+        nums = [[0] * n for _ in range(n)]
+        loops,mid = n//2, n//2
+        row_start = 0
+        col_start = 0
+        num = 1
+
+        for loop in range(loops):
+            print(loop)
+            for i in range(col_start,n - loop - 1):
+                nums[row_start][i] = num
+                num += 1
+            for i in range(row_start,n - loop - 1):
+                nums[i][n - loop - 1] = num
+                num += 1
+            for i in range(n - loop - 1,col_start,-1):
+                nums[n - loop - 1][i] = num
+                num += 1
+            for i in range(n - loop - 1,row_start,-1):
+                nums[i][col_start] = num
+                num += 1
+            
+            col_start += 1
+            row_start += 1
+            
+        if(len(nums) % 2 == 1):
+            nums[mid][mid] = num
+        
+        return nums
+```
+
         
         
 
