@@ -46,7 +46,7 @@ Output: [1]
 ### Solution[^snipSolution]
 
 
-## Remove Nth Node From End of List]
+## Remove Nth Node From End of List
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
 
