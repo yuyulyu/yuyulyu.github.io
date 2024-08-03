@@ -95,8 +95,6 @@ Output: [1]
 
 ### Solution[^iotllSolution]
 
-🟢🟡🔴☑️
-
 ### Similar Questions
 
 | Similar Questions                                                                |   Python   |   Java     |
@@ -109,7 +107,6 @@ Output: [1]
 
 ### Solution[^llcSolution]
 
-🟢🟡🔴☑️
 
 ### Similar Questions
 
