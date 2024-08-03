@@ -8,7 +8,7 @@ tags: [array, sliding window]
 ---
 | **Topic**: Array[^dmsxl]                                                                  |   Python   |   Java     |
 |-------------------------------------------------------------------------------------------|------------|------------|
-| [209 Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |✅          |            |
+| [209 Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |✅          |✅          |
 | [59 Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)                    |✅          |            |
 
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
@@ -55,20 +55,42 @@ class Solution(object):
         left = 0
         right = 0
         cur_sum = 0
-        min_len = float('inf')
+        min_len = len(nums) + 1
 
-        while right < len(nums):
+        while(right < len(nums)):
             cur_sum += nums[right]
-            while cur_sum >= target:
-                min_len = min(min_len, right - left + 1)
+            while(cur_sum >= target):
+                min_len = min(min_len,right - left + 1)
                 cur_sum -= nums[left]
                 left += 1
             right += 1
-
-        if min_len == float('inf'):
+        
+        if(min_len == len(nums) + 1):
             return 0
-        else:
-            return min_len
+        
+        return min_len
+```
+
+**Java**
+
+```java
+class Solution {
+    public int minSubArrayLen(int target, int[] nums) {
+        int left = 0;
+        int cur_sum = 0;
+        int min_len = nums.length + 1;
+
+        for(int right = 0;right < nums.length;right++){
+            cur_sum += nums[right];
+            while(cur_sum >= target){
+                min_len = Math.min(min_len,right - left + 1);
+                cur_sum -=nums[left++];
+            }
+        }
+
+        return min_len == nums.length + 1 ? 0 : min_len;
+    }
+}
 ```
 
 ## Spiral Matrix II [^smii]
