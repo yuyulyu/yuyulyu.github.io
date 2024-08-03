@@ -47,11 +47,6 @@ Output: []
 ### Solution[^rllrSolution]
 
 ```python
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
 class Solution(object):
     def removeElements(self, head, val):
         """
@@ -284,17 +279,8 @@ Output: []
 ### Solution
 
 ```python
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
 class Solution(object):
     def reverseList(self, head):
-        """
-        :type head: ListNode
-        :rtype: ListNode
-        """
         if head is not None:
             node = head
             prev_temp = None
@@ -310,6 +296,30 @@ class Solution(object):
             return old_head
         else:
             return None
+```
+
+**Java**
+
+```java
+class Solution {
+    public ListNode reverseList(ListNode head) {
+        if (head == null){
+            return null;
+        }
+        ListNode oldHead = null;
+        ListNode nextHead = head.next;
+        ListNode newHead = head;
+
+        while(nextHead != null){
+            newHead.next = oldHead;
+            oldHead = newHead;
+            newHead = nextHead;
+            nextHead = newHead.next;
+            newHead.next = oldHead;
+        }
+        return newHead;
+    }
+}
 ```
 
 ## Reference
