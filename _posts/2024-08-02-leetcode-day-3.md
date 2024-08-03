@@ -1,9 +1,9 @@
 ---
 title: Leetcode Day 3
-description: 🟢 203  Remove Linked List Elements | 🟡 707 Design Linked List | 🟢 206 Reverse Linked List
+description: 203  Remove Linked List Elements | 707 Design Linked List | 206 Reverse Linked List
 author: yoyo
 date: 2024-08-02 15:50:00 +0800
-categories: [Algorithm, Leetcode]
+categories: [Algorithm, Leetcode, LinkedList]
 tags: [linked list,recursion]
 ---
 
