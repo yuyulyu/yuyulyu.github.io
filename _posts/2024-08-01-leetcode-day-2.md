@@ -107,7 +107,7 @@ Output: [[1]]
 ```
 
 ### Note [^smiiSolution]
-![Desktop View](/assets/image/leetcode-day2-2.jpg){: width="700" height="400" }
+![Desktop View](/assets/image/leetcode-day2-2.jpg){: width="70" height="40" }
 
         
         
