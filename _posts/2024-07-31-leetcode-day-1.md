@@ -11,8 +11,6 @@ tags: [array, binary search, double pointers]
 | [074 Binary Search](#binary-search)  |✅          |✅          |
 | [27 Remove Element](#remove-element) |✅          |✅          |
 
-[^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
-
 ## Binary Search
 
 > [Link to Leetcode question](https://leetcode.com/problems/binary-search/)[^binarySearch]
@@ -223,6 +221,7 @@ class Solution {
 ```
 
 ## Reference
+[^dmsxl]:代码随想录-数组:[https://programmercarl.com/数组理论基础.html](https://programmercarl.com/数组理论基础.html).
 [^binarySearch]:Leetcode-074 Binary Search: [https://leetcode.com/problems/binary-search/](https://leetcode.com/problems/binary-search/).
 [^binarySearchSolution]:代码随想录-704二分法查找：[https://programmercarl.com/0704.二分查找.html#思路](https://programmercarl.com/0704.二分查找.html#思路).
 [^removeElement]:LeetCode-27 Remove Element: [https://leetcode.com/problems/remove-element/description/](https://leetcode.com/problems/remove-element/description/).
