@@ -207,6 +207,7 @@ A detail solution explaination[^removeElementSolution] can be found [here](https
         while len(nums) > slow_index:
             nums.pop()
   ```
+
 **Java**
   -<ins>Two-Pointers</ins>
 ```java
