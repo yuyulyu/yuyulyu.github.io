@@ -1,103 +1,47 @@
 ---
-title: Leetcode Day 3
-description: 203  Remove Linked List Elements | 707 Design Linked List | 206 Reverse Linked List
+title: Leetcode Day 4
+description: 24 Swap Nodes in Pairs | 707 Design Linked List | 206 Reverse Linked List
 author: yoyo
-date: 2024-08-02 15:50:00 +0800
+date: 2024-08-03 23:07:00 +0800
 categories: [Algorithm, Leetcode]
 tags: [linked list,recursion]
 ---
 
-| **Topic**: Linked list[^dmsxl]                                    |  Python |  Java    |
+| **Topic**: Linked list[^dmsxl]                                  |  Python |  Java    |
 |-----------------------------------------------------------------|---------|----------|
-| [203 Remove Linked List Elements](#remove-linked-list-elements) |✅       |✅        |
+| [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                  |✅       |✅        |
 | [707 Design Linked List](#design-linked-list)                   |✅       |          |
 | [206 Reverse Linked List](#reverse-linked-list)                 |✅       |✅        |
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
-## Remove Linked List Elements
+## Swap Nodes in Pairs
 
- [Link to Leetcode question](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rllr]
+> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
 
-Given the ```head``` of a linked list and an integer ```val```, remove all the nodes of the linked list that has ```Node.val == val```, and return the new head.
+Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 
 **Example 1**
 
-![Desktop View](/assets/image//leetcode-day3-1.jpg){: .normal }
-
 ```
-Input: head = [1,2,6,3,4,5,6], val = 6
-Output: [1,2,3,4,5]
+Input: head = [1,2,3,4]
+Output: [2,1,4,3]
 ```
 
 **Example 2**
-
 ```
-Input: head = [], val = 1
+Input: head = []
 Output: []
 ```
 
 **Example 3**
-
 ```
-Input: head = [7,7,7,7], val = 7
-Output: []
-```
-
-### Solution[^rllrSolution]
-
-```python
-class Solution(object):
-    def removeElements(self, head, val):
-        """
-        :type head: ListNode
-        :type val: int
-        :rtype: ListNode
-        """
-        node = head
-        while(node is not None and node.next is not None):
-            next_node = node.next
-            if (next_node.val == val):
-                node.next = next_node.next
-            else:
-                node = next_node
-        if (head is not None and head.val == val):
-            head = head.next
-        return head
+Input: head = [1]
+Output: [1]
 ```
 
-**Java**
+### Solution[^snipSolution]
 
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode removeElements(ListNode head, int val) {
-        ListNode dummy = new ListNode();
-        dummy.next = head;
-        ListNode node = head;
-        ListNode prev = dummy;
-        while(node != null){
-            if(node.val == val){
-                prev.next = node.next;
-            }  
-            else{
-                prev = node;
-            }
-            node = node.next;
-        }
-    return dummy.next;
-    }
-}
-```
 
 ## Design Linked List
 
@@ -324,8 +268,9 @@ class Solution {
 
 ## Reference
 [^dmsxl]:代码随想录-链表理论基础: [https://programmercarl.com/链表理论基础.html](https://programmercarl.com/链表理论基础.html)
-[^rllr]:Leetcode-203 Remove Linked List Elements: [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/).
-[^rllrSolution]:代码随想录-移除链表元素: [https://programmercarl.com/0203.移除链表元素.html](https://programmercarl.com/0203.移除链表元素.html).
+[^snip]:Leetcode-24 Swap Nodes in Pairs: [https://leetcode.com/problems/swap-nodes-in-pairs/description/](https://leetcode.com/problems/swap-nodes-in-pairs/description/)
+[^snipSolution]:代码随想录-两两交换链表中的节点: [https://programmercarl.com/0024.两两交换链表中的节点.html](https://programmercarl.com/0024.两两交换链表中的节点.html).
+
 [^dll]:Leetcode-707 Design Linked List: [https://leetcode.com/problems/design-linked-list/description/](https://leetcode.com/problems/design-linked-list/description/).
 [^dllSolution]:代码随想录-设计链表：[https://programmercarl.com/0707.设计链表.html#算法公开课](https://programmercarl.com/0707.设计链表.html#算法公开课).
 [^rll]:Leetcode-206 Reverse Linked List: [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/).
