@@ -10,10 +10,12 @@ tags: [linked list,recursion]
 | **Topic**: Linked list[^dmsxl]                                                                             |  Python |  Java    |
 |------------------------------------------------------------------------------------------------------------|---------|----------|
 | [203  Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) |✅       |✅        |
-| [707 Design Linked List](https://leetcode.com/problems/design-linked-list/description/)                    |✅       |          |
+| [707 Design Linked List](#Design-Linked-List)                    |✅       |          |
 | [206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)                  |✅       |          |
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
+
+https://leetcode.com/problems/design-linked-list/description/
 
 ## Remove Linked List Elements[^rllr]
 Given the ```head``` of a linked list and an integer ```val```, remove all the nodes of the linked list that has ```Node.val == val```, and return the new head.
