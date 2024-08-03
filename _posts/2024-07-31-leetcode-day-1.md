@@ -8,14 +8,14 @@ tags: [array, binary search, double pointers]
 ---
 | **Topic**: Array[^dmsxl]                                                       |   Python   |   Java     |
 |--------------------------------------------------------------------------------|------------|------------|
-| [074 Binary Search](https://leetcode.com/problems/binary-search/)              |✅          |✅          |
-| [27 Remove Element](https://leetcode.com/problems/remove-element/description/) |✅          |✅          |
+| [074 Binary Search](#binary-search)              |✅          |✅          |
+| [27 Remove Element](#remove-element) |✅          |✅          |
 
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
-## Binary Search[^binarySearch]
+## Binary Search
 
-[^binarySearch]:Leetcode-074 Binary Search: https://leetcode.com/problems/binary-search/.
+> [Link to Leetcode question](https://leetcode.com/problems/binary-search/)[^binarySearch]
 
 Given an array of integers ```nums``` which is sorted in <ins>ascending order</ins>, and an integer ```target```, write a function to search ```target``` in ```nums```. If ```target``` exists, then return its index. Otherwise, return ```-1```.
 
@@ -68,8 +68,6 @@ A detail solution explaination[^binarySearchSolution] can be found [here](https:
   * Time complexity: O(log n)
   * Memory complexity: O(1)
 
-[^binarySearchSolution]:代码随想录-704二分法查找：https://programmercarl.com/0704.二分查找.html#思路.
-
 **Python**
 ```python
 class Solution(object):
@@ -113,9 +111,9 @@ class Solution {
 }
 ```
 
-## Remove Element[^removeElement]
+## Remove Element
 
-[^removeElement]:LeetCode-27 Remove Element: https://leetcode.com/problems/remove-element/description/.
+> [Link to Leetcode question](https://leetcode.com/problems/remove-element/description/)[^removeElement]
 
 Given an integer array ```nums``` and an integer ```val```, remove all occurrences of ```val``` in ```nums``` in-place. The order of the elements may be changed. Then return the number of elements in ```nums``` which are not equal to ```val```.
 
@@ -169,8 +167,6 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 
 ### Solution
 A detail solution explaination[^removeElementSolution] can be found [here](https://programmercarl.com/0027.移除元素.html#思路)
-
-[^removeElementSolution]:代码随想录-27移除元素：https://programmercarl.com/0027.移除元素.html#思路.
 
 **Python**
  - <ins>Brute Force</ins>
@@ -227,4 +223,7 @@ class Solution {
 ```
 
 ## Reference
-
+[^binarySearch]:Leetcode-074 Binary Search: [https://leetcode.com/problems/binary-search/](https://leetcode.com/problems/binary-search/).
+[^binarySearchSolution]:代码随想录-704二分法查找：[https://programmercarl.com/0704.二分查找.html#思路](https://programmercarl.com/0704.二分查找.html#思路).
+[^removeElement]:LeetCode-27 Remove Element: [https://leetcode.com/problems/remove-element/description/](https://leetcode.com/problems/remove-element/description/).
+[^removeElementSolution]:代码随想录-27移除元素：[https://programmercarl.com/0027.移除元素.html#思路](https://programmercarl.com/0027.移除元素.html#思路).
