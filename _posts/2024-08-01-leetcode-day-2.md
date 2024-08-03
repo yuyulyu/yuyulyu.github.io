@@ -6,9 +6,9 @@ date: 2024-08-01 13:26:00 +0800
 categories: [Algorithm, Leetcode]
 tags: [array, sliding window]
 ---
-| **Topic**: Array[^dmsxl]                                                                  |   Python   |   Java     |
-|-------------------------------------------------------------------------------------------|------------|------------|
-| [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅          |
+| **Topic**: Array[^dmsxl]                                    |   Python   |   Java     |
+|-------------------------------------------------------------|------------|------------|
+| [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
 | [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
 
 ## Minimum Size Subarray Sum
