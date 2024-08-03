@@ -10,13 +10,14 @@ tags: [array, sliding window]
 |-------------------------------------------------------------|------------|------------|
 | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
 | [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
+| [`ACM 59 Range Sum`](#additional-question:-range-sum)         |            |            |
 
 ## Minimum Size Subarray Sum
 
 > [Link to Leetcode question](https://leetcode.com/problems/minimum-size-subarray-sum/)[^msss]
 
-Given an array of positive integers ```nums``` and a positive integer ```target```, return the minimal length of a 
-subarray whose sum is greater than or equal to target. If there is no such subarray, return``` 0``` instead.
+Given an array of positive integers `nums` and a positive integer `target`, return the minimal length of a 
+subarray whose sum is greater than or equal to target. If there is no such subarray, return` 0` instead.
 
 **Example 1***
 ```
@@ -158,8 +159,41 @@ class Solution(object):
         return nums
 ```
 
-        
-        
+## Addtional Question: Range Sum
+
+> [Link to Leetcode question](https://kamacoder.com/problempage.php?pid=1070)[^rs]
+
+**Problem Description**
+
+Given an integer array `Array`, calculate the sum of the elements within each specified range.
+
+**Input Description**
+
+The first line contains the length `n` of the integer array `Array`. The next `n` lines each contain an integer, representing the elements of the array. The subsequent inputs are the indices of the ranges to calculate the sum: `a` and `b` (`b >= a`), until the end of the file.
+
+**Output Description**
+
+Output the sum of the elements within each specified range.
+
+**Input Example**
+
+```
+5
+1
+2
+3
+4
+5
+0 1
+1 3
+```
+
+**Output Example**
+
+```
+3
+9
+```       
 
 ## Reference
 [^dmsxl]:代码随想录-数组:[https://programmercarl.com/数组理论基础.html](https://programmercarl.com/数组理论基础.html).
@@ -168,3 +202,4 @@ class Solution(object):
 [^smii]:Leetcode-59: Spiral Matrix: [https://leetcode.com/problems/spiral-matrix-ii/](https://leetcode.com/problems/spiral-matrix-ii/).
 [^smiiSolution]:代码随想录-螺旋矩阵: [https://programmercarl.com/0059.螺旋矩阵II.html](https://programmercarl.com/0059.螺旋矩阵II.html).
 [^slideWindowVideo]:Sliding Window Video (Bilibili, CN): https://www.bilibili.com/video/BV1tZ4y1q7XE/.
+[^rs]:Kamacoder-59 Range Sum: [https://kamacoder.com/problempage.php?pid=1070](https://kamacoder.com/problempage.php?pid=1070).
