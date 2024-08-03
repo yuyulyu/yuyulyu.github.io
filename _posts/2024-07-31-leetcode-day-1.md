@@ -6,10 +6,12 @@ date: 2024-07-31 22:56:00 +0800
 categories: [Algorithm, Leetcode]
 tags: [array, binary search, double pointers]
 ---
+🟢🟡🔴☑️
+
 | **Topic**: Array[^dmsxl]             |   Python   |   Java     |
 |--------------------------------------|------------|------------|
-|[`074 Binary Search`{: .prompt-tip }](#binary-search)                      |✅          |✅          |
-| [27 Remove Element](#remove-element) |✅          |✅          |
+| 🟢[074 Binary Search](#binary-search)  |✅          |✅          |
+| 🟢[27 Remove Element](#remove-element) |✅          |✅          |
 
 ## Binary Search
 
