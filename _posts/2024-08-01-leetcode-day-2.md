@@ -10,7 +10,7 @@ tags: [array, sliding window]
 |-------------------------------------------------------------|------------|------------|
 | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
 | [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
-| [ACM 59 Range Sum](#additional-question:-range-sum)         |            |            |
+| [ACM 59 Range Sum](#addtional-question:-range-sum)         |            |            |
 
 ## Minimum Size Subarray Sum
 
