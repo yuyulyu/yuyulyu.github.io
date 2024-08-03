@@ -176,8 +176,8 @@ class Solution(object):
 
 | Similar Questions                                                                |   Python   |   Java     |
 |----------------------------------------------------------------------------------|------------|------------|
-| 🟡 [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiii]                                                                                                                       |            |            |
-| 🟡 [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiv]                                                                                                                        |            |            |
+| 🟡 [885 Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiii]                                                                                                                       |            |            |
+| 🟡 [2326 Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiv]                                                                                                                        |            |            |
 
 ## Range Sum
 
