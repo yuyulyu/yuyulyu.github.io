@@ -235,7 +235,7 @@ class Solution {
 |----------------------------------------------------------------------------------|------------|------------|
 | 🟢 [26 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)[^rmdfsa]                                                                          |            |            |
 | 🟢 [203 Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rlle]                                                                                                    |            |            |
-| 🟢 [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)[^mz]  |            |            |
+| 🟢 [283 Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)[^mz]  |            |            |
 
 ## Reference
 [^dmsxl]:代码随想录-数组:[https://programmercarl.com/数组理论基础.html](https://programmercarl.com/数组理论基础.html).
