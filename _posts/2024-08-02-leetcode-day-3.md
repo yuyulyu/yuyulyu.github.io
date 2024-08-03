@@ -11,8 +11,8 @@ tags: [linked list,recursion]
 | **Topic**: Linked list[^dmsxl]                                    |  Python |  Java    |
 |-----------------------------------------------------------------|---------|----------|
 | 🟢 [203 Remove Linked List Elements](#remove-linked-list-elements) |✅       |✅        |
-| [707 Design Linked List](#design-linked-list)                   |✅       |          |
-| [206 Reverse Linked List](#reverse-linked-list)                 |✅       |✅        |
+| 🟡 [707 Design Linked List](#design-linked-list)                   |✅       |          |
+| 🟢 [206 Reverse Linked List](#reverse-linked-list)                 |✅       |✅        |
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
@@ -100,6 +100,14 @@ class Solution {
     }
 }
 ```
+
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| 🟡 [237 Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)[^dniall]                                                                                            |            |            |
+| 🟡 [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/)[^dtmnoall]                                                     |            |            |
+| 🟡 [3217 Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/)[^dnfllpia]                                                    |            |            |
 
 ## Design Linked List
 
@@ -257,10 +265,11 @@ lass MyLinkedList(object):
                 node.next.prev = prev
 ```
 
-🟢🟡🔴☑️
-
 ### Similar Questions
 
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| 🔴 [1206 Design Skiplist](https://leetcode.com/problems/design-skiplist/)[^ds]  |            |            |
 
 ## Reverse Linked List
 
@@ -328,6 +337,15 @@ class Solution {
 }
 ```
 
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| 🟢 [234 Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)[^pll]                                                                                                            |            |            |
+| 🟡 [92 Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)[^rllii]                                                                                                           |            |            |
+| 🟡 [2130 Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/)[^mtsoall]                                                                         |            |            |
+| 🟡 [2807 Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/)[^igcdill]                                                                         |            |            |
+
 ## Reference
 [^dmsxl]:代码随想录-链表理论基础: [https://programmercarl.com/链表理论基础.html](https://programmercarl.com/链表理论基础.html)
 [^rllr]:Leetcode-203 Remove Linked List Elements: [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/).
@@ -336,4 +354,14 @@ class Solution {
 [^dllSolution]:代码随想录-设计链表：[https://programmercarl.com/0707.设计链表.html#算法公开课](https://programmercarl.com/0707.设计链表.html#算法公开课).
 [^rll]:Leetcode-206 Reverse Linked List: [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/).
 [^rllSolution]: 代码随想录-翻转链表: [https://programmercarl.com/0206.翻转链表.html](https://programmercarl.com/0206.翻转链表.html).
+[^dniall]: Leetcode-237 Delete Node in a Linked List: [https://leetcode.com/problems/delete-node-in-a-linked-list/description/](https://leetcode.com/problems/delete-node-in-a-linked-list/description/).
+[^dtmnoall]: Leetcode-2095 Delete the Middle Node of a Linked List: [https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/).
+[^dnfllpia]: Leetcode-3217 Delete Nodes From Linked List Present in Array: [https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/).
+[^ds]: Leetcode-1206 Design Skiplist: [https://leetcode.com/problems/design-skiplist/](https://leetcode.com/problems/design-skiplist/).
+[^pll]: Leetcode-234 Palindrome Linked List: [https://leetcode.com/problems/palindrome-linked-list/description/](https://leetcode.com/problems/palindrome-linked-list/description/).
+[^rllii]: Leetcode-92 Reverse Linked List II: [https://leetcode.com/problems/reverse-linked-list-ii/description/](https://leetcode.com/problems/reverse-linked-list-ii/description/).
+[^mtsoall]: Leetcode-2130 Maximum Twin Sum of a Linked List: [https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/).
+[^igcdill]: Leetcode-2807 Insert Greatest Common Divisors in Linked List: [https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/).
+
+
 
