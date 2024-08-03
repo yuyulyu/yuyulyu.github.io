@@ -9,7 +9,7 @@ tags: [array, sliding window]
 | **Topic**: Array[^dmsxl]                                                                  |   Python   |   Java     |
 |-------------------------------------------------------------------------------------------|------------|------------|
 | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅          |
-| [59 Spiral Matrix II](#sprial-matrix-ii)                    |✅          |            |
+| [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
 
 ## Minimum Size Subarray Sum
 
