@@ -8,11 +8,8 @@ tags: [array, binary search, double pointers]
 ---
 | **Topic**: Array[^dmsxl]             |   Python   |   Java     |
 |--------------------------------------|------------|------------|
-|> [074 Binary Search](#binary-search){: .prompt-tip }                      |✅          |✅          |
+|[`074 Binary Search`{: .prompt-tip }](#binary-search)                      |✅          |✅          |
 | [27 Remove Element](#remove-element) |✅          |✅          |
-
-> An example showing the `tip` type prompt.
-{: .prompt-tip }
 
 ## Binary Search
 
