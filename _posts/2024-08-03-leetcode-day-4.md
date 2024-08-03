@@ -10,7 +10,7 @@ tags: [linked list,recursion]
 | **Topic**: Linked list[^dmsxl]                                            |  Python |  Java    |
 |---------------------------------------------------------------------------|---------|----------|
 | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                            |         |          |
-| [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list]) |         |          |
+| [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list) |         |          |
 | [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists) |         |          |
 | [142 Linked List Cycle II](#linked-list-cycle-ii)                         |         |          |
 
