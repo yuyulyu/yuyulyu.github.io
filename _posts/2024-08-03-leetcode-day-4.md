@@ -1,6 +1,6 @@
 ---
 title: Leetcode Day 4
-description: 24 Swap Nodes in Pairs | 19 Remove Nth Node From End of List | 206 Reverse Linked List
+description: 24 Swap Nodes in Pairs | 19 Remove Nth Node From End of List | 160 Intersection of Two Linked Lists | 142 Linked List Cycle II
 author: yoyo
 date: 2024-08-03 23:07:00 +0800
 categories: [Algorithm, Leetcode]
