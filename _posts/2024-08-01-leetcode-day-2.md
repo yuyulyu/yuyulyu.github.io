@@ -99,9 +99,9 @@ class Solution {
 
 | Similar Questions                                                                |   Python   |   Java     |
 |----------------------------------------------------------------------------------|------------|------------|
-| 🟢 [3095 Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/)[^sswoalki]                                                                        |            |            |
+| 🟢 [3095 Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/)[^sswoalki]                                                         |            |            |
 | 🟡 [718 Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description)[^mllors]                                                                          |            |            |
-| 🔴 [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws]                                                                                                            |            |            |
+| 🔴 [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws]                                                                                                         |            |            |
 
 ## Spiral Matrix II
 
