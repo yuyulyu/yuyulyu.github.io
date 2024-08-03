@@ -9,9 +9,9 @@ tags: [linked list,recursion]
 
 | **Topic**: Linked list[^dmsxl]                                  |  Python |  Java    |
 |-----------------------------------------------------------------|---------|----------|
-| [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                  |✅       |✅        |
-| [707 Design Linked List](#design-linked-list)                   |✅       |          |
-| [206 Reverse Linked List](#reverse-linked-list)                 |✅       |✅        |
+| [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                  |         |          |
+| [707 Design Linked List](#design-linked-list)                   |         |          |
+| [206 Reverse Linked List](#reverse-linked-list)                 |         |          |
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
