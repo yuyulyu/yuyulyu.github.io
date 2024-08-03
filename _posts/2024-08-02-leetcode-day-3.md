@@ -17,7 +17,7 @@ tags: [linked list,recursion]
 
 ## Remove Linked List Elements
 
- [```Link to Leetcode question```](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rllr]
+ [Link to Leetcode question](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rllr]
 
 Given the ```head``` of a linked list and an integer ```val```, remove all the nodes of the linked list that has ```Node.val == val```, and return the new head.
 
