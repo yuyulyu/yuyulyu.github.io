@@ -9,7 +9,7 @@ tags: [linked list,recursion]
 
 | **Topic**: Linked list[^dmsxl]                                                                             |  Python |  Java    |
 |------------------------------------------------------------------------------------------------------------|---------|----------|
-| [203  Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) |✅       |          |
+| [203  Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/) |✅       |✅        |
 | [707 Design Linked List](https://leetcode.com/problems/design-linked-list/description/)                    |         |          |
 | [206 Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)                  |✅       |          |
 
@@ -70,6 +70,39 @@ class Solution(object):
         if (head is not None and head.val == val):
             head = head.next
         return head
+```
+
+**Java**
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode removeElements(ListNode head, int val) {
+        ListNode dummy = new ListNode();
+        dummy.next = head;
+        ListNode node = head;
+        ListNode prev = dummy;
+        while(node != null){
+            if(node.val == val){
+                prev.next = node.next;
+            }  
+            else{
+                prev = node;
+            }
+            node = node.next;
+        }
+    return dummy.next;
+    }
+}
 ```
 
 ## Design Linked List[^dll]
