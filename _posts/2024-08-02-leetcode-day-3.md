@@ -15,9 +15,8 @@ tags: [linked list,recursion]
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
-https://leetcode.com/problems/design-linked-list/description/
-
 ## Remove Linked List Elements
+======
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rllr]
 
