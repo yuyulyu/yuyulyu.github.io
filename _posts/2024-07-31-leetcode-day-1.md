@@ -9,7 +9,7 @@ tags: [array, binary search, double pointers]
 | **Topic**: Array[^dmsxl]                                                       |   Python   |   Java     |
 |--------------------------------------------------------------------------------|------------|------------|
 | [074 Binary Search](https://leetcode.com/problems/binary-search/)              |✅          |✅          |
-| [27 Remove Element](https://leetcode.com/problems/remove-element/description/) |✅          |            |
+| [27 Remove Element](https://leetcode.com/problems/remove-element/description/) |✅          |✅          |
 
 [^dmsxl]:代码随想录-数组:https://programmercarl.com/数组理论基础.html.
 
@@ -188,7 +188,7 @@ A detail solution explaination[^removeElementSolution] can be found [here](https
           while len(nums) > nex:
               nums.pop()
   ```
-  - <ins>Two-pointer</ins>
+  - <ins>Two-pointers</ins>
     - Time complexity: O(n)
     - Memory complexity: O(1)
   ```python
@@ -207,6 +207,23 @@ A detail solution explaination[^removeElementSolution] can be found [here](https
         while len(nums) > slow_index:
             nums.pop()
   ```
+**Java**
+  -<ins>Two-Pointers</ins>
+```java
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int slow = 0;
+
+        for(int fast = 0;fast < nums.length;fast++){
+            if(nums[fast] != val){
+                nums[slow] = nums[fast];
+                slow ++;
+            }
+        }
+        return slow;
+    }
+}
+```
 
 ## Reference
 
