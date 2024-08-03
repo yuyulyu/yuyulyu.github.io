@@ -11,7 +11,7 @@ tags: [linked list,recursion]
 |-----------------------------------------------------------------|---------|----------|
 | [203 Remove Linked List Elements](#remove-linked-list-elements) |✅       |✅        |
 | [707 Design Linked List](#design-linked-list)                   |✅       |          |
-| [206 Reverse Linked List](#reverse-linked-list)                 |✅       |          |
+| [206 Reverse Linked List](#reverse-linked-list)                 |✅       |✅        |
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
