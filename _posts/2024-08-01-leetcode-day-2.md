@@ -8,10 +8,12 @@ tags: [array, sliding window]
 ---
 | **Topic**: Array[^dmsxl]                                                                  |   Python   |   Java     |
 |-------------------------------------------------------------------------------------------|------------|------------|
-| [209 Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) |✅          |✅          |
-| [59 Spiral Matrix II](https://leetcode.com/problems/spiral-matrix-ii/)                    |✅          |            |
+| [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅          |
+| [59 Spiral Matrix II](#sprial-matrix-ii)                    |✅          |            |
 
-## Minimum Size Subarray Sum[^msss]
+## Minimum Size Subarray Sum
+
+> [Link to Leetcode question](https://leetcode.com/problems/minimum-size-subarray-sum/)[^msss]
 
 Given an array of positive integers ```nums``` and a positive integer ```target```, return the minimal length of a 
 subarray whose sum is greater than or equal to target. If there is no such subarray, return``` 0``` instead.
@@ -87,7 +89,9 @@ class Solution {
 }
 ```
 
-## Spiral Matrix II [^smii]
+## Spiral Matrix II
+
+> [Link to Leetcode question](https://leetcode.com/problems/spiral-matrix-ii/)[^smii]
 
 Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
 
