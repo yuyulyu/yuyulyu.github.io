@@ -6,6 +6,7 @@ date: 2024-08-02 15:50:00 +0800
 categories: [Algorithm, Leetcode]
 tags: [linked list,recursion]
 ---
+🟢🟡🔴☑️
 
 | **Topic**: Linked list[^dmsxl]                                    |  Python |  Java    |
 |-----------------------------------------------------------------|---------|----------|
