@@ -97,13 +97,3 @@ Output: [1]
 [^iotllSolution]:代码随想录-面试题 02.07. 链表相交: [https://programmercarl.com/面试题02.07.链表相交.html](https://programmercarl.com/面试题02.07.链表相交.html).
 [^llc]:Leetcode-142 Linked List Cycle II: [https://leetcode.com/problems/linked-list-cycle-ii/description/](https://leetcode.com/problems/linked-list-cycle-ii/description/).
 [^llcSolution]:代码随想录-环形链表II:[https://programmercarl.com/0142.环形链表II.html](https://programmercarl.com/0142.环形链表II.html).
-
-
-
-
-
-[^dll]:Leetcode-707 Design Linked List: [https://leetcode.com/problems/design-linked-list/description/](https://leetcode.com/problems/design-linked-list/description/).
-[^dllSolution]:代码随想录-设计链表：[https://programmercarl.com/0707.设计链表.html#算法公开课](https://programmercarl.com/0707.设计链表.html#算法公开课).
-[^rll]:Leetcode-206 Reverse Linked List: [https://leetcode.com/problems/reverse-linked-list/description/](https://leetcode.com/problems/reverse-linked-list/description/).
-[^rllSolution]: 代码随想录-翻转链表: [https://programmercarl.com/0206.翻转链表.html](https://programmercarl.com/0206.翻转链表.html).
-
