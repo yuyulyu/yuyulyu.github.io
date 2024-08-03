@@ -43,7 +43,10 @@ Input: head = [7,7,7,7], val = 7
 Output: []
 ```
 
-### Solution
+### Solution[^rllrSolution]
+
+[^rllrSolution]:代码随想录-移除链表元素: [https://programmercarl.com/0203.移除链表元素.html](https://programmercarl.com/0203.移除链表元素.html).
+
 ```python
 # Definition for singly-linked list.
 # class ListNode(object):
