@@ -10,7 +10,7 @@ tags: [linked list,recursion]
 
 | **Topic**: Linked list[^dmsxl]                                    |  Python |  Java    |
 |-----------------------------------------------------------------|---------|----------|
-| [203 Remove Linked List Elements](#remove-linked-list-elements) |✅       |✅        |
+| 🟢 [203 Remove Linked List Elements](#remove-linked-list-elements) |✅       |✅        |
 | [707 Design Linked List](#design-linked-list)                   |✅       |          |
 | [206 Reverse Linked List](#reverse-linked-list)                 |✅       |✅        |
 
@@ -23,6 +23,7 @@ tags: [linked list,recursion]
 Given the ```head``` of a linked list and an integer ```val```, remove all the nodes of the linked list that has ```Node.val == val```, and return the new head.
 
 **Example 1**
+
 
 ![Desktop View](/assets/image//leetcode-day3-1.jpg){: .normal }
 
@@ -255,6 +256,10 @@ lass MyLinkedList(object):
             if (node.next is not None):
                 node.next.prev = prev
 ```
+
+🟢🟡🔴☑️
+
+### Similar Questions
 
 
 ## Reverse Linked List
