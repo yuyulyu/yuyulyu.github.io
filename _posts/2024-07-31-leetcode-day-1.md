@@ -114,7 +114,7 @@ class Solution {
 
 | Similar Questions                                            |   Python   |   Java     |
 |--------------------------------------------------------------|------------|------------|
-| [2529 Maximum Count of Positive Integer and Negative Integer ](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)[^mmcopiani]                             |            |            |
+| 🟢 [2529 Maximum Count of Positive Integer and Negative Integer ](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)[^mmcopiani]                             |            |            |
 
 
 
@@ -233,9 +233,9 @@ class Solution {
 
 | Similar Questions                                                                |   Python   |   Java     |
 |----------------------------------------------------------------------------------|------------|------------|
-| [26 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)[^rmdfsa]                                                                          |            |            |
-| [203 Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rlle]                                                                                                    |            |            |
-| [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)[^mz]  |            |            |
+| 🟢 [26 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)[^rmdfsa]                                                                          |            |            |
+| 🟢 [203 Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rlle]                                                                                                    |            |            |
+| 🟢 [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)[^mz]  |            |            |
 
 ## Reference
 [^dmsxl]:代码随想录-数组:[https://programmercarl.com/数组理论基础.html](https://programmercarl.com/数组理论基础.html).
