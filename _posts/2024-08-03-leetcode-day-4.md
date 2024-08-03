@@ -4,15 +4,15 @@ description: 24 Swap Nodes in Pairs | 19 Remove Nth Node From End of List | 160 
 author: yoyo
 date: 2024-08-03 23:07:00 +0800
 categories: [Algorithm, Leetcode]
-tags: [linked list,recursion]
+tags: [linked list,recursion,two pointers,hash table]
 ---
 
-| **Topic**: Linked list[^dmsxl]                                            |  Python |  Java    |
-|---------------------------------------------------------------------------|---------|----------|
-| [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                            |         |          |
-| [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list) |         |          |
-| [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists) |         |          |
-| [142 Linked List Cycle II](#linked-list-cycle-ii)                         |         |          |
+| **Topic**: Linked list[^dmsxl]                                               |  Python |  Java    |
+|------------------------------------------------------------------------------|---------|----------|
+| 🟡 [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                            |         |          |
+| 🟡 [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)  |         |          |
+| 🟢 [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists) |         |          |
+| 🟡 [142 Linked List Cycle II](#linked-list-cycle-ii)                         |         |          |
 
 [^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
@@ -45,6 +45,14 @@ Output: [1]
 
 ### Solution[^snipSolution]
 
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| 🟡 [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall]                                                                                      |            |            |
+| 🔴 [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]                                                                                                                   |            |            |
+
+
 
 ## Remove Nth Node From End of List
 
@@ -75,17 +83,39 @@ Output: [1]
 
 ### Solution[^rnnfeolSolution]
 
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| 🟡 [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall]                                                                          |            |            |
+
+
 ##  Intersection of Two Linked Lists
 > [Link to Leetcode question](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)[^iotll]
 
-
 ### Solution[^iotllSolution]
+
+🟢🟡🔴☑️
+
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| 🟢 [599 Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)[^misowll]                                                                                                    |            |            |
 
 ## Linked List Cycle II
 
 > [Link to Leetcode question](https://leetcode.com/problems/linked-list-cycle-ii/description/)[^llc]
 
 ### Solution[^llcSolution]
+
+🟢🟡🔴☑️
+
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| 🟢 [287 Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)[^ftdn]                                                                                                                 |            |            |
 
 ## Reference
 [^dmsxl]:代码随想录-链表理论基础: [https://programmercarl.com/链表理论基础.html](https://programmercarl.com/链表理论基础.html)
@@ -97,3 +127,9 @@ Output: [1]
 [^iotllSolution]:代码随想录-面试题 02.07. 链表相交: [https://programmercarl.com/面试题02.07.链表相交.html](https://programmercarl.com/面试题02.07.链表相交.html).
 [^llc]:Leetcode-142 Linked List Cycle II: [https://leetcode.com/problems/linked-list-cycle-ii/description/](https://leetcode.com/problems/linked-list-cycle-ii/description/).
 [^llcSolution]:代码随想录-环形链表II:[https://programmercarl.com/0142.环形链表II.html](https://programmercarl.com/0142.环形链表II.html).
+[^sniall]: Leetcode-1721 Swapping Nodes in a Linked List: [https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/).
+[^rnikg]: Leetcode-25 Reverse Nodes in k-Group: [https://leetcode.com/problems/reverse-nodes-in-k-group/](https://leetcode.com/problems/reverse-nodes-in-k-group/).
+[^dtmnoall]: Leetcode-2095 Delete the Middle Node of a Linked List: [https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/).
+[^misowll]: Leetcode-599 Minimum Index Sum of Two Lists: [https://leetcode.com/problems/minimum-index-sum-of-two-lists/](https://leetcode.com/problems/minimum-index-sum-of-two-lists/).
+[^ftdn]: Leetcode-287 Find the Duplicate Number: [https://leetcode.com/problems/find-the-duplicate-number/](https://leetcode.com/problems/find-the-duplicate-number/).
+
