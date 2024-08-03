@@ -143,6 +143,126 @@ myLinkedList.deleteAtIndex(1);    // now the linked list is 1->3
 myLinkedList.get(1);              // return 3
 ```
 
+### Solution[^dllSolution]
+
+[^dllSolution]:代码随想录-设计链表：[https://programmercarl.com/0707.设计链表.html#算法公开课](https://programmercarl.com/0707.设计链表.html#算法公开课)
+
+**Python**
+
+```python
+lass MyLinkedList(object):
+
+    def __init__(self,val = None,next_ = None,prev = None):
+        self.val = val
+        self.next = next_
+        self.prev = prev
+
+    def get(self, index):
+        """
+        :type index: int
+        :rtype: int
+        """
+        if(index == 0):
+            return self.val if self.val is not None
+            return -1
+            if(self.val is not None):
+                return self.val
+            else:
+                return -1
+        node = self
+        for i in range(index):
+            if node.next is None:
+                return -1
+            node = node.next
+        return node.val 
+
+    def addAtHead(self, val):
+        """
+        :type val: int
+        :rtype: None
+        """
+        if(self.val is None):
+            self.val = val
+        else:
+            node = MyLinkedList(self.val,self.next,self)
+            self.val = val
+            self.next = node        
+
+    def addAtTail(self, val):
+        """
+        :type val: int
+        :rtype: None
+        """
+        if(self.val is None):
+            self.val = val
+        else:
+            node = self
+            while(node.next is not None):
+                node = node.next
+            node.next = MyLinkedList(val,None,node)
+
+    def addAtIndex(self, index, val):
+        """
+        :type index: int
+        :type val: int
+        :rtype: None
+        """
+        if(self.val is None and index == 0):
+            self.val = val
+            return
+        elif(index==0):
+            self.addAtHead(val)
+            return
+        elif(self.val is not None):
+            node = self
+            prev = None
+            for i in range(index):
+                if node.next is None:
+                    if (index != i+1):
+                        return 
+                    else:
+                        node.next = MyLinkedList(val,None,node)
+                        return
+                prev = node
+                node = node.next
+            if node is not None:
+                node.prev = MyLinkedList(val,node,prev)
+                if(prev is not None):
+                    prev.next = node.prev
+            else:
+                prev.next = MyLinkedList(val,None,prev)
+
+    def deleteAtIndex(self, index):
+        """
+        :type index: int
+        :rtype: None
+        """
+        if(index == 0):
+            if(self.next is not None):
+                self.val = self.next.val
+                self.next = self.next.next
+                self.prev = None 
+                return
+            else:
+                self.val = None
+                return
+        else:
+            node = self
+            prev = None
+            for i in range(index):
+                if node.next is None:
+                    print("delete out of range")
+                    return 
+                prev = node
+                node = node.next
+            if node is None:
+                return
+            if(prev is not None):
+                prev.next = node.next
+            if (node.next is not None):
+                node.next.prev = prev
+```
+
 
 ## Reverse Linked List[^rll]
 
