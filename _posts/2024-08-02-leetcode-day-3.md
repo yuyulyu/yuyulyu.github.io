@@ -107,7 +107,9 @@ class Solution {
 }
 ```
 
-## Design Linked List[^dll]
+## Design Linked List
+
+[^dll]
 
 [^dll]:Leetcode-707 Design Linked List: https://leetcode.com/problems/design-linked-list/description/
 
