@@ -244,5 +244,5 @@ class Solution {
 [^removeElementSolution]:代码随想录-27移除元素：[https://programmercarl.com/0027.移除元素.html#思路](https://programmercarl.com/0027.移除元素.html#思路).
 [^mmcopiani]:Leetcode-2529 Maximum Count of Positive Integer and Negative Integer: [https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/).
 [^rmdfsa]:Leetcode-26 Remove Duplicates from Sorted Array: [https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/).
-[^rlle]Leetcode-203 Remove Linked List Elements: [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/).
+[^rlle]:Leetcode-203 Remove Linked List Elements: [https://leetcode.com/problems/remove-linked-list-elements/description/](https://leetcode.com/problems/remove-linked-list-elements/description/).
 [^mz]:Leetcode-283 Move Zeroes: [https://leetcode.com/problems/move-zeroes/description/](https://leetcode.com/problems/move-zeroes/description/).
