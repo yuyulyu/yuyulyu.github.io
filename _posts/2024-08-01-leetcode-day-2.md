@@ -6,10 +6,11 @@ date: 2024-08-01 13:26:00 +0800
 categories: [Algorithm, Leetcode]
 tags: [array, sliding window]
 ---
+
 | **Topic**: Array[^dmsxl]                                    |   Python   |   Java     |
 |-------------------------------------------------------------|------------|------------|
-| [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
-| [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
+| 🟡 [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
+| 🟡 [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
 
 | Additional ACM Questions                                    |   Python   |   Java     |
 |-------------------------------------------------------------|------------|------------|
@@ -98,9 +99,9 @@ class Solution {
 
 | Similar Questions                                                                |   Python   |   Java     |
 |----------------------------------------------------------------------------------|------------|------------|
-| [3095 Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/)[^sswoalki]                                                                        |            |            |
-| [718 Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description)[^mllors]                                                                          |            |            |
-| [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws]                                                                                                            |            |            |
+| 🟢 [3095 Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/)[^sswoalki]                                                                        |            |            |
+| 🟡 [718 Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description)[^mllors]                                                                          |            |            |
+| 🔴 [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws]                                                                                                            |            |            |
 
 ## Spiral Matrix II
 
@@ -175,8 +176,8 @@ class Solution(object):
 
 | Similar Questions                                                                |   Python   |   Java     |
 |----------------------------------------------------------------------------------|------------|------------|
-| [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiii]                                                                                                                       |            |            |
-| [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiv]                                                                                                                        |            |            |
+| 🟡 [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiii]                                                                                                                       |            |            |
+| 🟡 [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiv]                                                                                                                        |            |            |
 
 ## Range Sum
 
