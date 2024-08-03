@@ -94,6 +94,14 @@ class Solution {
 }
 ```
 
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| [3095 Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/)[^sswoalki]                                                                        |            |            |
+| [718 Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description)[^mllors]                                                                          |            |            |
+| [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws]                                                                                                            |            |            |
+
 ## Spiral Matrix II
 
 > [Link to Leetcode question](https://leetcode.com/problems/spiral-matrix-ii/)[^smii]
@@ -163,6 +171,13 @@ class Solution(object):
         return nums
 ```
 
+### Similar Questions
+
+| Similar Questions                                                                |   Python   |   Java     |
+|----------------------------------------------------------------------------------|------------|------------|
+| [885. Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiii]                                                                                                                       |            |            |
+| [2326. Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiv]                                                                                                                        |            |            |
+
 ## Range Sum
 
 > [Link to ACM question](https://kamacoder.com/problempage.php?pid=1070)[^rs]
@@ -219,3 +234,11 @@ Output the sum of the elements within each specified range.
 [^rsSolution]:代码随想录-区间和: [https://www.programmercarl.com/kamacoder/0058.区间和.html#思路](https://www.programmercarl.com/kamacoder/0058.区间和.html#思路).
 [^dlp]:Kamacoder-44 Developer land purchase: [https://kamacoder.com/problempage.php?pid=1044](https://kamacoder.com/problempage.php?pid=1044).
 [^dlpSolution]:代码随想录-开发商购买土地: [https://www.programmercarl.com/kamacoder/0044.开发商购买土地.html#思路](https://www.programmercarl.com/kamacoder/0044.开发商购买土地.html#思路).
+[^sswoalki]: Leetcode-3095 Shortest Subarray With OR at Least K I: [https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/).
+[^mllors]: Leetcode-718 Maximum Length of Repeated Subarray: [https://leetcode.com/problems/maximum-length-of-repeated-subarray/description](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description).
+[^mws]: Leetcode-76 Minimum Window Substring: [https://leetcode.com/problems/minimum-window-substring/description/](https://leetcode.com/problems/minimum-window-substring/description/).
+[^smiii]: Leetcode-885 Spiral Matrix III: [https://leetcode.com/problems/spiral-matrix-iii/description/](https://leetcode.com/problems/spiral-matrix-iii/description/).
+[^smiv]: Leetcode-2326 Spiral Matrix IV: [https://leetcode.com/problems/spiral-matrix-iv/description/](https://leetcode.com/problems/spiral-matrix-iv/description/).
+
+
+
