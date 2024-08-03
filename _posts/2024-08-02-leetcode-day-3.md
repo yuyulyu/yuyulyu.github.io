@@ -9,7 +9,7 @@ tags: [linked list,recursion]
 
 | **Topic**: Linked list[^dmsxl]                                    |  Python |  Java    |
 |-----------------------------------------------------------------|---------|----------|
-| [203  Remove Linked List Elements](#remove-linked-list-element) |✅       |✅        |
+| [203 Remove Linked List Elements](#remove-linked-list-elements) |✅       |✅        |
 | [707 Design Linked List](#design-linked-list)                   |✅       |          |
 | [206 Reverse Linked List](#reverse-linked-list)                 |✅       |          |
 
@@ -263,7 +263,7 @@ lass MyLinkedList(object):
 ```
 
 
-## Reverse Linked List[^rll]
+## Reverse Linked List
 
 > [Link to Leetcode question](https://leetcode.com/problems/reverse-linked-list/description/)[^rll]
 
