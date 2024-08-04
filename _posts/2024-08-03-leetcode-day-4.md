@@ -15,7 +15,7 @@ tags: [linked list,recursion,two pointers,hash table]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#linked-list-cycle-ii)                                       |        |      |
@@ -49,6 +49,33 @@ Output: [1]
 ```
 
 ### Solution[^snipSolution]
+**Python**
+
+```python
+class Solution(object):
+    def swapPairs(self, head):
+        if head is None or head.next is None:
+            return head
+
+        odd = head
+        even = head.next
+        old = None
+
+        while((even is not None) and (odd is not None)):
+            odd.next = even.next
+            even.next = odd
+            if old is not None:
+                old.next = even
+            else:
+                head = even
+            old = odd
+            odd = odd.next
+            
+            if odd is not None:
+                even = odd.next
+        
+        return head
+```
 
 ### Similar Questions
 
