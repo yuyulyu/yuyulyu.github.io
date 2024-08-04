@@ -2,23 +2,19 @@
 title: Leetcode Day 5 - Hash Table
 description: 242 Valid Anagram | 349 Intersection of Two Arrays | 202 Happy Number | 1 Two Sum
 author: yoyo
-date: 2020-08-03 23:07:00 +0800
+date: 2020-08-05 23:07:00 +0800
 categories: [Algorithm, Leetcode,Hash Table]
 tags: [hash table,string,sorting,two pointers,binary search]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
-## <Topic> [^dmsxl] 
+## Hash Table [^dmsxl] 
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [242 Valid Anagram](#valid-anagram)                                          |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [349 Intersection of Two Arrays](#intersection-of-two-arrays)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [202 Happy Number](#happy-number)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [1 Two Sum](#two-sum)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [1 Two Sum](#two-sum)                                       |        |      |
 
 ## Valid Anagram
 
