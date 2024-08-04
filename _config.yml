@@ -24,6 +24,8 @@ description: A personal website by a third-year Computer Science and Artificial 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
 url: "https://yuyulyu.github.io"
+plugins:
+  - jekyll-sitemap
 
 github:
   username: yuyulyu # change to your github username
@@ -149,6 +151,8 @@ paginate: 10
 
 # The base URL of your site
 baseurl: ""
+
+
 
 # ------------ The following options are not recommended to be modified ------------------
 
