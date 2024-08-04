@@ -256,6 +256,33 @@ Explanation: There is no cycle in the linked list.
 
 ### Solution[^llcSolution]
 
+**Python**
+
+```python
+class Solution(object):
+    def detectCycle(self, head):
+        if head is None:
+            return None
+
+        fast, slow = head, head
+
+        while(fast is not None and fast.next is not None):
+            fast = fast.next.next
+            slow = slow.next
+            if(fast == slow):
+                break
+        
+        if(fast is None or fast.next is None):
+            return None
+
+        fast = head
+        while(fast != slow):
+            fast = fast.next
+            slow = slow.next
+        
+        return fast
+```
+
 
 ### Similar Questions
 
