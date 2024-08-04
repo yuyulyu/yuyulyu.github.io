@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 2 - Array 2
+title: Leetcode Day 2 - Array
 description: 209 Minimum Size Subarray Sum | 59 Spiral Matrix II
 author: yoyo
 date: 2024-08-01 13:26:00 +0800
