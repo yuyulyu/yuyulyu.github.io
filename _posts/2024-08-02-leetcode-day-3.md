@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 3
+title: Leetcode Day 3 - Linked List
 description: 203  Remove Linked List Elements | 707 Design Linked List | 206 Reverse Linked List
 author: yoyo
 date: 2024-08-02 15:50:00 +0800
@@ -7,13 +7,13 @@ categories: [Algorithm, Leetcode, LinkedList]
 tags: [linked list,recursion]
 ---
 
-| **Topic**: Linked list[^dmsxl]                                    |  Python |  Java    |
-|-----------------------------------------------------------------|---------|----------|
-| 🟢 [203 Remove Linked List Elements](#remove-linked-list-elements) |✅       |✅        |
-| 🟡 [707 Design Linked List](#design-linked-list)                   |✅       |          |
-| 🟢 [206 Reverse Linked List](#reverse-linked-list)                 |✅       |✅        |
+## Linked List 1[^dmsxl]
 
-[^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
+| Diff                                                                                                 | Problem                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [203 Remove Linked List Elements](#remove-linked-list-elements)                                | ✅     | ✅   |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [707 Design Linked List](#design-linked-list)                                                  | ✅     |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [206 Reverse Linked List](#reverse-linked-list)                                                | ✅     | ✅   |
 
 ## Remove Linked List Elements
 
@@ -102,11 +102,12 @@ class Solution {
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟡 [237 Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)[^dniall]                                                                                            |            |            |
-| 🟡 [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/)[^dtmnoall]                                                     |            |            |
-| 🟡 [3217 Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/)[^dnfllpia]                                                    |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [237 Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/description/)[^dniall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/)[^dtmnoall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [3217 Delete Nodes From Linked List Present in Array](https://leetcode.com/problems/delete-nodes-from-linked-list-present-in-array/description/)[^dnfllpia] |        |      |
+                                                  |            |            |
 
 ## Design Linked List
 
@@ -266,9 +267,10 @@ lass MyLinkedList(object):
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🔴 [1206 Design Skiplist](https://leetcode.com/problems/design-skiplist/)[^ds]  |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [1206 Design Skiplist](https://leetcode.com/problems/design-skiplist/)[^ds]                              |        |      |
+
 
 ## Reverse Linked List
 
@@ -338,12 +340,13 @@ class Solution {
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟢 [234 Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)[^pll]                                                                                                            |            |            |
-| 🟡 [92 Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)[^rllii]                                                                                                           |            |            |
-| 🟡 [2130 Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/)[^mtsoall]                                                                         |            |            |
-| 🟡 [2807 Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/)[^igcdill]                                                                         |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [234 Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list/description/)[^pll]   |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [92 Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii/description/)[^rllii]  |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2130 Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/)[^mtsoall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2807 Insert Greatest Common Divisors in Linked List](https://leetcode.com/problems/insert-greatest-common-divisors-in-linked-list/description/)[^igcdill] |        |      |
+                                                                        |            |            |
 
 ## Reference
 [^dmsxl]:代码随想录-链表理论基础: [https://programmercarl.com/链表理论基础.html](https://programmercarl.com/链表理论基础.html)
