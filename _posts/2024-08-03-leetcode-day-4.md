@@ -16,7 +16,7 @@ tags: [linked list,recursion,two pointers,hash table]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#linked-list-cycle-ii)                                       |        |      |
 
@@ -84,9 +84,6 @@ class Solution(object):
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall] |        |      |
 | ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
 
-
-
-
 ## Remove Nth Node From End of List
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
@@ -115,6 +112,31 @@ Output: [1]
 ```
 
 ### Solution[^rnnfeolSolution]
+
+**Python**
+
+```python
+class Solution(object):
+    def removeNthFromEnd(self, head, n):
+        cur = head
+        dummy = ListNode(0)
+        dummy.next = head
+        prev = dummy
+        nth = cur
+        i = 1
+
+        while cur.next is not None:
+            if i == n:
+                prev = nth
+                nth = nth.next
+            else:
+                i += 1
+            cur = cur.next
+        
+        prev.next = nth.next
+
+        return dummy.next
+```
 
 ### Similar Questions
 
