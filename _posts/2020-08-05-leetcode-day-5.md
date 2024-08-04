@@ -183,5 +183,6 @@ Output: [0,1]
 [^matmib]:Leetcode-2457 Minimum Addition to Make Integer Beautiful: [https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/).
 [^un]:Leetcode-263 Ugly Number: [https://leetcode.com/problems/ugly-number/description/](https://leetcode.com/problems/ugly-number/description/).
 [^matmib]:Leetcode-2457 Minimum Addition to Make Integer Beautiful: [https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/).
+[^ts]:Leetcode-1 Two Sum: [https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/).
 
 
