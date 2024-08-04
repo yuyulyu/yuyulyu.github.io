@@ -153,7 +153,7 @@ Given the heads of two singly linked-lists `headA` and `headB`, return the node 
 
 For example, the following two linked lists begin to intersect at node `c1`:
 
-![Desktop View](/assets/image//leetcode-day4-3.jpg){: .normal }
+![Desktop View](/assets/image//leetcode-day4-3.png){: .normal }
 
 The test cases are generated such that there are no cycles anywhere in the entire linked structure.
 
@@ -161,7 +161,7 @@ The test cases are generated such that there are no cycles anywhere in the entir
 
 **Example 1:**
 
-![Desktop View](/assets/image//leetcode-day4-4.jpg){: .normal }
+![Desktop View](/assets/image//leetcode-day4-4.png){: .normal }
 
 ```
 Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
@@ -170,7 +170,7 @@ Output: Intersected at '8'
 
 **Example 2**
 
-![Desktop View](/assets/image//leetcode-day4-5.jpg){: .normal }
+![Desktop View](/assets/image//leetcode-day4-5.png){: .normal }
 
 ```
 Input: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
