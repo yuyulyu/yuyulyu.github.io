@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 4
+title: Leetcode Day 4 - Linked List 2
 description: 24 Swap Nodes in Pairs | 19 Remove Nth Node From End of List | 160 Intersection of Two Linked Lists | 142 Linked List Cycle II
 author: yoyo
 date: 2024-08-03 23:07:00 +0800
@@ -11,33 +11,15 @@ tags: [linked list,recursion,two pointers,hash table]
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-| Topic: Linked list[^dmsxl]                                                                                                 | Python | Java |
-|----------------------------------------------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)     [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)     [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)    [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)   [142 Linked List Cycle II](#linked-list-cycle-ii)                                       |        |      |
+## Linked List 2[^dmsxl] 
 
-# Linked List Problems
-
-| Topic: Linked list[^dmsxl]                                                                                                 | Python | Java |
-|----------------------------------------------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)     [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)     [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)    [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)   [142 Linked List Cycle II](#linked-list-cycle-ii)                                       |        |      |
-
-# Linked List Problems
-
-| Difficulty                                                                                          | Problem                                                                                 | Python | Java |
+| Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#linked-list-cycle-ii)                                       |        |      |
 
-
-[^dmsxl]:代码随想录-链表:https://programmercarl.com/链表理论基础.html.
 
 ## Swap Nodes in Pairs
 
@@ -70,10 +52,11 @@ Output: [1]
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟡 [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall]                                                                                      |            |            |
-| 🔴 [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]                                                                                                                   |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall] |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
+
 
 
 
@@ -108,9 +91,10 @@ Output: [1]
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟡 [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall]                                                                          |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+
 
 
 ##  Intersection of Two Linked Lists
@@ -120,9 +104,9 @@ Output: [1]
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟢 [599 Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)[^misowll]                                                                                                    |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [599 Minimum Index Sum of Two Lists](https://leetcode.com/problems/minimum-index-sum-of-two-lists/)[^misowll] |        |      |
 
 ## Linked List Cycle II
 
@@ -133,9 +117,10 @@ Output: [1]
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟢 [287 Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)[^ftdn]                                                                                                                 |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [287 Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number/)[^ftdn]         |        |      |
+
 
 ## Reference
 [^dmsxl]:代码随想录-链表理论基础: [https://programmercarl.com/链表理论基础.html](https://programmercarl.com/链表理论基础.html)
