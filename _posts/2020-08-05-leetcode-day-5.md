@@ -168,20 +168,20 @@ Output: [0,1]
 ## Reference
 [^dmsxl]:代码随想录-哈希表理论基础: [https://programmercarl.com/哈希表理论基础.html#哈希表](https://programmercarl.com/哈希表理论基础.html#哈希表).
 [^va]:Leetcode-242 Valid Anagram: [https://leetcode.com/problems/valid-anagram/description/](https://leetcode.com/problems/valid-anagram/description/).
-[^fraara]: Leetcode-2273 Find Resultant Array After Removing Anagrams: [https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/).
-[^ga]: Leetcode-49 Group Anagrams: [https://leetcode.com/problems/group-anagrams/description/](https://leetcode.com/problems/group-anagrams/description/).
-[^faaias]: Leetcode-438 Find All Anagrams in a String: [https://leetcode.com/problems/find-all-anagrams-in-a-string/](https://leetcode.com/problems/find-all-anagrams-in-a-string/).
+[^fraara]:Leetcode-2273 Find Resultant Array After Removing Anagrams: [https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/).
+[^ga]:Leetcode-49 Group Anagrams: [https://leetcode.com/problems/group-anagrams/description/](https://leetcode.com/problems/group-anagrams/description/).
+[^faaias]:Leetcode-438 Find All Anagrams in a String: [https://leetcode.com/problems/find-all-anagrams-in-a-string/](https://leetcode.com/problems/find-all-anagrams-in-a-string/).
 [^vaSolution]:代码随想录-有效的字母异位词: [https://programmercarl.com/0242.有效的字母异位词.html](https://programmercarl.com/0242.有效的字母异位词.html).
-[^iota]Leetcode-349 Intersection of Two Arrays: [https://leetcode.com/problems/intersection-of-two-arrays/description/](https://leetcode.com/problems/intersection-of-two-arrays/description/).
-[^iotaSolution]代码随想录-两个数组的交集: [https://programmercarl.com/0349.两个数组的交集.html](https://programmercarl.com/0349.两个数组的交集.html).
-[^iotaii]: Leetcode-350 Intersection of Two Arrays II: [https://leetcode.com/problems/intersection-of-two-arrays-ii/description/](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/).
-[^msoasar]: Leetcode-3002 Maximum Size of a Set After Removals: [https://leetcode.com/problems/maximum-size-of-a-set-after-removals/](https://leetcode.com/problems/maximum-size-of-a-set-after-removals/).
+[^iota]:Leetcode-349 Intersection of Two Arrays: [https://leetcode.com/problems/intersection-of-two-arrays/description/](https://leetcode.com/problems/intersection-of-two-arrays/description/).
+[^iotaSolution]:代码随想录-两个数组的交集: [https://programmercarl.com/0349.两个数组的交集.html](https://programmercarl.com/0349.两个数组的交集.html).
+[^iotaii]:Leetcode-350 Intersection of Two Arrays II: [https://leetcode.com/problems/intersection-of-two-arrays-ii/description/](https://leetcode.com/problems/intersection-of-two-arrays-ii/description/).
+[^msoasar]:Leetcode-3002 Maximum Size of a Set After Removals: [https://leetcode.com/problems/maximum-size-of-a-set-after-removals/](https://leetcode.com/problems/maximum-size-of-a-set-after-removals/).
 [^hn]:Leetcode-202 Happy Number: [https://leetcode.com/problems/happy-number/description/](https://leetcode.com/problems/happy-number/description/).
 [^tsSolution]:代码随想录-两数之和: [https://programmercarl.com/0001.两数之和.html](https://programmercarl.com/0001.两数之和.html).
-[^hnSolution]: 代码随想录-快乐数: [https://programmercarl.com/0202.快乐数.html](https://programmercarl.com/0202.快乐数.html).
-[^un]: Leetcode-263 Ugly Number: [https://leetcode.com/problems/ugly-number/description/](https://leetcode.com/problems/ugly-number/description/).
-[^matmib]: Leetcode-2457 Minimum Addition to Make Integer Beautiful: [https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/).
-[^un]: Leetcode-263 Ugly Number: [https://leetcode.com/problems/ugly-number/description/](https://leetcode.com/problems/ugly-number/description/).
-[^matmib]: Leetcode-2457 Minimum Addition to Make Integer Beautiful: [https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/).
+[^hnSolution]:代码随想录-快乐数: [https://programmercarl.com/0202.快乐数.html](https://programmercarl.com/0202.快乐数.html).
+[^un]:Leetcode-263 Ugly Number: [https://leetcode.com/problems/ugly-number/description/](https://leetcode.com/problems/ugly-number/description/).
+[^matmib]:Leetcode-2457 Minimum Addition to Make Integer Beautiful: [https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/).
+[^un]:Leetcode-263 Ugly Number: [https://leetcode.com/problems/ugly-number/description/](https://leetcode.com/problems/ugly-number/description/).
+[^matmib]:Leetcode-2457 Minimum Addition to Make Integer Beautiful: [https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/).
 
 
