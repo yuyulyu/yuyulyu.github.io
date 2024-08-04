@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 2
+title: Leetcode Day 2 - Array 2
 description: 209 Minimum Size Subarray Sum | 59 Spiral Matrix II
 author: yoyo
 date: 2024-08-01 13:26:00 +0800
@@ -7,10 +7,13 @@ categories: [Algorithm, Leetcode, Array]
 tags: [array, sliding window]
 ---
 
-| **Topic**: Array[^dmsxl]                                    |   Python   |   Java     |
-|-------------------------------------------------------------|------------|------------|
-| 🟡 [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum) |✅          |✅         |
-| 🟡 [59 Spiral Matrix II](#spiral-matrix-ii)                    |✅          |            |
+## Array 2[^dmsxl]
+
+| Diff                                                                                                 | Problem                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------|------|
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum)                                    | ✅     | ✅   |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [59 Spiral Matrix II](#spiral-matrix-ii)                                                       | ✅     |      |
+
 
 | Additional ACM Questions                                    |   Python   |   Java     |
 |-------------------------------------------------------------|------------|------------|
@@ -97,11 +100,12 @@ class Solution {
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟢 [3095 Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/)[^sswoalki]                                                         |            |            |
-| 🟡 [718 Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description)[^mllors]                                                                          |            |            |
-| 🔴 [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws]                                                                                                         |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [3095 Shortest Subarray With OR at Least K I](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-i/description/)[^sswoalki]  |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [718 Maximum Length of Repeated Subarray](https://leetcode.com/problems/maximum-length-of-repeated-subarray/description)[^mllors] |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws]         |        |      |
+                                                                                  |            |            |
 
 ## Spiral Matrix II
 
@@ -174,10 +178,11 @@ class Solution(object):
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟡 [885 Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiii]                                                                                                                       |            |            |
-| 🟡 [2326 Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiv]                                                                                                                        |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [885 Spiral Matrix III](https://leetcode.com/problems/spiral-matrix-iii/description/)[^smiii]           |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2326 Spiral Matrix IV](https://leetcode.com/problems/spiral-matrix-iv/description/)[^smiv]             |        |      |
+                                                                                   |            |            |
 
 ## Range Sum
 
