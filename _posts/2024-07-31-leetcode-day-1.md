@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 1
+title: Leetcode Day 1 - Array 1
 description: 074 Binary Search | 27 Remove Element
 author: yoyo
 date: 2024-07-31 22:56:00 +0800
@@ -7,10 +7,13 @@ categories: [Algorithm, Leetcode, Array]
 tags: [array, binary search, double pointers]
 ---
 
-| **Topic**: Array[^dmsxl]             |   Python   |   Java     |
-|--------------------------------------|------------|------------|
-| 🟢 [074 Binary Search](#binary-search)  |✅          |✅          |
-| 🟢 [27 Remove Element](#remove-element) |✅          |✅          |
+## Array 1[^dmsxl]
+
+| Diff                                                                                                 | Problem                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [074 Binary Search](#binary-search)  | ✅          | ✅          |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [27 Remove Element](#remove-element) | ✅          | ✅          |
+
 
 ## Binary Search
 
@@ -112,9 +115,9 @@ class Solution {
 
 ### Similar Questions
 
-| Similar Questions                                            |   Python   |   Java     |
-|--------------------------------------------------------------|------------|------------|
-| 🟢 [2529 Maximum Count of Positive Integer and Negative Integer ](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)[^mmcopiani]                             |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [2529 Maximum Count of Positive Integer and Negative Integer](https://leetcode.com/problems/maximum-count-of-positive-integer-and-negative-integer/)[^mmcopiani] |        |      |
 
 
 
@@ -231,11 +234,12 @@ class Solution {
 
 ### Similar Questions
 
-| Similar Questions                                                                |   Python   |   Java     |
-|----------------------------------------------------------------------------------|------------|------------|
-| 🟢 [26 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)[^rmdfsa]                                                                          |            |            |
-| 🟢 [203 Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rlle]                                                                                                    |            |            |
-| 🟢 [283 Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)[^mz]  |            |            |
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [26 Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)[^rmdfsa] |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [203 Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rlle] |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [283 Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)[^mz]  |        |      |
+
 
 ## Reference
 [^dmsxl]:代码随想录-数组:[https://programmercarl.com/数组理论基础.html](https://programmercarl.com/数组理论基础.html).
