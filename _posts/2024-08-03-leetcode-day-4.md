@@ -17,7 +17,7 @@ tags: [linked list,recursion,two pointers,hash table]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#linked-list-cycle-ii)                                       |        |      |
 
 
@@ -150,6 +150,35 @@ class Solution(object):
 > [Link to Leetcode question](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)[^iotll]
 
 ### Solution[^iotllSolution]
+
+**Python**
+
+```python
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        pA = headA
+        pB = headB
+        noneA = True
+        noneB = True
+
+        while(pA != pB):
+            if(pA.next is not None):
+                pA = pA.next
+            elif(noneA):
+                pA = headB
+                noneA = False
+            else:
+                return None
+            
+            if(pB.next is not None):
+                pB = pB.next
+            elif(noneB):
+                pB = headA
+                noneB = False
+            else:
+                return None
+        return pA
+```
 
 ### Similar Questions
 
