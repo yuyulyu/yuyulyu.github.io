@@ -76,7 +76,7 @@ Explanation: [4,9] is also accepted.
 
 #### Python
 
-**Solution 1**: Implement a hash table to record the number of each letters.
+**Solution 1**: Implement a hash table to record the number of each letter.
 
   ```python
   class Solution(object):
@@ -94,6 +94,17 @@ Explanation: [4,9] is also accepted.
                 return False
         
         return True
+  ```
+
+**Solution 2**: Use `Counter` to count number of each letter exist in each string.
+
+  ```python
+  class Solution(object):
+      def isAnagram(self, s, t):        
+          from collections import Counter
+          a = Counter(s)
+          b = Counter(t)
+          return a == b
   ```
 
 ### Similar Questions
