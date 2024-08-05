@@ -7,7 +7,9 @@ categories: [Algorithm, Leetcode,Hash Table]
 tags: [hash table,string,sorting,two pointers,binary search]
 ---
 
-## [Hash Table](https://yuyulyu.github.io/posts/hash-table/) [^dmsxl] 
+## Hash Table [^dmsxl] 
+
+> [Link to note about hash table](https://yuyulyu.github.io/posts/hash-table/)
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
