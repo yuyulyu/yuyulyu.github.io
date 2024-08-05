@@ -15,8 +15,8 @@ tags: [hash table,string,sorting,two pointers,binary search]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [242 Valid Anagram](#valid-anagram)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [349 Intersection of Two Arrays](#intersection-of-two-arrays)                |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [202 Happy Number](#happy-number)               |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [1 Two Sum](#two-sum)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [202 Happy Number](#happy-number)               |✅      |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [1 Two Sum](#two-sum)                                       |✅      |      |
 
 ## Valid Anagram
 
@@ -249,6 +249,7 @@ Output: [0,1]
 #### Python
 
 **Solution 1**: Brute Force
+  <ins>Time Complexity</ins>: O(n<sup>2</sup>)
 
   ```python
   class Solution(object):
@@ -260,6 +261,7 @@ Output: [0,1]
   ```
 
 **Solution 2**: Use dictionary
+  <ins>Time Complexity</ins>: O(n)
 
   ```python
   class Solution(object):
