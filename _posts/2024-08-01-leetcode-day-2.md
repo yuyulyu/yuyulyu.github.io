@@ -3,7 +3,7 @@ title: Leetcode Day 2 - Array
 description: 209 Minimum Size Subarray Sum | 59 Spiral Matrix II
 author: yoyo
 date: 2024-08-01 13:26:00 +0800
-categories: [Algorithm, Leetcode, Array]
+categories: [Data Structure and Algorithm, Leetcode, Array]
 tags: [array, sliding window]
 ---
 
