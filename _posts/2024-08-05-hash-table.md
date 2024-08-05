@@ -1,11 +1,12 @@
 ---
-title: Template
-description: Write down description here.
+title: Hash Table
+# description: Write down description here.
 author: yoyo
-date: 2024-08-01 11:33:00 +0800
-categories: [Z others, Demo]
-tags: []
+date: 2024-05-01 15:56:00 +0800
+categories: [Data Structure and Algorithm, Data Structure]
+tags: [hash table]
 ---
 
-content
+## Hash Table
+
 
