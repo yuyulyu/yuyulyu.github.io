@@ -1,11 +1,21 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
+title: Leetcode Day 6 - Hash Table 
 description: # <problem> | # <Problem> 
 author: yoyo
-date: 2020-08-03 23:07:00 +0800
+date: 2024-08-06 23:07:00 +0800
 categories: [Algorithm, Leetcode]
 tags: []
 ---
+
+<script async src="https://www.googletagmanager.com/gtag/js?id={{analytics.google}}"></script>
+<script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', '{{ext_ga_id}}');
+</script>
+  
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
