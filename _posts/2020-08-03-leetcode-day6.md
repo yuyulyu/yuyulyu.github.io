@@ -13,7 +13,7 @@ tags: []
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', '{{ext_ga_id}}');
+      gtag('config', '{{analytics.google}}');
 </script>
   
 
