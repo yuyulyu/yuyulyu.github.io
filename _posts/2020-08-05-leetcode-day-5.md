@@ -13,7 +13,7 @@ tags: [hash table,string,sorting,two pointers,binary search]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [242 Valid Anagram](#valid-anagram)                                          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [242 Valid Anagram](#valid-anagram)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [349 Intersection of Two Arrays](#intersection-of-two-arrays)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [202 Happy Number](#happy-number)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [1 Two Sum](#two-sum)                                       |        |      |
