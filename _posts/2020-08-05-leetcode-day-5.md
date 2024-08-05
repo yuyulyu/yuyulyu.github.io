@@ -74,6 +74,28 @@ Explanation: [4,9] is also accepted.
 
 ### Solution[^iotaSolution]
 
+#### Python
+
+**Solution 1**: Implement a hash table to record the number of each letters.
+
+  ```python
+  class Solution(object):
+    def isAnagram(self, s, t):        
+        record = [0] * 26
+
+        for c in s:
+            record[ord(c) - ord('a')] += 1
+        
+        for c in t:
+            record[ord(c) - ord('a')] -= 1
+        
+        for i in range(len(record)):
+            if (record[i] != 0):
+                return False
+        
+        return True
+  ```
+
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
