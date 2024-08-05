@@ -14,6 +14,8 @@ tags: [hash table]
 
 ## Hash Table
 
+A structure that can map keys to values. It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found in time O(1).
+
 ![Desktop View](/assets/image/hash-table-1.jpg){: .normal }
 
 ### Collisions
@@ -24,16 +26,22 @@ $$
 h(k_1) = h(k_2)
 $$
 
-### Chaining**
+### Technique to handle collisions
+
+#### Chaining
+
+Each bucket in the hash table points to a linked list of entries that hash to the same index. When a collision occurs, the new entry is added to the list.
 
 ![Desktop View](/assets/image/hash-table-2.jpeg){: .normal }
 
-### Open addressing
+#### Open addressing
 
-Make use of spare space, for example:
-  - **Linear probing**: Scan forward through the array.
-  - **Quadratic probing**: \(h(k,i) = (h(k) + c_1 i + c_2 i^2) \% M\)
-  - **Double hashing**: \(H(k,i) = (h_1(k) + i \cdot h_2(k)) \% M\)
+Instead of storing all entries that hash to the same index in a linked list, open addressing searches for the next available slot in the array, make use of spare space, for example:
+  - **Linear probing**: Scan forward through the array. If the desired slot is occupied, check the next slot, and so on.
+  - **Quadratic probing**: Reduces primary clustering by checking slots at increasing distances.
+    - \(h(k,i) = (h(k) + c_1 i + c_2 i^2) \% M\)
+  - **Double hashing**: Uses a secondary hash function to determine the interval between probes, providing a more uniform distribution of entries.
+    - \(H(k,i) = (h_1(k) + i \cdot h_2(k)) \% M\)
 
 ## Hash Table in Python
 
