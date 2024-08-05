@@ -32,7 +32,7 @@ Make use of spare space, for example:
 
 ## Hash Table in Python
 
-### 1. `ord()`
+### `ord()`
 
 The `ord()` function in Python returns an integer representing the ASCII / Unicode code point of the given character.
 
