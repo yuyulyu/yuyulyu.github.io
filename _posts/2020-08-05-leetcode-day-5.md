@@ -183,6 +183,28 @@ Output: false
 
 ### Solution[^hnSolution]
 
+#### Python
+
+```python
+class Solution(object):
+    def isHappy(self, n):
+        n = str(n)
+        record = []
+
+        while(True):
+            new_n = 0
+            for num in n:
+                new_n += int(num) ** 2
+            
+            if(new_n not in record):
+                record += [new_n]
+            elif(new_n == 1):
+                return True
+            else:
+                return False
+            n = str(new_n)
+```
+
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
