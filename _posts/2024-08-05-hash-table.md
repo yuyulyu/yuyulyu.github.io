@@ -2,9 +2,10 @@
 title: Hash Table
 # description: Write down description here.
 author: yoyo
-date: 2024-05-01 15:56:00 +0800
+date: 2024-08-05 15:56:00 +0800
 categories: [Data Structure and Algorithm, Data Structure]
 tags: [hash table]
+image: /assets/image/hash-table-1.jpg
 ---
 
 ## Hash Table
