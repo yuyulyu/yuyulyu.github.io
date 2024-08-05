@@ -42,38 +42,6 @@ Output: false
 
 ### Solution[^vaSolution]
 
-### Similar Questions
-
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [2273 Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/)[^fraara] |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                       | [49 Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)[^ga]          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                       | [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)[^faaias]          |        |      |
-
-
-## Intersection of Two Arrays
-
-> [Link to Leetcode question](https://leetcode.com/problems/intersection-of-two-arrays/description/)[^iota]
-
-Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
-
-**Example 1**
-
-```
-Input: nums1 = [1,2,2,1], nums2 = [2,2]
-Output: [2]
-```
-
-**Example 2**
-
-```
-Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
-Output: [9,4]
-Explanation: [4,9] is also accepted.
-```
-
-### Solution[^iotaSolution]
-
 #### Python
 
 **Solution 1**: Implement a hash table to record the number of each letter.
@@ -106,6 +74,40 @@ Explanation: [4,9] is also accepted.
           b = Counter(t)
           return a == b
   ```
+
+### Similar Questions
+
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [2273 Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/)[^fraara] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                       | [49 Group Anagrams](https://leetcode.com/problems/group-anagrams/description/)[^ga]          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                       | [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/)[^faaias]          |        |      |
+
+
+## Intersection of Two Arrays
+
+> [Link to Leetcode question](https://leetcode.com/problems/intersection-of-two-arrays/description/)[^iota]
+
+Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
+
+**Example 1**
+
+```
+Input: nums1 = [1,2,2,1], nums2 = [2,2]
+Output: [2]
+```
+
+**Example 2**
+
+```
+Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
+Output: [9,4]
+Explanation: [4,9] is also accepted.
+```
+
+### Solution[^iotaSolution]
+
+
 
 ### Similar Questions
 
