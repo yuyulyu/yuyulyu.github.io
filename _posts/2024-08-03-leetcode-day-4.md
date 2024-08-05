@@ -4,7 +4,7 @@ description: 24 Swap Nodes in Pairs | 19 Remove Nth Node From End of List | 160 
 author: yoyo
 date: 2024-08-03 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Linked List]
-tags: [linked list,recursion,two pointers,hash table]
+tags: [linked list,recursion,double pointers,hash table]
 ---
 
 ## Linked List 2[^dmsxl] 
