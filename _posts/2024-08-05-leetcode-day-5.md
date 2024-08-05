@@ -259,7 +259,19 @@ Output: [0,1]
                     return [i,j]
   ```
 
-**Solution 2**:
+**Solution 2**: Use dictionary
+
+  ```python
+  class Solution(object):
+    def twoSum(self, nums, target):
+        records = dict()
+
+        for index, value in enumerate(nums):
+            if((target - value) in records):
+                return index, records[target - value]
+            else:
+                records[value] = index
+  ```
 
 ### Similar Questions
 
@@ -289,5 +301,5 @@ Output: [0,1]
 [^un]:Leetcode-263 Ugly Number: [https://leetcode.com/problems/ugly-number/description/](https://leetcode.com/problems/ugly-number/description/).
 [^matmib]:Leetcode-2457 Minimum Addition to Make Integer Beautiful: [https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/](https://leetcode.com/problems/minimum-addition-to-make-integer-beautiful/).
 [^ts]:Leetcode-1 Two Sum: [https://leetcode.com/problems/two-sum/description/](https://leetcode.com/problems/two-sum/description/).
-
+[^3sum]:Leetcode-15 3Sum: [https://leetcode.com/problems/3sum/description/](https://leetcode.com/problems/3sum/description/).
 
