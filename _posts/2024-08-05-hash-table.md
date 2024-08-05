@@ -7,6 +7,11 @@ categories: [Data Structure and Algorithm, Data Structure]
 tags: [hash table]
 ---
 
+> Related Leetcode Questions
+>  - [Leetcode Day 5 - Hash Table](https://yuyulyu.github.io/posts/leetcode-day-5/)
+>  - Leetcode Day 6 - Hash Table
+{: .prompt-info }
+
 ## Hash Table
 
 ![Desktop View](/assets/image/hash-table-1.jpg){: .normal }
