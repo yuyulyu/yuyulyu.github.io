@@ -14,7 +14,7 @@ tags: [hash table,string,sorting,two pointers,binary search]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [242 Valid Anagram](#valid-anagram)                                          |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [349 Intersection of Two Arrays](#intersection-of-two-arrays)                |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [349 Intersection of Two Arrays](#intersection-of-two-arrays)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [202 Happy Number](#happy-number)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [1 Two Sum](#two-sum)                                       |        |      |
 
@@ -107,6 +107,37 @@ Explanation: [4,9] is also accepted.
 
 ### Solution[^iotaSolution]
 
+#### Python
+
+**Solution 1**: Use dictionary
+
+  ```python
+  class Solution(object):
+    def intersection(self, nums1, nums2):
+        from collections import Counter
+        record = {-1:-1}
+        intersection = []
+        
+        for num in nums1:
+            record[num] = num
+        
+        for num in nums2:
+            try:
+                if(record[num] not in intersection):
+                    intersection += [record[num]]
+            except:
+                temp = num
+
+        return intersection
+  ```
+
+**Solution 2**: Use set
+
+  ```python
+  class Solution(object):
+    def intersection(self, nums1, nums2):
+        return list(set(nums1) & set(nums2))
+```
 
 
 ### Similar Questions
