@@ -9,4 +9,5 @@ tags: [hash table]
 
 ## Hash Table
 
+![Desktop View](/assets/image/hash-table-1.jpg){: .normal }
 
