@@ -4,7 +4,7 @@ description: 242 Valid Anagram | 349 Intersection of Two Arrays | 202 Happy Numb
 author: yoyo
 date: 2024-08-05 23:07:00 +0800
 categories: [Algorithm, Leetcode,Hash Table]
-tags: [hash table,string,sorting,two pointers,binary search]
+tags: [hash table,string,sorting,double pointers,binary search]
 ---
 
 ## Hash Table [^dmsxl] 
