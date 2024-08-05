@@ -3,7 +3,7 @@ title: Characterizing Running Times
 description: Introduction to Algorithm Chapter 3.
 author: yoyo
 date: 2024-07-28 11:33:00 +0800
-categories: [Algorithm, Introduction to Algorithm]
+categories: [Algorithm]
 tags: [BigO]
 ---
 
