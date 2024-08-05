@@ -1,6 +1,6 @@
 ---
 title: Hash Table
-# description: Write down description here.
+description: Hash table | Technique to handle collisions | Hash table in Python and Java
 author: yoyo
 date: 2024-08-05 15:56:00 +0800
 categories: [Data Structure and Algorithm, Data Structure]
