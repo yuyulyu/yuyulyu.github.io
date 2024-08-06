@@ -4,21 +4,24 @@ description: # <problem> | # <Problem>
 author: yoyo
 date: 2024-08-06 14:07:00 +0800
 categories: [Algorithm, Leetcode]
-tags: []
+tags: [hash table, array, double pointers,]
 ---  
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-## <Topic> [^dmsxl] 
+## Hash Table [^dmsxl] 
+
+> [Link to note about hash table](https://yuyulyu.github.io/posts/hash-table/)
+{: .prompt-info }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [454 4Sum II](#4sum-ii)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [383 Ransom Note](#ransom-note)                |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [15 3Sum](#3sum)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [15 3Sum](#3sum)               |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [18 4Sum](#4sum)                                       |✅      |      |
 
 ## 4Sum II
 
@@ -80,7 +83,7 @@ class Solution(object):
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [18 4Sum](https://leetcode.com/problems/4sum/)[^4s] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [18 4Sum](#4sum)[^4s]                                                                                   |✅      |      |
 
 
 ## Ransom Note
@@ -177,28 +180,112 @@ Output: [[0,0,0]]
 Explanation: The only possible triplet sums up to 0.
 ```
 
-### Solution[^rnnfeolSolution]
+### Solution[^3sumSolution]
+
+## Python
+
+```python
+class Solution(object):
+    def threeSum(self, nums):
+        nums.sort()
+        if nums[0] > 0:
+            return []
+        result = []
+
+        for i in range(len(nums)):
+            if(i > 0 and nums[i-1] == nums[i]):
+                continue  
+            left = i + 1
+            right = len(nums) - 1
+           
+            while left < right:
+                s = nums[i] + nums[left] + nums[right] 
+                
+                if s == 0:
+                    result.append([nums[i],nums[left],nums[right]])
+                    left += 1
+                    while(nums[left] == nums[left - 1] and left < right):
+                        left += 1
+                elif s < 0:
+                    left += 1
+                    while(nums[left] == nums[left - 1] and left < right):
+                        left += 1
+                else:
+                    right -= 1
+            
+        return result
+```
 
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [16 3Sum Closest](https://leetcode.com/problems/3sum-closest/description/)[^3sc] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2909 Minimum Sum of Mountain Triplets II](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/)[^msomt] |        |      |
 
-## Ransom Note
+## 4Sum
 
-> [Link to Leetcode question](https://leetcode.com/problems/ransom-note/description/)[^rn]
+> [Link to Leetcode question](https://leetcode.com/problems/4sum/description/)[^4s]
 
+Given an array `nums` of `n` integers, return an array of all the unique quadruplets `[nums[a], nums[b], nums[c], nums[d]]` such that:
 
-### Solution[^rnnfeolSolution]
+  - `0 <= a, b, c, d < n`
+  - `a, b, c, and d are distinct.`
+  - `nums[a] + nums[b] + nums[c] + nums[d] == target`
 
-### Similar Questions
+You may return the answer in any order. 
 
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+**Example 1**
 
+```
+Input: nums = [1,0,-1,0,-2,2], target = 0
+Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
+```
 
+**Example 2**
+
+```
+Input: nums = [2,2,2,2,2], target = 8
+Output: [[2,2,2,2]]
+```
+
+### Solution[^4sSolution]
+
+#### Python
+
+```python
+class Solution(object):
+    def fourSum(self, nums, target):
+        """
+        :type nums: List[int]
+        :type target: int
+        :rtype: List[List[int]]
+        """
+        nums.sort()
+
+        if((nums[0] > 0 and target < 0) or (nums[-1] < 0 and target > 0)):
+            return []
+
+        record = []
+
+        for i in range(len(nums) - 3):
+            for j in range(i + 1, len(nums) - 2):
+                left = j + 1
+                right = len(nums) - 1
+
+                while(left < right and right > j + 1):
+                    s = nums[i] + nums[j] + nums[left] + nums[right]
+                    if(s == target):
+                        if ([nums[i],nums[j],nums[left],nums[right]] not in record):
+                            record.append([nums[i],nums[j],nums[left],nums[right]])
+                        right -= 1
+                    elif(s < target):
+                        left += 1
+                    else:
+                        right -= 1
+            
+        return record
+```
 
 ## Reference
 [^dmsxl]:代码随想录-哈希表理论基础: [https://programmercarl.com/哈希表理论基础.html#哈希表](https://programmercarl.com/哈希表理论基础.html#哈希表).
@@ -209,3 +296,7 @@ Explanation: The only possible triplet sums up to 0.
 [^stsw]: Leetcode-691 Stickers to Spell Word: [https://leetcode.com/problems/stickers-to-spell-word/](https://leetcode.com/problems/stickers-to-spell-word/).
 [^4s]: Leetcode-18 4Sum: [https://leetcode.com/problems/4sum/](https://leetcode.com/problems/4sum/).
 [^3sum]: Leetcode-15 3Sum: [https://leetcode.com/problems/3sum/description/](https://leetcode.com/problems/3sum/description/).
+[^3sc]: Leetcode-16 3Sum Closest: [https://leetcode.com/problems/3sum-closest/description/](https://leetcode.com/problems/3sum-closest/description/).
+[^msomt]: Leetcode-2909 Minimum Sum of Mountain Triplets II: [https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/).
+[^3sumSolution]:代码随想录-三数之和: [https://programmercarl.com/0015.三数之和.html#其他语言版本](https://programmercarl.com/0015.三数之和.html#其他语言版本).
+
