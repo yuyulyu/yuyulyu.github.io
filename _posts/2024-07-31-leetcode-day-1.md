@@ -18,6 +18,7 @@ tags: [array, binary search, double pointers]
 ## Binary Search
 
 > [Link to Leetcode question](https://leetcode.com/problems/binary-search/)[^binarySearch]
+{: .prompt-info }
 
 Given an array of integers ```nums``` which is sorted in <ins>ascending order</ins>, and an integer ```target```, write a function to search ```target``` in ```nums```. If ```target``` exists, then return its index. Otherwise, return ```-1```.
 
@@ -124,6 +125,7 @@ class Solution {
 ## Remove Element
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-element/description/)[^removeElement]
+{: .prompt-info }
 
 Given an integer array ```nums``` and an integer ```val```, remove all occurrences of ```val``` in ```nums``` in-place. The order of the elements may be changed. Then return the number of elements in ```nums``` which are not equal to ```val```.
 
