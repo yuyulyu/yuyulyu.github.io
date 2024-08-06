@@ -23,6 +23,7 @@ tags: [array, sliding window]
 ## Minimum Size Subarray Sum
 
 > [Link to Leetcode question](https://leetcode.com/problems/minimum-size-subarray-sum/)[^msss]
+{: .prompt-info }
 
 Given an array of positive integers `nums` and a positive integer `target`, return the minimal length of a 
 subarray whose sum is greater than or equal to target. If there is no such subarray, return` 0` instead.
@@ -48,7 +49,6 @@ Output: 0
 
 ### Note 
 **Sliding Window**
-
 
 
 ### Solution [^bsssSolution]
@@ -110,6 +110,7 @@ class Solution {
 ## Spiral Matrix II
 
 > [Link to Leetcode question](https://leetcode.com/problems/spiral-matrix-ii/)[^smii]
+{: .prompt-info }
 
 Given a positive integer n, generate an n x n matrix filled with elements from 1 to n2 in spiral order.
 
@@ -187,6 +188,7 @@ class Solution(object):
 ## Range Sum
 
 > [Link to ACM question](https://kamacoder.com/problempage.php?pid=1070)[^rs]
+{: .prompt-info }
 
 **Problem Description**
 
@@ -225,6 +227,7 @@ Output the sum of the elements within each specified range.
 ## Developer land purchase
 
 > [Link to ACM question](https://kamacoder.com/problempage.php?pid=1044)[^dlp]
+{: .prompt-info }
 
 ### Solution[^dlpSolution]
 
