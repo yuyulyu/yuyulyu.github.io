@@ -20,6 +20,7 @@ tags: [linked list,recursion,double pointers,hash table]
 ## Swap Nodes in Pairs
 
 > [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+{: .prompt-info }
 
 Given a linked list, swap every two adjacent nodes and return its head. You must solve the problem without modifying the values in the list's nodes (i.e., only nodes themselves may be changed.)
 
@@ -83,6 +84,7 @@ class Solution(object):
 ## Remove Nth Node From End of List
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+{: .prompt-info }
 
 Given the `head` of a linked list, remove the `nth` node from the end of the list and return its head.
 
@@ -144,6 +146,7 @@ class Solution(object):
 
 ##  Intersection of Two Linked Lists
 > [Link to Leetcode question](https://leetcode.com/problems/intersection-of-two-linked-lists/description/)[^iotll]
+{: .prompt-info }
 
 Given the heads of two singly linked-lists `headA` and `headB`, return the node at which the two lists intersect. If the two linked lists have no intersection at all, return `null`.
 
@@ -213,6 +216,7 @@ class Solution(object):
 ## Linked List Cycle II
 
 > [Link to Leetcode question](https://leetcode.com/problems/linked-list-cycle-ii/description/)[^llc]
+{: .prompt-info }
 
 Given the `head` of a linked list, return the node where the cycle begins. If there is no cycle, return `null`.
 
