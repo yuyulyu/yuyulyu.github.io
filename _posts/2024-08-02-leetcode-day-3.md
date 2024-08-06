@@ -17,7 +17,8 @@ tags: [linked list,recursion]
 
 ## Remove Linked List Elements
 
- [Link to Leetcode question](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rllr]
+> [Link to Leetcode question](https://leetcode.com/problems/remove-linked-list-elements/description/)[^rllr]
+{: .prompt-info }
 
 Given the ```head``` of a linked list and an integer ```val```, remove all the nodes of the linked list that has ```Node.val == val```, and return the new head.
 
@@ -112,6 +113,7 @@ class Solution {
 ## Design Linked List
 
 > [Link to Leetcode question](https://leetcode.com/problems/design-linked-list/description/)[^dll]
+{: .prompt-info }
 
 Design your implementation of the linked list. You can choose to use a singly or doubly linked list.
 
@@ -275,6 +277,7 @@ lass MyLinkedList(object):
 ## Reverse Linked List
 
 > [Link to Leetcode question](https://leetcode.com/problems/reverse-linked-list/description/)[^rll]
+{: .prompt-info }
 
 Given the ···head··· of a singly linked list, reverse the list, and return the reversed list.
 
