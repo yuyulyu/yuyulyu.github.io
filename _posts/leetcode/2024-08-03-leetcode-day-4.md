@@ -26,7 +26,7 @@ Given a linked list, swap every two adjacent nodes and return its head. You must
 
 **Example 1**
 
-![Desktop View](/assets/image//leetcode-day4-1.jpg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/swap-nodes-in-pairs-example-1.jpg){: .normal }
 
 ```
 Input: head = [1,2,3,4]
@@ -90,7 +90,7 @@ Given the `head` of a linked list, remove the `nth` node from the end of the lis
 
 **Example 1**
 
-![Desktop View](/assets/image//leetcode-day4-2.jpg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/remove-nth-node-from-end-of-list-example-1.jpg){: .normal }
 
 ```
 Input: head = [1,2,3,4,5], n = 2
@@ -152,7 +152,7 @@ Given the heads of two singly linked-lists `headA` and `headB`, return the node 
 
 For example, the following two linked lists begin to intersect at node `c1`:
 
-![Desktop View](/assets/image//leetcode-day4-3.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/intersection-of-two-linked-lists-description-1.png){: .normal }
 
 The test cases are generated such that there are no cycles anywhere in the entire linked structure.
 
@@ -160,7 +160,7 @@ The test cases are generated such that there are no cycles anywhere in the entir
 
 **Example 1:**
 
-![Desktop View](/assets/image//leetcode-day4-4.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/intersection-of-two-linked-lists-example-1.png){: .normal }
 
 ```
 Input: intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3
@@ -169,7 +169,7 @@ Output: Intersected at '8'
 
 **Example 2**
 
-![Desktop View](/assets/image//leetcode-day4-5.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/intersection-of-two-linked-lists-example2.png){: .normal }
 
 ```
 Input: intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2
@@ -226,7 +226,7 @@ There is a cycle in a linked list if there is some node in the list that can be 
 
 **Example 1**
 
-![Desktop View](/assets/image//leetcode-day4-6.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/linked-list-cycle-ii-example-1.png){: .normal }
 
 ```
 Input: head = [3,2,0,-4], pos = 1
@@ -236,7 +236,7 @@ Explanation: There is a cycle in the linked list, where tail connects to the sec
 
 **Example 2**
 
-![Desktop View](/assets/image//leetcode-day4-7.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/linked-list-cycle-ii-example-2.png){: .normal }
 
 ```
 Input: head = [1,2], pos = 0
@@ -246,7 +246,7 @@ Explanation: There is a cycle in the linked list, where tail connects to the fir
 
 **Example 3**
 
-![Desktop View](/assets/image//leetcode-day4-8.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-4/linked-list-cycle-ii-example-3.png){: .normal }
 
 ```
 Input: head = [1], pos = -1
