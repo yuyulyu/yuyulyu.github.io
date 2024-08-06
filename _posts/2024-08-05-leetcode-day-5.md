@@ -22,6 +22,7 @@ tags: [hash table,string,sorting,double pointers,binary search]
 ## Valid Anagram
 
 > [Link to Leetcode question](https://leetcode.com/problems/valid-anagram/description/)[^va]
+{: .prompt-info }
 
 Given two strings `s` and `t`, return `true` if `t` is an anagram of `s`, and `false` otherwise.
 
@@ -88,6 +89,7 @@ Output: false
 ## Intersection of Two Arrays
 
 > [Link to Leetcode question](https://leetcode.com/problems/intersection-of-two-arrays/description/)[^iota]
+{: .prompt-info }
 
 Given two integer arrays `nums1` and `nums2`, return an array of their intersection. Each element in the result must be unique and you may return the result in any order.
 
@@ -151,6 +153,7 @@ Explanation: [4,9] is also accepted.
 ## Happy Number
 
 > [Link to Leetcode question](https://leetcode.com/problems/happy-number/description/)[^hn]
+{: .prompt-info }
 
 Write an algorithm to determine if a number `n` is happy.
 
@@ -216,6 +219,7 @@ class Solution(object):
 ## Two Sum
 
 > [Link to Leetcode question](https://leetcode.com/problems/two-sum/description/)[^ts]
+{: .prompt-info }
 
 Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
 
