@@ -1,6 +1,6 @@
 ---
 title: Leetcode Day 6 - Hash Table 
-description: # <problem> | # <Problem> 
+description: 454 4Sum II |  383 Ransom Note | 15 3Sum | 18 4Sum
 author: yoyo
 date: 2024-08-06 14:07:00 +0800
 categories: [Algorithm, Leetcode]
@@ -23,6 +23,7 @@ tags: [hash table, array, double pointers,]
 ## 4Sum II
 
 > [Link to Leetcode question](https://leetcode.com/problems/4sum-ii/description/)[^4sum]
+{: .prompt-info }
 
 Given four integer arrays `nums1`, `nums2`, `nums3`, and `nums4` all of length `n`, return the number of tuples `(i, j, k, l)` such that:
 
@@ -86,6 +87,7 @@ class Solution(object):
 ## Ransom Note
 
 > [Link to Leetcode question](https://leetcode.com/problems/ransom-note/description/)[^rn]
+{: .prompt-info }
 
 Given two strings `ransomNote` and `magazine`, return `true` if `ransomNote` can be constructed by using the letters from `magazine` and `false` otherwise.
 
@@ -143,6 +145,7 @@ class Solution(object):
 ## 3Sum
 
 > [Link to Leetcode question](https://leetcode.com/problems/3sum/description/)[^3sum]
+{: .prompt-info }
 
 Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` such that `i != j, i != k, and j != k`, and `nums[i] + nums[j] + nums[k] == 0`.
 
@@ -223,6 +226,7 @@ class Solution(object):
 ## 4Sum
 
 > [Link to Leetcode question](https://leetcode.com/problems/4sum/description/)[^4s]
+{: .prompt-info }
 
 Given an array `nums` of `n` integers, return an array of all the unique quadruplets `[nums[a], nums[b], nums[c], nums[d]]` such that:
 
