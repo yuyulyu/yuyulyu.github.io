@@ -299,5 +299,6 @@ class Solution(object):
 [^3sum]: Leetcode-15 3Sum: [https://leetcode.com/problems/3sum/description/](https://leetcode.com/problems/3sum/description/).
 [^3sc]: Leetcode-16 3Sum Closest: [https://leetcode.com/problems/3sum-closest/description/](https://leetcode.com/problems/3sum-closest/description/).
 [^msomt]: Leetcode-2909 Minimum Sum of Mountain Triplets II: [https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/](https://leetcode.com/problems/minimum-sum-of-mountain-triplets-ii/).
-[^3sumSolution]:代码随想录-三数之和: [https://programmercarl.com/0015.三数之和.html#其他语言版本](https://programmercarl.com/0015.三数之和.html#其他语言版本).
+[^3sumSolution]:代码随想录-三数之和: [https://programmercarl.com/0015.三数之和.html](https://programmercarl.com/0015.三数之和.html).
+[^4sSolution]:代码随想录-四数之和:[https://programmercarl.com/0018.四数之和.html#算法公开课](https://programmercarl.com/0018.四数之和.html#算法公开课)
 
