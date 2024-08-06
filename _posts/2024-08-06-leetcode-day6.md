@@ -7,9 +7,6 @@ categories: [Algorithm, Leetcode]
 tags: [hash table, array, double pointers,]
 ---  
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
 
 ## Hash Table [^dmsxl] 
 
