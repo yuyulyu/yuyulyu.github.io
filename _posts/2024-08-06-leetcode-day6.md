@@ -201,7 +201,7 @@ Explanation: The only possible triplet sums up to 0.
 
 
 ## Reference
-[^dmsxl]:
+[^dmsxl]:代码随想录-哈希表理论基础: [https://programmercarl.com/哈希表理论基础.html#哈希表](https://programmercarl.com/哈希表理论基础.html#哈希表).
 [^4sum]:Leetcode-454 4Sum II: [https://leetcode.com/problems/4sum-ii/description/](https://leetcode.com/problems/4sum-ii/description/).
 [^4sumSolution]: 代码随想录-四数相加II: [https://programmercarl.com/0454.四数相加II.html#其他语言版本](https://programmercarl.com/0454.四数相加II.html#其他语言版本).
 [^rn]:Leetcode-383 Ransom Note: [https://leetcode.com/problems/ransom-note/description/](https://leetcode.com/problems/ransom-note/description/).
