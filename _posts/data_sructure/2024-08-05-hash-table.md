@@ -16,7 +16,7 @@ tags: [hash table]
 
 A structure that can map keys to values. It uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found in time O(1).
 
-![Desktop View](/assets/image/hash-table-1.jpg){: .normal }
+![Desktop View](/assets/image/data-structure/hash-table/hash-table-1.jpg){: .normal }
 
 ### Collisions
 
@@ -32,7 +32,7 @@ $$
 
 Each bucket in the hash table points to a linked list of entries that hash to the same index. When a collision occurs, the new entry is added to the list.
 
-![Desktop View](/assets/image/hash-table-2.jpeg){: .normal }
+![Desktop View](/assets/image/data-structure/hash-table/chaining.jpeg){: .normal }
 
 #### Open addressing
 
