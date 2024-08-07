@@ -30,6 +30,8 @@ tags: []
 
 ### Solution[^snipSolution]
 
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
@@ -45,6 +47,8 @@ tags: []
 
 
 ### Solution[^rnnfeolSolution]
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
 
 ### Similar Questions
 
