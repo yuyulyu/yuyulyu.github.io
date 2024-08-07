@@ -21,9 +21,6 @@ tags: [string, double pointers]
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [28 Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)                                          |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [459 Repeated Substring Pattern](#repeated-substring-pattern)                |        |      |
 
-
-# the link
-
 ## Reverse Words in a String
 
 > [Link to Leetcode question](https://leetcode.com/problems/reverse-words-in-a-string/description/)[^rwias]
