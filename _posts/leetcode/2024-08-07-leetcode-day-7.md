@@ -109,8 +109,8 @@ Output: "bacd"
 ### Thinking Process (Python)
 
 #### <ins>1. Conversion Between String and List</ins>
-  - To facilitate easy character swapping within the string, it is first converted into a list using res = list(s).
-  - When returning the result, the list res is converted back into a string with ''.join(res).
+  - To facilitate easy character swapping within the string, it is first converted into a list using `res = list(s)`.
+  - When returning the result, the list res is converted back into a string with `''.join(res)`.
 
 #### <ins>2. Using Two Pointers to Iterate Over Each Block of Length `k` </ins>
 
