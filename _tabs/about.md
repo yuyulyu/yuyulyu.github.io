@@ -11,6 +11,7 @@ This website serves as a personal repository for my educational progress and is 
 Currently, I'm  sharpening my coding skills by coding on Leetcode every day. You can explore my detailed notes [here](https://yuyulyu.github.io/categories/leetcode/), where I document my progress, thought processes, and key learnings. 
 
 > The primary purpose of this website is to serve as a personal repository for my educational pursuits. While the materials here are primarily for my own use, I warmly invite you to explore and benefit from them as well.
+{: .prompt-warning }
 
 # About Me
 
