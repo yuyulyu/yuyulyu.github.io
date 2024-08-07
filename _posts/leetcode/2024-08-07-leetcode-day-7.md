@@ -123,14 +123,14 @@ The question's description "reverse the first `k` characters for every `2k` char
   - Each block follows the rule: if `reverse = True`, then reverse the block; otherwise, do not reverse. After processing, reverse is toggled with `not reverse` to alternate the behavior for the next block.
   - The pointers are updated to move to the next block with `left += k` and `right += k`.
 
-<First Diagram Here>
+![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-1.jpeg){: .normal }
 
 When advancing to the last block, besides checking if `right + k = len(s) - 1`, other special cases may arise:
 
 | Scenario                                           | Check Condition     | Diagram             | Update `right` to | Explanation                                                                                                                    |
 |----------------------------------------------------|---------------------|---------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| The next block is the first block in a 2k-length segment | `reverse = True`    | <Second Diagram Here> | `len(s) - 1`      | "If there are fewer than `k` characters left, reverse all of them."                                                           |
-| The next block is the second block in a 2k-length segment | `reverse = False`   | <Third Diagram Here>  | `right + k`       | In the current 2k-length segment, if there are more than `k` but fewer than `2k` characters remaining, only the first `k` characters should be reversed per the problem's requirement. Thus, the rest of the characters do not need to be reversed, allowing `right + k` to exceed `len(s) - 1` and exit the while loop. |
+| The next block is the first block in a 2k-length segment | `reverse = True`    | ![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-2.jpeg){: .normal } | `len(s) - 1`      | "If there are fewer than `k` characters left, reverse all of them."                                                           |
+| The next block is the second block in a 2k-length segment | `reverse = False`   | ![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-3.jpeg){: .normal } | `right + k`       | In the current 2k-length segment, if there are more than `k` but fewer than `2k` characters remaining, only the first `k` characters should be reversed per the problem's requirement. Thus, the rest of the characters do not need to be reversed, allowing `right + k` to exceed `len(s) - 1` and exit the while loop. |
 
    
 
