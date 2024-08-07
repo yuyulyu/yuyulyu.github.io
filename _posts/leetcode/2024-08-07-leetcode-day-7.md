@@ -1,10 +1,10 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
-description: # <problem> | # <Problem> 
+title: Leetcode Day 7 - String
+description: 344 Reverse String |
 author: yoyo
-date: 2020-08-03 23:07:00 +0800
+date: 2024-08-07 14:05:00 +0800
 categories: [Algorithm, Leetcode]
-tags: []
+tags: [string,]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
@@ -15,16 +15,18 @@ tags: []
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#the-link)                                          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [344 Reverse String](#reverse-string)                                          |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
 
 # the link
 
-## <1st problem>
+## Reverse String
 
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+> [Link to Leetcode question](https://leetcode.com/problems/reverse-string/description/)[^rs]
+
+[^rs]: Leetcode-344 Reverse String: [https://leetcode.com/problems/reverse-string/description/](https://leetcode.com/problems/reverse-string/description/).
 
 
 ### Solution[^snipSolution]
@@ -54,4 +56,4 @@ tags: []
 
 ## Reference
 [^dmsxl]:
-
+[^rs]: Leetcode-344 Reverse String: [https://leetcode.com/problems/reverse-string/description/](https://leetcode.com/problems/reverse-string/description/).
