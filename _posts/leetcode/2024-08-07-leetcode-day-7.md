@@ -42,15 +42,36 @@ Input: s = ["H","a","n","n","a","h"]
 Output: ["h","a","n","n","a","H"]
 ```
 
+### Thinking Process
+
+The two-pointer method is utilized. Two pointers, starting from the leftmost and the rightmost character of the string respectively. The characters at these pointers are then swapped until the pointers meet in the middle.
+
+When swapping characters in Python, the following traditional method can be used:
+
+```python
+def swap(s,i,j):
+  temp = s[i]
+  s[i] = s[j]
+  s[j] = temp
+  return s
+```
+
+However, Python allows a more space-efficient and elegant way to perform this operation using **tuple unpacking**:
+
+```python
+def swap(s,i,j):
+  s[i], s[j] = s[j], s[i]
+  return s
+```
+
 ### Solution
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0344.反转字符串.html#算法公开课)[^rsSolution]
+
 #### Python
 
 ```python
 class Solution(object):
     def reverseString(self, s):
-        if s is None:
-            return None
         n = len(s)
         for i in range(n // 2 ):
             s[i], s[n - i - 1] = s[n - i - 1], s[i]
@@ -89,7 +110,29 @@ Input: s = "abcd", k = 2
 Output: "bacd"
 ```
 
-### Thinking Process
+### Thinking Process (Python)
+
+#### <ins>1. Conversion Between String and List</ins>
+  - To facilitate easy character swapping within the string, it is first converted into a list using res = list(s).
+  - When returning the result, the list res is converted back into a string with ''.join(res).
+
+#### <ins>2. Using Two Pointers to Iterate Over Each Block of Length `k` </ins>
+
+The question's description "reverse the first `k` characters for every `2k` characters," can be interpreted as reversing every alternate block of length `k`. Therefore, a boolean variable `reverse` is used to track whether the current block should be reversed. Specifically:
+  - The `left` pointer marks the start of each block, while the `right` pointer marks the end.
+  - Each block follows the rule: if `reverse = True`, then reverse the block; otherwise, do not reverse. After processing, reverse is toggled with `not reverse` to alternate the behavior for the next block.
+  - The pointers are updated to move to the next block with `left += k` and `right += k`.
+
+<First Diagram Here>
+
+When advancing to the last block, besides checking if `right + k = len(s) - 1`, other special cases may arise:
+
+| Scenario                                           | Check Condition     | Diagram             | Update `right` to | Explanation                                                                                                                    |
+|----------------------------------------------------|---------------------|---------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| The next block is the first block in a 2k-length segment | `reverse = True`    | <Second Diagram Here> | `len(s) - 1`      | "If there are fewer than `k` characters left, reverse all of them."                                                           |
+| The next block is the second block in a 2k-length segment | `reverse = False`   | <Third Diagram Here>  | `right + k`       | In the current 2k-length segment, if there are more than `k` but fewer than `2k` characters remaining, only the first `k` characters should be reversed per the problem's requirement. Thus, the rest of the characters do not need to be reversed, allowing `right + k` to exceed `len(s) - 1` and exit the while loop. |
+
+   
 
 #### Solution 1
 
