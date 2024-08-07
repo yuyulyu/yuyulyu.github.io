@@ -17,8 +17,8 @@ Currently, I'm  sharpening my coding skills by coding on Leetcode every day. You
 
 ## Education
 
-### 2022-2026: University of Bath
-**BSc(Hons) Computer Science & Artificial Intelligence with Yearlong Work Placement**
+### 2022-2026: [University of Bath](https://www.bath.ac.uk/)
+**BSc(Hons) Computer Science & Artificial Intelligence**
 - **Predicted Classification:** First class
 - **Year 2 Modules:**
   - Machine Learning, Foundations of Computation, Fundamentals of Visual Computing, Data Structures and Algorithms, Artificial Intelligence 2, Foundations and Frontiers of Machine Learning, Experimental Systems Project
@@ -35,8 +35,8 @@ Currently, I'm  sharpening my coding skills by coding on Leetcode every day. You
 
 ## Extracurricular Experience
 
-### June – July 2024: SJTU SDG July Camp
-During Sustainable Development Goal July Camp at Shanghai Jiaotong University, China, I participated in the course Sustainable Marine Environment Intelligent Monitoring. 
+### June – July 2024: [SJTU SDG July Camp](https://global.sjtu.edu.cn/en/studyatSJTU/SDG)
+During Sustainable Development Goal July Camp at Shanghai Jiaotong University, China, I participated in the course [Sustainable Marine Environment Intelligent Monitoring](https://global.sjtu.edu.cn/en/page/sub/473). 
    - Attended lectures on marine robotics, machine learning, and autonomous systems.
    - Led a team of 5 computer science students to design and develop a Marine Debris Collection System demo.
    - <ins>Technologies and Skills Learned</ins>: Image recognition, path planning algorithms, wireless communication, energy management, robotics system integration.
