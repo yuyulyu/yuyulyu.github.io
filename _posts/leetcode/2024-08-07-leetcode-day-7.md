@@ -7,10 +7,6 @@ categories: [Algorithm, Leetcode]
 tags: [string,]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## String
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
@@ -132,17 +128,11 @@ When advancing to the last block, besides checking if `right + k = len(s) - 1`, 
 | The next block is the first block in a 2k-length segment | `reverse = True`    | ![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-2.jpeg){: .normal } | `len(s) - 1`      | "If there are fewer than `k` characters left, reverse all of them."                                                           |
 | The next block is the second block in a 2k-length segment | `reverse = False`   | ![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-3.jpeg){: .normal } | `right + k`       | In the current 2k-length segment, if there are more than `k` but fewer than `2k` characters remaining, only the first `k` characters should be reversed per the problem's requirement. Thus, the rest of the characters do not need to be reversed, allowing `right + k` to exceed `len(s) - 1` and exit the while loop. |
 
-   
-
-#### Solution 1
-
-
-
 ### Solution
 
 #### Python
 
-[**Solution 1**](#solution-1)
+[**Solution 1**]
 
 ```python
 class Solution(object):
