@@ -6,11 +6,11 @@ order: 4
 
 Hi! Welcome to my personal website!
 
-This website serves as a personal repository for my educational progress and is openly shared for anyone interested in learning alongside me. Here, you'll find various resources, notes, and reflections on what I'm studying. 
+The primary purpose of this website is to serve as a personal repository for my educational pursuits. You are welcome to browse the content and I hope you find it helpful.
 
 Currently, I'm  sharpening my coding skills by coding on Leetcode every day. You can explore my detailed notes [here](https://yuyulyu.github.io/categories/leetcode/), where I document my progress, thought processes, and key learnings. 
 
-> The primary purpose of this website is to serve as a personal repository for my educational pursuits. You are welcome to browse the content and I hope you find it useful. However, please note that the content is intended for personal use only and not for commercial purposes. If you come across any material that infringes upon copyright, please inform me so it can be addressed promptly.
+>  Please note that the content is intended for personal use only and not for commercial purposes. If you come across any material that infringes upon copyright, please inform me so it can be addressed promptly.
 {: .prompt-warning }
 
 # About Me
