@@ -25,6 +25,7 @@ tags: []
 ## <1st problem>
 
 > [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+{: .prompt-info }
 
 
 ### Solution[^snipSolution]
@@ -40,6 +41,7 @@ tags: []
 ## <2nd problem>
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+{: .prompt-info }
 
 
 ### Solution[^rnnfeolSolution]
