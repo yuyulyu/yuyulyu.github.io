@@ -114,7 +114,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
     - `strip()` removes the leading and trailing spaces in a string.
     - `split()` splits string into a list of word.
 
-#### 2. <ins>Revers charaaters</ins>
+#### 2. <ins>Revers characters</ins>
 
   Similar to [344 Revers String](https://yuyulyu.github.io/posts/leetcode-day-7/#reverse-string), use double pointers.
 
@@ -147,50 +147,41 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 ```python
 class Solution(object):
     def reverseWords(self, s):
-    
-        def reverseWord(s):
-            for i in range(len(s) // 2):
-                s[i], s[len(s) - i - 1] = s[len(s) - i - 1], s[i]
-            return s
-
         s = list(s)
-        fast = 0
-        slow = 0
         l = len(s)
 
         # Remove leading spaces
-        while(s[fast] == ' ' and fast < l):
-            fast += 1
+        i = 0
+        slow = 0
+        while i < len(s):
+            if (s[i] != ' '):
+                if(slow != 0):
+                    s[slow] = ' '
+                    slow += 1
+                while(i < len(s) and s[i] != ' '):
+                    s[slow] = s[i]
+                    slow += 1
+                    i += 1
+            i += 1
         
-        # Remove extra spaces between words
-        while(fast < l):
-            if not(fast - 1 > 0 and s[fast -1] == s[fast] and s[fast] == ' '):
-                s[slow] = s[fast]
-                slow += 1
-            fast += 1
-        
-        # Remove trailing spaces
-        if(slow - 1 > 0 and s[slow - 1] == ' '):
-            s = s[:slow - 1]
-        else:
-            s = s[:slow]
-        
+        #Resize s
+        s = s[:slow]
         l = len(s)
 
         #Reverse Characters
-        s = reverseWord(s)
+        s = s[::-1]
 
         #Reverse Words
         start = 0
         for i in range(l + 1):
             if(i == l or s[i] == ' '):
-                s[start:i] = reverseWord(s[start:i])
+                s[start:i] = s[start:i][::-1]
                 start = i + 1
         
         return ''.join(s)
 ```
 
-**Solution using split**
+**Solution using `split()`**
 ```python
 class Solution:
     def reverseWords(self, s):
@@ -232,7 +223,7 @@ class Solution:
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/kama55.右旋字符串.html)[^rhsSolution].
 
 ## Find the Index of the First Occurrence in a String
 
