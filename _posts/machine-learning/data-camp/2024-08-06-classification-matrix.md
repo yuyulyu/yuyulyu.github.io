@@ -1,9 +1,9 @@
 ---
-title: Classification Matrix
+title: Scikit-learn Classification Matrix
 description: Supervised Learning with scikit-learn
 author: yoyo
 date: 2024-08-06 17:01:00 +0800
-categories: [Machine Learning, DataCamp, Supervised Learning with scikit-learn]
+categories: [Machine Learning, Supervised Learning with scikit-learn]
 tags: [scikit-learn]
 ---
 
