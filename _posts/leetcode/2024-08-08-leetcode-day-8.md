@@ -4,7 +4,7 @@ description: 151 Reverse Words in a String | Kama-55 Right-Handed String | 28 Fi
 author: yoyo
 date: 2024-08-08 13:53:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
-tags: [string, double pointers]
+tags: [string, double pointers, kmp]
 ---
 
 ## String 
@@ -12,7 +12,7 @@ tags: [string, double pointers]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [151 Reverse Words in a String](#reverse-words-in-a-string)                                          |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [Kama-55 Right-Handed String](#right-handed-string)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [Kama-55 Right-Handed String](#right-handed-string)                |✅      |      |
 
 **Optional Queations**
 
