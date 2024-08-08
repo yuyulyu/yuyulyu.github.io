@@ -11,7 +11,7 @@ tags: [string, double pointers]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [151 Reverse Words in a String](#reverse-words-in-a-string)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [151 Reverse Words in a String](#reverse-words-in-a-string)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [Kama-55 Right-Handed String](#right-handed-string)                |        |      |
 
 **Optional Queations**
@@ -65,7 +65,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
   - reverse charaters: `the sky is blue` -> `eulb si yks eht`
   - reverse each word: `eulb si yks eht` -> `blue is sky the`
 
-1. <ins> Remove extra spaces </ins>
+#### 1. <ins> Remove extra spaces </ins>
   - **Solution 1: Traverse the String**:
     - Complexity: O(n<sup>2</sup>)
 
@@ -110,12 +110,11 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
             i += 1
         s = s[:slow]
     ```
-    
   - **Other tricky solution in python**: 
     - `strip()` removes the leading and trailing spaces in a string.
     - `split()` splits string into a list of word.
 
-2. <ins>Revers charaaters</ins>
+#### 2. <ins>Revers charaaters</ins>
 
   Similar to [344 Revers String](https://yuyulyu.github.io/posts/leetcode-day-7/#reverse-string), use double pointers.
 
@@ -125,10 +124,80 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
                   s[i], s[len(s) - i - 1] = s[len(s) - i - 1], s[i]
               return s
   ```
-  
-3. <ins>Reverse each word</ins>
-    
 
+  Or Python can simply reverse the word by slicing
+
+  ```python
+  def reverseWord(word):
+    return word[::-1]
+  ```
+  
+#### 3. <ins>Reverse each word</ins>
+  ```python
+  start = 0
+        for i in range(len(s) + 1):
+            if i == len(s) or s[i] == ' ':
+                s[start:i] = reverseWord(s[start:i])
+                start = i + 1
+  ```
+
+#### Completed Solution: Python
+
+**Solution without using `split()`**
+```python
+class Solution(object):
+    def reverseWords(self, s):
+    
+        def reverseWord(s):
+            for i in range(len(s) // 2):
+                s[i], s[len(s) - i - 1] = s[len(s) - i - 1], s[i]
+            return s
+
+        s = list(s)
+        fast = 0
+        slow = 0
+        l = len(s)
+
+        # Remove leading spaces
+        while(s[fast] == ' ' and fast < l):
+            fast += 1
+        
+        # Remove extra spaces between words
+        while(fast < l):
+            if not(fast - 1 > 0 and s[fast -1] == s[fast] and s[fast] == ' '):
+                s[slow] = s[fast]
+                slow += 1
+            fast += 1
+        
+        # Remove trailing spaces
+        if(slow - 1 > 0 and s[slow - 1] == ' '):
+            s = s[:slow - 1]
+        else:
+            s = s[:slow]
+        
+        l = len(s)
+
+        #Reverse Characters
+        s = reverseWord(s)
+
+        #Reverse Words
+        start = 0
+        for i in range(l + 1):
+            if(i == l or s[i] == ' '):
+                s[start:i] = reverseWord(s[start:i])
+                start = i + 1
+        
+        return ''.join(s)
+```
+
+**Solution using split**
+```python
+class Solution:
+    def reverseWords(self, s):
+        words = s.split() 
+        words = words[::-1] 
+        return ' '.join(words) 
+```
 
 ## Right-Handed String
 
