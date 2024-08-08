@@ -116,6 +116,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
     - `split()` splits string into a list of word.
 
 2. <ins>Revers charaaters</ins>
+
   Similar to [344 Revers String](https://yuyulyu.github.io/posts/leetcode-day-7/#reverse-string), use double pointers.
 
   ```python
@@ -125,7 +126,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
               return s
   ```
   
-4. <ins>Reverse each word</ins>
+3. <ins>Reverse each word</ins>
     
 
 
