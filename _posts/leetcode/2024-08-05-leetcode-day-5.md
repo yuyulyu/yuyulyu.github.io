@@ -3,7 +3,7 @@ title: Leetcode Day 5 - Hash Table
 description: 242 Valid Anagram | 349 Intersection of Two Arrays | 202 Happy Number | 1 Two Sum
 author: yoyo
 date: 2024-08-05 23:07:00 +0800
-categories: [Algorithm, Leetcode,Hash Table]
+categories: [Data Structure and Algorithm, Leetcode,Hash Table]
 tags: [hash table,string,sorting,double pointers,binary search]
 ---
 
