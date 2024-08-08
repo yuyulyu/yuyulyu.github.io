@@ -7,10 +7,6 @@ categories: [Algorithm, Leetcode]
 tags: [string,]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## String
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
@@ -83,7 +79,7 @@ class Solution(object):
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                 | [541 Reverse String II](#reverse-string-ii))[^rsii] |✅      |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                 | [541 Reverse String II](#reverse-string-ii)[^rsii] |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                        | [345 Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)[^rvoas]          |        |      |
 
 
@@ -113,8 +109,8 @@ Output: "bacd"
 ### Thinking Process (Python)
 
 #### <ins>1. Conversion Between String and List</ins>
-  - To facilitate easy character swapping within the string, it is first converted into a list using res = list(s).
-  - When returning the result, the list res is converted back into a string with ''.join(res).
+  - To facilitate easy character swapping within the string, it is first converted into a list using `res = list(s)`.
+  - When returning the result, the list res is converted back into a string with `''.join(res)`.
 
 #### <ins>2. Using Two Pointers to Iterate Over Each Block of Length `k` </ins>
 
@@ -123,26 +119,20 @@ The question's description "reverse the first `k` characters for every `2k` char
   - Each block follows the rule: if `reverse = True`, then reverse the block; otherwise, do not reverse. After processing, reverse is toggled with `not reverse` to alternate the behavior for the next block.
   - The pointers are updated to move to the next block with `left += k` and `right += k`.
 
-<First Diagram Here>
+![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-1.jpeg){: .normal }
 
 When advancing to the last block, besides checking if `right + k = len(s) - 1`, other special cases may arise:
 
 | Scenario                                           | Check Condition     | Diagram             | Update `right` to | Explanation                                                                                                                    |
 |----------------------------------------------------|---------------------|---------------------|-------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| The next block is the first block in a 2k-length segment | `reverse = True`    | <Second Diagram Here> | `len(s) - 1`      | "If there are fewer than `k` characters left, reverse all of them."                                                           |
-| The next block is the second block in a 2k-length segment | `reverse = False`   | <Third Diagram Here>  | `right + k`       | In the current 2k-length segment, if there are more than `k` but fewer than `2k` characters remaining, only the first `k` characters should be reversed per the problem's requirement. Thus, the rest of the characters do not need to be reversed, allowing `right + k` to exceed `len(s) - 1` and exit the while loop. |
-
-   
-
-#### Solution 1
-
-
+| The next block is the first block in a 2k-length segment | `reverse = True`    | ![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-2.jpeg){: .normal } | `len(s) - 1`      | "If there are fewer than `k` characters left, reverse all of them."                                                           |
+| The next block is the second block in a 2k-length segment | `reverse = False`   | ![Desktop View](/assets/image/leetcode/leetcode-day-7/reverse-string-ii-thinking-process-3.jpeg){: .normal } | `right + k`       | In the current 2k-length segment, if there are more than `k` but fewer than `2k` characters remaining, only the first `k` characters should be reversed per the problem's requirement. Thus, the rest of the characters do not need to be reversed, allowing `right + k` to exceed `len(s) - 1` and exit the while loop. |
 
 ### Solution
 
 #### Python
 
-[**Solution 1**](#solution-1)
+[**Solution 1**]
 
 ```python
 class Solution(object):

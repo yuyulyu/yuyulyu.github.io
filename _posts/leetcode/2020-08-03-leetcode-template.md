@@ -25,9 +25,12 @@ tags: []
 ## <1st problem>
 
 > [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+{: .prompt-info }
 
 
 ### Solution[^snipSolution]
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
 
 ### Similar Questions
 
@@ -40,9 +43,12 @@ tags: []
 ## <2nd problem>
 
 > [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+{: .prompt-info }
 
 
 ### Solution[^rnnfeolSolution]
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
 
 ### Similar Questions
 
