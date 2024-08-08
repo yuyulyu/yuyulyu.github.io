@@ -3,7 +3,7 @@ title: Leetcode Day 6 - Hash Table
 description: 454 4Sum II |  383 Ransom Note | 15 3Sum | 18 4Sum
 author: yoyo
 date: 2024-08-06 14:07:00 +0800
-categories: [Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode]
 tags: [hash table, array, double pointers,]
 ---  
 
