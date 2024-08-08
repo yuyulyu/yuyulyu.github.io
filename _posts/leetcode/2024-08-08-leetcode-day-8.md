@@ -3,7 +3,7 @@ title: Leetcode Day 8 - String
 description: 151 Reverse Words in a String | Kama-55 Right-Handed String | 28 Find the Index of the First Occurrence in a String |459 Repeated Substring Pattern 
 author: yoyo
 date: 2024-08-08 13:53:00 +0800
-categories: [Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode]
 tags: [string, double pointers]
 ---
 
