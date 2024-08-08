@@ -225,6 +225,18 @@ class Solution:
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/kama55.右旋字符串.html)[^rhsSolution].
 
+![Desktop View](/assets/image/leetcode/leetcode-day-8/right-handed-string-solution-1.jpeg){: .normal }
+
+#### Python
+
+```python
+k = int(input())
+s = input()
+
+s = s[len(s)-k:] + s[:len(s)-k]
+print(s)
+```
+
 ## Find the Index of the First Occurrence in a String
 
 > [Link to Leetcode question](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)[^ftiotfoias].
