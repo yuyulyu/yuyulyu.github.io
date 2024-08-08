@@ -61,6 +61,74 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html).[^rwiasSolution]
 
+  - Remove extra spaces: `the sky is blue ` -> `the sky is blue`
+  - reverse charaters: `the sky is blue` -> `eulb si yks eht`
+  - reverse each word: `eulb si yks eht` -> `blue is sky the`
+
+1. <ins> Remove extra spaces </ins>
+  - **Solution 1: Traverse the String**:
+    - Complexity: O(n<sup>2</sup>)
+
+  - **Solution 2: Use double pointers to remove extra spaces**
+    - Complexity: O(n) 
+
+    ```python
+    # Remove leading spaces
+        # Remove leading spaces
+        while(s[fast] == ' ' and fast < len(s)):
+            fast += 1
+        
+        # Remove extra spaces between words
+        while(fast < len(s)):
+            if not(fast - 1 > 0 and s[fast -1] == res[fast] and s[fast] == ' '):
+                s[slow] = s[fast]
+                slow += 1
+            fast += 1
+        
+        # Remove trailing spaces
+        if(slow - 1 > 0 and s[slow - 1] == ' '):
+            s = s[:slow - 1]
+        else:
+            s = s[:slow]
+    ```
+  - **Solution 3: Similar to idea in [27 Remove Element](https://yuyulyu.github.io/posts/leetcode-day-1/#remove-element)**:
+    - Complexity: O(n)
+      
+    ```python
+    i = 0
+    slow = 0
+
+        while i < len(s):
+            if (s[i] != ' '):
+                if(slow != 0):
+                    s[slow] = ' '
+                    slow += 1
+                while(i < len(s) and s[i] != ' '):
+                    s[slow] = s[i]
+                    slow += 1
+                    i += 1
+            i += 1
+        s = s[:slow]
+    ```
+    
+  - **Other tricky solution in python**: 
+    - `strip()` removes the leading and trailing spaces in a string.
+    - `split()` splits string into a list of word.
+
+2. <ins>Revers charaaters</ins>
+  Similar to [344 Revers String](https://yuyulyu.github.io/posts/leetcode-day-7/#reverse-string), use double pointers.
+
+  ```python
+  def reverseWord(s):
+              for i in range(len(s) // 2):
+                  s[i], s[len(s) - i - 1] = s[len(s) - i - 1], s[i]
+              return s
+  ```
+  
+4. <ins>Reverse each word</ins>
+    
+
+
 ## Right-Handed String
 
 > [Link to the question](https://kamacoder.com/problempage.php?pid=1065/)[^rhs].
