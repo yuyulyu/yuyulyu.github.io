@@ -14,7 +14,10 @@ tags: [string, double pointers, kmp]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [151 Reverse Words in a String](#reverse-words-in-a-string)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [Kama-55 Right-Handed String](#right-handed-string)                |✅      |      |
 
-**Optional Queations**
+### Optional Queations about KMP
+
+> [Link to Note about KMP](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)[^ftiotfoias].
+{: .prompt-info }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
