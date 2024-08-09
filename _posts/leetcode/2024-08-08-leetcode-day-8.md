@@ -22,7 +22,7 @@ tags: [string, double pointers, kmp]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [28 Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)         |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [459 Repeated Substring Pattern](#repeated-substring-pattern)                |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [459 Repeated Substring Pattern](#repeated-substring-pattern)                |✅      |      |
 
 ## Reverse Words in a String
 
@@ -365,6 +365,40 @@ Explanation: It is the substring "abc" four times or the substring "abcabc" twic
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0459.重复的子字符串.html)[^rspSolution].
 
+解释后补
+
+#### Python
+
+**Solution 1**: KMP
+
+```python
+class Solution(object):
+    def repeatedSubstringPattern(self, s):
+        j = 0
+        j_max = 0
+        prefix = [0] * len(s)
+
+        for i in range(1,len(s)):
+            while j > 0 and s[i] != s[j]:
+                j = prefix[j - 1]
+            if s[i] == s[j]:
+                j += 1
+                j_max = max(j,j_max)
+            prefix[i] = j
+        
+        return (prefix[-1] != 0 and len(s) % (len(s) - prefix[-1]) == 0)
+```
+
+**Solution 2**: Use `find()`
+
+```python
+class Solution(object):
+    def repeatedSubstringPattern(self, s):
+        if len(s) <= 1:
+            return False
+        ss = s[1:] + s[:-1]     
+        return ss.find(s) != -1
+```
 
 ### Similar Questions
 
