@@ -16,7 +16,7 @@ tags: [string, double pointers, kmp]
 
 ### Optional Queations about KMP
 
-> [Link to Leetcode question](https://yuyulyu.github.io/posts/kmp/).
+> [Link to Note about KMP](https://yuyulyu.github.io/posts/kmp/).
 {: .prompt-info }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
@@ -242,10 +242,10 @@ print(s)
 
 ## Find the Index of the First Occurrence in a String
 
-> [Link to Leetcode question](https://yuyulyu.github.io/posts/kmp/).
+> [Link to Note about KMP](https://yuyulyu.github.io/posts/kmp/).
 {: .prompt-info }
 
-> [Link to Note about KMP](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)[^ftiotfoias].
+> [Link to Leetcode question](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)[^ftiotfoias].
 {: .prompt-info }
 
 Given two strings `needle` and `haystack`, return the index of the first occurrence of `needle` in `haystack`, or `-1` if `needle` is not part of `haystack`.
