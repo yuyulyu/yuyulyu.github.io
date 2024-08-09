@@ -28,7 +28,7 @@ tags: []
 {: .prompt-info }
 
 
-### Solution[^snipSolution]
+### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
 
@@ -46,7 +46,7 @@ tags: []
 {: .prompt-info }
 
 
-### Solution[^rnnfeolSolution]
+### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
 
