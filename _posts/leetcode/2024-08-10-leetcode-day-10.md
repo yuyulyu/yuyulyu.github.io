@@ -1,63 +1,179 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
-description: # <problem> | # <Problem> 
+title: Leetcode Day 10 - Stack & Queue
+description: 150 Evaluate Reverse Polish Notation | 239 Sliding Window Maximum | 347 Top K Frequent Elements
 author: yoyo
-date: 2020-08-03 23:07:00 +0800
-categories: [Algorithm, Leetcode]
-tags: []
+date: 2020-08-10 13:57:00 +0800
+categories: [Datastructure and Algorithm, Leetcode]
+tags: [stack, queue,sliding window]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-## <Topic> [^dmsxl] 
+## Stack & Queue 
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#the-link)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [150 Evaluate Reverse Polish Notation](#evaluate-reverse-polish-notation)                                          |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [239 Sliding Window Maximum](#sliding-window-maximum)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [347 Top K Frequent Elements](#top-k-frequent-elements)               |        |      |
 
-# the link
+## Evaluate Reverse Polish Notation
 
-## <1st problem>
-
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+> [Link to Leetcode question](https://leetcode.com/problems/evaluate-reverse-polish-notation/)[^erpn]
 {: .prompt-info }
+
 
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0150.逆波兰表达式求值.html)[^erpnSolution].
+
+
+
+You are given an array of strings `tokens` that represents an arithmetic expression in a Reverse Polish Notation.
+
+Evaluate the expression. Return an integer that represents the value of the expression.
+
+**Note that**:
+  - The valid operators are `'+'`, `'-'`, `'*'`, and `'/'`.
+  - Each operand may be an integer or another expression.
+  - The division between two integers always truncates toward zero.
+  - There will not be any division by zero.
+  - The input represents a valid arithmetic expression in a reverse polish notation.
+  - The answer and all the intermediate calculations can be represented in a 32-bit integer. 
+
+**Example 1**
+
+```
+Input: tokens = ["2","1","+","3","*"]
+Output: 9
+Explanation: ((2 + 1) * 3) = 9
+```
+
+**Example 2**
+
+```
+Input: tokens = ["4","13","5","/","+"]
+Output: 6
+Explanation: (4 + (13 / 5)) = 6
+```
+
+**Example 3**
+
+```
+Input: tokens = ["10","6","9","3","+","-11","*","/","*","17","+","5","+"]
+Output: 22
+Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
+= ((10 * (6 / (12 * -11))) + 17) + 5
+= ((10 * (6 / -132)) + 17) + 5
+= ((10 * 0) + 17) + 5
+= (0 + 17) + 5
+= 17 + 5
+= 22
+```
 
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall] |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                | [282 Expression Add Operators](https://leetcode.com/problems/expression-add-operators/description/)[^eao] |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [224 Basic Calculator](https://leetcode.com/problems/basic-calculator/)[^bc]          |        |      |
 
 
-## <2nd problem>
+## Sliding Window Maximum
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+> [Link to Leetcode question](https://leetcode.com/problems/sliding-window-maximum/description/)[^swm]
 {: .prompt-info }
 
+You are given an array of integers `nums`, there is a sliding window of size `k` which is moving from the very left of the array to the very right. You can only see the `k` numbers in the window. Each time the sliding window moves right by one position.
+
+Return the max sliding window.
+
+**Example 1**
+
+```
+Input: nums = [1,3,-1,-3,5,3,6,7], k = 3
+Output: [3,3,5,5,6,7]
+Explanation: 
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+```
+
+**Example 2**
+
+```
+Input: nums = [1], k = 1
+Output: [1]
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0239.滑动窗口最大值.html)[^swmSolution].
 
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [155 Min Stack](https://leetcode.com/problems/min-stack/)[^ms] |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                | [76 Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/description/)[^mws] |        |      |
+
+## Top K Frequent Elements
+
+> [Link to Leetcode question](https://leetcode.com/problems/top-k-frequent-elements/description/)[^tkfe].
+{: .prompt-info }
+
+Given an integer array `nums` and an integer `k`, return the `k` most frequent elements. You may return the answer in any order.
+
+**Example 1**
+
+```
+Input: nums = [1,1,1,2,2,3], k = 2
+Output: [1,2]
+```
+
+**Example 2**
+
+```
+Input: nums = [1], k = 1
+Output: [1]
+```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0347.前K个高频元素.html)[^tkfeSolution].
+
+
+
+### Similar Questions
+
+| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
+|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [192 Word Frequency](https://leetcode.com/problems/word-frequency/description/)[^wf] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [215 Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)[^kleiaa] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [659 Split Array into Consecutive Subsequences](https://leetcode.com/problems/split-array-into-consecutive-subsequences/)[^saics] |        |      |
 
 
 
 ## Reference
-[^dmsxl]:
+[^erpn]:Leetcode-150 Evaluate Reverse Polish Notation: [https://leetcode.com/problems/evaluate-reverse-polish-notation/](https://leetcode.com/problems/evaluate-reverse-polish-notation/).
+[^erpnSolution]:代码随想录-逆波兰表达式求值: [https://programmercarl.com/0150.逆波兰表达式求值.html](https://programmercarl.com/0150.逆波兰表达式求值.html).
+[^eao]: Leetcode-282 Expression Add Operators: [https://leetcode.com/problems/expression-add-operators/description/](https://leetcode.com/problems/expression-add-operators/description/).
+[^bc]: Leetcode-224 Basic Calculator: [https://leetcode.com/problems/basic-calculator/](https://leetcode.com/problems/basic-calculator/).
+[^swm]:Leetcode-239 Sliding Window Maximum: [https://leetcode.com/problems/sliding-window-maximum/description/](https://leetcode.com/problems/sliding-window-maximum/description/).
+[^swmSolution]:代码随想录-滑动窗口最大值: [https://programmercarl.com/0239.滑动窗口最大值.html](https://programmercarl.com/0239.滑动窗口最大值.html).
+[^ms]: Leetcode-155 Min Stack: [https://leetcode.com/problems/min-stack/](https://leetcode.com/problems/min-stack/).
+[^mws]: Leetcode-76 Minimum Window Substring: [https://leetcode.com/problems/minimum-window-substring/description/](https://leetcode.com/problems/minimum-window-substring/description/).
+[^tkfe]:Leetcode-347 Top K Frequent Elements: [https://leetcode.com/problems/top-k-frequent-elements/description/](https://leetcode.com/problems/top-k-frequent-elements/description/).
+[^tkfeSolution]:代码随想录-前K个高频元素: [https://programmercarl.com/0347.前K个高频元素.html](https://programmercarl.com/0347.前K个高频元素.html).
+[^wf]: Leetcode-192 Word Frequency: [https://leetcode.com/problems/word-frequency/description/](https://leetcode.com/problems/word-frequency/description/).
+[^kleiaa]: Leetcode-215 Kth Largest Element in an Array: [https://leetcode.com/problems/kth-largest-element-in-an-array/description/](https://leetcode.com/problems/kth-largest-element-in-an-array/description/).
+[^saics]: Leetcode-659 Split Array into Consecutive Subsequences: [https://leetcode.com/problems/split-array-into-consecutive-subsequences/](https://leetcode.com/problems/split-array-into-consecutive-subsequences/).
 
