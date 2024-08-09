@@ -7,10 +7,6 @@ categories: [Datastructure and Algorithm, Leetcode]
 tags: [stack, queue,sliding window]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Stack & Queue 
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
