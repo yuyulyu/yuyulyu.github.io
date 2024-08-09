@@ -16,12 +16,12 @@ tags: [string, double pointers, kmp]
 
 ### Optional Queations about KMP
 
-> [Link to Note about KMP](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)[^ftiotfoias].
+> [Link to Leetcode question](https://yuyulyu.github.io/posts/kmp/).
 {: .prompt-info }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [28 Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)                                          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [28 Find the Index of the First Occurrence in a String](#find-the-index-of-the-first-occurrence-in-a-string)         |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [459 Repeated Substring Pattern](#repeated-substring-pattern)                |        |      |
 
 ## Reverse Words in a String
@@ -242,7 +242,7 @@ print(s)
 
 ## Find the Index of the First Occurrence in a String
 
-> [Link to Leetcode question](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)[^ftiotfoias].
+> [Link to Leetcode question](https://yuyulyu.github.io/posts/kmp/).
 {: .prompt-info }
 
 > [Link to Note about KMP](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)[^ftiotfoias].
@@ -271,6 +271,58 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0028.实现strStr.html)[^ftiotfoiasSolution].
 
+#### Python
+
+**Solution 1**: KMP
+
+```python
+class Solution(object):
+    def strStr(self, haystack, needle):
+        l = len(needle)
+        if l == 0:
+            return 0
+        
+        j = 0
+        prefix = [0] * l
+
+        for i in range(1,l):
+            while j > 0 and needle[j] != needle[i]:
+                j = prefix[j - 1]
+            if needle[j] == needle[i]:
+                j += 1
+            prefix[i] = j
+
+        
+        j = 0
+        for i in range(len(haystack)):
+            while j > 0 and haystack[i] != needle[j]:
+                j = prefix[j - 1]
+            if haystack[i] == needle[j]:
+                j += 1
+            if j == l:
+                return i - l + 1
+        
+        return -1
+```
+
+**Solution 2**: Use `index()`
+
+```python
+class Solution(object):
+    def strStr(self, haystack, needle):
+        try:
+            return haystack.index(needle)
+        except ValueError:
+            return -1
+```
+
+**Solution 3**: Use `find()`
+
+```python
+class Solution(object):
+    def strStr(self, haystack, needle):
+        return haystack.find(needle)
+```
 
 ### Similar Questions
 
