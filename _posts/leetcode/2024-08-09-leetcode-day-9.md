@@ -12,7 +12,7 @@ tags: [stack, queue]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [232 Implement Queue using Stacks](#implement-queue-using-stacks)                                          |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [225 Implement Stack using Queues](#implement-stack-usings-queues)                |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [225 Implement Stack using Queues](#implement-stack-using-queues)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [20 Valid Parentheses](#valid-parentheses)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [1047 Remove All Adjacent Duplicates In String](#remove-all-adjacent-duplicates-in-string)                                       |        |      |
 
