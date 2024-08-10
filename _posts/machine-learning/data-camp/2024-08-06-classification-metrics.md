@@ -3,7 +3,7 @@ title: Scikit-learn Classification Metrics
 description: Supervised Learning with scikit-learn
 author: yoyo
 date: 2024-08-10 17:41:00 +0800
-categories: [Machine Learning, Supervised Learning with scikit-learn]
+categories: [Artificial Intelligence, Machine Learning, Supervised Learning with scikit-learn]
 tags: [scikit-learn]
 ---
 
