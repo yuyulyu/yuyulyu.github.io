@@ -12,7 +12,7 @@ tags: [stack, queue,sliding window]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [150 Evaluate Reverse Polish Notation](#evaluate-reverse-polish-notation)                                          |✅      |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [239 Sliding Window Maximum](#sliding-window-maximum)                |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [239 Sliding Window Maximum](#sliding-window-maximum)                |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [347 Top K Frequent Elements](#top-k-frequent-elements)               |        |      |
 
 ## Evaluate Reverse Polish Notation
@@ -169,6 +169,37 @@ Output: [1]
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0239.滑动窗口最大值.html)[^swmSolution].
+
+解释后补
+
+#### Python
+
+```python
+from collections import deque
+
+class Solution(object):
+    def maxSlidingWindow(self, nums, k):
+        que = deque()
+        que.append(nums[0])
+
+        for i in range(1,k):
+            while len(que) != 0 and que[len(que) - 1]< nums[i]:
+                que.pop()
+            que.append(nums[i])
+        
+        record = [que[0]]
+        
+        for i in range(len(nums) - k):
+            if nums[i] == que[0]:
+                que.popleft()
+            while len(que) != 0 and que[len(que) - 1]< nums[i + k]:
+                que.pop()
+            que.append(nums[i + k])
+            record.append(que[0])
+
+        return record
+```
+
 
 ### Similar Questions
 
