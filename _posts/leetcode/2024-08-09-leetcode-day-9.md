@@ -12,7 +12,7 @@ tags: [stack, queue]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [232 Implement Queue using Stacks](#implement-queue-using-stacks)                                          |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [225 Implement Stack using Queues](#implement-stack-using-queues)                |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [225 Implement Stack using Queues](#implement-stack-using-queues)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [20 Valid Parentheses](#valid-parentheses)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [1047 Remove All Adjacent Duplicates In String](#remove-all-adjacent-duplicates-in-string)                                       |        |      |
 
@@ -136,7 +136,48 @@ myStack.empty(); // return False
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0225.用队列实现栈.html)[^isuqSolution].
 
+#### Python
 
+```python
+from collections import deque
+class MyStack(object):
+
+    def __init__(self):
+        self.queue_in = deque()
+        self.queue_out = deque()
+
+    def push(self, x):
+        self.queue_in.append(x)
+        
+    def pop(self):
+        if self.empty():
+            return None
+
+        for i in range(len(self.queue_in) - 1):
+            self.queue_out.append(self.queue_in.popleft())
+        
+        self.queue_in, self.queue_out = self.queue_out, self.queue_in    
+        return self.queue_out.popleft()
+
+        
+
+    def top(self):
+        if self.empty():
+            return None
+
+        for i in range(len(self.queue_in) - 1):
+            self.queue_out.append(self.queue_in.popleft())
+        
+        self.queue_in, self.queue_out = self.queue_out, self.queue_in 
+        temp = self.queue_out.popleft()   
+        self.queue_in.append(temp)
+        return temp
+
+        
+
+    def empty(self):
+        return len(self.queue_in) == 0
+```
 
 ## Valid Parentheses
 
