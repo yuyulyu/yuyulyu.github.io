@@ -13,7 +13,7 @@ tags: [stack, queue]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [232 Implement Queue using Stacks](#implement-queue-using-stacks)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [225 Implement Stack using Queues](#implement-stack-using-queues)                |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [20 Valid Parentheses](#valid-parentheses)               |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [20 Valid Parentheses](#valid-parentheses)               |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [1047 Remove All Adjacent Duplicates In String](#remove-all-adjacent-duplicates-in-string)                                       |        |      |
 
 ## Implement Queue using Stacks
@@ -217,6 +217,25 @@ Output: false
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0020.有效的括号.html)[^vpSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def isValid(self, s):
+        stack = []
+        end = {'(': ')', '{': '}', '[': ']'}
+
+        for c in s:
+            if c in end.keys():
+                stack.append(c)
+            elif len(stack) == 0 or end[stack[-1]] != c:
+                return False
+            else:
+                stack.pop()
+    
+        
+        return len(stack) == 0
+```
 
 ### Similar Questions
 
