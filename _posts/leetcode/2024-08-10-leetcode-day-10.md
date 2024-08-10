@@ -233,6 +233,33 @@ Output: [1]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0347.前K个高频元素.html)[^tkfeSolution].
 
+#### Python
+
+**Solution 1**: Use two stack - low efficiency
+
+```python
+from collections import Counter
+
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        
+        counter = Counter(nums)
+        stack1 = []
+        stack2 = []
+
+        for num in counter.keys():
+            while len(stack1) > 0 and counter[stack1[-1]] < counter[num]:
+                stack2.append(stack1.pop())
+
+            stack1.append(num)
+            while len(stack2) != 0:
+                stack1.append(stack2.pop())
+        
+        return stack1[:k]
+```
+
+**Solution 2**: Use heap (priority queue)
+
 
 
 ### Similar Questions
