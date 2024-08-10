@@ -3,7 +3,7 @@ title: Generative Model
 description: Write down description here.
 author: yoyo
 date: 2024-08-11 11:33:00 +0800
-categories: [Artificial Intelligence, Maching Learning, AIGC]
+categories: [Artificial Intelligence, AIGC]
 tags: [AIGC]
 ---
 
