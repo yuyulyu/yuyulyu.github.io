@@ -33,6 +33,8 @@ In a typical binary classification, the matrix categorizes predictions into 4 ty
   - **<ins>False Positive (FP)</ins>**: Predictions where the model incorrectly predicts the positive class (also known as a "Type I error").
   - **<ins>False Negative (FN)</ins>**: Predictions where the model incorrectly predicts the negative class (also known as a "Type II error").
 
+![Desktop View](/assets/image/AI/machine-learning/confusion-matrix-1.jpeg){: .normal }
+
 Each of these outcomes provides insight into different aspects of model performance:
 - **TP** & **TN** indicate correct predictions made by the model.
 - **FP** can be particularly costly in scenarios where false alarms are undesirable (e.g., medical diagnostics, spam detection).
