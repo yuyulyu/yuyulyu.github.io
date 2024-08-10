@@ -11,7 +11,7 @@ tags: [stack, queue]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [232 Implement Queue using Stacks](#implement-queue-using-stacks)                                          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [232 Implement Queue using Stacks](#implement-queue-using-stacks)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [225 Implement Stack using Queues](#implement-stack-using-queues)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [20 Valid Parentheses](#valid-parentheses)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [1047 Remove All Adjacent Duplicates In String](#remove-all-adjacent-duplicates-in-string)                                       |        |      |
@@ -57,6 +57,43 @@ myQueue.empty(); // return false
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0232.用栈实现队列.html)[^iqusSolution].
 
+#### Python
+
+```python
+class MyQueue(object):
+
+    def __init__(self):
+        self.stack_in = []
+        self.stack_out = []
+
+    def push(self, x):
+        self.stack_in.append(x)
+
+    def pop(self):
+        if self.empty():
+            return None
+        else:
+            return self.stack_out.pop()
+
+    def peek(self):
+        """
+        :rtype: int
+        """
+        if self.empty():
+            return None
+        else:
+            return self.stack_out[-1]
+        
+
+    def empty(self):
+        if(len(self.stack_out) != 0):
+            return False
+        if(len(self.stack_in) != 0):
+            for i in range(len(self.stack_in)):
+                self.stack_out.append(self.stack_in.pop())
+            return False
+        return True
+```
 
 ## Implement Stack using Queues
 
