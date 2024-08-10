@@ -1,6 +1,6 @@
 ---
 title: Leetcode Study Dashboard
-description: This is a dashboard which serves as a central hub for navigating through my LeetCode daily study notes, summaries on key topics every two days, and additional notes on specific algorithms and data structures. 
+description: This is a dashboard which serves as a central hub for navigating through my LeetCode daily study notes.
 pin: true
 author: yoyo
 date: 2024-08-11 02:30:00 +0800
@@ -10,7 +10,7 @@ tags: []
 
 > ## Navigation Tips
 > - Use the **search feature** in your browser (Ctrl + F or Command + F) to quickly find specific days or topics.
-> - - Bookmark this dashboard for easy access in the future.
+> - Bookmark this dashboard for easy access in the future.
 {: .prompt-info }
 
 | Period       | 1st Day Challenge | 2nd Day Challenge | Bi-Daily Summary | Additional Notes |
