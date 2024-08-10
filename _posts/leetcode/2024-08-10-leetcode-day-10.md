@@ -3,7 +3,7 @@ title: Leetcode Day 10 - Stack & Queue
 description: 150 Evaluate Reverse Polish Notation | 239 Sliding Window Maximum | 347 Top K Frequent Elements
 author: yoyo
 date: 2024-08-10 16:09:00 +0800
-categories: [Datastructure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode]
 tags: [stack, queue,sliding window]
 ---
 
