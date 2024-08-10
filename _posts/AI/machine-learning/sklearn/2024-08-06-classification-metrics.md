@@ -40,6 +40,9 @@ Each of these outcomes provides insight into different aspects of model performa
 - **FP** can be particularly costly in scenarios where false alarms are undesirable (e.g., medical diagnostics, spam detection).
 - **FN** can be critical in situations where missing out on true positives can have severe consequences (e.g., failing to diagnose a serious disease).
 
+This matrix excels at illustrating the performance of an algorithm. Below is an image demonstrating a possible visualization.
+
+![Desktop View](/assets/image/AI/machine-learning/classification-metrics/confusion-matrix-2.png){: .normal }
 
 
 
