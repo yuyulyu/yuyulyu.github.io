@@ -42,7 +42,6 @@ Each of these outcomes provides insight into different aspects of model performa
 
 This matrix excels at illustrating the performance of an algorithm. Below is an image demonstrating a possible visualization.
 
-![Desktop View](/assets/image/AI/machine-learning/classification-metrics/confusion-matrix-2.png){: .normal }
 
 
 
