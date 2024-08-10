@@ -2,7 +2,7 @@
 title: Leetcode Day 10 - Stack & Queue
 description: 150 Evaluate Reverse Polish Notation | 239 Sliding Window Maximum | 347 Top K Frequent Elements
 author: yoyo
-date: 2024-08-10 13:51:00 +0800
+date: 2024-08-10 16:09:00 +0800
 categories: [Datastructure and Algorithm, Leetcode]
 tags: [stack, queue,sliding window]
 ---
@@ -11,7 +11,7 @@ tags: [stack, queue,sliding window]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [150 Evaluate Reverse Polish Notation](#evaluate-reverse-polish-notation)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [150 Evaluate Reverse Polish Notation](#evaluate-reverse-polish-notation)                                          |✅      |      |
 | ![Hard](https://img.shields.io/badge/Hard-red)                                               | [239 Sliding Window Maximum](#sliding-window-maximum)                |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [347 Top K Frequent Elements](#top-k-frequent-elements)               |        |      |
 
@@ -19,14 +19,6 @@ tags: [stack, queue,sliding window]
 
 > [Link to Leetcode question](https://leetcode.com/problems/evaluate-reverse-polish-notation/)[^erpn]
 {: .prompt-info }
-
-
-
-### Solution
-
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0150.逆波兰表达式求值.html)[^erpnSolution].
-
-
 
 You are given an array of strings `tokens` that represents an arithmetic expression in a Reverse Polish Notation.
 
@@ -69,6 +61,70 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 = 17 + 5
 = 22
 ```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0150.逆波兰表达式求值.html)[^erpnSolution].
+
+#### Python
+
+**Solution 1**: Simply use stack
+
+```python
+class Solution(object):
+    def evalRPN(self, tokens):
+        def div(x, y):
+            return int(x / y) if x * y > 0 else -(abs(x) // abs(y))
+
+
+        stack = []
+
+        for t in tokens:
+            try:
+                stack.append(int(t))
+            except:
+                t2 = stack.pop()
+                t1 = stack.pop()
+                if t == '+':
+                    print(t1,'+',t2)
+                    stack.append(t1 + t2)
+                elif t == '-':
+                    print(t1,'-',t2)
+                    stack.append(t1 - t2)
+                elif t == '*':
+                    print(t1,'*',t2)
+                    stack.append(t1 * t2)
+                elif t == '/':
+                    print(t1,'/',t2)
+                    stack.append(div(t1,t2))
+        
+        return stack.pop()
+```
+
+**Solution 2**: Stack + operator
+
+```python
+from operator import add, sub, mul
+class Solution(object):
+    def evalRPN(self, tokens):
+        def div(x, y):
+            return int(x / y) if x * y > 0 else -(abs(x) // abs(y))
+
+
+        stack = []
+
+        op_map = {'+': add, '-': sub, '*': mul, '/': div}
+    
+        for token in tokens:
+            if token not in {'+', '-', '*', '/'}:
+                stack.append(int(token))
+            else:
+                op2 = stack.pop()
+                op1 = stack.pop()
+                stack.append(op_map[token](op1, op2))  
+        return stack.pop()
+```
+
 
 ### Similar Questions
 
