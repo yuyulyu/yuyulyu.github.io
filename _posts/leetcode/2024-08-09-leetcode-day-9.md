@@ -14,7 +14,7 @@ tags: [stack, queue]
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [232 Implement Queue using Stacks](#implement-queue-using-stacks)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [225 Implement Stack using Queues](#implement-stack-using-queues)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [20 Valid Parentheses](#valid-parentheses)               |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [1047 Remove All Adjacent Duplicates In String](#remove-all-adjacent-duplicates-in-string)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [1047 Remove All Adjacent Duplicates In String](#remove-all-adjacent-duplicates-in-string)                                       |✅      |      |
 
 ## Implement Queue using Stacks
 
@@ -276,7 +276,24 @@ Output: "ay"
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/1047.删除字符串中的所有相邻重复项.html)[^raadisSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def removeDuplicates(self, s):
+        stack = []
+
+        for c in s:
+            if len(stack) != 0:
+                if stack[-1] == c:
+                    stack.pop()
+                else:
+                    stack.append(c)
+            else:
+                stack.append(c)
+        
+        return ''.join(stack)
+```
 
 
 ### Similar Questions
