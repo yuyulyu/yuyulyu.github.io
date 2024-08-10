@@ -3,7 +3,7 @@ title: Scikit-learn Classification
 description: Supervised Learning with scikit-learn
 author: yoyo
 date: 2024-07-21 11:33:00 +0800
-categories: [Machine Learning, Supervised Learning with scikit-learn]
+categories: [Artificial Intelligence, Machine Learning, Supervised Learning with scikit-learn]
 tags: [scikit-learn]
 ---
 
