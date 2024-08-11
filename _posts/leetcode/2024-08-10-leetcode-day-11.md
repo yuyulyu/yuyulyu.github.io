@@ -1,43 +1,233 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
-description: # <problem> | # <Problem> 
+title: Leetcode Day 11 - Binary Tree
+description: 102 Binary Tree Level Order Traversal I & II | 199 Binary Tree Right Side View | 637 Average of Levels in Binary Tree | 429 N-ary Tree Level Order Traversal ...
 author: yoyo
-date: 2020-08-03 23:07:00 +0800
-categories: [Algorithm, Leetcode]
-tags: []
+date: 2024-08-12 23:07:00 +0800
+categories: [Data Structure and Algorithm, Leetcode]
+tags: [binary tree]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-## <Topic> [^dmsxl] 
+## Binary Tree 
+
+> [Link to note about binary tree](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#the-link)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view])               |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                       |        |      |
 
-# the link
+## Binary Tree Level Order Traversal
 
-## <1st problem>
+> [Link to Leetcode question](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)[^btlot]
+{: .prompt-info }
 
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+Given the `root` of a binary tree, return the level order traversal of its nodes' values. (i.e., from left to right, level by level).
+
+**Example 1**
+
+<image>
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: [[3],[9,20],[15,7]]
+```
+
+**Example 2**
+
+```
+Input: root = [1]
+Output: [[1]]
+```
+
+**Example 3**
+
+```
+Input: root = []
+Output: []
+```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_102-二叉树的层序遍历)[^solution].
+
+
+
+## 107 Binary Tree Level Order Traversal II
+
+> [Link to Leetcode question](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/)[^btlotii]
+{: .prompt-info }
+
+Given the `root` of a binary tree, return the bottom-up level order traversal of its nodes' values. (i.e., from left to right, level by level from leaf to root).
+
+**Example 1**
+
+<image>
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: [[15,7],[9,20],[3]]
+```
+
+**Example 2**
+
+```
+Input: root = [1]
+Output: [[1]]
+```
+
+**Example 3**
+
+```
+Input: root = []
+Output: []
+```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_107-二叉树的层次遍历-ii)[^solution].
+
+## Binary Tree Right Side View
+
+> [Link to Leetcode question](https://leetcode.com/problems/binary-tree-right-side-view/description/)[^btrsv]
+{: .prompt-info }
+
+Given the `root` of a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+**Example 1**
+
+<image 2>
+
+```
+Input: root = [1,2,3,null,5,null,4]
+Output: [1,3,4]
+```
+
+**Example 2**
+
+```
+Input: root = [1,null,3]
+Output: [1,3]
+```
+
+**Example 3**
+
+```
+Input: root = []
+Output: []
+```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_199-二叉树的右视图)[^solution].
+
+
+## Average of Levels in Binary Tree
+
+> [Link to Leetcode question](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/)[^aolib]
+{: .prompt-info }
+
+Given the `root` of a binary tree, return the average value of the nodes on each level in the form of an array. Answers within `10<sup>-5</sup>` of the actual answer will be accepted.
+
+**Example 1**
+
+<image>
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: [3.00000,14.50000,11.00000]
+Explanation: The average value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
+Hence return [3, 14.5, 11].
+```
+
+**Example 2**
+
+<image 3>
+
+```
+Input: root = [3,9,20,15,7]
+Output: [3.00000,14.50000,11.00000]
+```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_637-二叉树的层平均值)[^solution].
+
+## N-ary Tree Level Order Traversal
+
+> [Link to Leetcode question](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)[^natlot]
+{: .prompt-info }
+
+Given an n-ary tree, return the level order traversal of its nodes' values.
+
+Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).
+
+**Example 1**
+
+<image4>
+
+```
+Input: root = [1,null,3,2,4,null,5,6]
+Output: [[1],[3,2,4],[5,6]]
+```
+
+**Example 2**
+
+<image 5>
+
+```
+Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+Output: [[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]
+```
+ 
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_429-n叉树的层序遍历)[^solution].
+
+## Find Largest Value in Each Tree Row
+
+> [Link to Leetcode question](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)[^flvietr]
+{: .prompt-info }
+
+**Example 1**
+
+<image6>
+
+```
+Input: root = [1,3,2,5,3,null,9]
+Output: [1,3,9]
+```
+
+**Example 2**
+
+```
+Input: root = [1,2,3]
+Output: [1,3]
+```
+
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_515-在每个树行中找最大值)[^solution].
+
+## <2nd problem>
+
+> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
 {: .prompt-info }
 
 
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
-
-### Similar Questions
-
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall] |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
 
 
 ## <2nd problem>
@@ -50,6 +240,30 @@ tags: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
 
+
+## <2nd problem>
+
+> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+{: .prompt-info }
+
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+
+
+## <2nd problem>
+
+> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+{: .prompt-info }
+
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+
+
+
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
@@ -59,5 +273,10 @@ tags: []
 
 
 ## Reference
-[^dmsxl]:
-
+[^btlot]:Leetcode-102 Binary Tree Level Order Traversal: [https://leetcode.com/problems/binary-tree-level-order-traversal/description/](https://leetcode.com/problems/binary-tree-level-order-traversal/description/).
+[^btlotii]:Leetcode-107 Binary Tree Level Order Traversal II: [https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/).
+[^solution]: 代码随想录-二叉树的层序遍历 II: [https://programmercarl.com/0102.二叉树的层序遍历.html](https://programmercarl.com/0102.二叉树的层序遍历.html).
+[^btrsv]:Leetcode-199 Binary Tree Right Side View: [https://leetcode.com/problems/binary-tree-right-side-view/description/](https://leetcode.com/problems/binary-tree-right-side-view/description/).
+[^aolib]:Leetcode-637 Average of Levels in Binary Tree: [https://leetcode.com/problems/average-of-levels-in-binary-tree/description/](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/).
+[^natlot]:Leetcode-429 N-ary Tree Level Order Traversal: [https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/).
+[^flvietr]:Leetcode-515 Find Largest Value in Each Tree Row: [https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/).
