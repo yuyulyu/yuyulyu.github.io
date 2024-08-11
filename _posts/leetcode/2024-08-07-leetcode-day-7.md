@@ -80,7 +80,7 @@ class Solution(object):
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                 | [541 Reverse String II](#reverse-string-ii)[^rsii] |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                        | [345 Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)[^rvoas]          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                        | [345 Reverse Vowels of a String](https://leetcode.com/problems/reverse-vowels-of-a-string/)[^rvoas]          |✅     |      |
 
 
 ## Reverse String II
