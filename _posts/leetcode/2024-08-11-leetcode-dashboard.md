@@ -8,7 +8,7 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: []
 ---
 
-> ## Navigation Tips
+> **Navigation Tips**
 > - Use the **search feature** in your browser (Ctrl + F or Command + F) to quickly find specific days or topics.
 > - Bookmark this dashboard for easy access in the future.
 {: .prompt-info }
