@@ -13,7 +13,7 @@ tags: [stack, queue,sliding window]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [150 Evaluate Reverse Polish Notation](#evaluate-reverse-polish-notation)                                          |✅      |      |
 | ![Hard](https://img.shields.io/badge/Hard-red)                                               | [239 Sliding Window Maximum](#sliding-window-maximum)                |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [347 Top K Frequent Elements](#top-k-frequent-elements)               |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [347 Top K Frequent Elements](#top-k-frequent-elements)               |✅      |      |
 
 ## Evaluate Reverse Polish Notation
 
@@ -260,6 +260,26 @@ class Solution(object):
 
 **Solution 2**: Use heap (priority queue)
 
+```python
+import heapq
+from collections import Counter
+
+class Solution(object):
+    def topKFrequent(self, nums, k):
+        map_ = Counter(nums)
+        
+        pri_que = []
+        
+        for key, freq in map_.items():
+            heapq.heappush(pri_que, (freq, key))
+            if len(pri_que) > k: 
+                heapq.heappop(pri_que)
+
+        result = [0] * k
+        for i in range(k-1, -1, -1):
+            result[i] = heapq.heappop(pri_que)[1]
+        return result
+```
 
 
 ### Similar Questions
