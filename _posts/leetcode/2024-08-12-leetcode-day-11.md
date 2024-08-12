@@ -14,7 +14,7 @@ tags: [binary tree]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |        |      |
