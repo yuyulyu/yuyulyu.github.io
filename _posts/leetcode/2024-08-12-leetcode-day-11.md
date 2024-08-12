@@ -14,15 +14,15 @@ tags: [binary tree]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                          |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                       |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                                         |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                                                      |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)                                                                           |✅      |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                                              |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                                         |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                                     |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [117 Populating Next Right Pointers in Each Node II](#populating-next-right-pointers-in-each-node-ii)                                       |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [117 Populating Next Right Pointers in Each Node II](#populating-next-right-pointers-in-each-node-ii)                               |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [104 Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)                                                                     |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |        |      |
 
 
@@ -447,7 +447,7 @@ Output: []
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_116-填充每个节点的下一个右侧节点指针)[^solution].
 
 #### Python
 
@@ -496,17 +496,34 @@ Populate each next pointer to point to its next right node. If there is no next 
 
 Initially, all next pointers are set to `NULL`.
 
+**Example 1**
 
+![Desktop View](/assets/image/leetcode/leetcode-day-11/populating-next-right-pointers-in-each-node-ii-example-1.png){: .normal }
+
+```
+Input: root = [1,2,3,4,5,null,7]
+Output: [1,#,2,3,#,4,5,7,#]
+Explanation: Given the above binary tree (Figure A), your function should populate each next pointer to point to its next right node, just like in Figure B. The serialized output is in level order as connected by the next pointers, with '#' signifying the end of each level.
+```
+
+**Example 2**
+
+```
+Input: root = []
+Output: []
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_117-填充每个节点的下一个右侧节点指针ii)[^solution].
 
 
-## <2nd problem>
+## Maximum Depth of Binary Tree
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+> [Link to Leetcode question](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)[^mdobt]
 {: .prompt-info }
+
+maximum-depth-of-binary-tree-example-1
 
 
 ### Solution
@@ -544,5 +561,7 @@ Initially, all next pointers are set to `NULL`.
 [^flvietr]:Leetcode-515 Find Largest Value in Each Tree Row: [https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/).
 [^pnrpien]:Leetcode-116 Populating Next Right Pointers in Each Node: [https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/).
 [^pnrpienii]:Leetcode-117 Populating Next Right Pointers in Each Node II: [https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/).
+[^mdobt]:Leetcode-104 Maximum Depth of Binary Tree: [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/).
+
 
 
