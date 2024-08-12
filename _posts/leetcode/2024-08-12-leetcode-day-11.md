@@ -17,6 +17,7 @@ tags: [binary tree]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                          |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |        |      |
 
 ## Binary Tree Level Order Traversal
 
@@ -120,6 +121,36 @@ Output: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_199-二叉树的右视图)[^solution].
 
+## Average of Levels in Binary Tree
+
+> [Link to Leetcode question](https://leetcode.com/problems/average-of-levels-in-binary-tree/description/)[^aolib]
+{: .prompt-info }
+
+Given the `root` of a binary tree, return the average value of the nodes on each level in the form of an array. Answers within `10<sup>-5</sup>` of the actual answer will be accepted.
+
+**Example 1**
+
+![Desktop View](/assets/image/leetcode/leetcode-day-11/average-of-levels-in-binary-tree-example-2.jpeg){: .normal }
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: [3.00000,14.50000,11.00000]
+Explanation: The average value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
+Hence return [3, 14.5, 11].
+```
+
+**Example 2**
+
+![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-level-order-traversal-example-1.jpeg){: .normal }
+
+```
+Input: root = [3,9,20,15,7]
+Output: [3.00000,14.50000,11.00000]
+```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_637-二叉树的层平均值)[^solution].
 
 
 
