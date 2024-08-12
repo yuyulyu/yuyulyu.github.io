@@ -7,10 +7,6 @@ categories: [Data Structure and Algorithm, Algorithm]
 tags: [binary tree]
 ---
 
-## Binary Tree
-
-### Structure of binary tree
-
 A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
 
 【image】structure-of-binary-tree-1
@@ -22,11 +18,11 @@ Siblings: Nodes with the same parent.
 Depth: The length of the path to its root.
 Height: The depth of the deepest node.
 
-### How binary tree stored in memory
+## How binary tree stored in memory
 
 Binary trees can be stored in memory using two common representations: **pointer-based (linked) structures** and **array-based structures**.
 
-#### <ins>Pointer-Based Storage (Linked Storage)</ins>
+### <ins>Pointer-Based Storage (Linked Storage)</ins>
 
 In pointer-based storage, each node is an object, and each node typically contains:
 
@@ -44,7 +40,7 @@ class BinaryTree:
 
 This method is dynamic, allowing the tree to expand as needed. It is particularly useful for operations that involve **frequent insertions and deletions**, as nodes can be added or removed without reorganizing the entire structure.
 
-#### <ins>Array-Based Storage</ins>
+### <ins>Array-Based Storage</ins>
 
 In array-based storage of binary trees:
 - **Root**: The root element is stored at the beginning of the array.
