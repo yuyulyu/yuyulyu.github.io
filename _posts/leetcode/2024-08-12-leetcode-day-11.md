@@ -56,6 +56,31 @@ Output: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_102-二叉树的层序遍历)[^solution].
 
+#### Python
+
+```python
+class Solution(object):
+    def levelOrder(self, root):
+        if root is None:
+            return []
+        
+        result = []
+
+        def traverse(node, level):
+            if node is None:
+                return
+            
+            if len(result) == level:
+                result.append([])
+                
+            result[level].append(node.val)
+            traverse(node.left, level + 1)
+            traverse(node.right, level + 1)
+        
+        traverse(root, 0)
+        return result
+```
+
 ## Binary Tree Level Order Traversal II
 
 > [Link to Leetcode question](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/)[^btlotii]
