@@ -97,10 +97,10 @@ Different types of binary trees are designed to meet specific needs, such as mai
 
 | Binary Tree | Applications |
 |-------------|--------------|
-| Full Binary Trees | Often used in applications that require a simple and efficient tree structure without complex operations.|
-| Complete Binary Trees | Ideal for priority queues and heap-based algorithms, where quick access to elements is necessary. |
-| Binary Search Trees (BST) | Serve well in database indexing systems where quick insertion, deletion, and retrieval of records are frequent.|
-| AVL Trees | In applications where low latency data retrieval is critical, such as in network routers, where balancing ensures optimal search times.|
+| Full Binary Trees | Often used in applications that require a simple and efficient tree structure<br>without complex operations.|
+| Complete Binary Trees | Ideal for priority queues and heap-based algorithms, where quick access to<br>elements is necessary. |
+| Binary Search Trees (BST) | Serve well in database indexing systems where quick insertion, deletion, and<br>retrieval of records are frequent.|
+| AVL Trees | In applications where low latency data retrieval is critical, such as in network<br>routers, where balancing ensures optimal search times.|
 
 ### Full Binary Tree
 
