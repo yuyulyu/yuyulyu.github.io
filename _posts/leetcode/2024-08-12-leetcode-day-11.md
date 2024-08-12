@@ -23,7 +23,7 @@ tags: [binary tree]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [117 Populating Next Right Pointers in Each Node II](#populating-next-right-pointers-in-each-node-ii)                               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [104 Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)                                                                     |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [111 Minimum Depth of Binary Tree](#minimum-depth-of-binary-tree)                                       |        |      |
 
 
 
@@ -523,23 +523,58 @@ Output: []
 > [Link to Leetcode question](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)[^mdobt]
 {: .prompt-info }
 
-maximum-depth-of-binary-tree-example-1
+**Example 1**
 
+![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg){: .normal }
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: 3
+```
+
+**Example 2**
+
+```
+Input: root = [1,null,2]
+Output: 2
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_104-二叉树的最大深度)[^solution].
 
 
-## <2nd problem>
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+## Minimum Depth of Binary Tree
+
+> [Link to Leetcode question](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/)[^minidepth]
 {: .prompt-info }
 
+Given a binary tree, find its minimum depth.
+
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+
+**Note**: A leaf is a node with no children.
+
+**Example 1**
+
+![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg){: .normal }
+
+```
+Input: root = [3,9,20,null,null,15,7]
+Output: 2
+```
+
+**Example 2**
+
+```
+Input: root = [2,null,3,null,4,null,5,null,6]
+Output: 5
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_111-二叉树的最小深度)[^solution].
 
 
 
@@ -562,6 +597,6 @@ maximum-depth-of-binary-tree-example-1
 [^pnrpien]:Leetcode-116 Populating Next Right Pointers in Each Node: [https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/).
 [^pnrpienii]:Leetcode-117 Populating Next Right Pointers in Each Node II: [https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/).
 [^mdobt]:Leetcode-104 Maximum Depth of Binary Tree: [https://leetcode.com/problems/maximum-depth-of-binary-tree/description/](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/).
-
+[^minidepth]:Leetcode-111 Minimum Depth of Binary Tree: [https://leetcode.com/problems/minimum-depth-of-binary-tree/description/](https://leetcode.com/problems/minimum-depth-of-binary-tree/description/).
 
 
