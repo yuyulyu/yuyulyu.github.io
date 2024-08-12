@@ -23,7 +23,7 @@ A binary tree is a tree data structure in which each node has at most two childr
 >   - [Pointer-Based Storage](https://yuyulyu.github.io/posts/binary-tree/#pointer-based-storage-linked-storage)
 >   - [Array-Based Storage](https://yuyulyu.github.io/posts/binary-tree/#array-based-storage)
 > - [<ins>**Different types of binary tree**,/ins>](https://yuyulyu.github.io/posts/binary-tree/#different-types-of-binary-tree)
->   - [Full Binary Tre](https://yuyulyu.github.io/posts/binary-tree/#full-binary-tree)e
+>   - [Full Binary Tree](https://yuyulyu.github.io/posts/binary-tree/#full-binary-tree)
 >   - [Complete Binary Tree](https://yuyulyu.github.io/posts/binary-tree/#complete-binary-tree)
 >   - [Binary Search Tree (BST)](https://yuyulyu.github.io/posts/binary-tree/#binary-search-tree-bst)
 >   - [Adelson-Velsky and Landis (AVL) Tree](https://yuyulyu.github.io/posts/binary-tree/#adelson-velsky-and-landis-avl-tree)
