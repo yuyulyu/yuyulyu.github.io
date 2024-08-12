@@ -95,7 +95,7 @@ Given the `root` of a binary tree, imagine yourself standing on the right side o
 
 **Example 1**
 
-<image>
+![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-right-side-view-example-1.jpeg){: .normal }
 
 ```
 Input: root = [1,2,3,null,5,null,4]
