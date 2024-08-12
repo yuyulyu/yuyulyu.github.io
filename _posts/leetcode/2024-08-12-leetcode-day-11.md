@@ -19,6 +19,7 @@ tags: [binary tree]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                       |        |      |
 
 ## Binary Tree Level Order Traversal
 
@@ -185,3 +186,28 @@ Output: [[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_429-n叉树的层序遍历)[^solution].
 
+## Find Largest Value in Each Tree Row
+
+> [Link to Leetcode question](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/)[^flvietr]
+{: .prompt-info }
+
+**Example 1**
+
+![Desktop View](/assets/image/leetcode/leetcode-day-11/find-largest-value-in-each-tree-row-example-1.jpeg){: .normal }
+
+```
+Input: root = [1,3,2,5,3,null,9]
+Output: [1,3,9]
+```
+
+**Example 2**
+
+```
+Input: root = [1,2,3]
+Output: [1,3]
+```
+
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_515-在每个树行中找最大值)[^solution].
