@@ -17,7 +17,6 @@ A binary tree is a tree data structure in which each node has at most two childr
 - Siblings: Nodes with the same parent.
 - Depth: The length of the path to its root.
 - Height: The depth of the deepest node.
-- Balance fasctor (node) = height(right subtree - height(left tree)
   
 ## How binary tree stored in memory
 
@@ -96,6 +95,13 @@ class ArrayBasedBinaryTree:
 
 Different types of binary trees are designed to meet specific needs, such as maintaining balance or optimizing search operations.
 
+| Binary Tree | Applications |
+|-------------|--------------|
+| Full Binary Trees | Often used in applications that require a simple and efficient tree structure without complex operations.|
+| Complete Binary Trees | Ideal for priority queues and heap-based algorithms, where quick access to elements is necessary. |
+| Binary Search Trees (BST) | Serve well in database indexing systems where quick insertion, deletion, and retrieval of records are frequent.|
+| AVL Trees | In applications where low latency data retrieval is critical, such as in network routers, where balancing ensures optimal search times.|
+
 ### Full Binary Tree
 
 A full binary tree is a type of binary tree in which every node other than the leaves has two children. In other words, each node has exactly zero or two children. 
@@ -120,6 +126,18 @@ A  binary tree in which for each node, the left children are less than the node 
 - There must be no duplicate nodes.
 
 ### Adelson-Velsky and Landis (AVL) Tree
+A self-balancing binary search tree where the height of the two child subtrees of any node differ by no more than one. If at any time the heights differ more than one, rebalancing is done to restore this property. AVL trees are optimized for lookup-intensive applications, where frequent insertions and deletions necessitate quick rebalancing to maintain efficient search times.
+
+#### Balance factor
+
+The balance factor helps in determining the type of rotation needed to maintain the tree's balance. It must always be -1, 0, or +1.
+
+> Balance factor (node) = height(right subtree - height(left tree)
+
+#### Rebalance AVL tree
+
+When a node is added/deleted to/from an AVL tree, performing rotations is needed to ensure that the balance factor of all nodes remains within the allowed range.
+
 
 
 ## Tree Traversal
