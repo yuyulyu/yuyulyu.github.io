@@ -22,8 +22,8 @@ tags: [binary tree]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                                     |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [117 Populating Next Right Pointers in Each Node II](#populating-next-right-pointers-in-each-node-ii)                               |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [104 Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)                                                                     |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [111 Minimum Depth of Binary Tree](#minimum-depth-of-binary-tree)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [104 Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)                                                                      |✅      |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [111 Minimum Depth of Binary Tree](#minimum-depth-of-binary-tree)                                                                      |✅      |      |
 
 
 
@@ -543,6 +543,19 @@ Output: 2
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_104-二叉树的最大深度)[^solution].
 
+#### Python
+
+```python
+class Solution(object):
+    def maxDepth(self, root):
+        def depth_of(node, depth):
+            if node is None:
+                return depth
+            
+            return 1 + max(depth_of(node.left, depth), depth_of(node.right, depth))
+        
+        return depth_of(root, 0)
+```
 
 
 ## Minimum Depth of Binary Tree
@@ -576,13 +589,24 @@ Output: 5
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_111-二叉树的最小深度)[^solution].
 
+#### Python
 
+```python
+class Solution(object):
+    def minDepth(self, root):
+        if root is None:
+                return 0
+        depth = 1
+        if root.left is not None and root.right is not None:
+            depth += min(self.minDepth(root.left), self.minDepth(root.right))
+        elif root.left is not None:
+            depth += self.minDepth(root.left)
+        elif root.right is not None:
+            depth += self.minDepth(root.right)
 
-### Similar Questions
+        return depth
+```
 
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
 
 
 
