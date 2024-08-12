@@ -7,8 +7,6 @@ categories: [Data Structure and Algorithm, Data Structure]
 tags: [binary tree]
 ---
 
-A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
-
 【image】structure-of-binary-tree-1
 - Root: The top node in a tree.
 - Parent Node: Any node except the root.
@@ -17,8 +15,28 @@ A binary tree is a tree data structure in which each node has at most two childr
 - Siblings: Nodes with the same parent.
 - Depth: The length of the path to its root.
 - Height: The depth of the deepest node.
+
+A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
+
+> **Table of Content**
+> - How binary trees are stored in memory
+>   - Pointer-Based Storage
+>   - Array-Based Storage
+> - Different types of binary tree
+>   - Full Binary Tree
+>   - Complete Binary Tree
+>   - Binary Search Tree (BST)
+>   - Adelson-Velsky and Landis (AVL) Tree
+> - Tree Traversal
+>   - Depth First Search (DFS)
+>     - Preorder
+>     - Inorder
+>     - Postorder
+>   - Depth First Search (DFS)
+>     - Level order
+{: .prompt-info }
   
-## How binary tree stored in memory
+## How binary trees are stored in memory
 
 Binary trees can be stored in memory using two common representations: **pointer-based (linked) structures** and **array-based structures**.
 
@@ -138,22 +156,74 @@ The balance factor helps in determining the type of rotation needed to maintain 
 
 When a node is added/deleted to/from an AVL tree, performing rotations is needed to ensure that the balance factor of all nodes remains within the allowed range.
 
-> [Link to note about binary tree](https://yuyulyu.github.io/posts/binary-tree/)
+> [Link to note about Rotation of AVL Trees](https://yuyulyu.github.io/posts/binary-tree/)
 {: .prompt-tip }
 
 ## Tree Traversal
+
+### Depth First Search (DFS)
+
+DFS explores as far as possible along each branch before backtracking. Implemented using a stack, either through the system's call stack via recursion or an explicit stack data structure.
+- Used in solving puzzles with only one solution, like mazes.
+- Employed in topological sorting, scheduling problems, cycle detection in environments where pathways to vertices need exploration.
+
+[image]: dfs
+
+> [Link to code about DFS](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
+
+### Preorder
+
+Preorder traversal visits the root first, followed by the left subtree, and then the right subtree. Captures the root node early, which is helpful for operations that need to replicate or examine the tree structure itself.
+- Used to create a copy of the tree.
+- Useful in syntax tree applications, such as in compilers and expression parsers, where the structure of the tree aligns with the order of operations.
+
+[image]: preorder-traversal
+
+> [Link to code about Preorder Traversal](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
 
 ### Inorder
 
 Inorder traversal first visits the left subtree, then the root, and finally the right subtree.
 - Commonly used in binary search trees where an ordered list of elements is required.
 - Useful in algorithms that need to process nodes in a specific order relative to their hierarchical levels.
-### Preorder
+
+[image]: inorder-traversal
+
+> [Link to code about Inorder Traversal](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
 
 ### Postorder
 
+Postorder traversal visits the left subtree, the right subtree, and the root last. Ideal for situations where operations on a node require results from its children first.
+- Commonly used in the calculation of a value for a tree where nodes represent operations in postfix expression evaluation.
+- Useful in deleting or freeing nodes and space of the tree in a safe manner.
+
+[image]: postorder-traversal
+
+> [Link to code about Postorder Traversal](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
+
+### Breadth First Search (BFS)
+
+BFS explores the neighbor nodes at the present depth prior to moving on to nodes at the next depth level.Implemented using a queue to bring the earliest visited nodes for processing first.
+- Used to find the shortest path from a source node to other nodes in an unweighted graph.
+- Useful in any searching algorithm where the shortest path is desired, and all edges are of equal weight.
+
+[image]: bfs
+
+> [Link to code about BFS](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
+
 ### Level Order
 
-### Depth First Search (DFS)
+Level order traversal visits nodes level by level from top to bottom. This is the same as Breadth-First Search (BFS) for trees.
+- Widely used in breadth-first search operations in trees and graphs, such as in finding the shortest path in unweighted graphs.
+- Useful in serialization of a tree structure in a way that reconstruction is feasible.
 
-### BFS
+[image]: level-order-traversal
+
+> [Link to code about Level Order Traversal](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
+  
