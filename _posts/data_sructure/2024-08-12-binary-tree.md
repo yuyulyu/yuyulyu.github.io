@@ -17,7 +17,8 @@ A binary tree is a tree data structure in which each node has at most two childr
 - Siblings: Nodes with the same parent.
 - Depth: The length of the path to its root.
 - Height: The depth of the deepest node.
-
+- Balance fasctor (node) = height(right subtree - height(left tree)
+  
 ## How binary tree stored in memory
 
 Binary trees can be stored in memory using two common representations: **pointer-based (linked) structures** and **array-based structures**.
@@ -113,13 +114,10 @@ A complete binary tree is a type of binary tree in which all levels, except poss
 
 ### Binary Search Tree (BST)
 
-A Binary Search Tree (BST) is a binary tree in which for each node, the left children are less than the node and the right children are greater. This property makes BSTs immensely useful for search and retrieval operations, as the decision tree of going left or right at each step significantly cuts down the search space.
-
-Properties:
-
-The left subtree of a node contains only nodes with keys lesser than the node’s key.
-The right subtree of a node contains only nodes with keys greater than the node’s key.
-There must be no duplicate nodes.
+A  binary tree in which for each node, the left children are less than the node and the right children are greater. This property makes BSTs immensely useful for search and retrieval operations, as the decision tree of going left or right at each step significantly cuts down the search space.
+- The left subtree of a node contains only nodes with keys lesser than the node’s key.
+- The right subtree of a node contains only nodes with keys greater than the node’s key.
+- There must be no duplicate nodes.
 
 ### Adelson-Velsky and Landis (AVL) Tree
 
