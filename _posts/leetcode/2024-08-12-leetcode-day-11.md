@@ -15,8 +15,8 @@ tags: [binary tree]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                          |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                       |        |      |
@@ -115,6 +115,35 @@ Output: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_107-二叉树的层次遍历-ii)[^solution].
 
+#### Python
+
+```python
+class Solution(object):
+    def levelOrderBottom(self, root):
+        if root is None:
+            return []
+        
+        result = []
+        
+        def traverse(node, level):
+            if node is None:
+                return
+
+            if len(result) == level:
+                result.append([])
+
+            traverse(node.left, level + 1)
+            traverse(node.right, level + 1)
+            result[level].append(node.val)
+        
+        traverse(root,0)
+        l = len(result)
+        for i in range(l // 2):
+            result[i], result[l - i - 1] = result[l - i - 1], result[i]
+        return result
+```
+
+
 ## Binary Tree Right Side View
 
 > [Link to Leetcode question](https://leetcode.com/problems/binary-tree-right-side-view/description/)[^btrsv]
@@ -148,6 +177,63 @@ Output: []
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_199-二叉树的右视图)[^solution].
+
+#### Python
+
+**Iteration Solution**
+
+```python
+class Solution(object):
+    def rightSideView(self, root):
+        if root is None:
+            return []
+
+        result = [root.val]
+
+        def right_side(node, level):
+            if node is None:
+                return
+
+            if len(result) <= level:
+                if node.right is not None:
+                    result.append(node.right.val)
+                elif node.left is not None:
+                    result.append(node.left.val) 
+
+            right_side(node.right, level + 1)
+            right_side(node.left, level + 1) 
+
+        right_side(root,1)
+        return result
+```
+
+**Loop**
+
+```python
+class Solution(object):
+    def rightSideView(self, root):
+        if not root:
+            return []
+        
+        queue = collections.deque([root])
+        right_view = []
+        
+        while queue:
+            level_size = len(queue)
+            
+            for i in range(level_size):
+                node = queue.popleft()
+                
+                if i == level_size - 1:
+                    right_view.append(node.val)
+                
+                if node.left:
+                    queue.append(node.left)
+                if node.right:
+                    queue.append(node.right)
+        
+        return right_view
+```
 
 ## Average of Levels in Binary Tree
 
