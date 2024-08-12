@@ -132,13 +132,14 @@ A self-balancing binary search tree where the height of the two child subtrees o
 
 The balance factor helps in determining the type of rotation needed to maintain the tree's balance. It must always be -1, 0, or +1.
 
-> Balance factor (node) = height(right subtree - height(left tree)
+**Balance factor (node) = height(right subtree) - height(left tree)**
 
 #### Rebalance AVL tree
 
 When a node is added/deleted to/from an AVL tree, performing rotations is needed to ensure that the balance factor of all nodes remains within the allowed range.
 
-
+> [Link to note about binary tree](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
 
 ## Tree Traversal
 
