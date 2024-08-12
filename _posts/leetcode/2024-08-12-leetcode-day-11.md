@@ -7,4 +7,7 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: [binary tree]
 ---
 
+## Binary Tree 
 
+> [Link to note about binary tree](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
