@@ -62,7 +62,7 @@ Output: []
 
 
 
-## 107 Binary Tree Level Order Traversal II
+## Binary Tree Level Order Traversal II
 
 > [Link to Leetcode question](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/description/)[^btlotii]
 {: .prompt-info }
