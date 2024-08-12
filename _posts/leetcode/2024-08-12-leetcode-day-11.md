@@ -242,7 +242,7 @@ Initially, all next pointers are set to `NULL`.
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/populating-next-right-pointers-in-each-node-example-1.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/populating-next-right-pointers-in-each-node-example-1.png){: .normal }
 
 ```
 Input: root = [1,2,3,4,5,6,7]
