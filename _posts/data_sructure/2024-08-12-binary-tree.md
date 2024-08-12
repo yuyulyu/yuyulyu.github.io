@@ -22,7 +22,7 @@ A binary tree is a tree data structure in which each node has at most two childr
 > - [<ins>**How binary trees are stored in memory**</ins>](https://yuyulyu.github.io/posts/binary-tree/#how-binary-trees-are-stored-in-memory)
 >   - [Pointer-Based Storage](https://yuyulyu.github.io/posts/binary-tree/#pointer-based-storage-linked-storage)
 >   - [Array-Based Storage](https://yuyulyu.github.io/posts/binary-tree/#array-based-storage)
-> - [<ins>**Different types of binary tree**,/ins>](https://yuyulyu.github.io/posts/binary-tree/#different-types-of-binary-tree)
+> - [<ins>**Different types of binary tree**</ins>](https://yuyulyu.github.io/posts/binary-tree/#different-types-of-binary-tree)
 >   - [Full Binary Tree](https://yuyulyu.github.io/posts/binary-tree/#full-binary-tree)
 >   - [Complete Binary Tree](https://yuyulyu.github.io/posts/binary-tree/#complete-binary-tree)
 >   - [Binary Search Tree (BST)](https://yuyulyu.github.io/posts/binary-tree/#binary-search-tree-bst)
@@ -34,7 +34,7 @@ A binary tree is a tree data structure in which each node has at most two childr
 >     - [Postorder](https://yuyulyu.github.io/posts/binary-tree/#postorder)
 >   - [Breadth First Search (BFS)](https://yuyulyu.github.io/posts/binary-tree/#breadth-first-search-bfs)
 >     - [Level order](https://yuyulyu.github.io/posts/binary-tree/#level-order)
-{: .prompt-info }
+
   
 ## How binary trees are stored in memory
 
