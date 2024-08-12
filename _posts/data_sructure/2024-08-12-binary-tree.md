@@ -3,7 +3,7 @@ title: Binary Tree
 description: Write down description here.
 author: yoyo
 date: 2024-08-12 11:33:00 +0800
-categories: [Data Structure and Algorithm, Algorithm]
+categories: [Data Structure and Algorithm, Data Structure]
 tags: [binary tree]
 ---
 
@@ -145,6 +145,9 @@ When a node is added/deleted to/from an AVL tree, performing rotations is needed
 
 ### Inorder
 
+Inorder traversal first visits the left subtree, then the root, and finally the right subtree.
+- Commonly used in binary search trees where an ordered list of elements is required.
+- Useful in algorithms that need to process nodes in a specific order relative to their hierarchical levels.
 ### Preorder
 
 ### Postorder
