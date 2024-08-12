@@ -19,21 +19,21 @@ tags: [binary tree]
 A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
 
 > **Table of Content**
-> - How binary trees are stored in memory
->   - Pointer-Based Storage
->   - Array-Based Storage
-> - Different types of binary tree
->   - Full Binary Tree
->   - Complete Binary Tree
->   - Binary Search Tree (BST)
->   - Adelson-Velsky and Landis (AVL) Tree
-> - Tree Traversal
->   - Depth First Search (DFS)
->     - Preorder
->     - Inorder
->     - Postorder
->   - Depth First Search (DFS)
->     - Level order
+> - [<ins>**How binary trees are stored in memory**</ins>](https://yuyulyu.github.io/posts/binary-tree/#how-binary-trees-are-stored-in-memory)
+>   - [Pointer-Based Storage](https://yuyulyu.github.io/posts/binary-tree/#pointer-based-storage-linked-storage)
+>   - [Array-Based Storage](https://yuyulyu.github.io/posts/binary-tree/#array-based-storage)
+> - [<ins>**Different types of binary tree**,/ins>](https://yuyulyu.github.io/posts/binary-tree/#different-types-of-binary-tree)
+>   - [Full Binary Tre](https://yuyulyu.github.io/posts/binary-tree/#full-binary-tree)e
+>   - [Complete Binary Tree](https://yuyulyu.github.io/posts/binary-tree/#complete-binary-tree)
+>   - [Binary Search Tree (BST)](https://yuyulyu.github.io/posts/binary-tree/#binary-search-tree-bst)
+>   - [Adelson-Velsky and Landis (AVL) Tree](https://yuyulyu.github.io/posts/binary-tree/#adelson-velsky-and-landis-avl-tree)
+> - [<ins>**Tree Traversal**</ins>](https://yuyulyu.github.io/posts/binary-tree/#tree-traversal)
+>   - [Depth First Search (DFS)](https://yuyulyu.github.io/posts/binary-tree/#depth-first-search-dfs)
+>     - [Preorder](https://yuyulyu.github.io/posts/binary-tree/#preorder)
+>     - [Inorder](https://yuyulyu.github.io/posts/binary-tree/#inorder)
+>     - [Postorder](https://yuyulyu.github.io/posts/binary-tree/#postorder)
+>   - [Breadth First Search (BFS)](https://yuyulyu.github.io/posts/binary-tree/#breadth-first-search-bfs)
+>     - [Level order](https://yuyulyu.github.io/posts/binary-tree/#level-order)
 {: .prompt-info }
   
 ## How binary trees are stored in memory
