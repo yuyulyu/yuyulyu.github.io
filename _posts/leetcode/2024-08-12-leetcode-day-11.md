@@ -17,8 +17,8 @@ tags: [binary tree]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [102 Binary Tree Level Order Traversal](#binary-tree-level-order-traversal)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                       |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |        |      |
 
@@ -266,6 +266,38 @@ Output: [3.00000,14.50000,11.00000]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_637-二叉树的层平均值)[^solution].
 
+#### Python
+
+```python
+class Solution(object):
+    def averageOfLevels(self, root):
+        sums = [[root.val, 1]]
+
+        def average(node, level):
+            if node is None or (node.left is None and node.right is None):
+                return
+            
+            if len(sums) == level:
+                sums.append([0,0])
+            
+            if node.left is not None:
+                sums[level][0] += node.left.val
+                sums[level][1] += 1
+                average(node.left, level + 1)
+            if node.right is not None:
+                sums[level][0] += node.right.val
+                sums[level][1] += 1
+                average(node.right, level + 1)          
+
+        average(root,1)
+        
+        for i in range(len(sums)):
+            sums[i] = float(sums[i][0]) / float(sums[i][1])
+        
+        return sums
+```
+
+
 ## N-ary Tree Level Order Traversal
 
 > [Link to Leetcode question](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)[^natlot]
@@ -297,6 +329,28 @@ Output: [[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_429-n叉树的层序遍历)[^solution].
+
+#### Python
+
+```python
+class Solution(object):
+    def levelOrder(self, root):
+        result =[]
+
+        def level_order(node, level):
+            if node is None:
+                return
+            
+            if len(result) == level:
+                result.append([])
+            
+            result[level].append(node.val)
+            for child in node.children:
+                level_order(child, level + 1)
+        
+        level_order(root, 0)
+        return result
+```
 
 ## Find Largest Value in Each Tree Row
 
