@@ -18,6 +18,7 @@ tags: [binary tree]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [107 Binary Tree Level Order Traversal II](#binary-tree-level-order-traversal-ii)                |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |        |      |
 
 ## Binary Tree Level Order Traversal
 
@@ -152,5 +153,35 @@ Output: [3.00000,14.50000,11.00000]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_637-二叉树的层平均值)[^solution].
 
+## N-ary Tree Level Order Traversal
 
+> [Link to Leetcode question](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/)[^natlot]
+{: .prompt-info }
+
+Given an n-ary tree, return the level order traversal of its nodes' values.
+
+Nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value (See examples).
+
+**Example 1**
+
+![Desktop View](/assets/image/leetcode/leetcode-day-11/n-ary-tree-level-order-traversal-example-1.png){: .normal }
+
+```
+Input: root = [1,null,3,2,4,null,5,6]
+Output: [[1],[3,2,4],[5,6]]
+```
+
+**Example 2**
+
+![Desktop View](/assets/image/leetcode/leetcode-day-11/n-ary-tree-level-order-traversal-example-2.png){: .normal }
+
+```
+Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
+Output: [[1],[2,3,4,5],[6,7,8,9,10],[11,12,13],[14]]
+```
+ 
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_429-n叉树的层序遍历)[^solution].
 
