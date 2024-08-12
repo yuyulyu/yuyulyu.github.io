@@ -19,8 +19,13 @@ tags: [binary tree]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [199 Binary Tree Right Side View](#binary-tree-right-side-view)               |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [637 Average of Levels in Binary Tree](#average-of-levels-in-binary-tree)                                       |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [429 N-ary Tree Level Order Traversal](#n-ary-tree-level-order-traversal)                                       |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [515 Find Largest Value in Each Tree Row](#find-largest-value-in-each-tree-row)                                       |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [117 Populating Next Right Pointers in Each Node II](#populating-next-right-pointers-in-each-node-ii)                                       |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [116 Populating Next Right Pointers in Each Node](#populating-next-right-pointers-in-each-node)                                       |        |      |
+
+
 
 ## Binary Tree Level Order Traversal
 
@@ -378,6 +383,30 @@ Output: [1,3]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_515-在每个树行中找最大值)[^solution].
 
+#### Python
+
+```python
+class Solution(object):
+    def largestValues(self, root):
+        result = []
+
+        def largest(node, level):
+            if node is None:
+                return
+            
+            if len(result) == level:
+                result.append(node.val)
+            else:
+                result[level] = max(result[level], node.val)
+            
+            largest(node.left, level + 1)
+            largest(node.right, level + 1)
+        
+        largest(root, 0)
+        return result
+```
+
+
 ## Populating Next Right Pointers in Each Node
 
 > [Link to Leetcode question](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/)[^pnrpien]
@@ -420,11 +449,53 @@ Output: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
 
+#### Python
 
-## <2nd problem>
+**Iteration**
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+```python
+class Solution(object):
+    def connect(self, root):
+        if root is None:
+            return None
+        
+        def populate(node, nex):
+            if node.left is None:
+                return
+            
+            node.left.next = node.right
+            node.right.next = nex
+
+            populate(node.left, node.right.left)
+            if nex is not None:
+                populate(node.right, nex.left)
+            else:
+                populate(node.right, None)
+        
+        populate(root, None)
+        return root
+```
+
+## Populating Next Right Pointers in Each Node II
+
+> [Link to Leetcode question](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/)[^pnrpienii]
 {: .prompt-info }
+
+Given a binary tree
+
+```
+struct Node {
+  int val;
+  Node *left;
+  Node *right;
+  Node *next;
+}
+```
+
+Populate each next pointer to point to its next right node. If there is no next right node, the next pointer should be set to NULL.
+
+Initially, all next pointers are set to `NULL`.
+
 
 
 ### Solution
@@ -472,3 +543,6 @@ Output: []
 [^natlot]:Leetcode-429 N-ary Tree Level Order Traversal: [https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/](https://leetcode.com/problems/n-ary-tree-level-order-traversal/description/).
 [^flvietr]:Leetcode-515 Find Largest Value in Each Tree Row: [https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/](https://leetcode.com/problems/find-largest-value-in-each-tree-row/description/).
 [^pnrpien]:Leetcode-116 Populating Next Right Pointers in Each Node: [https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/](https://leetcode.com/problems/populating-next-right-pointers-in-each-node/description/).
+[^pnrpienii]:Leetcode-117 Populating Next Right Pointers in Each Node II: [https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/](https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/description/).
+
+
