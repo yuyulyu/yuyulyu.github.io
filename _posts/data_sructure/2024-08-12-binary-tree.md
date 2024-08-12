@@ -10,13 +10,13 @@ tags: [binary tree]
 A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
 
 【image】structure-of-binary-tree-1
-Root: The top node in a tree.
-Parent Node: Any node except the root.
-Child Node: A node directly connected to another node when moving away from the Root.
-Leaf Node: A node with no children.
-Siblings: Nodes with the same parent.
-Depth: The length of the path to its root.
-Height: The depth of the deepest node.
+- Root: The top node in a tree.
+- Parent Node: Any node except the root.
+- Child Node: A node directly connected to another node when moving away from the Root.
+- Leaf Node: A node with no children.
+- Siblings: Nodes with the same parent.
+- Depth: The length of the path to its root.
+- Height: The depth of the deepest node.
 
 ## How binary tree stored in memory
 
