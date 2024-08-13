@@ -7,16 +7,12 @@ categories: [Data Structure and Algorithm, Data Structure]
 tags: [binary tree]
 ---
 
-【image】structure-of-binary-tree-1
-- Root: The top node in a tree.
-- Parent Node: Any node except the root.
-- Child Node: A node directly connected to another node when moving away from the Root.
-- Leaf Node: A node with no children.
-- Siblings: Nodes with the same parent.
-- Depth: The length of the path to its root.
-- Height: The depth of the deepest node.
+![Desktop View](/assets/image/data-structure/binary-tree/structure-of-binary-tree-1.jpeg){: .normal }
 
-A binary tree is a tree data structure in which each node has at most two children, which are referred to as the left child and the right child. 
+> Related Leetcode Questions
+>  - [Leetcode Day 11 - Binary Tree](https://yuyulyu.github.io/posts/leetcode-day-11/)
+>  - [Leetcode Day 12 - Binary Tree](https://yuyulyu.github.io/posts/leetcode-day-12/)
+{: .prompt-info }
 
 > **Table of Content**
 > - [<ins>**How binary trees are stored in memory**</ins>](https://yuyulyu.github.io/posts/binary-tree/#how-binary-trees-are-stored-in-memory)
@@ -65,7 +61,7 @@ In array-based storage of binary trees:
 - **Left Child**: The left child of a node located at position n is found at position 2n + 1.
 - **Right Child**: The right child of a node located at position n is found at position 2n + 2.
 
-【image】
+![Desktop View](/assets/image/data-structure/binary-tree/array-based-storage.jpeg){: .normal }
 
 This method is **space-efficient** when the tree is **complete and perfect**, as it doesn't require any pointers. However, for sparse trees, this method can waste memory space due to empty indices in the array representing absent nodes.
 
@@ -126,7 +122,7 @@ A full binary tree is a type of binary tree in which every node other than the l
 - Every node has 0 or 2 children.
 - Leaves are at the same level or one level apart.
 
-【image】full-binary-tree
+![Desktop View](/assets/image/data-structure/binary-tree/full-binary-tree.jpeg){: .normal }
 
 ### Complete Binary Tree
 
@@ -134,7 +130,7 @@ A complete binary tree is a type of binary tree in which all levels, except poss
 - All levels are fully filled except possibly the last level.
 - Nodes are positioned as far left as possible.
 
-【image】complete-binary-tree
+![Desktop View](/assets/image/data-structure/binary-tree/complete-binary-tree.jpeg){: .normal }
 
 ### Binary Search Tree (BST)
 
@@ -142,6 +138,8 @@ A  binary tree in which for each node, the left children are less than the node 
 - The left subtree of a node contains only nodes with keys lesser than the node’s key.
 - The right subtree of a node contains only nodes with keys greater than the node’s key.
 - There must be no duplicate nodes.
+
+![Desktop View](/assets/image/data-structure/binary-tree/binary-search-tree.jpeg){: .normal }
 
 ### Adelson-Velsky and Landis (AVL) Tree
 A self-balancing binary search tree where the height of the two child subtrees of any node differ by no more than one. If at any time the heights differ more than one, rebalancing is done to restore this property. AVL trees are optimized for lookup-intensive applications, where frequent insertions and deletions necessitate quick rebalancing to maintain efficient search times.
@@ -167,7 +165,7 @@ DFS explores as far as possible along each branch before backtracking. Implement
 - Used in solving puzzles with only one solution, like mazes.
 - Employed in topological sorting, scheduling problems, cycle detection in environments where pathways to vertices need exploration.
 
-[image]: dfs
+![Desktop View](/assets/image/data-structure/binary-tree/dfs.jpeg){: .normal }
 
 > [Link to code about DFS](https://yuyulyu.github.io/posts/binary-tree/)
 {: .prompt-tip }
@@ -178,7 +176,7 @@ Preorder traversal visits the root first, followed by the left subtree, and then
 - Used to create a copy of the tree.
 - Useful in syntax tree applications, such as in compilers and expression parsers, where the structure of the tree aligns with the order of operations.
 
-[image]: preorder-traversal
+![Desktop View](/assets/image/data-structure/binary-tree/preorder.jpeg){: .normal }
 
 > [Link to code about Preorder Traversal](https://yuyulyu.github.io/posts/binary-tree/)
 {: .prompt-tip }
@@ -189,7 +187,7 @@ Inorder traversal first visits the left subtree, then the root, and finally the 
 - Commonly used in binary search trees where an ordered list of elements is required.
 - Useful in algorithms that need to process nodes in a specific order relative to their hierarchical levels.
 
-[image]: inorder-traversal
+![Desktop View](/assets/image/data-structure/binary-tree/inorder.jpeg){: .normal }
 
 > [Link to code about Inorder Traversal](https://yuyulyu.github.io/posts/binary-tree/)
 {: .prompt-tip }
@@ -200,7 +198,7 @@ Postorder traversal visits the left subtree, the right subtree, and the root las
 - Commonly used in the calculation of a value for a tree where nodes represent operations in postfix expression evaluation.
 - Useful in deleting or freeing nodes and space of the tree in a safe manner.
 
-[image]: postorder-traversal
+![Desktop View](/assets/image/data-structure/binary-tree/postorder.jpeg){: .normal }
 
 > [Link to code about Postorder Traversal](https://yuyulyu.github.io/posts/binary-tree/)
 {: .prompt-tip }
@@ -211,7 +209,7 @@ BFS explores the neighbor nodes at the present depth prior to moving on to nodes
 - Used to find the shortest path from a source node to other nodes in an unweighted graph.
 - Useful in any searching algorithm where the shortest path is desired, and all edges are of equal weight.
 
-[image]: bfs
+![Desktop View](/assets/image/data-structure/binary-tree/bfs.jpeg){: .normal }
 
 > [Link to code about BFS](https://yuyulyu.github.io/posts/binary-tree/)
 {: .prompt-tip }
@@ -223,6 +221,8 @@ Level order traversal visits nodes level by level from top to bottom. This is th
 - Useful in serialization of a tree structure in a way that reconstruction is feasible.
 
 [image]: level-order-traversal
+
+![Desktop View](/assets/image/data-structure/binary-tree/level-order.jpeg){: .normal }
 
 > [Link to code about Level Order Traversal](https://yuyulyu.github.io/posts/binary-tree/)
 {: .prompt-tip }
