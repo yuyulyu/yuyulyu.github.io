@@ -11,8 +11,8 @@ tags: [binary tree, DFS, BFS]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [226 Invert Binary Tree](#invert-binary-tree)                                          |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [101 Symmetric Tree](#symmetric-tree)                                              |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [226 Invert Binary Tree](#invert-binary-tree)                                          |✅      |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [101 Symmetric Tree](#symmetric-tree)                                              |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [104 Maximum Depth of Binary Tree](#maximum-depth-of-binary-tree)                    |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [111 Minimum Depth of Binary Tree](#minimum-depth-of-binary-tree)                    |✅      |      |
 
@@ -51,6 +51,24 @@ Output: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0226.翻转二叉树.html)[^ibtSolution].
 
+### Python
+
+```python
+class Solution(object):
+    def invertTree(self, root):
+        if root is None:
+            return
+        
+        temp = root.left
+        root.left = root.right
+        root.right = temp
+
+        self.invertTree(root.left)
+        self.invertTree(root.right)
+
+        return root
+```
+
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
@@ -85,6 +103,33 @@ Output: false
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0101.对称二叉树.html#算法公开课)[^stSolution].
+
+#### Python
+
+```python
+class Solution(object):
+    def isSymmetric(self, root):
+        """
+        :type root: TreeNode
+        :rtype: bool
+        """
+        
+        def compare(left, right):
+            if left is None and right is None:
+                return True
+            elif left is None and right is not None:
+                return False
+            elif right is None and left is not None:
+                return False
+            elif left.val != right.val:
+                return False
+            
+            outside = compare(left.left, right.right)
+            inside = compare(left.right, right.left)
+            return outside and inside
+        
+        return compare(root.left, root.right)
+```
 
 ## Maximum Depth of Binary Tree
 
