@@ -517,6 +517,28 @@ Output: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0102.二叉树的层序遍历.html#_117-填充每个节点的下一个右侧节点指针ii)[^solution].
 
+#### Python
+
+```python
+class Solution(object):
+    def connect(self, root):
+        next_points = []
+        def populate(node, level):
+            if node is None:
+                return
+            
+            if len(next_points) == level:
+                next_points.append(node)
+            else:
+                node.next = next_points[level]
+                next_points[level] = node
+            
+            populate(node.right, level + 1)
+            populate(node.left, level + 1)
+
+        populate(root, 0)
+        return root
+```
 
 ## Maximum Depth of Binary Tree
 
