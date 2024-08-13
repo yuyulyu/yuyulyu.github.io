@@ -9,7 +9,7 @@ tags: [hash table]
 
 > Related Leetcode Questions
 >  - [Leetcode Day 5 - Hash Table](https://yuyulyu.github.io/posts/leetcode-day-5/)
->  - Leetcode Day 6 - Hash Table
+>  - [Leetcode Day 6 - Hash Table](https://yuyulyu.github.io/posts/leetcode-day-6/)
 {: .prompt-info }
 
 ## Hash Table
