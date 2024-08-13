@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 13 - Binary Tree
-description: 226 Invert Binary Tree | 101 Symmetric Tree | 104 Maximum Depth of Binary Tree
+title: Leetcode Day 12 - Binary Tree
+description: 226 Invert Binary Tree | 101 Symmetric Tree | 104 Maximum Depth of Binary Tree | 111 Minimum Depth of Binary Tree
 author: yoyo
 date: 2024-08-13 14:58:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
