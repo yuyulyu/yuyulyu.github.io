@@ -73,7 +73,7 @@ class Solution(object):
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2415 Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)[^rolobt] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2415 Reverse Odd Levels of Binary Tree](https://leetcode.com/problems/reverse-odd-levels-of-binary-tree/)[^rolobt] |✅      |      |
 
 ## Symmetric Tree
 
