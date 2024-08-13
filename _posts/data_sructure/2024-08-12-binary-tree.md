@@ -9,11 +9,6 @@ tags: [binary tree]
 
 ![Desktop View](/assets/image/data-structure/binary-tree/structure-of-binary-tree-1.jpeg){: .normal }
 
-> Related Leetcode Questions
->  - [Leetcode Day 11 - Binary Tree](https://yuyulyu.github.io/posts/leetcode-day-11/)
->  - [Leetcode Day 12 - Binary Tree](https://yuyulyu.github.io/posts/leetcode-day-12/)
-{: .prompt-info }
-
 > **Table of Content**
 > - [<ins>**How binary trees are stored in memory**</ins>](https://yuyulyu.github.io/posts/binary-tree/#how-binary-trees-are-stored-in-memory)
 >   - [Pointer-Based Storage](https://yuyulyu.github.io/posts/binary-tree/#pointer-based-storage-linked-storage)
@@ -31,6 +26,10 @@ tags: [binary tree]
 >   - [Breadth First Search (BFS)](https://yuyulyu.github.io/posts/binary-tree/#breadth-first-search-bfs)
 >     - [Level order](https://yuyulyu.github.io/posts/binary-tree/#level-order)
 
+> Related Leetcode Questions
+>  - [Leetcode Day 11 - Binary Tree](https://yuyulyu.github.io/posts/leetcode-day-11/)
+>  - [Leetcode Day 12 - Binary Tree](https://yuyulyu.github.io/posts/leetcode-day-12/)
+{: .prompt-info }
   
 ## How binary trees are stored in memory
 
