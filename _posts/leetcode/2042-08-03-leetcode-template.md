@@ -3,7 +3,7 @@ title: Leetcode Template # Leetcode Day # - <Topic> #
 description: # <problem> | # <Problem> 
 author: yoyo
 date: 2042-08-03 23:07:00 +0800
-categories: [Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode]
 tags: []
 ---
 
