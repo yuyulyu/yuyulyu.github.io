@@ -84,7 +84,7 @@ Given the `root` of a binary tree, check whether it is a mirror of itself (i.e.,
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-1.jpeg){: .normal }
 
 ```
 Input: root = [1,2,2,3,4,4,3]
@@ -93,7 +93,7 @@ Output: true
 
 **Example 2**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-example-2.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-2.jpeg){: .normal }
 
 ```
 Input: root = [1,2,2,null,3,null,3]
