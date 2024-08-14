@@ -14,7 +14,7 @@ tags: [binary tree, DFS]
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [110 Balanced Binary Tree](#balanced-binary-tree)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [257 Binary Tree Paths](#binary-tree-paths)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [404 Sum of Left Leaves](#sum-of-left-leaves)               |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [222 Count Complete Tree Nodes](#count-complete-tree-nodes)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [222 Count Complete Tree Nodes](#count-complete-tree-nodes)                                       |✅      |      |
 
 
 ## Balanced Binary Tree
@@ -249,6 +249,35 @@ Output: 1
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0222.完全二叉树的节点个数.html)[^cctnSolution].
 
+#### Python
+
+笔记后补
+
+**Solution 1**
+
+```python
+class Solution(object):
+    def countNodes(self, root):
+        if not root: return 0
+        count = 1
+        left = root.left; right = root.right
+        while left and right:
+            count+=1
+            left = left.left; right = right.right
+        if not left and not right: 
+            return 2**count-1
+        return 1+self.countNodes(root.left)+self.countNodes(root.right)
+```
+
+**Solution 2**
+
+```python
+class Solution(object):
+    def countNodes(self, root):
+        if not root:
+            return 0
+        return 1 + self.countNodes(root.left) + self.countNodes(root.right)
+```
 
 ## Reference
 [^bbt]:Leetcode-110 Balanced Binary Tree: [https://leetcode.com/problems/balanced-binary-tree/description/](https://leetcode.com/problems/balanced-binary-tree/description/).
