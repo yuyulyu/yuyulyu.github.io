@@ -228,7 +228,7 @@ class Solution:
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/kama55.右旋字符串.html)[^rhsSolution].
 
-![Desktop View](/assets/image/leetcode/leetcode-day-8/right-handed-string-solution-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-8/right-handed-string-solution-1.jpeg)
 
 #### Python
 
