@@ -25,7 +25,7 @@ Given the ```head``` of a linked list and an integer ```val```, remove all the n
 **Example 1**
 
 
-![Desktop View](/assets/image/leetcode/leetcode-day-3/remove-linked-list-elements-example-1.jpg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-3/remove-linked-list-elements-example-1.jpg)
 
 ```
 Input: head = [1,2,6,3,4,5,6], val = 6
