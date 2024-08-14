@@ -36,7 +36,7 @@ Given the `root` of a binary tree, return the level order traversal of its nodes
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-level-order-traversal-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-level-order-traversal-example-1.jpeg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -95,7 +95,7 @@ Given the `root` of a binary tree, return the bottom-up level order traversal of
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-level-order-traversal-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-level-order-traversal-example-1.jpeg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -158,7 +158,7 @@ Given the `root` of a binary tree, imagine yourself standing on the right side o
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-right-side-view-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-right-side-view-example-1.jpeg)
 
 ```
 Input: root = [1,2,3,null,5,null,4]
@@ -249,7 +249,7 @@ Given the `root` of a binary tree, return the average value of the nodes on each
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/average-of-levels-in-binary-tree-example-2.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/average-of-levels-in-binary-tree-example-2.jpeg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -260,7 +260,7 @@ Hence return [3, 14.5, 11].
 
 **Example 2**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-level-order-traversal-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/binary-tree-level-order-traversal-example-1.jpeg)
 
 ```
 Input: root = [3,9,20,15,7]
@@ -314,7 +314,7 @@ Nary-Tree input serialization is represented in their level order traversal, eac
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/n-ary-tree-level-order-traversal-example-1.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/n-ary-tree-level-order-traversal-example-1.png)
 
 ```
 Input: root = [1,null,3,2,4,null,5,6]
@@ -323,7 +323,7 @@ Output: [[1],[3,2,4],[5,6]]
 
 **Example 2**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/n-ary-tree-level-order-traversal-example-2.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/n-ary-tree-level-order-traversal-example-2.png)
 
 ```
 Input: root = [1,null,2,3,4,5,null,null,6,7,null,8,null,9,10,null,null,11,null,12,null,13,null,null,14]
@@ -364,7 +364,7 @@ class Solution(object):
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/find-largest-value-in-each-tree-row-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/find-largest-value-in-each-tree-row-example-1.jpeg)
 
 ```
 Input: root = [1,3,2,5,3,null,9]
@@ -429,7 +429,7 @@ Initially, all next pointers are set to `NULL`.
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/populating-next-right-pointers-in-each-node-example-1.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/populating-next-right-pointers-in-each-node-example-1.png)
 
 ```
 Input: root = [1,2,3,4,5,6,7]
@@ -498,7 +498,7 @@ Initially, all next pointers are set to `NULL`.
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/populating-next-right-pointers-in-each-node-ii-example-1.png){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/populating-next-right-pointers-in-each-node-ii-example-1.png)
 
 ```
 Input: root = [1,2,3,4,5,null,7]
@@ -547,7 +547,7 @@ class Solution(object):
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -593,7 +593,7 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
