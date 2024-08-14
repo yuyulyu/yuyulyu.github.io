@@ -12,7 +12,7 @@ tags: [binary tree, DFS]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [110 Balanced Binary Tree](#balanced-binary-tree)                                          |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [257 Binary Tree Paths](#binary-tree-paths)                |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [257 Binary Tree Paths](#binary-tree-paths)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [404 Sum of Left Leaves](#sum-of-left-leaves)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [222 Count Complete Tree Nodes](#count-complete-tree-nodes)                                       |        |      |
 
@@ -119,6 +119,38 @@ Output: ["1"]
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0257.二叉树的所有路径.html)[^btpSolution].
 
 ### Similar Questions
+
+#### Python
+
+```python
+class Solution(object):
+    def binaryTreePaths(self, root):
+        if root is None:
+            return []
+        
+        if root.left is None and root.right is None:
+            return [str(root.val)]
+
+        paths = []
+
+        def findPath(node, path):
+            if node is None:
+                return
+
+            path += "->" + str(node.val)            
+            if node.left is None and node.right is None:
+                print(node.val, path)
+                paths.append(path)
+                return
+            
+            findPath(node.left, path)
+            findPath(node.right, path)
+        
+        findPath(root.left,str(root.val))
+        findPath(root.right,str(root.val))
+
+        return paths
+```
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
