@@ -26,7 +26,7 @@ Given a binary tree, determine if it is height-balanced.
 
 **Example 1**
 
-[image]: balanced-binary-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-13/balanced-binary-tree-example-1.jpeg){: .normal }
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -35,7 +35,7 @@ Output: true
 
 **Example 2**
 
-[image]: balanced-binary-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-13/balanced-binary-tree-example-2.jpeg){: .normal }
 
 ```
 Input: root = [1,2,2,3,3,null,null,4,4]
@@ -100,7 +100,7 @@ A leaf is a node with no children.
 
 **Example 1**
 
-[image]: binary-tree-paths-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-13/binary-tree-paths-example-1.jpeg){: .normal }
 
 ```
 Input: root = [1,2,3,null,5]
@@ -169,7 +169,7 @@ A leaf is a node with no children. A left leaf is a leaf that is the left child 
 
 **Example 1**
 
-[image]: sum-of-left-leaves-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-13/sum-of-left-leaves-example-1.jpeg){: .normal }
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -224,7 +224,7 @@ Design an algorithm that runs in less than `O(n)` time complexity.
 
 **Example 1**
 
-[image]: count-complete-tree-nodes-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-13/count-complete-tree-nodes-example-1.jpeg){: .normal }
 
 ```
 Input: root = [1,2,3,4,5,6]
