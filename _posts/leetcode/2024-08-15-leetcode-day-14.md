@@ -9,6 +9,10 @@ tags: []
 
 ## Binary Tree 
 
+> [Link to note about binary tree](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
+
+
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [513 Find Bottom Left Tree Value](#find-bottom-left-tree-value)                                 |        |      |
