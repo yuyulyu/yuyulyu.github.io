@@ -24,7 +24,7 @@ tags: [binary tree, DFS, BFS]
 
 Given the `root` of a binary tree, invert the tree, and return its root.
 
-![Desktop View](/assets/image/leetcode/leetcode-day-12/invert-binary-tree-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-12/invert-binary-tree-example-1.jpeg)
 
 ```
 Input: root = [4,2,7,1,3,6,9]
@@ -33,7 +33,7 @@ Output: [4,7,2,9,6,3,1]
 
 **Example 2**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-12/invert-binary-tree-example-2.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-12/invert-binary-tree-example-2.jpeg)
 
 ```
 Input: root = [2,1,3]
@@ -84,7 +84,7 @@ Given the `root` of a binary tree, check whether it is a mirror of itself (i.e.,
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-1.jpeg)
 
 ```
 Input: root = [1,2,2,3,4,4,3]
@@ -93,7 +93,7 @@ Output: true
 
 **Example 2**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-2.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-12/symmetric-tree-example-2.jpeg)
 
 ```
 Input: root = [1,2,2,null,3,null,3]
@@ -138,7 +138,7 @@ class Solution(object):
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
@@ -183,7 +183,7 @@ The minimum depth is the number of nodes along the shortest path from the root n
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-11/maximum-depth-of-binary-tree-example-1.jpeg)
 
 ```
 Input: root = [3,9,20,null,null,15,7]
