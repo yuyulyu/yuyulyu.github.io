@@ -10,7 +10,7 @@ tags: [hash table,string,sorting,double pointers,binary search]
 ## Hash Table [^dmsxl] 
 
 > [Link to note about hash table](https://yuyulyu.github.io/posts/hash-table/)
-{: .prompt-info }
+{: .prompt-tip }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
