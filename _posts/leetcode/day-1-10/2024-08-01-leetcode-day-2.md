@@ -116,7 +116,7 @@ Given a positive integer n, generate an n x n matrix filled with elements from 1
 
 **Example 1**
 
-![Desktop View](/assets/image/leetcode/leetcode-day-2/spiral-matrix-example-1.jpg){: .normal }
+![Desktop View](/assets/image/leetcode/leetcode-day-2/spiral-matrix-example-1.jpg)
 
 ```
 Input: n = 3
