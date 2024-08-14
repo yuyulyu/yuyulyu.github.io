@@ -13,7 +13,7 @@ tags: [binary tree, DFS]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [110 Balanced Binary Tree](#balanced-binary-tree)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [257 Binary Tree Paths](#binary-tree-paths)                |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [404 Sum of Left Leaves](#sum-of-left-leaves)               |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [404 Sum of Left Leaves](#sum-of-left-leaves)               |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [222 Count Complete Tree Nodes](#count-complete-tree-nodes)                                       |        |      |
 
 
@@ -188,6 +188,28 @@ Output: 0
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0404.左叶子之和.html#算法公开课)[^sollSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def sumOfLeftLeaves(self, root):
+        leaves = []
+
+        def traverse(node,isLeft):
+            if node is None:
+                return
+            
+            if node.left is None and node.right is None:
+                if isLeft:
+                    leaves.append(node.val)
+                return
+            
+            traverse(node.left,True)
+            traverse(node.right, False)
+        
+        traverse(root,False)
+        return sum(leaves)
+```
 
 ## Count Complete Tree Nodes
 
