@@ -17,7 +17,7 @@ tags: [string, double pointers, kmp]
 ### Optional Queations about KMP
 
 > [Link to Note about KMP](https://yuyulyu.github.io/posts/kmp/).
-{: .prompt-info }
+{: .prompt-tip }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
