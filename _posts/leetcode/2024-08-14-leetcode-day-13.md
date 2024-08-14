@@ -11,7 +11,7 @@ tags: [binary tree, DFS]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [110 Balanced Binary Tree](#balanced-binary-tree)                                          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [110 Balanced Binary Tree](#balanced-binary-tree)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [257 Binary Tree Paths](#binary-tree-paths)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [404 Sum of Left Leaves](#sum-of-left-leaves)               |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [222 Count Complete Tree Nodes](#count-complete-tree-nodes)                                       |        |      |
@@ -52,6 +52,40 @@ Output: true
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0110.平衡二叉树.html)[^bbtSolution].
+
+#### Python
+
+```
+class Solution(object):
+    def isBalanced(self, root):        
+        def subtree(node):
+            if node is None:
+                return 0 
+
+            if node.left is None and node.right is None:
+                return  1
+
+            if node.right is not None:
+                right_depth = subtree(node.right)
+                if right_depth == -2:
+                    return -2
+            else:
+                right_depth = 0
+
+            if node.left is not None:
+                left_depth = subtree(node.left)
+                if left_depth == -2:
+                    return -2
+            else:
+                left_depth = 0
+  
+            if abs(left_depth - right_depth) > 1:
+                return -2
+            else:
+                return  max(left_depth, right_depth) + 1
+
+        return False if subtree(root) == -2 else True
+```
 
 ## Binary Tree Paths
 
