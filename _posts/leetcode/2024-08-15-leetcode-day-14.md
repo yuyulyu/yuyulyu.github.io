@@ -28,7 +28,7 @@ Given the `root` of a binary tree, return the leftmost value in the last row of 
 
 **Example 1**
 
-[image]: find-bottom-left-tree-value-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-14/find-bottom-left-tree-value-example-1.jpeg)
 
 ```
 Input: root = [2,1,3]
@@ -37,7 +37,7 @@ Output: 1
 
 **Example 2**
 
-[image]: find-bottom-left-tree-value-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-14/find-bottom-left-tree-value-example-2.jpeg)
 
 ```
 Input: root = [1,2,3,4,null,5,6,null,null,7]
@@ -92,7 +92,7 @@ A leaf is a node with no children.
 
 **Example 1**
 
-[image]: path-sum-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-14/path-sum-example-1.jpeg)
 
 ```
 Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
@@ -102,7 +102,7 @@ Explanation: The root-to-leaf path with the target sum is shown.
 
 **Example 2**
 
-[image]: path-sum-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-14/path-sum-example-2.jpeg)
 
 ```
 Input: root = [1,2,3], targetSum = 5
@@ -170,7 +170,7 @@ Given two integer arrays `inorder` and `postorder` where `inorder` is the inorde
 
 **Example 1**
 
-[image]: construct-binary-tree-from-inorder-and-postorder-traversal-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-14/construct-binary-tree-from-inorder-and-postorder-traversal-example-1.jpeg)
 
 ```
 Input: inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]
