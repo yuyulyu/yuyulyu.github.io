@@ -17,7 +17,7 @@ tags: []
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [513 Find Bottom Left Tree Value](#find-bottom-left-tree-value)                                 |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [112 Path Sum](#path-sum)                                                                      |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [106 Construct Binary Tree from Inorder and Postorder Traversal](#construct-binary-tree-from-inorder-and-postorder-traversal)                                                                                                      |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [106 Construct Binary Tree from Inorder and Postorder Traversal](#construct-binary-tree-from-inorder-and-postorder-traversal)                                                                                                      |✅      |      |
 
 ## Find Bottom Left Tree Value
 
@@ -188,6 +188,26 @@ Output: [-1]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0106.从中序与后序遍历序列构造二叉树.html)[^cbtfiaptSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def buildTree(self, inorder, postorder):
+
+        def construct(inorder, postorder):
+            if not inorder:
+                return None
+
+            mid = postorder.pop()
+            i = inorder.index(mid)
+            
+            right_node = construct(inorder[i + 1:], postorder)
+            left_node = construct(inorder[:i], postorder)
+
+            return TreeNode(mid, left_node, right_node)
+        
+        return construct(inorder, postorder)
+```
 
 ### Similar Questions
 
