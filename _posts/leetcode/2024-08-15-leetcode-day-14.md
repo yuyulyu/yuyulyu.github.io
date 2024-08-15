@@ -138,7 +138,7 @@ Output: [-1]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [105 Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)[^cbtfpait]               |        |      | 
 
 ## Reference
-[^fbltv]Leetcode-513 Find Bottom Left Tree Value: [https://leetcode.com/problems/find-bottom-left-tree-value/description/](https://leetcode.com/problems/find-bottom-left-tree-value/description/).
+[^fbltv]:Leetcode-513 Find Bottom Left Tree Value: [https://leetcode.com/problems/find-bottom-left-tree-value/description/](https://leetcode.com/problems/find-bottom-left-tree-value/description/).
 [^fbltvSolution]:代码随想录-找树左下角的值: [https://programmercarl.com/0513.找树左下角的值.html](https://programmercarl.com/0513.找树左下角的值.html).
 [^ps]:Leetcode-112 Path Sum: [https://leetcode.com/problems/path-sum/description/](https://leetcode.com/problems/path-sum/description/).
 [^psSolution]:代码随想录-路径总和: [https://programmercarl.com/0112.路径总和.html](https://programmercarl.com/0112.路径总和.html).
