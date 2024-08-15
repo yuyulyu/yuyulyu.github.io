@@ -48,6 +48,38 @@ Output: 7
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0513.找树左下角的值.html)[^fbltvSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def findBottomLeftValue(self, root):
+                
+        def find(node):
+            if node is None:
+                return None, 0
+            
+            if node.left is None and node.right is None:
+                return node.val, 1
+            
+            if node.left is not None:
+                left, left_depth = find(node.left)
+                left_depth += 1
+            
+                if node.right is None:
+                    return left, left_depth
+                else:
+                    right, right_depth = find(node.right)
+                    right_depth += 1
+                    if right_depth > left_depth:
+                        return right, right_depth
+                    else:
+                        return left, left_depth
+            right, right_depth = find(node.right)
+            return right, right_depth + 1
+        
+        re, temp = find(root)
+        return re
+```
 
 ## Path Sum
 
