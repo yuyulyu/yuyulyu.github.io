@@ -15,8 +15,8 @@ tags: []
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [513 Find Bottom Left Tree Value](#find-bottom-left-tree-value)                                 |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [112 Path Sum](#path-sum)                                                                      |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [513 Find Bottom Left Tree Value](#find-bottom-left-tree-value)                                 |✅      |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [112 Path Sum](#path-sum)                                                                      |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [106 Construct Binary Tree from Inorder and Postorder Traversal](#construct-binary-tree-from-inorder-and-postorder-traversal)                                                                                                      |        |      |
 
 ## Find Bottom Left Tree Value
@@ -125,7 +125,33 @@ Explanation: Since the tree is empty, there are no root-to-leaf paths.
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0112.路径总和.html)[^psSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def hasPathSum(self, root, targetSum):
+
+        def find(node,s):
+            if node is None:
+                return False
+            
+            if node.left is None and node.right is None and node.val == targetSum - s:
+                return True
+            
+            s += node.val
+
+            if node.left is not None:
+                if find(node.left, s):
+                    return True
+            
+            if node.right is not None:
+                if find(node.right,s):
+                    return True
+            
+            return False
+    
+        return find(root,0)
+```
 
 ### Similar Questions
 
