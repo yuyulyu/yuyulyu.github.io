@@ -2,7 +2,7 @@
 title: Leetcode Day 14 - Binary Tree
 description: 513 Find Bottom Left Tree Value | 112 Path Sum | 106 Construct Binary Tree from Inorder and Postorder Traversal
 author: yoyo
-date: 2042-08-03 23:07:00 +0800
+date: 2024-08-15 16:27:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: []
 ---
