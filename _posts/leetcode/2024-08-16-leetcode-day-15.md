@@ -29,7 +29,8 @@ You are given an integer array `nums` with no duplicates. A maximum binary tree 
 
 **Example 1**
 
-[image]: maximum-binary-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-15/maximum-binary-tree-example-1.jpeg)
+
 
 ```
 Input: nums = [3,2,1,6,0,5]
@@ -49,7 +50,7 @@ Explanation: The recursive calls are as follow:
 
 **Example 2**
 
-[image]: maximum-binary-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-15/maximum-binary-tree-example-2.jpeg)
 
 ```
 Input: nums = [3,2,1]
@@ -105,7 +106,7 @@ Return the merged tree.
 
 **Example 1**
 
-[image]: merge-two-binary-trees-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-15/merge-two-binary-trees-example-1.jpeg)
 
 ```
 Input: root1 = [1,3,2,5], root2 = [2,1,3,null,4,null,7]
@@ -155,7 +156,7 @@ Find the node in the BST that the node's value equals `val` and return the subtr
 
 **Example 1**
 
-[image]: search-in-a-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-15/search-in-a-binary-search-tree-example-1.jpeg)
 
 ```
 Input: root = [4,2,7,1,3], val = 2
@@ -164,7 +165,7 @@ Output: [2,1,3]
 
 **Example 2**
 
-[image]: search-in-a-binary-search-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-15/search-in-a-binary-search-tree-example-2.jpeg)
 
 ```
 Input: root = [4,2,7,1,3], val = 5
@@ -212,7 +213,8 @@ A valid BST is defined as follows:
 
 **Example 1**
 
-[image]: validate-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-15/validate-binary-search-tree-example-1.jpeg)
+
 
 ```
 Input: root = [2,1,3]
@@ -221,7 +223,7 @@ Output: true
 
 **Example 2**
 
-[image]: validate-binary-search-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-15/validate-binary-search-tree-example-2.jpeg)
 
 ```
 Input: root = [5,1,4,null,null,3,6]
