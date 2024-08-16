@@ -9,6 +9,9 @@ tags: [binary tree]
 
 ## Binary Tree
 
+> [Link to note about binary tree](https://yuyulyu.github.io/posts/binary-tree/)
+{: .prompt-tip }
+
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [530 Minimum Absolute Difference in BST](#minimum-absolute-difference-in-bst)                                          |        |      |
