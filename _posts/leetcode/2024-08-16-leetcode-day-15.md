@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 16 - Binary Tree
+title: Leetcode Day 15 - Binary Tree
 description: 654 Maximum Binary Tree | 617 Merge Two Binary Trees | 700 Search in a Binary Search Tree | 98 Validate Binary Search Tree
 author: yoyo
 date: 2024-08-16 14:19:00 +0800
