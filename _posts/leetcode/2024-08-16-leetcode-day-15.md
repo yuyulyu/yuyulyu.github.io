@@ -6,11 +6,6 @@ date: 2024-08-16 14:19:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: [binary tree]
 ---
-
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Binary Tree
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
