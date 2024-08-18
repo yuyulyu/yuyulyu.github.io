@@ -147,6 +147,8 @@ class Solution(object):
 > [Link to Leetcode question](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)[^rnnfeol]
 {: .prompt-info }
 
+
+
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).”
@@ -235,4 +237,5 @@ Output: 2
 [^lcaoabt]:Leetcode-236 Lowest Common Ancestor of a Binary Tree: [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/).
 [^rnnfeolSolution]:代码随想录-二叉树的最近公共祖先: [https://programmercarl.com/0236.二叉树的最近公共祖先.html](https://programmercarl.com/0236.二叉树的最近公共祖先.html).
 [^lcaoabst]:Leetcode-235 Lowest Common Ancestor of a Binary Search Tree: [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/).
+[^rnnfeol]:Leetcode-236 Lowest Common Ancestor of a Binary Tree: [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/).
 
