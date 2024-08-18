@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 1 - Array
+title: Leetcode Day 1 - Array Basics
 description: 074 Binary Search | 27 Remove Element
 author: yoyo
 date: 2024-07-31 22:56:00 +0800
