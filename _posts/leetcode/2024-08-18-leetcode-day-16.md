@@ -14,7 +14,7 @@ tags: [binary tree]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [530 Minimum Absolute Difference in BST](#minimum-absolute-difference-in-bst)                                          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [530 Minimum Absolute Difference in BST](#minimum-absolute-difference-in-bst)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [501 Find Mode in Binary Search Tree](#find-mode-in-binary-search-tree)                |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [236 Lowest Common Ancestor of a Binary Tree](#lowest-common-ancestor-of-a-binary-tree)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [235 Lowest Common Ancestor of a Binary Search Tree](#lowest-common-ancestor-of-a-binary-search-tree)                                       |        |      |
@@ -49,6 +49,31 @@ Output: 1
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0530.二叉搜索树的最小绝对差.html)[^madibSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def getMinimumDifference(self, root):
+        minab = [float('inf')]
+        que = []
+        
+        def inorder(node):
+            if node is None:
+                return
+
+            inorder(node.left)
+
+            if len(que) > 0:
+                prv = que[-1] 
+                minab[0] = min(minab[0], abs(node.val - prv))
+
+            que.append(node.val)
+
+            inorder(node.right)
+        
+        inorder(root)
+        return minab[0] 
+```
 
 ### Similar Questions
 
