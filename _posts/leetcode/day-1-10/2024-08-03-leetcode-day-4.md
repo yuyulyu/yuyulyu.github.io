@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 4 - Linked List
-description: 24 Swap Nodes in Pairs | 19 Remove Nth Node From End of List | 160 Intersection of Two Linked Lists | 142 Linked List Cycle II
+title: Leetcode Day 4 - Advanced Linked List Operations
+description: Focuses on more complex linked list problems, such as swapping nodes in pairs, removing nodes from specific positions, detecting intersections between two lists, and identifying cycles within a linked list, requiring advanced pointer manipulation and boundary case handling.
 author: yoyo
 date: 2024-08-03 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Linked List]
