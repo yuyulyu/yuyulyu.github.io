@@ -2,7 +2,7 @@
 title: Leetcode Day 16 - Binary Tree
 description: 530 Minimum Absolute Difference in BST | 501 Find Mode in Binary Search Tree | 236 Lowest Common Ancestor of a Binary Tree | 235 Lowest Common Ancestor of a Binary Search Tree
 author: yoyo
-date: 2024-08-17 23:07:00 +0800
+date: 2024-08-18 16:52:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: [binary tree]
 ---
