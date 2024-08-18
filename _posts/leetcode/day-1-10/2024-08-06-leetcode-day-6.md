@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 6 - Hash Table 
-description: 454 4Sum II |  383 Ransom Note | 15 3Sum | 18 4Sum
+title: Leetcode Day 6 - Advanced Hash Table 
+description: Focuses on more complex problems involving hash tables, such as multi-array sum combinations (4Sum II, 3Sum, 4Sum) and validating ransom note creation. These problems require more intricate use of hash maps to handle sums, counting, and combinations efficiently.
 author: yoyo
 date: 2024-08-06 14:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
