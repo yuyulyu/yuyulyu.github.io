@@ -28,7 +28,8 @@ Given the `root` of a Binary Search Tree (BST), return the minimum absolute diff
 
 **Example 1**
 
-[image]: minimum-absolute-difference-in-bst-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-16/minimum-absolute-difference-in-bst-example-1.jpeg)
+
 
 ```
 Input: root = [4,2,6,1,3]
@@ -37,7 +38,7 @@ Output: 1
 
 **Example 2**
 
-[image]: minimum-absolute-difference-in-bst-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-16/minimum-absolute-difference-in-bst-example-2.jpeg)
 
 ```
 Input: root = [1,0,48,null,null,12,49]
@@ -72,7 +73,7 @@ Assume a BST is defined as follows:
 
 **Example 1**
 
-[image]: find-mode-in-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-16/find-mode-in-binary-search-tree-example-1.jpeg)
 
 ```
 Input: root = [1,null,2,2]
@@ -127,7 +128,8 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 **Example 1**
 
-[image]: lowest-common-ancestor-of-a-binary-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-16/lowest-common-ancestor-of-a-binary-tree-example-1.png)
+
 
 ```
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 1
@@ -137,7 +139,7 @@ Explanation: The LCA of nodes 5 and 1 is 3.
 
 **Example 2**
 
-[image]: lowest-common-ancestor-of-a-binary-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-16/lowest-common-ancestor-of-a-binary-tree-example-2.png)
 
 ```
 Input: root = [3,5,1,6,2,0,8,null,null,7,4], p = 5, q = 4
@@ -167,7 +169,7 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 **Example 1**
 
-[image]: lowest-common-ancestor-of-a-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-16/lowest-common-ancestor-of-a-binary-search-tree-example-1.png)
 
 ```
 Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
@@ -177,7 +179,7 @@ Explanation: The LCA of nodes 2 and 8 is 6.
 
 **Example 2**
 
-[image]: lowest-common-ancestor-of-a-binary-search-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-16/lowest-common-ancestor-of-a-binary-search-tree-example-2.png)
 
 ```
 Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
