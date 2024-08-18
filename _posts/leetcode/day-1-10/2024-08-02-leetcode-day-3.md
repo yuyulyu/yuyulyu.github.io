@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 3 - Linked List
-description: 203  Remove Linked List Elements | 707 Design Linked List | 206 Reverse Linked List
+title: Leetcode Day 3 - Linked List Basics
+description: Introduces fundamental linked list operations. Topics include removing elements from a list, designing a custom linked list with core operations, and reversing a singly linked list, highlighting basic traversal and manipulation.
 author: yoyo
 date: 2024-08-02 15:50:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Linked List]
