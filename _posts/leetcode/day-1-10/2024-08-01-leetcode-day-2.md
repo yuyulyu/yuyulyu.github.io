@@ -1,6 +1,6 @@
 ---
 title: Leetcode Day 2 - Advanced Array Manipulation
-description: 209 Minimum Size Subarray Sum | 59 Spiral Matrix II
+description: More advanced array techniques, including sliding window to find the minimum subarray sum and generating a matrix in a spiral order, which requires managing more complex array structures.
 author: yoyo
 date: 2024-08-01 13:26:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Array]
