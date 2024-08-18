@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 13 - Binary Tree
-description: 110 Balanced Binary Tree | 257 Binary Tree Paths | 404 Sum of Left Leaves | 222 Count Complete Tree Nodes
+title: "Leetcode Day 13 - Binary Tree: Tree Balance and Paths"
+description: Examines binary tree balance (height-balanced trees), finding all root-to-leaf paths, summing left leaves, and counting nodes in complete trees.
 author: yoyo
 date: 2024-08-14 14:01:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
