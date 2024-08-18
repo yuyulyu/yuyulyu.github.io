@@ -1,6 +1,6 @@
 ---
 title: Leetcode Day 1 - Array Basics
-description: 074 Binary Search | 27 Remove Element
+description: Focuses on fundamental array operations. Covers binary search and basic element removal, emphasizing efficient searching and modifying arrays.
 author: yoyo
 date: 2024-07-31 22:56:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Array]
