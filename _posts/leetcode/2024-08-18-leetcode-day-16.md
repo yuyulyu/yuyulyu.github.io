@@ -16,7 +16,7 @@ tags: [binary tree]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [530 Minimum Absolute Difference in BST](#minimum-absolute-difference-in-bst)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [501 Find Mode in Binary Search Tree](#find-mode-in-binary-search-tree)                |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [236 Lowest Common Ancestor of a Binary Tree](#lowest-common-ancestor-of-a-binary-tree)               |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [236 Lowest Common Ancestor of a Binary Tree](#lowest-common-ancestor-of-a-binary-tree)               |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [235 Lowest Common Ancestor of a Binary Search Tree](#lowest-common-ancestor-of-a-binary-search-tree)                                       |        |      |
 
 ## Minimum Absolute Difference in BST
@@ -147,8 +147,6 @@ class Solution(object):
 > [Link to Leetcode question](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/)[^rnnfeol]
 {: .prompt-info }
 
-
-
 Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
 
 According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).”
@@ -184,6 +182,26 @@ Output: 1
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0236.二叉树的最近公共祖先.html)[^rnnfeolSolution].
+
+#### Python
+
+```python
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        if root is None:
+            return None
+        
+        if root == p or root == q:
+            return root
+
+        left = self.lowestCommonAncestor(root.left, p, q)
+        right = self.lowestCommonAncestor(root.right, p, q)
+
+        if left and right:
+            return root
+        
+        return left if left else right
+```
 
 ## Lowest Common Ancestor of a Binary Search Tree
 
