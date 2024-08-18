@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 7 - String
-description: 344 Reverse String | 541 Reverse String II | Kama 54 Replace Number
+title: Leetcode Day 7 - String Reversal and Manipulation Basics
+description: Description: Focuses on basic string reversal techniques and simple string manipulations. Includes reversing strings and segments of strings, along with replacing numbers in a string.
 author: yoyo
 date: 2024-08-07 14:05:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, String]
