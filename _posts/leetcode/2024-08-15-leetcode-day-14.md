@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 14 - Binary Tree
-description: 513 Find Bottom Left Tree Value | 112 Path Sum | 106 Construct Binary Tree from Inorder and Postorder Traversal
+title: "Leetcode Day 14 - Binary Tree: Path and Construction Problems"
+description: Focuses on finding specific nodes or values in binary trees, such as the bottom-left value and path sums. Also covers reconstructing binary trees from inorder and postorder traversal.
 author: yoyo
 date: 2024-08-15 16:27:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
