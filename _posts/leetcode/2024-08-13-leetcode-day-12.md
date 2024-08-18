@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 12 - Binary Tree
-description: 226 Invert Binary Tree | 101 Symmetric Tree | 104 Maximum Depth of Binary Tree | 111 Minimum Depth of Binary Tree
+title: Leetcode Day 12 - Binary Tree: Tree Structure and Depth
+description: Involves manipulating binary tree structures, such as inverting a binary tree and determining symmetry. Also covers finding the maximum and minimum depth of a tree.
 author: yoyo
 date: 2024-08-13 14:58:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
