@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 5 - Hash Table
-description: 242 Valid Anagram | 349 Intersection of Two Arrays | 202 Happy Number | 1 Two Sum
+title: Leetcode Day 5 - Hash Table Basics
+description: Covers the basics of hash table usage, including checking for anagrams, finding intersections of arrays, identifying happy numbers, and solving the classic two-sum problem. Focus is on efficient lookup and counting with hash tables.
 author: yoyo
 date: 2024-08-05 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode,Hash Table]
