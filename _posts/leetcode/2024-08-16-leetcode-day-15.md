@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 15 - Binary Tree
-description: 654 Maximum Binary Tree | 617 Merge Two Binary Trees | 700 Search in a Binary Search Tree | 98 Validate Binary Search Tree
+title: "Leetcode Day 15 - Binary Tree: Construction and Search Operations"
+description: Emphasizes constructing and manipulating binary trees, including building the maximum binary tree, merging trees, and performing search and validation operations in binary search trees (BST).
 author: yoyo
 date: 2024-08-16 14:19:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
