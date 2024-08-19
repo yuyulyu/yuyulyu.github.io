@@ -1,36 +1,56 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
-description: # <problem> | # <Problem> 
+title: Leetcode Day 18 - Binary Tree
+description: 669 Trim a Binary Search Tree | 108 Convert Sorted Array to Binary Search Tree | 538 Convert BST to Greater Tree
 author: yoyo
-date: 2042-08-03 23:07:00 +0800
+date: 2024-08-20 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
-tags: []
+tags: [binary tree]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-## <Topic> [^dmsxl] 
+## Binary Tree
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#the-link)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [669 Trim a Binary Search Tree](#trim-a-binary-search-tree)                                          |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [108 Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [538 Convert BST to Greater Tree](#convert-bst-to-greater-tree)               |        |      |
 
-# the link
 
-## <1st problem>
+## Trim a Binary Search Tree
 
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+> [Link to Leetcode question](https://leetcode.com/problems/trim-a-binary-search-tree/description/)[^tabst]
 {: .prompt-info }
 
+Given the `root` of a binary search tree and the lowest and highest boundaries as `low` and `high`, trim the tree so that all its elements lies in `[low, high]`. Trimming the tree should not change the relative structure of the elements that will remain in the tree (i.e., any node's descendant should remain a descendant). It can be proven that there is a unique answer.
+
+Return the root of the trimmed binary search tree. Note that the root may change depending on the given bounds.
+
+**Example 1**
+
+[image]: trim-a-binary-search-tree-example-1
+
+```
+Input: root = [1,0,2], low = 1, high = 2
+Output: [1,null,2]
+```
+
+**Example 2**
+
+[image]: trim-a-binary-search-tree-example-1
+
+```
+Input: root = [3,0,4,null,2,null,null,1], low = 1, high = 3
+Output: [3,2,null,1]
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0669.修剪二叉搜索树.html)[^tabstSolution].
+
 
 ### Similar Questions
 
@@ -40,24 +60,87 @@ tags: []
 | ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
 
 
-## <2nd problem>
+## Convert Sorted Array to Binary Search Tree
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+> [Link to Leetcode question](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)[^csatbst]
 {: .prompt-info }
 
+Given an integer array `nums` where the elements are sorted in ascending order, convert it to a 
+height-balanced binary search tree.
+
+**Example 1**
+
+[image]: convert-sorted-array-to-binary-search-tree-example-1
+
+```
+Input: nums = [-10,-3,0,5,9]
+Output: [0,-3,9,-10,null,5]
+Explanation: [0,-10,5,null,-3,null,9] is also accepted:
+```
+
+[image]: convert-sorted-array-to-binary-search-tree-example-2
+
+**Example 2**
+
+[image]: convert-sorted-array-to-binary-search-tree-example-3
+
+```
+Input: nums = [1,3]
+Output: [3,1]
+Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0108.将有序数组转换为二叉搜索树.html)[^csatbstSolution].
+
 
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [109 Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)[^csltbst] |        |      |
 
+
+## 538 Convert BST to Greater Tree
+
+> [Link to Leetcode question](https://leetcode.com/problems/convert-bst-to-greater-tree/description/)[^cbtgt]
+{: .prompt-info }
+
+Given the root of a Binary Search Tree (BST), convert it to a Greater Tree such that every key of the original BST is changed to the original key plus the sum of all keys greater than the original key in BST.
+
+As a reminder, a binary search tree is a tree that satisfies these constraints:
+
+- The left subtree of a node contains only nodes with keys less than the node's key.
+- The right subtree of a node contains only nodes with keys greater than the node's key.
+- Both the left and right subtrees must also be binary search trees.
+ 
+**Example 1**
+
+[image]: convert-bst-to-greater-tree-example-1
+
+```
+Input: root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
+Output: [30,36,21,36,35,26,15,null,null,null,33,null,null,null,8]
+```
+
+**Example 2**
+
+```
+Input: root = [0,null,1]
+Output: [1,null,1]
+```
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0538.把二叉搜索树转换为累加树.html)[^cbtgtSolution].
 
 
 ## Reference
-[^dmsxl]:
-
+[^tabst]:Leetcode-669 Trim a Binary Search Tree: [https://leetcode.com/problems/trim-a-binary-search-tree/description/](https://leetcode.com/problems/trim-a-binary-search-tree/description/).
+[^tabstSolution]:代码随想录-修剪二叉搜索树: [https://programmercarl.com/0669.修剪二叉搜索树.html](https://programmercarl.com/0669.修剪二叉搜索树.html).
+[^csatbst]:Leetcode-108 Convert Sorted Array to Binary Search Tree: [https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/description/)
+[^csatbstSolution]:代码随想录-将有序数组转换为二叉搜索树: [https://programmercarl.com/0108.将有序数组转换为二叉搜索树.html](https://programmercarl.com/0108.将有序数组转换为二叉搜索树.html).
+[^csltbst]:Leetcode-109. Convert Sorted List to Binary Search Tree: [https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/).
+[^cbtgt]:Leetcode-538 Convert BST to Greater Tree: [https://leetcode.com/problems/convert-bst-to-greater-tree/description/](https://leetcode.com/problems/convert-bst-to-greater-tree/description/).
+[^cbtgtSolution]:代码随想录-把二叉搜索树转换为累加树: [https://programmercarl.com/0538.把二叉搜索树转换为累加树.html](https://programmercarl.com/0538.把二叉搜索树转换为累加树.html).
