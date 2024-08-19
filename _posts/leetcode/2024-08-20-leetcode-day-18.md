@@ -30,7 +30,7 @@ Return the root of the trimmed binary search tree. Note that the root may change
 
 **Example 1**
 
-[image]: trim-a-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-18/trim-a-binary-search-tree-example-1.jpeg)
 
 ```
 Input: root = [1,0,2], low = 1, high = 2
@@ -39,7 +39,7 @@ Output: [1,null,2]
 
 **Example 2**
 
-[image]: trim-a-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-18/trim-a-binary-search-tree-example-2.jpeg)
 
 ```
 Input: root = [3,0,4,null,2,null,null,1], low = 1, high = 3
@@ -49,14 +49,6 @@ Output: [3,2,null,1]
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0669.修剪二叉搜索树.html)[^tabstSolution].
-
-
-### Similar Questions
-
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall] |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
 
 
 ## Convert Sorted Array to Binary Search Tree
@@ -69,7 +61,7 @@ height-balanced binary search tree.
 
 **Example 1**
 
-[image]: convert-sorted-array-to-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-18/convert-sorted-array-to-binary-search-tree-example-1.jpeg)
 
 ```
 Input: nums = [-10,-3,0,5,9]
@@ -77,12 +69,11 @@ Output: [0,-3,9,-10,null,5]
 Explanation: [0,-10,5,null,-3,null,9] is also accepted:
 ```
 
-[image]: convert-sorted-array-to-binary-search-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-18/convert-sorted-array-to-binary-search-tree-example-2.jpeg)
 
 **Example 2**
 
-[image]: convert-sorted-array-to-binary-search-tree-example-3
-
+![Desktop View](/assets/image/leetcode/leetcode-day-18/convert-sorted-array-to-binary-search-tree-example-3.jpeg)
 ```
 Input: nums = [1,3]
 Output: [3,1]
@@ -101,7 +92,7 @@ Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [109 Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/)[^csltbst] |        |      |
 
 
-## 538 Convert BST to Greater Tree
+## Convert BST to Greater Tree
 
 > [Link to Leetcode question](https://leetcode.com/problems/convert-bst-to-greater-tree/description/)[^cbtgt]
 {: .prompt-info }
@@ -116,7 +107,7 @@ As a reminder, a binary search tree is a tree that satisfies these constraints:
  
 **Example 1**
 
-[image]: convert-bst-to-greater-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-18/convert-bst-to-greater-tree-example-1.png)
 
 ```
 Input: root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]
