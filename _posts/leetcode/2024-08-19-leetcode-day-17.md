@@ -7,10 +7,6 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: [binary tree]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Binary Tree
 
 > [Link to note about binary tree](https://yuyulyu.github.io/posts/binary-tree/)
@@ -75,7 +71,7 @@ Notice that there may exist multiple valid ways for the insertion, as long as th
 
 **Example 1**
 
-[image]: insert-into-a-binary-search-tree-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-17/insert-into-a-binary-search-tree-example-1.jpeg)
 
 ```
 Input: root = [4,2,7,1,3], val = 5
@@ -83,7 +79,7 @@ Output: [4,2,7,1,3,5]
 Explanation: Another accepted tree is:
 ```
 
-[image]: insert-into-a-binary-search-tree-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-17/insert-into-a-binary-search-tree-example-2.jpeg)
 
 **Example 2**
 
@@ -118,7 +114,7 @@ Basically, the deletion can be divided into two stages:
  
 **Example 1**
 
-[image]: delete-node-in-a-bst-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-17/delete-node-in-a-bst-example-1.jpeg)
 
 ```
 Input: root = [5,3,6,2,4,null,7], key = 3
@@ -128,7 +124,7 @@ One valid answer is [5,4,6,2,null,null,7], shown in the above BST.
 Please notice that another valid answer is [5,2,6,null,4,null,7] and it's also accepted.
 ```
 
-[image]: delete-node-in-a-bst-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-17/delete-node-in-a-bst-example-2.jpeg)
 
 **Example 2**
 
