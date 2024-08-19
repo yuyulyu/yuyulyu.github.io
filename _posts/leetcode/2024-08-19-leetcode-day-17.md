@@ -62,7 +62,7 @@ Output: 2
 
 ## Insert into a Binary Search Tree
 
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^iiabst]
 {: .prompt-info }
 
 You are given the `root` node of a binary search tree (BST) and a `value` to insert into the tree. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
@@ -154,4 +154,5 @@ Output: []
 [^iiabstSolution]:代码随想录-二叉搜索树中的插入操作: [https://programmercarl.com/0701.二叉搜索树中的插入操作.html](https://programmercarl.com/0701.二叉搜索树中的插入操作.html).
 [^dniab]:Leetcode-450 Delete Node in a BST: [https://leetcode.com/problems/delete-node-in-a-bst/description/](https://leetcode.com/problems/delete-node-in-a-bst/description/).
 [^dniabSolution]:代码随想录-删除二叉搜索树中的节点: [https://programmercarl.com/0450.删除二叉搜索树中的节点.html](https://programmercarl.com/0450.删除二叉搜索树中的节点.html).
+[^iiabst]:Leetcode-701 Insert into a Binary Search Tree: [https://leetcode.com/problems/swap-nodes-in-pairs/description/](https://leetcode.com/problems/swap-nodes-in-pairs/description/).
 
