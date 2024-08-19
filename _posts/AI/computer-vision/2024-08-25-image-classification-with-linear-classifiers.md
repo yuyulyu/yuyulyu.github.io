@@ -7,4 +7,8 @@ categories: [Artificial Intelligence, Computer Vision]
 tags: [CV,KNN]
 ---
 
+## The imageclassification task
 
+## K-Nearest Neighbor (KNN) Classifier
+
+## Linear Classifier
