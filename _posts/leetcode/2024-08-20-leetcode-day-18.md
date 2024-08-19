@@ -14,7 +14,7 @@ tags: [binary tree]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [669 Trim a Binary Search Tree](#trim-a-binary-search-tree)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [669 Trim a Binary Search Tree](#trim-a-binary-search-tree)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [108 Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)                |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [538 Convert BST to Greater Tree](#convert-bst-to-greater-tree)               |✅      |      |
 
@@ -50,6 +50,24 @@ Output: [3,2,null,1]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0669.修剪二叉搜索树.html)[^tabstSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def trimBST(self, root, low, high):
+        if root is None:
+            return None
+
+        root.left = self.trimBST(root.left, low, high) 
+        root.right = self.trimBST(root.right, low, high)
+        
+        if root.val < low:
+            root = root.right
+        elif root.val > high:
+            root = root.left
+        
+        return root
+```
 
 ## Convert Sorted Array to Binary Search Tree
 
