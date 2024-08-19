@@ -14,9 +14,9 @@ tags: [binary tree]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [235 Lowest Common Ancestor of a Binary Search Tree](#lowest-common-ancestor-of-a-binary-search-tree)                                       |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [701 Insert into a Binary Search Tree](#insert-into-a-binary-search-tree)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [450 Delete Node in a BST](#delete-node-in-a-bst)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [235 Lowest Common Ancestor of a Binary Search Tree](#lowest-common-ancestor-of-a-binary-search-tree)        |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [701 Insert into a Binary Search Tree](#insert-into-a-binary-search-tree)                                  |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [450 Delete Node in a BST](#delete-node-in-a-bst)                                                          |        |      |
 
 
 ## Lowest Common Ancestor of a Binary Search Tree
@@ -59,6 +59,23 @@ Output: 2
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0235.二叉搜索树的最近公共祖先.html#算法公开课)[^lcaoabstSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def lowestCommonAncestor(self, root, p, q):
+        if root is None:
+            return None
+        
+        if (p.val <= root.val and q.val >= root.val) or (p.val >= root.val and q.val <= root.val):
+            return root
+        
+        if p.val <= root.val and q.val <= root.val:
+            return self.lowestCommonAncestor(root.left, p, q)
+        
+        if p.val >= root.val and q.val >= root.val:
+            return self.lowestCommonAncestor(root.right, p, q)
+```
 
 ## Insert into a Binary Search Tree
 
