@@ -8,10 +8,15 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: []
 ---
 
-> **Navigation Tips**
-> - Use the **search feature** in your browser (Ctrl + F or Command + F) to quickly find specific days or topics.
-> - Bookmark this dashboard for easy access in the future.
+> <details>
+>  <summary><strong>Navigation Tips</strong></summary>
+>  <ul>
+>    <li>Use the <strong>search feature</strong> in your browser (Ctrl + F or Command + F) to quickly find specific days or topics.> > </li>
+>    <li>Bookmark this dashboard for easy access in the future.</li>
+>  </ul>
+> </details>
 {: .prompt-info }
+
 
 | Period       | Link to the problem sets   | Related Notes |
 |--------------|-----------------|-----------------|------------------|
