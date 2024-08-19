@@ -15,7 +15,7 @@ tags: [binary tree]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [669 Trim a Binary Search Tree](#trim-a-binary-search-tree)                                          |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [108 Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)                |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [108 Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)                |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [538 Convert BST to Greater Tree](#convert-bst-to-greater-tree)               |✅      |      |
 
 
@@ -102,7 +102,24 @@ Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0108.将有序数组转换为二叉搜索树.html)[^csatbstSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def sortedArrayToBST(self, nums):
+        if len(nums) == 0:
+            return None    
+        if len(nums) == 1:
+            return TreeNode(nums[0])
+        
+        i = len(nums) // 2
+        node = TreeNode(nums[i])
+        node.left = self.sortedArrayToBST(nums[:i])
+        if i + 1 < len(nums):
+            node.right = self.sortedArrayToBST(nums[i+1:])
+        
+        return node
+```
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
