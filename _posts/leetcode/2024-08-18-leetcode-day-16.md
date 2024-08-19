@@ -17,7 +17,7 @@ tags: [binary tree]
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [530 Minimum Absolute Difference in BST](#minimum-absolute-difference-in-bst)                                          |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [501 Find Mode in Binary Search Tree](#find-mode-in-binary-search-tree)                |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [236 Lowest Common Ancestor of a Binary Tree](#lowest-common-ancestor-of-a-binary-tree)               |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [235 Lowest Common Ancestor of a Binary Search Tree](#lowest-common-ancestor-of-a-binary-search-tree)                                       |        |      |
+
 
 ## Minimum Absolute Difference in BST
 
@@ -203,47 +203,9 @@ class Solution(object):
         return left if left else right
 ```
 
-## Lowest Common Ancestor of a Binary Search Tree
 
-> [Link to Leetcode question](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)[^lcaoabst]
-{: .prompt-info }
 
-Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes in the BST.
 
-According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes `p` and `q` as the lowest node in `T` that has both `p` and `q` as descendants (where we allow a node to be a descendant of itself).” 
-
-**Example 1**
-
-![Desktop View](/assets/image/leetcode/leetcode-day-16/lowest-common-ancestor-of-a-binary-search-tree-example-1.png)
-
-```
-Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8
-Output: 6
-Explanation: The LCA of nodes 2 and 8 is 6.
-```
-
-**Example 2**
-
-![Desktop View](/assets/image/leetcode/leetcode-day-16/lowest-common-ancestor-of-a-binary-search-tree-example-2.png)
-
-```
-Input: root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4
-Output: 2
-Explanation: The LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
-```
-
-**Example 3**
-
-```
-Input: root = [2,1], p = 2, q = 1
-Output: 2
-```
-
-### Solution
-
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0235.二叉搜索树的最近公共祖先.html#算法公开课)[^lcaoabstSolution].
-
-[^lcaoabstSolution]:代码随想录-二叉搜索树的最近公共祖先: [https://programmercarl.com/0235.二叉搜索树的最近公共祖先.html#算法公开课](https://programmercarl.com/0235.二叉搜索树的最近公共祖先.html#算法公开课).
 ### Similar Questions
 
 ## Reference
@@ -254,6 +216,5 @@ Output: 2
 [^fmibstSolution]:代码随想录-二叉搜索树中的众数: [https://programmercarl.com/0501.二叉搜索树中的众数.html](https://programmercarl.com/0501.二叉搜索树中的众数.html).
 [^lcaoabt]:Leetcode-236 Lowest Common Ancestor of a Binary Tree: [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/).
 [^rnnfeolSolution]:代码随想录-二叉树的最近公共祖先: [https://programmercarl.com/0236.二叉树的最近公共祖先.html](https://programmercarl.com/0236.二叉树的最近公共祖先.html).
-[^lcaoabst]:Leetcode-235 Lowest Common Ancestor of a Binary Search Tree: [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/).
 [^rnnfeol]:Leetcode-236 Lowest Common Ancestor of a Binary Tree: [https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/description/).
 
