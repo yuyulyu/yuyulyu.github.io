@@ -16,8 +16,8 @@ tags: [binary tree]
   ```python
   def hello_world():
       print("Hello, world!")
-</details>
 ```
+</details>
 
 ## Binary Tree
 
