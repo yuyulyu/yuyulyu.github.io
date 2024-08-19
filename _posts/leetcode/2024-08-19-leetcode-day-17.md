@@ -15,8 +15,8 @@ tags: [binary tree]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [235 Lowest Common Ancestor of a Binary Search Tree](#lowest-common-ancestor-of-a-binary-search-tree)        |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [701 Insert into a Binary Search Tree](#insert-into-a-binary-search-tree)                                  |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [450 Delete Node in a BST](#delete-node-in-a-bst)                                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [701 Insert into a Binary Search Tree](#insert-into-a-binary-search-tree)                                  |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [450 Delete Node in a BST](#delete-node-in-a-bst)                                                          |✅      |      |
 
 
 ## Lowest Common Ancestor of a Binary Search Tree
@@ -79,7 +79,7 @@ class Solution(object):
 
 ## Insert into a Binary Search Tree
 
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^iiabst]
+> [Link to Leetcode question](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/)[^iiabst]
 {: .prompt-info }
 
 You are given the `root` node of a binary search tree (BST) and a `value` to insert into the tree. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
@@ -116,7 +116,21 @@ Output: [4,2,7,1,3,5]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0701.二叉搜索树中的插入操作.html)[^iiabstSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def insertIntoBST(self, root, val):
+        if root is None:
+            return TreeNode(val)
+        
+        if val < root.val:
+            root.left = self.insertIntoBST(root.left, val)
+            return root
+        
+        root.right = self.insertIntoBST(root.right, val)
+        return root
+```
 
 ## Delete Node in a BST
 
@@ -162,7 +176,83 @@ Output: []
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0450.删除二叉搜索树中的节点.html)[^dniabSolution].
 
+The deletion process involves handling three distinct cases once the node to be deleted is located.
 
+<ins>**Case **1: Node is a Leaf (No Child Nodes)</ins>
+
+If the node has no left or right child, we simply delete this node by returning `None`. T
+
+```python
+if not root.left and not root.right:
+    return None
+```
+
+<ins>**Case 2**: Node has One Child</ins>
+
+If the node to be deleted has only one child, we replace the node with its single child. This is done by returning the child node, which will take the place of the deleted node.
+
+- **Left Child Only**: If the node has only a left child, return the left child.
+- **Right Child Only**: If the node has only a right child, return the right child.
+
+```python
+if not root.left:
+    return root.right
+elif not root.right:
+    return root.left
+```
+
+<ins>**Case 3**: Node has Two Children</ins>
+
+If the node has two children, this is the most complex case. To maintain the BST properties, we need to:
+
+1. Find the smallest node in the right subtree (in-order successor). This node is guaranteed to be larger than all nodes in the left subtree and smaller than all other nodes in the right subtree.
+
+  ```python
+  min_larger_node = self.findMin(root.right)
+  ```
+
+2. Replace the value of the node to be deleted with the value of the in-order successor. This ensures that the BST property remains intact.
+
+  ```python
+  root.val = min_larger_node.val
+  ```
+
+3. Recursively delete the in-order successor from the right subtree since its value has been moved to the current node. This step ensures that the tree does not contain duplicate values.
+   
+   ```python
+   root.right = self.deleteNode(root.right, min_larger_node.val)
+   ```
+
+#### Complete Code
+
+**Python**
+
+```python
+class Solution(object):
+    def deleteNode(self, root, key):
+        if not root:
+            return None
+        
+        if key < root.val:
+            root.left = self.deleteNode(root.left, key)
+        elif key > root.val:
+            root.right = self.deleteNode(root.right, key)
+        else:
+            if not root.left:
+                return root.right
+            elif not root.right:
+                return root.left
+            
+            min_larger_node = self.findMin(root.right)
+            root.val = min_larger_node.val
+            root.right = self.deleteNode(root.right, min_larger_node.val)
+        return root
+    
+    def findMin(self, node):
+        while node.left:
+            node = node.left
+        return node
+```
 
 ## Reference
 [^lcaoabstSolution]:代码随想录-二叉搜索树的最近公共祖先: [https://programmercarl.com/0235.二叉搜索树的最近公共祖先.html#算法公开课](https://programmercarl.com/0235.二叉搜索树的最近公共祖先.html#算法公开课).
@@ -171,5 +261,4 @@ Output: []
 [^iiabstSolution]:代码随想录-二叉搜索树中的插入操作: [https://programmercarl.com/0701.二叉搜索树中的插入操作.html](https://programmercarl.com/0701.二叉搜索树中的插入操作.html).
 [^dniab]:Leetcode-450 Delete Node in a BST: [https://leetcode.com/problems/delete-node-in-a-bst/description/](https://leetcode.com/problems/delete-node-in-a-bst/description/).
 [^dniabSolution]:代码随想录-删除二叉搜索树中的节点: [https://programmercarl.com/0450.删除二叉搜索树中的节点.html](https://programmercarl.com/0450.删除二叉搜索树中的节点.html).
-[^iiabst]:Leetcode-701 Insert into a Binary Search Tree: [https://leetcode.com/problems/swap-nodes-in-pairs/description/](https://leetcode.com/problems/swap-nodes-in-pairs/description/).
-
+[^iiabst]:Leetcode-701 Insert into a Binary Search Tree: [https://leetcode.com/problems/insert-into-a-binary-search-tree/description/](https://leetcode.com/problems/insert-into-a-binary-search-tree/description/).
