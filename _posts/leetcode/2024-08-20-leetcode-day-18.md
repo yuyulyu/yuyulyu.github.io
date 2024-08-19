@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 18 - Binary Tree
-description: 669 Trim a Binary Search Tree | 108 Convert Sorted Array to Binary Search Tree | 538 Convert BST to Greater Tree
+title: "Leetcode Day 18 - Binary Search Tree: Transformations and Conversions"
+description: Examines BST transformations, such as trimming a tree within a given range, converting a sorted array into a balanced BST, and converting a BST to a greater tree by modifying its node values.
 author: yoyo
 date: 2024-08-20 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
