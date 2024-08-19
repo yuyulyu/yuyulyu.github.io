@@ -16,7 +16,7 @@ tags: [binary tree]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [669 Trim a Binary Search Tree](#trim-a-binary-search-tree)                                          |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [108 Convert Sorted Array to Binary Search Tree](#convert-sorted-array-to-binary-search-tree)                |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [538 Convert BST to Greater Tree](#convert-bst-to-greater-tree)               |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [538 Convert BST to Greater Tree](#convert-bst-to-greater-tree)               |✅      |      |
 
 
 ## Trim a Binary Search Tree
@@ -125,6 +125,26 @@ Output: [1,null,1]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0538.把二叉搜索树转换为累加树.html)[^cbtgtSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def convertBST(self, root):
+        
+        def getSum(node, s):
+            if node is None:
+                return 0
+
+            new_s = s + node.val
+            new_s += getSum(node.right,s)
+            node.val = new_s
+            new_s += getSum(node.left,new_s)
+
+            return new_s - s
+        
+        getSum(root, 0)
+        return root
+```
 
 ## Reference
 [^tabst]:Leetcode-669 Trim a Binary Search Tree: [https://leetcode.com/problems/trim-a-binary-search-tree/description/](https://leetcode.com/problems/trim-a-binary-search-tree/description/).
