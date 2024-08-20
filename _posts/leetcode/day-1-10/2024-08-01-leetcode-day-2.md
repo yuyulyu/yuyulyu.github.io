@@ -9,7 +9,7 @@ tags: [array, sliding window]
 
 ## Array 2[^dmsxl]
 
-| Diff                                                                                                 | Problem                                                                                       | Python | Java |
+| Diff                                                                                                 | Problem                                                                                       | Python | C++ |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum)                                    | ✅     | ✅   |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [59 Spiral Matrix II](#spiral-matrix-ii)                                                       | ✅     |      |
@@ -47,13 +47,9 @@ Input: target = 11, nums = [1,1,1,1,1,1,1,1]
 Output: 0
 ```
 
-### Note 
-**Sliding Window**
-
-
 ### Solution [^bsssSolution]
 
-**Python**
+#### Python
 ```python
 class Solution(object):
     def minSubArrayLen(self, target, nums):
@@ -75,8 +71,36 @@ class Solution(object):
         
         return min_len
 ```
+#### C++
 
-**Java**
+```c++
+class Solution {
+public:
+    int minSubArrayLen(int target, vector<int>& nums) {
+        int slow = 0;
+        int fast = 0;
+        int sum = 0;
+        int minLen = 100001;
+
+        while(fast < nums.size()){
+            sum += nums[fast];
+            if (sum >= target){
+                while(slow <= fast){
+                    if(fast - slow + 1 < minLen)minLen = fast - slow + 1;
+                    sum -= nums[slow];
+                    slow ++;
+                    if(sum < target)break;
+                }
+            }
+            fast++;
+        }
+        if (minLen == 100001)return 0;
+        return minLen;
+    }
+};
+```
+
+#### Java
 
 ```java
 class Solution {
@@ -135,7 +159,7 @@ Output: [[1]]
 
 ### Solution
 
-**Python**
+#### Python
 
 ```python
 class Solution(object):
@@ -175,6 +199,52 @@ class Solution(object):
             nums[mid][mid] = num
         
         return nums
+```
+
+#### C++
+
+```c++
+class Solution {
+public:
+    vector<vector<int>> generateMatrix(int n) {
+        int colStart = 0; 
+        int rowStart = 0; 
+        int colEnd = n - 1; 
+        int rowEnd = n - 1; 
+        int num = 1; 
+
+        vector<vector<int>> grid(n, vector<int>(n)); 
+
+        while (rowStart <= rowEnd && colStart <= colEnd) {
+            for (int i = colStart; i <= colEnd; i++) {
+                grid[rowStart][i] = num++;
+            }
+            rowStart++; 
+
+        
+            for (int i = rowStart; i <= rowEnd; i++) {
+                grid[i][colEnd] = num++;
+            }
+            colEnd--;
+
+            if (rowStart <= rowEnd) {
+                for (int i = colEnd; i >= colStart; i--) {
+                    grid[rowEnd][i] = num++;
+                }
+                rowEnd--;
+            }
+
+            if (colStart <= colEnd) {
+                for (int i = rowEnd; i >= rowStart; i--) {
+                    grid[i][colStart] = num++;
+                }
+                colStart++; 
+            }
+        }
+
+        return grid;
+    }
+};
 ```
 
 ### Similar Questions
