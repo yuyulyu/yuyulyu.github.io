@@ -205,7 +205,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 ### Solution
 A detail solution explaination[^removeElementSolution] can be found [here](https://programmercarl.com/0027.移除元素.html#思路)
 
-**Python**
+#### Python
  - <ins>Brute Force</ins>
    - Time complexity: O(n<sup>2</sup>)
    - Memory complexity: O(1)
@@ -240,8 +240,26 @@ A detail solution explaination[^removeElementSolution] can be found [here](https
         while len(nums) > slow_index:
             nums.pop()
   ```
+#### C++
 
-**Java**
+```c++
+class Solution {
+public:
+    int removeElement(vector<int>& nums, int val) {
+        int slow = 0;
+        
+        for(int fast = 0; fast < nums.size();fast++){
+            if(nums[fast] != val){
+                nums[slow] = nums[fast];
+                slow++;
+            }
+        }
+        return slow;
+    }
+}
+```
+
+#### Java
   -<ins>Two-Pointers</ins>
 ```java
 class Solution {
