@@ -9,7 +9,7 @@ tags: [array, binary search, double pointers]
 
 ## Array 1[^dmsxl]
 
-| Diff                                                                                                 | Problem                                                                                       | Python | Java |
+| Diff                                                                                                 | Problem                                                                                       | Python | C++ |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [074 Binary Search](#binary-search)  | ✅          | ✅          |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [27 Remove Element](#remove-element) | ✅          | ✅          |
@@ -71,7 +71,7 @@ A detail solution explaination[^binarySearchSolution] can be found [here](https:
   * Time complexity: O(log n)
   * Memory complexity: O(1)
 
-**Python**
+#### Python
 ```python
 class Solution(object):
     def search(self, nums, target):
@@ -89,7 +89,32 @@ class Solution(object):
                 
         return -1
 ```
-**Java**
+
+#### C++
+
+```c++
+class Solution {
+public:
+    int search(vector<int>& nums, int target) {
+        int left = 0;
+        int right = nums.size() - 1;
+        while(left <= right){
+            int mid = left + (right - left) / 2;
+            if(nums[mid] == target) return mid;
+            if(nums[mid] < target){
+                left = mid + 1;
+            }
+            else{
+                right = mid - 1;
+            }
+        }
+        return -1;
+    }
+};
+```
+
+
+#### Java
 ```java
 class Solution {
     public int search(int[] nums, int target) {
