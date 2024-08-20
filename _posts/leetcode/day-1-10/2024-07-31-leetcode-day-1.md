@@ -260,7 +260,7 @@ public:
 ```
 
 #### Java
-  -<ins>Two-Pointers</ins>
+
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {
