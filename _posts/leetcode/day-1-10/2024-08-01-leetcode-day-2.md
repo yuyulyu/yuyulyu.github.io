@@ -12,7 +12,7 @@ tags: [array, sliding window]
 | Diff                                                                                                 | Problem                                                                                       | Python | C++ |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [209 Minimum Size Subarray Sum](#minimum-size-subarray-sum)                                    | ✅     | ✅   |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [59 Spiral Matrix II](#spiral-matrix-ii)                                                       | ✅     |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [59 Spiral Matrix II](#spiral-matrix-ii)                                                       | ✅     | ✅   |
 
 
 | Additional ACM Questions                                    |   Python   |   Java     |
