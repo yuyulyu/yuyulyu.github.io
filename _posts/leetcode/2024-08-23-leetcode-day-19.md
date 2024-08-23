@@ -2,7 +2,7 @@
 title: Leetcode Day 19 - Backtracking Algorithm
 description:  77 Combinations | 216 Combination Sum III |17 Letter Combinations of a Phone Number
 author: yoyo
-date: 20424-08-23 23:47:00 +0800
+date: 2024-08-23 23:47:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: [backtracking]
 ---
