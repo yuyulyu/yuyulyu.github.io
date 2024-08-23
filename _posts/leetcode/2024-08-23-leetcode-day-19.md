@@ -133,7 +133,8 @@ Given a string containing digits from `2-9` inclusive, return all possible lette
 
 A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
-[image]: letter-combinations-of-a-phone-number-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-19/letter-combinations-of-a-phone-number-example-1,png)
+
 
 **Example 1**
 
