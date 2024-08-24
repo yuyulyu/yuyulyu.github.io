@@ -10,9 +10,9 @@ tags: [backtracking]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [93 Restore IP Addresses](#restore-ip-addresses)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [78 Subsets](#subsets)                |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [90 Subsets II](#subsets-ii)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [93 Restore IP Addresses](#restore-ip-addresses)                                          |✅      |       |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [78 Subsets](#subsets)                                                                       |        |       |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [90 Subsets II](#subsets-ii)                                                              |        |       |
 
 ## Restore IP Addresses
 
@@ -50,6 +50,52 @@ Output: ["1.0.10.23","1.0.102.3","10.1.0.23","10.10.2.3","101.0.2.3"]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0093.复原IP地址.html)[^riaSolution].
 
+#### Python
+
+My first solution:
+
+```python
+class Solution(object):
+    def restoreIpAddresses(self, s):
+        result = []
+        s = list(s)
+        if len(s) > 12 or len(s) < 4:
+            return []
+        self.backtracking(0,"","",0,s,result)
+        return result
+
+    
+    def backtracking(self,i,ip,num,dotCount,s,result):
+        print(ip, num, dotCount, i)
+        if dotCount == 3:
+            if i == len(s):
+                if num != "" and int(num) <= 255:
+                    if ip not in result:
+                        result.append(ip[:])
+                        print(result)
+                return
+            if i == len(s) - 1:
+                if ip + s[i] not in result:
+                    result.append(ip[:] + s[i])
+            if i > len(s) - 5 and s[i] != '0':
+                while(i < len(s)):
+                    num += s[i]
+                    i += 1
+                ip += num
+                self.backtracking(i, ip, num, dotCount, s,result)
+            return
+        
+        if i >= len(s):
+            return
+        
+        if num == "" and s[i] == '0':
+            self.backtracking(i + 1, ip + '0.', '', dotCount + 1, s,result)
+            return
+        
+        if int(num + s[i]) <= 255:
+            self.backtracking(i + 1, ip + s[i], num + s[i], dotCount, s,result)
+            self.backtracking(i + 1, ip + s[i] + '.', '', dotCount + 1, s,result)
+```
 
 
 ## Subsets
