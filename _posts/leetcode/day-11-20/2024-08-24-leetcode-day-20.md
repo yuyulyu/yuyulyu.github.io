@@ -11,7 +11,7 @@ tags: [backtracking]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [39 Combination Sum](#combination-sum)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [39 Combination Sum](#combination-sum)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [40 Combination Sum II](#combination-sum-ii)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [131 Palindrome Partitioning](#palindrome-partitioning)               |        |      |
 
@@ -56,6 +56,30 @@ Output: []
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0039.组合总和.html)[^csSolution].
+
+
+#### Python
+
+```python
+class Solution(object):
+    def combinationSum(self, candidates, target):
+        result = []
+        candidates.sort()
+
+        def comb(group, index, target):
+            if len(candidates) == 0 or candidates[0] > target:
+                return
+            
+            if target in candidates[index:]:
+                result.append(group + [target])
+            
+            for i in range(index, len(candidates)):
+                if candidates[i] < target:
+                    comb(group + [candidates[i]], i, target - candidates[i])
+        
+        comb([],0, target)
+        return result
+```
 
 
 ## Combination Sum II
