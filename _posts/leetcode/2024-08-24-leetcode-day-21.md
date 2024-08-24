@@ -11,8 +11,8 @@ tags: [backtracking]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [93 Restore IP Addresses](#restore-ip-addresses)                                          |✅      |       |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [78 Subsets](#subsets)                                                                       |        |       |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [90 Subsets II](#subsets-ii)                                                              |        |       |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [78 Subsets](#subsets)                                                                       |✅      |       |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [90 Subsets II](#subsets-ii)                                                              |✅      |       |
 
 ## Restore IP Addresses
 
@@ -125,6 +125,25 @@ Output: [[],[0]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0078.子集.html)[^subsetsSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def subsets(self, nums):
+        result = []
+
+        def backtracking(index, subset):
+            result.append(subset[:])
+        
+            for i in range(index,len(nums)):
+                subset.append(nums[i])
+                backtracking(i + 1, subset)
+                subset.pop()
+        
+        backtracking(0, [])
+        return result
+```
+
 
 
 ## Subsets II
@@ -154,7 +173,27 @@ Output: [[],[0]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0090.子集II.html)[^siiSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def subsetsWithDup(self, nums):
+        result = []
+        nums.sort()
+
+        def backtracking(index, subset):
+            result.append(subset[:]) 
+            
+            for i in range(index, len(nums)):
+                if i > index and nums[i] == nums[i - 1]:
+                    continue
+                subset.append(nums[i])
+                backtracking(i + 1, subset)
+                subset.pop() 
+
+        backtracking(0, [])
+        return result
+```
 
 ### Similar Questions
 
