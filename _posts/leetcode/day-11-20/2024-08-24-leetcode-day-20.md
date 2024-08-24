@@ -12,7 +12,7 @@ tags: [backtracking]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [39 Combination Sum](#combination-sum)                                          |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [40 Combination Sum II](#combination-sum-ii)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [40 Combination Sum II](#combination-sum-ii)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [131 Palindrome Partitioning](#palindrome-partitioning)               |        |      |
 
 
@@ -120,6 +120,38 @@ Output:
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0040.组合总和II.html)[^csiiSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def combinationSum2(self, candidates, target):
+        s = sum(candidates)
+        if s < target:
+            return []
+        if s == target:
+            return [candidates]
+
+        candidates.sort()
+        result = []
+
+        def comb(group, index, candidates, target):
+            if target == 0 and group not in result:
+                result.append(group)
+                return
+
+            if len(candidates) == index or candidates[index] > target:
+                return
+            
+            for i in range(index,len(candidates)):
+                if i > index and candidates[i] == candidates[i - 1]:
+                    continue
+                if candidates[i] > target:
+                    break
+                comb(group + [candidates[i]], i + 1, candidates, target - candidates[i])
+        
+        comb([],0, candidates, target)
+        return result
+```
 
 ### Similar Questions
 
