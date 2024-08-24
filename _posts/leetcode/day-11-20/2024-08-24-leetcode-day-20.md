@@ -2,7 +2,7 @@
 title: Leetcode Day 20 Backtracking Algorithm
 description: 39 Combination Sum | 40 Combination Sum II | 131 Palindrome Partitioning
 author: yoyo
-date: 2024-08-24 23:07:00 +0800
+date: 2024-08-24 15:03:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: [backtracking]
 ---
