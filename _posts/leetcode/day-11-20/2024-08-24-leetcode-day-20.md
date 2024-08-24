@@ -13,7 +13,7 @@ tags: [backtracking]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [39 Combination Sum](#combination-sum)                                          |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [40 Combination Sum II](#combination-sum-ii)                |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [131 Palindrome Partitioning](#palindrome-partitioning)               |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [131 Palindrome Partitioning](#palindrome-partitioning)               |✅      |      |
 
 
 ## Combination Sum
@@ -186,6 +186,39 @@ Output: [["a"]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0131.分割回文串.html)[^ppSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def partition(self, s):
+        result = []
+        isPalindrome = [[False] * len(s) for _ in range(len(s))]  # 初始化isPalindrome矩阵
+        self.computePalindrome(s, isPalindrome)
+        self.backtracking(s, 0, [], result, isPalindrome)
+        return result
+
+    def backtracking(self, s, startIndex, path, result, isPalindrome):
+        if startIndex >= len(s):
+            result.append(path[:])
+            return
+
+        for i in range(startIndex, len(s)):
+            if isPalindrome[startIndex][i]:   # 是回文子串
+                substring = s[startIndex:i + 1]
+                path.append(substring)
+                self.backtracking(s, i + 1, path, result, isPalindrome)  # 寻找i+1为起始位置的子串
+                path.pop()           # 回溯过程，弹出本次已经添加的子串
+
+    def computePalindrome(self, s, isPalindrome):
+        for i in range(len(s) - 1, -1, -1):  # 需要倒序计算，保证在i行时，i+1行已经计算好了
+            for j in range(i, len(s)):
+                if j == i:
+                    isPalindrome[i][j] = True
+                elif j - i == 1:
+                    isPalindrome[i][j] = (s[i] == s[j])
+                else:
+                    isPalindrome[i][j] = (s[i] == s[j] and isPalindrome[i+1][j-1])
+```
 
 
 ### Similar Questions
