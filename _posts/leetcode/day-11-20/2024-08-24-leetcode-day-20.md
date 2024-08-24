@@ -192,32 +192,33 @@ Output: [["a"]]
 class Solution(object):
     def partition(self, s):
         result = []
-        isPalindrome = [[False] * len(s) for _ in range(len(s))]  # 初始化isPalindrome矩阵
-        self.computePalindrome(s, isPalindrome)
-        self.backtracking(s, 0, [], result, isPalindrome)
+        isPalindrome = [[False] * len(s) for _ in range(len(s))]
+        isPalindrome = self.computePalindrome(isPalindrome,s)
+        self.backTracking([], 0, s, isPalindrome, result)
         return result
 
-    def backtracking(self, s, startIndex, path, result, isPalindrome):
-        if startIndex >= len(s):
-            result.append(path[:])
+    def backTracking(self, partition, left, s, isPalindrome, result):
+        if left == len(s):
+            result.append(partition[:])
             return
+        
+        for right in range(left,len(s)):
+            if isPalindrome[left][right]:
+                partition.append(s[left:right + 1])
+                self.backTracking(partition, right + 1, s, isPalindrome, result)
+                partition.pop()
+    
 
-        for i in range(startIndex, len(s)):
-            if isPalindrome[startIndex][i]:   # 是回文子串
-                substring = s[startIndex:i + 1]
-                path.append(substring)
-                self.backtracking(s, i + 1, path, result, isPalindrome)  # 寻找i+1为起始位置的子串
-                path.pop()           # 回溯过程，弹出本次已经添加的子串
-
-    def computePalindrome(self, s, isPalindrome):
-        for i in range(len(s) - 1, -1, -1):  # 需要倒序计算，保证在i行时，i+1行已经计算好了
-            for j in range(i, len(s)):
-                if j == i:
-                    isPalindrome[i][j] = True
-                elif j - i == 1:
-                    isPalindrome[i][j] = (s[i] == s[j])
+    def computePalindrome(self, isPalindrome, s):
+        for left in range(len(s) - 1,-1,-1):
+            for right in range(left, len(s)):
+                if left == right:
+                    isPalindrome[left][right] = True
+                elif right - left == 1:
+                    isPalindrome[left][right] = (s[left] == s[right])
                 else:
-                    isPalindrome[i][j] = (s[i] == s[j] and isPalindrome[i+1][j-1])
+                    isPalindrome[left][right] = (s[left] == s[right] and isPalindrome[left + 1][right - 1])
+        return isPalindrome
 ```
 
 
