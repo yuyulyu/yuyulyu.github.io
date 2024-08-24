@@ -11,9 +11,9 @@ tags: [backtracking]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [77 Combinations](#combinations)                                                    |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [216 Combination Sum III](#combination-sum-iii)                                             |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [17 Letter Combinations of a Phone Number](#letter-combinations-of-a-phone-number)            |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [77 Combinations](#combinations)                                                    |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [216 Combination Sum III](#combination-sum-iii)                                             |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [17 Letter Combinations of a Phone Number](#letter-combinations-of-a-phone-number)            |✅      |      |
 
 ## Combinations
 
@@ -123,6 +123,29 @@ Using 4 different numbers in the range [1,9], the smallest sum we can get is 1+2
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0216.组合总和III.html)[^csiiiSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def combinationSum3(self, k, n):
+        nums = [i for i in range(1,10)]
+        result = []
+
+        def comb(group,nums, k, n):
+            if len(nums) == 0 or nums[0] > n:
+                return
+            
+            if k == 1 and n in nums:
+                result.append(group + [n])
+            
+            for i in range(len(nums)):
+                if nums[i] > n:
+                    break
+                comb(group + [nums[i]], nums[i+1:],k - 1, n - nums[i])
+            
+        comb([],nums,k,n)
+        return result
+```
 
 ## Letter Combinations of a Phone Number
 
@@ -161,6 +184,30 @@ Output: ["a","b","c"]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0017.电话号码的字母组合.html)[^lcoapnSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def letterCombinations(self, digits):
+
+        phone = {'2':['a','b','c'],'3':['d','e','f'],'4':['g','h','i'],'5':['j','k','l'],'6':['m','n','o'],'7':['p','q','r','s'],'8':['t','u','v'],'9':['w','x','y','z']}
+        result = []
+        nums = list(digits)
+
+        def comb(i,string):
+            if len(nums) == i:
+                return
+
+            if len(nums) == i + 1:
+                for c in phone[nums[i]]:
+                    result.append(string + c)
+            
+            for c in phone[nums[i]]:
+                comb(i + 1,string + c)
+        
+        comb(0,"")
+        return result
+```
 
 
 ### Similar Questions
