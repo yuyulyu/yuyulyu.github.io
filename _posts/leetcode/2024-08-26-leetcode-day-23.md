@@ -1,10 +1,10 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
-description: # <problem> | # <Problem> 
+title: Leetcode Day 23 - Greedy Algorithm
+description: 
 author: yoyo
 date: 2042-08-03 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
-tags: []
+tags: [greedy algorithm]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
