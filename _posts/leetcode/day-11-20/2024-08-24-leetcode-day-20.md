@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 20 Backtracking Algorithm
+title: "Leetcode Day 20 - Backtracking: Cutting"
 description: 39 Combination Sum | 40 Combination Sum II | 131 Palindrome Partitioning
 author: yoyo
 date: 2024-08-24 15:03:00 +0800
