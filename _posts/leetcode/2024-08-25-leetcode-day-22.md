@@ -3,7 +3,7 @@ title: Leetcode Day 22 - Backtracking Algorithm
 description: 491 Non-decreasing Subsequences | 46 Permutations | 47 Permutations II | 332 Reconstruct Itinerary | 51 N-Queens | 37 Sudoku Solver
 
 author: yoyo
-date: 2024-08-25 23:07:00 +0800
+date: 2024-08-25 13:50:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: [backtracking]
 ---
