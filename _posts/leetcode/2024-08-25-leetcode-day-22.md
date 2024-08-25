@@ -274,12 +274,11 @@ Explanation: The input board is shown above and the only valid solution is shown
 [^nds]:Leetcode-491 Non-decreasing Subsequences: [https://leetcode.com/problems/non-decreasing-subsequences/description/](https://leetcode.com/problems/non-decreasing-subsequences/description/).
 [^ndsSolution]:代码随想录-递增子序列: [https://programmercarl.com/0491.递增子序列.html](https://programmercarl.com/0491.递增子序列.html)
 [^mlopc]:Leetcode-646 Maximum Length of Pair Chain: [https://leetcode.com/problems/maximum-length-of-pair-chain/](https://leetcode.com/problems/maximum-length-of-pair-chain/).
-[^permu]:Leetcode-46 Permutations: [https://leetcode.com/problems/permutations/description/](https://leetcode.com/problems/permutations/description/)
+[^permu]:Leetcode-46 Permutations: [https://leetcode.com/problems/permutations/description/](https://leetcode.com/problems/permutations/description/).
 [^permuSolution]:代码随想录-全排列: [https://programmercarl.com/0046.全排列.html](https://programmercarl.com/0046.全排列.html)
 [^pii]:Leetcode-47 Permutations II: [https://leetcode.com/problems/permutations-ii/description/](https://leetcode.com/problems/permutations-ii/description/).
 [^piiSolution]:代码随想录-全排列II: [https://programmercarl.com/0047.全排列II.html](https://programmercarl.com/0047.全排列II.html).
-[^np]:Leetcode-31 Next Permutation: [https://leetcode.com/problems/next-permutation/description/
-](https://leetcode.com/problems/next-permutation/description/).
+[^np]:Leetcode-31 Next Permutation: [https://leetcode.com/problems/next-permutation/description/](https://leetcode.com/problems/next-permutation/description/).
 [^ps]:Leetcode-60 Permutation Sequence: [https://leetcode.com/problems/permutation-sequence/](https://leetcode.com/problems/permutation-sequence/).
 [^rl]:Leetcode-332 Reconstruct Itinerary: [https://leetcode.com/problems/reconstruct-itinerary/description/](https://leetcode.com/problems/reconstruct-itinerary/description/).
 [^rlSolution]:代码随想录-重新安排行程: [https://programmercarl.com/0332.重新安排行程.html](https://programmercarl.com/0332.重新安排行程.html).
