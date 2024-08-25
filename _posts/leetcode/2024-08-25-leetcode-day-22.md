@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 22 - Backtracking Algorithm
+title: "Leetcode Day 22 - Backtracking: Permutation & Chessboard"
 description: 491 Non-decreasing Subsequences | 46 Permutations | 47 Permutations II | 332 Reconstruct Itinerary | 51 N-Queens | 37 Sudoku Solver
 
 author: yoyo
