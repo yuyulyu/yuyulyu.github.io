@@ -138,7 +138,7 @@ You may assume all tickets form at least one valid itinerary. You must use all t
 
 **Example 1**
 
-[image]: reconstruct-itinerary-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-22/reconstruct-itinerary-example-1.jpeg)
 
 ```
 Input: tickets = [["MUC","LHR"],["JFK","MUC"],["SFO","SJC"],["LHR","SFO"]]
@@ -147,7 +147,7 @@ Output: ["JFK","MUC","LHR","SFO","SJC"]
 
 **Example 2**
 
-[image]: reconstruct-itinerary-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-22/reconstruct-itinerary-example-2.jpeg)
 
 ```
 Input: tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
@@ -182,7 +182,7 @@ Each solution contains a distinct board configuration of the n-queens' placement
 
 **Example 1**
 
-[image]: n-queens-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-22/n-queens-example-1.jpeg)
 
 ```
 Input: n = 4
@@ -227,7 +227,7 @@ The `'.'` character indicates empty cells.
 
 **Example 1**
 
-[image]: sudoku-solver-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-22/sudoku-solver-example-1.png)
 
 ```
 Input: board =
@@ -253,7 +253,7 @@ Output:
 Explanation: The input board is shown above and the only valid solution is shown below:
 ```
 
-[image]: sudoku-solver-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-22/sudoku-solver-example-2.png)
 
 
 ### Solution
