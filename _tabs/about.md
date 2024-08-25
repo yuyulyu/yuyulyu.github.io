@@ -8,7 +8,9 @@ Hi! Welcome to my personal website!
 
 The primary purpose of this website is to serve as a personal repository for my educational pursuits. You are welcome to browse the content and I hope you find it helpful.
 
-Currently, I'm  sharpening my coding skills by coding on Leetcode every day. You can explore my detailed notes [here](https://yuyulyu.github.io/posts/leetcode-dashboard/), where I document my progress, thought processes, and key learnings. 
+Currently, I'm  working on:
+- Leetcode daily challenges [[Link](https://yuyulyu.github.io/posts/leetcode-dashboard/)].
+- CS231n: Deep Learning for Computer Vision [[Link](https://yuyulyu.github.io/tags/cs231n/)].
 
 >  Please note that the content is intended for personal use only and not for commercial purposes. If you come across any material that infringes upon copyright, please inform me so it can be addressed promptly.
 {: .prompt-warning }
