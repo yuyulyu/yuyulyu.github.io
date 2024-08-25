@@ -12,12 +12,12 @@ tags: [backtracking]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [491 Non-decreasing Subsequences](#non-decreasing-subsequences)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [46 Permutations](#permutations)                |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                           | [47 Permutations II](#permutations-ii)               |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [332 Reconstruct Itinerary](#reconstruct-itinerary)                                       |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [51 N-Queens](#n-queens)                                       |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [37 Sudoku Solver](#sudoku-solver)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [491 Non-decreasing Subsequences](#non-decreasing-subsequences)                     |✅      |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [46 Permutations](#permutations)                                                 |✅      |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                           | [47 Permutations II](#permutations-ii)                                              |✅      |        |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [332 Reconstruct Itinerary](#reconstruct-itinerary)                                        |        |        |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [51 N-Queens](#n-queens)                                                                           |        |        |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                               | [37 Sudoku Solver](#sudoku-solver)                                                                 |        |        |
 
 ## Non-decreasing Subsequences
 
@@ -44,7 +44,27 @@ Output: [[4,4]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0491.递增子序列.html)[^ndsSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def findSubsequences(self, nums):
+        result = set()
+
+        def backtracking(index, group):
+            if len(group) > 1:
+                result.add(tuple(group))
+            
+            for i in range(index, len(nums)):
+                if len(group) > 0 and nums[i] < group[-1]:
+                    continue
+                group.append(nums[i])
+                backtracking(i + 1, group)
+                group.pop()
+        
+        backtracking(0,[])
+        return result
+```
 
 ### Similar Questions
 
@@ -86,6 +106,32 @@ Output: [[1]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0046.全排列.html)[^permuSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def permute(self, nums):
+        result = []
+
+        def backtracking(permu,nums):
+            if len(nums) == 1:
+                permu.append(nums[0])
+                result.append(permu[:])
+                permu.pop()
+                return
+            
+            remain = nums[:]
+            for num in nums:
+                remain.remove(num)
+                permu.append(num)
+                backtracking(permu, remain)
+                remain.append(num)
+                permu.pop()
+        
+        backtracking([],nums)
+        return result
+```
+
 
 ## Permutations II
 
@@ -115,6 +161,31 @@ Output: [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0047.全排列II.html)[^piiSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def permuteUnique(self, nums):
+        result = []
+        nums.sort()
+
+        def backtracking(permu,nums):
+            if len(nums) == 1:
+                permu.append(nums[0])
+                result.append(permu[:])
+                permu.pop()
+                return
+            
+            for i in range(len(nums)):
+                if i > 0 and nums[i] == nums[i - 1]:
+                    continue
+                permu.append(nums[i])
+                backtracking(permu, nums[:i] + nums[i + 1:])
+                permu.pop()
+        
+        backtracking([],nums)
+        return result
+```
 
 ### Similar Questions
 
