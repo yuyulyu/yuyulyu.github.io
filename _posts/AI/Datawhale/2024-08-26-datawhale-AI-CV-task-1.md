@@ -6,6 +6,7 @@ date: 2024-08-26 14:31:00 +0800
 categories: [AI]
 tags: [CV]
 mermaid: true
+math: true
 ---
 
 ## 赛题解读
