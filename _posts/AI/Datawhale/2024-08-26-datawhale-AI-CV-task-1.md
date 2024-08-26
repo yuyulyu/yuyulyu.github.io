@@ -101,9 +101,7 @@ You Only Look Once（YOLO），是一种流行的实时目标检测系统，由J
 
 YOLO使用的标注格式是每张图像一个文本文件，文件名与图像文件名相对应。
 
-```csharp
-<class> <x_center> <y_center> <width> <height>`。
-```
+`<class> <x_center> <y_center> <width> <height>`
 
 - `<class>`：类别的索引号。
 - `<x_center>`：边界框中心点的 x 坐标，相对于图像宽度的归一化比例。
@@ -142,7 +140,8 @@ results = model.train(data="yolo-dataset/yolo.yaml", epochs=2, imgsz=1080, batch
 - `cls_loss` 是分类损失，用于评估类别预测的准确性。
 - `dfl_loss` 是防御性损失，用于提高模型的泛化能力。
 
+### 调参
 
-
+（此处笔记还没更新完成
 
 
