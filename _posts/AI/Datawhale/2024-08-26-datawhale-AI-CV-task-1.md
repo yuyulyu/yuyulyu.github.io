@@ -6,7 +6,7 @@ date: 2024-08-26 14:31:00 +0800
 categories: [AI]
 tags: [CV]
 image:
-  path: /assets/image/AI/datawhale/daynhebei,jpeg
+  path: /assets/image/AI/datawhale/daynhebei.jpeg
   alt: 
 ---
 
