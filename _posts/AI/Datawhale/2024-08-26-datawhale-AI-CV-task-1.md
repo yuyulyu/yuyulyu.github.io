@@ -5,7 +5,9 @@ author: yoyo
 date: 2024-08-26 14:31:00 +0800
 categories: [AI]
 tags: [CV]
-images: 
+image:
+  path: /assets/image/AI/datawhale/daynhebei,jpeg
+  alt: 
 ---
 
 sth
