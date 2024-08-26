@@ -62,14 +62,27 @@ math: true
 
 使用F1score、MOTA指标来评估模型预测结果。对每个json文件得到两个指标的加权求和，最终得分为所有文件得分取均值。[^1][^2]
 
+其中，<ins>**F1 Score**</ins> 是 Precision（精度）和 Recall（召回率）的调和平均值，专注于检测模型的准确性和完整性。
 $$
 F1\_score = 2 \times \frac{Recall \times Precision}{Recall + Precision}
 $$
+- **精度**：检测出的正样本中有多少是正确的。模型预测的目标中有多少是真实目标，减少 假阳性（ FP） 的比例。
+- **召回率**：所有真实的正样本中有多少被正确检测出。模型未遗漏多少目标，减少假阴性（FN） 的比例。
+
+F1 Score 是在 Precision 和 Recall 之间找到一个平衡的度量。当这两个指标均衡时，F1 Score 较高。因此，它同时考虑了<ins>避免错误检测的目标</ins>以及<ins>尽量多的检测出所有目标</ins>。
+
+<ins>**MOTA**</ins>（Multi-Object Tracking Accuracy，多目标追踪准确率）是多目标追踪任务的评估标准，它专注于减少错误检测（假阳性和假阴性）以及 ID 追踪错误（ID Switches, IDSW）
 
 $$
 MOTA = 1 - \frac{\sum FN + \sum FP + \sum IDSW}{\sum GT}
 $$
 
+MOTA 主要关注：
+- **减少漏检（FN）**：保证模型能够检测出所有目标，尽量不要遗漏。
+- **减少误检（FP）**：保证模型预测出的目标是真实目标，避免错误检测。
+- **减少 ID 错误（IDSW**）：在多目标追踪任务中，减少不同目标的 ID 错误。
+
+**最终评分的权重分配**则要求模型在检测性能和追踪性能之间取得平衡。重点是模型的检测能力（**F1 Score**），其次是其在多目标场景下的表现（**MOTA**）
 
 $$
 score = 0.85 \times F1\_score + 0.15 \times MOTA
