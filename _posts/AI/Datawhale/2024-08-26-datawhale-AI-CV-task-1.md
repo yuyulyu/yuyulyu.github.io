@@ -1,11 +1,14 @@
 ---
-title: Template
-description: Write down description here.
+title: Datawhale AI 夏令营 
+description: 2024 大运河杯数据开发应用创新大赛 - 城市治理赛道
 author: yoyo
-date: 2024-08-01 11:33:00 +0800
-categories: [Z others, Demo]
-tags: []
+date: 2024-08-26 14:31:00 +0800
+categories: [AI]
+tags: [CV]
+images: 
 ---
 
-content
+sth
+
+
 
