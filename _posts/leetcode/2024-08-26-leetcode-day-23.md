@@ -64,8 +64,8 @@ Given an integer array `nums`, return the length of the longest wiggle subsequen
 
 **Example 1**
 
-> **Input**: nums = [1,7,4,9,2,5]
-> **Output**: 6
+> **Input**: nums = [1,7,4,9,2,5]<br>
+> **Output**: 6<br>
 > **Explanation**: The entire sequence is a wiggle sequence with differences (6, -3, 5, -7, 3).
 
 **Example 2**
