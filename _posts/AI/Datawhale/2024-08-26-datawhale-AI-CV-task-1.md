@@ -60,7 +60,18 @@ mermaid: true
 
 使用F1score、MOTA指标来评估模型预测结果。
 
-![Desktop View](/assets/image/AI/Datawhale/F1score.png)
+$$
+F1\_score = 2 \times \frac{Recall \times Precision}{Recall + Precision}
+$$
+
+$$
+MOTA = 1 - \frac{\sum FN + \sum FP + \sum IDSW}{\sum GT}
+$$
+
+
+$$
+score = 0.85 \times F1\_score + 0.15 \times MOTA
+$$
 
 对每个json文件得到两个指标的加权求和，最终得分为所有文件得分取均值。[^1][^2]
 
