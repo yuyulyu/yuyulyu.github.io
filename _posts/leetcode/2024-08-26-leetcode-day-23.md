@@ -143,7 +143,7 @@ class Solution(object):
 
 ## Maximum Subarray
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^ms]
+> [Link to Leetcode question](https://leetcode.com/problems/maximum-subarray/description/)[^ms]
 {: .prompt-info }
 
 Given an integer array nums, find the subarray with the largest sum, and return its sum.
