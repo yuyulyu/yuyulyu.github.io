@@ -16,7 +16,7 @@ tags: [greedy algorithm]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [122 Best Time to Buy and Sell Stock II](#best-time-to-buy-and-sell-stock-ii)                    |✅      |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [55 Jump Game](#55 Jump Game)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
 
@@ -35,24 +35,29 @@ Find and return the maximum profit you can achieve.
 
 **Example 1**
 
-> **Input**: prices = [7,1,5,3,6,4]
-> **Output**: 7
-> **Explanation**: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
+```yml
+Input: prices = [7,1,5,3,6,4]
+Output: 7
+Explanation: Buy on day 2 (price = 1) and sell on day 3 (price = 5), profit = 5-1 = 4.
 Then buy on day 4 (price = 3) and sell on day 5 (price = 6), profit = 6-3 = 3.
 Total profit is 4 + 3 = 7.
+```
 
 **Example 2**
 
-> **Input**: prices = [1,2,3,4,5]
-> **Output**: 4
-> **Explanation**: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
+```yml
+Input: prices = [1,2,3,4,5]
+Output: 4
+Explanation**: Buy on day 1 (price = 1) and sell on day 5 (price = 5), profit = 5-1 = 4.
 Total profit is 4.
-
+```
 **Example 3**
 
-> **Input**: prices = [7,6,4,3,1]
-> **Output**: 0
-> **Explanation**: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
+```yml
+Input: prices = [7,6,4,3,1]
+Output: 0
+Explanation: There is no way to make a positive profit, so we never buy the stock to achieve the maximum profit of 0.
+```
 
 ### Solution
 
