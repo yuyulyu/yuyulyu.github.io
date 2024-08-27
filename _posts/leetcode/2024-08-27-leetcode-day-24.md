@@ -15,7 +15,7 @@ tags: [greedy algorithm]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [122 Best Time to Buy and Sell Stock II](#best-time-to-buy-and-sell-stock-ii)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [122 Best Time to Buy and Sell Stock II](#best-time-to-buy-and-sell-stock-ii)                    |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
@@ -58,7 +58,62 @@ Total profit is 4.
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0122.买卖股票的最佳时机II.html)[^bttbassiiSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def maxProfit(self, prices):
+        stack = []
+        buy = prices[0]
+        sell = prices[0]
+
+        def add(buy, sell):
+            if len(stack) != 0:
+                prv = stack[-1]
+                if buy > prv[1]:
+                    stack.pop()
+                    stack.append([prv[0],sell])
+                else:
+                    stack.append([buy,sell])
+                
+            elif buy != sell:
+                stack.append([buy,sell])
+
+        for i in range(1, len(prices)):
+            
+            p = prices[i]
+            if p < buy:
+                if buy != sell:
+                    add(buy, sell)
+                    buy, sell = prices[i], prices[i]
+                buy = p
+                sell = p
+                continue
+            elif p > sell:
+                sell = p
+                continue
+            elif buy != sell:
+                add(buy, sell)
+                buy, sell = prices[i], prices[i]
+        
+        if buy != sell:
+            stack.append([buy,sell])
+        
+        profit = 0
+        for deal in stack:
+            profit += deal[1] - deal[0]
+        
+        return profit
+```
+
+```python
+class Solution(object):
+    def maxProfit(self, prices):
+        result = 0
+        for i in range(1, len(prices)):
+            result += max(prices[i] - prices[i - 1], 0)
+        return result
+```
 
 ### Similar Questions
 
