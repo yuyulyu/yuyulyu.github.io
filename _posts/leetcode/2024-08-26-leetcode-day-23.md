@@ -11,9 +11,9 @@ tags: [greedy]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [455 Assign Cookies](#assign-cookies)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [376 Wiggle Subsequence](#wiggle-subsequence)                |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [53 Maximum Subarray](#maximum-subarray)                                       |        |      |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [455 Assign Cookies](#assign-cookies)                                     |✅      |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [376 Wiggle Subsequence](#wiggle-subsequence)                             |        |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [53 Maximum Subarray](#maximum-subarray)                                 |        |        |
 
 ## Assign Cookies
 
@@ -47,6 +47,27 @@ You need to output 2.
 ### Solution
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0455.分发饼干.html)[^acSolution].
+
+#### Python
+
+```python
+class Solution(object):
+    def findContentChildren(self, g, s):
+        g.sort()
+        s.sort()
+        i = 0
+        count = 0
+        ls = len(s)
+
+        for child in g:
+            while i < ls:
+                i += 1
+                if s[i - 1] >= child:
+                    count += 1
+                    break
+        
+        return count
+```
 
 ## Wiggle Subsequence
 
