@@ -13,7 +13,7 @@ tags: [greedy]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [455 Assign Cookies](#assign-cookies)                                     |✅      |        |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [376 Wiggle Subsequence](#wiggle-subsequence)                             |✅      |        |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [53 Maximum Subarray](#maximum-subarray)                                 |        |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [53 Maximum Subarray](#maximum-subarray)                                 |✅      |        |
 
 ## Assign Cookies
 
@@ -176,6 +176,40 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0053.最大子序和.html)[^msSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def maxSubArray(self, nums):
+        if len(nums) == 1:
+            return nums[0]
+
+        cur_sum = min(nums[0],0)
+        max_sum = cur_sum
+        flag = False
+
+        for fast in range(len(nums)):
+            if cur_sum <= 0 and not flag and max_sum <= 0:
+                max_sum = max(nums[fast], max_sum)
+                cur_sum = max_sum
+                continue
+            if nums[fast] < 0:
+                if not flag:
+                    max_sum = max(max_sum, cur_sum)
+                    flag = True
+                cur_sum += nums[fast]
+                continue
+            
+            if flag:
+                flag = False
+                if cur_sum <= 0:
+                    cur_sum = 0
+
+            cur_sum += nums[fast]
+        
+        max_sum = max(max_sum, cur_sum) 
+        return max_sum
+```
 
 
 ### Similar Questions
