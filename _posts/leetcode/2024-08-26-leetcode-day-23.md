@@ -12,7 +12,7 @@ tags: [greedy]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                                | [455 Assign Cookies](#assign-cookies)                                     |✅      |        |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [376 Wiggle Subsequence](#wiggle-subsequence)                             |        |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [376 Wiggle Subsequence](#wiggle-subsequence)                             |✅      |        |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [53 Maximum Subarray](#maximum-subarray)                                 |        |        |
 
 ## Assign Cookies
@@ -109,7 +109,30 @@ Output: 2
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0376.摆动序列.html)[^wsSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def wiggleMaxLength(self, nums):
+        if len(nums) == 1:
+            return 1
+        if len(nums) == 2:
+            return 2 if nums[1] - nums[0] != 0 else 1
+
+        prv_diff = nums[1] - nums[0]
+        count = 2 if prv_diff != 0 else 1
+
+        for i in range(2,len(nums)):
+            cur_diff = nums[i] - nums[i - 1]
+            if cur_diff * prv_diff < 0 or (count == 1 and cur_diff != 0):
+                count += 1
+                prv_diff = cur_diff
+            if count == 1:
+                prv_diff = cur_diff
+            
+        
+        return count
+```
 
 ### Similar Questions
 
