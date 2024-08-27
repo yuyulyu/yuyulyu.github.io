@@ -2,7 +2,7 @@
 title: Leetcode Day 24 - Greedy Algorithm
 description: 122 Best Time to Buy and Sell Stock II |
 author: yoyo
-date: 2042-08-03 23:07:00 +0800
+date: 2024-08-27 12:29:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: [greedy algorithm]
 ---
