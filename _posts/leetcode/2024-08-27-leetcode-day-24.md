@@ -299,40 +299,18 @@ Explanation: Choose indices (1, 4) and nums becomes [2,3,-1,5,4].
 ```python
 class Solution(object):
     def largestSumAfterKNegations(self, nums, k):
-        is_odd = (k % 2 == 1)
-        nums.sort()
-        nums = nums[::-1]
-        result = 0
-        flag = -1
-        i = 0
-        
-        while  i < len(nums) and i > flag:
-            if nums[i] > 0:
-                result += nums[i]
-                i += 1
-            elif nums[i] == 0 and flag == -1:
-                flag = i
-                i = len(nums) - 1
-            else:
-                if flag == -1:
-                    flag = i
-                    
-                if (flag != i and k > 0) or (flag == i and k >= len(nums) - i):
-                    is_odd = not is_odd
-                    k -= 1
-                    result -= nums[i]
-                else:
-                    result += nums[i]
-                
-                i = len(nums) - 1 if flag == i else i - 1
-        
-        if flag == -1:
-            return result - 2 * nums[-1]
+        nums.sort(key=lambda x: abs(x), reverse=True)
 
-        if k != 0 and is_odd:
-            return result - min(-2 * nums[flag], 2 * nums[flag - 1]) if flag > 0 else result + 2 * nums[flag]
+        for i in range(len(nums)):
+            if nums[i] < 0:
+                if k > 0:
+                    nums[i] = - nums[i]
+                    k -= 1
         
-        return result
+        if k % 2 == 1:
+            nums[-1] = -nums[-1]
+        
+        return sum(nums)
 ```
 
 ### Similar Questions
