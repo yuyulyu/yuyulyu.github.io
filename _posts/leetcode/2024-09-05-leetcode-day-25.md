@@ -14,7 +14,7 @@ tags: [greedy]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [134 Gas Station](#gas-station)                                                       |✅      |       |
 | ![Hard](https://img.shields.io/badge/Hard-red)                                                      | [135 Candy](#candy)                                                                        |✅      |       |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [860 Lemonade Change](#lemonade-change)                                             |✅      |       |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [406 Queue Reconstruction by Height](#queue-reconstruction-by-height)                    |        |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [406 Queue Reconstruction by Height](#queue-reconstruction-by-height)                    |✅      |        |
 
 # the link
 
@@ -259,7 +259,28 @@ Output: [[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]]
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0406.根据身高重建队列.html)[^qrbhSolution].
 
+**Sorting Rule**: We start by sorting the people array based on two criteria:
 
+-  <ins>Height in descending order</ins>: This ensures that the tallest people are processed first because their position is less likely to be affected by shorter people.
+-   <ins>k-value in ascending order</ins>: For people with the same height, we sort them by the number of people in front of them.
+  
+**Inserting into the Queue**: Once the array is sorted, we can start placing people into the result queue:
+1. For each person in the sorted list, the k value tells us exactly where they should be placed in the queue. Specifically, they should be inserted at the position equal to their k value.
+2. Inserting them in the order we processed guarantees that people with greater height or equal height have already been placed in front of them, satisfying the k condition.
+
+#### Python
+
+```python
+class Solution(object):
+    def reconstructQueue(self, people):
+        people.sort(key=lambda x: (-x[0], x[1]))
+    
+        queue = []
+        for person in people:
+            queue.insert(person[1], person)
+        
+        return queue
+```
 
 ### Similar Questions
 
