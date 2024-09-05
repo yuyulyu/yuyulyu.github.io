@@ -7,10 +7,6 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: [greedy]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Greedy Algorithm 
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
@@ -269,7 +265,10 @@ Output: [[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]]
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2512 Reward Top K Students](https://leetcode.com/problems/reward-top-k-students/description/)[^rtks] |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                | [315 Count of Smaller Numbers After Self](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/)[^cosnas] |        |      |
+
+
 
 
 ## Reference
@@ -282,4 +281,6 @@ Output: [[4,0],[5,0],[2,2],[3,2],[1,4],[6,0]]
 [^lcSolution]:代码随想录-柠檬水找零: [https://programmercarl.com/0860.柠檬水找零.html](https://programmercarl.com/0860.柠檬水找零.html).
 [^qrbh]:Leetcode-406 Queue Reconstruction by Height: [https://leetcode.com/problems/queue-reconstruction-by-height/description/](https://leetcode.com/problems/queue-reconstruction-by-height/description/).
 [^qrbhSolution]:代码随想录-根据身高重建队列: [https://programmercarl.com/0406.根据身高重建队列.html](https://programmercarl.com/0406.根据身高重建队列.html).
+[^rtks]:Leetcode-2512 Reward Top K Students: [https://leetcode.com/problems/reward-top-k-students/description/](https://leetcode.com/problems/reward-top-k-students/description/).
+[^cosnas]:Leetcode-315 Count of Smaller Numbers After Self: [https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/](https://leetcode.com/problems/count-of-smaller-numbers-after-self/description/).
 
