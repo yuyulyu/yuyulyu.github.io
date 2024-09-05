@@ -134,7 +134,7 @@ class Solution(object):
 
 ## Binary Tree Cameras
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^btc]
+> [Link to Leetcode question](https://leetcode.com/problems/binary-tree-cameras/description/)[^btc]
 {: .prompt-info }
 
 You are given the `root` of a binary tree. We install cameras on the tree nodes where each camera at a node can monitor its parent, itself, and its immediate children.
