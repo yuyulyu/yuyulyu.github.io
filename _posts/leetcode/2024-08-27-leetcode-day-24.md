@@ -168,7 +168,7 @@ class Solution(object):
 
 
 
-## 45 Jump Game II
+## Jump Game II
 
 > [Link to Leetcode question](https://leetcode.com/problems/jump-game-ii/)[^jgiii]
 {: .prompt-info }
