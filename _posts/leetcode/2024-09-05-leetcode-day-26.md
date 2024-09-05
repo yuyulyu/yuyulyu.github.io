@@ -7,10 +7,6 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: [greedy]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Greedy Algorithm
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
@@ -216,7 +212,8 @@ class Solution(object):
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [56 Merge Intervals](https://leetcode.com/problems/merge-intervals/description/)[^mi] |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2405 Optimal Partition of String](https://leetcode.com/problems/optimal-partition-of-string/)[^opos] |        |      |
 
 
 
@@ -227,5 +224,6 @@ class Solution(object):
 [^pl]:Leetcode-763 Partition Labels: [https://leetcode.com/problems/partition-labels/description/](https://leetcode.com/problems/partition-labels/description/).
 [^plSolution]:代码随想录-划分字母区间: [https://programmercarl.com/0763.划分字母区间.html](https://programmercarl.com/0763.划分字母区间.html).
 [^noiSolution]:代码随想录-无重叠区间: [https://programmercarl.com/0435.无重叠区间.html](https://programmercarl.com/0435.无重叠区间.html).
-
+[^mi]: Leetcode-56 Merge Intervals: [https://leetcode.com/problems/merge-intervals/description/](https://leetcode.com/problems/merge-intervals/description/).
+[^opos]: Leetcode-2405 Optimal Partition of String: [https://leetcode.com/problems/optimal-partition-of-string/](https://leetcode.com/problems/optimal-partition-of-string/).
 
