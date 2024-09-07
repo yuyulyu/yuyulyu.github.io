@@ -1,6 +1,6 @@
 ---
 title: Dynamic Programming (DP)
-description: Dynamic Programming (DP) is a technique that solves complex problems by breaking them into smaller overlapping subproblems and reusing the solutions to avoid redundant computations. It is particularly useful when a problem can be divided into overlapping subproblems or optimal substructure. Two main approaches: top-down (memoization) and bottom-up (tabulation) are introduced. 
+description: "Dynamic Programming (DP) is a technique that solves complex problems by breaking them into smaller overlapping subproblems and reusing the solutions to avoid redundant computations. It is particularly useful when a problem can be divided into overlapping subproblems or optimal substructure. Two main approaches: top-down (memoization) and bottom-up (tabulation) are introduced. "
 author: yoyo
 date: 2024-09-07 14:32:00 +0800
 categories: [Data Structure and Algorithm, Algorithm]
