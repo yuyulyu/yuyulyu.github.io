@@ -7,11 +7,10 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: [dynamic programming (DP)]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Dynamic Programming
+
+> [Link to note about Dynamic Programming](https://yuyulyu.github.io/posts/dynamic-programming/) 
+{: .prompt-tip }
 
 | Problem                                                    | Python | Java |
 |------------------------------------------------------------|--------|------|
