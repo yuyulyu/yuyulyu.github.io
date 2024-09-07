@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 24 - Greedy: Stock and Jump Problems
+title: "Leetcode Day 24 - Greedy: Stock and Jump Problems"
 description: 122 Best Time to Buy and Sell Stock II | 55 Jump Game | 45 Jump Game II | 1005 Maximize Sum Of Array After K Negations
 author: yoyo
 date: 2024-08-27 12:29:00 +0800
