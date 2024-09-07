@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 27 - Greedy Algorithm
+title: "Leetcode Day 27 - Greedy: Advanced Interval & Sequence Problems"
 description: 56 Merge Intervals | 738 Monotone Increasing Digits | 968 Binary Tree Cameras
 author: yoyo
 date: 2024-09-05 20:14:00 +0800
