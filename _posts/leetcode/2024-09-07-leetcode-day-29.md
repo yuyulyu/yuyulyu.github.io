@@ -31,7 +31,7 @@ The test cases are generated so that the answer will be less than or equal to `2
 
 **Example 1**
 
-[image]: unique-paths-example-1
+![Unique Paths Example 1](/assets/image/leetcode/leetcode-day-29/unique-paths-example-1.png)
 
 > **Input**: m = 3, n = 7<br>
 > **Output**: 28
@@ -83,7 +83,7 @@ The testcases are generated so that the answer will be less than or equal to `2 
 
 **Example 1**
 
-[image]: unique-paths-ii-example-1
+![Unique Paths II Example 1](/assets/image/leetcode/leetcode-day-29/unique-paths-ii-example-1.jpeg)
 
 > **Input**: obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]<br>
 > **Output**: 2<br>
@@ -92,7 +92,7 @@ The testcases are generated so that the answer will be less than or equal to `2 
 > 1. Right -> Right -> Down -> Down<br>
 > 2. Down -> Down -> Right -> Right
 
-[image]: unique-paths-ii-example-2
+![Unique Paths II Example 2](/assets/image/leetcode/leetcode-day-29/unique-paths-ii-example-2.jpeg)
 
 > **Input**: obstacleGrid = [[0,1],[0,0]]<br>
 > **Output**: 1
@@ -228,7 +228,7 @@ Given an integer `n`, return the number of structurally unique BST's (binary sea
 
 **Example 1**
 
-[image]: unique-binary-search-trees-example-1
+![Unique Binary Search Trees Example 1](/assets/image/leetcode/leetcode-day-29/unique-binary-search-trees-example-1.jpeg)
 
 > **Input**: n = 3<br>
 > **Output**: 5
@@ -267,9 +267,6 @@ class Solution(object):
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [95 Unique Binary Search Trees II](https://leetcode.com/problems/unique-binary-search-trees-ii/description/)[^ubstii] |        |      |
-
-
-
 
 ## Reference
 
