@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 25 - Greedy Algorithm
+title: "Leetcode Day 25 - Greedy:  Two-Dimensional Trade-Off"
 description: 134 Gas Station | 135 Candy | 860 Lemonade Change | 406 Queue Reconstruction by Height
 author: yoyo
 date: 2024-09-05 09:58:00 +0800
