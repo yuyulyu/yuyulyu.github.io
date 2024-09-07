@@ -49,7 +49,7 @@ tags: [dynamic programming (DP)]
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/背包理论基础01背包-1.html)[^背包理论基础1].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/背包理论基础01背包-1.html)[^背包理论基础].
 
 #### 二维dp数组
 
