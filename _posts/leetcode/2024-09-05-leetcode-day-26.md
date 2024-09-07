@@ -1,5 +1,5 @@
 ---
-title: "Leetcode 26 - Greedy: Overlap Intervals"
+title: "Leetcode Day 26 - Greedy: Overlapping Intervals"
 description: 452 Minimum Number of Arrows to Burst Balloons | 435 Non-overlapping Intervals | 763 Partition Labels
 author: yoyo
 date: 2024-09-05 15:43:00 +0800
