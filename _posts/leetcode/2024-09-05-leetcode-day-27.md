@@ -143,9 +143,7 @@ Return the minimum number of cameras needed to monitor all nodes of the tree.
 
 **Example 1**
 
-[image]: binary-tree-cameras-example-1
-
-![Desktop View](/assets/image/leetcode/leetcode-day-16/minimum-absolute-difference-in-bst-example-1.jpeg)
+![Desktop View](/assets/image/leetcode/leetcode-day-27/binary-tree-cameras-example-1.png)
 
 
 ```
@@ -156,7 +154,7 @@ Explanation: One camera is enough to monitor all nodes if placed as shown.
 
 **Example 2**
 
-[image]: binary-tree-cameras-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-27/binary-tree-cameras-example-2.png)
 
 ```
 Input: root = [0,0,null,0,null,0,null,null,0]
