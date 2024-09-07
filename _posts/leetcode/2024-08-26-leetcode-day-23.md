@@ -1,6 +1,6 @@
 ---
-title: Leetcode Day 23 - Greedy Algorithm
-description: 455 Assign Cookies | 376 Wiggle Subsequence | 53 Maximum Subarray
+title: "Leetcode Day 23 - Greedy: Basic Applications"
+description: "Fundamental greedy problems: 455 Assign Cookies | 376 Wiggle Subsequence | 53 Maximum Subarray"
 author: yoyo
 date: 2024-08-26 14:00:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
