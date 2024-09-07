@@ -9,7 +9,8 @@ tags: [dynamic programming (DP)]
 
 ## Dynamic Programming
 
-[Link to note about Dynamic Programming](https://yuyulyu.github.io/posts/dynamic-programming/) {: .prompt-tip }
+> [Link to note about Dynamic Programming](https://yuyulyu.github.io/posts/dynamic-programming/) 
+{: .prompt-tip }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
