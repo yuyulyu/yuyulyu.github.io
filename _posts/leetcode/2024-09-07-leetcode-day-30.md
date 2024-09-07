@@ -1,6 +1,6 @@
 ---
-title: “Leetcode Day 30 - DP : Backpack Problem Basic”
-description: “背包问题基础，二维dp数组、一维dp数组（滚动数组）”
+title: "Leetcode Day 30 - DP : Backpack Problem Basic"
+description: 背包问题基础，二维dp数组、一维dp数组（滚动数组）
 author: yoyo
 date: 2024-09-07 23:53:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
