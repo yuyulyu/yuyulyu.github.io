@@ -1,63 +1,87 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
-description: # <problem> | # <Problem> 
+title: “Leetcode Day 30 - DP : Backpack Problem Basic”
+description: 背包问题基础，二维dp数组、一维dp数组（滚动数组）
 author: yoyo
-date: 2042-08-03 23:07:00 +0800
+date: 2024-09-07 23:53:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
-tags: []
+tags: [dynamic programming (DP)]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-## <Topic> [^dmsxl] 
+## Dynamic Programming
 
-| Diff                                                                                                | Problem                                                                                 | Python | Java |
-|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#the-link)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
+| Problem                                                    | Python | Java |
+|------------------------------------------------------------|--------|------|
+| [46 携带研究材料](#携带研究材料)                               |✅      |      |
 
-# the link
+## 携带研究材料
 
-## <1st problem>
-
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^snip]
+> [Link to the question](https://kamacoder.com/problempage.php?pid=1046)[^携带研究材料]
 {: .prompt-info }
 
+#### 题目描述
+
+小明是一位科学家，他需要参加一场重要的国际科学大会，以展示自己的最新研究成果。他需要带一些研究材料，但是他的行李箱空间有限。这些研究材料包括实验设备、文献资料和实验样本等等，它们各自占据不同的空间，并且具有不同的价值。 
+小明的行李空间为 `N`，问小明应该如何抉择，才能携带最大价值的研究材料，每种研究材料只能选择一次，并且只有选与不选两种选择，不能进行切割。
+
+#### 输入描述
+
+- 第一行包含两个正整数，第一个整数 `M` 代表研究材料的种类，第二个正整数 `N`，代表小明的行李空间。
+- 第二行包含 `M` 个正整数，代表每种研究材料的所占空间。 
+- 第三行包含 `M` 个正整数，代表每种研究材料的价值。
+
+#### 输出描述
+
+输出一个整数，代表小明能够携带的研究材料的最大价值。
+
+#### 输入示例
+
+`6 1`
+`2 2 3 1 5 2`
+`2 3 1 5 4 3`
+
+#### 输出示例
+
+`5`
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/背包理论基础01背包-1.html)[^背包理论基础1].
 
-### Similar Questions
+#### 二维dp数组
 
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall] |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
+```python
+M, N = map(int, input().split())  
+space = list(map(int, input().split()))  
+value = list(map(int, input().split()))  
 
+def backpack(M, N, space, value):
+    if M == 0: return 0
+    
+    dp = [[0] * space[0] + [value[0]] * (N - space[0])] + [[0] * N for _ in range (M - 1)]
+    
+    for item in range(M):
+        for remain_space in range(N):
+            if remain_space + 1 == space[item]:
+                dp[item][remain_space] = max(value[item], dp[item - 1][remain_space])
+            elif remain_space + 1 > space[item]:
+                dp[item][remain_space] = max(value[item] + dp[item - 1][remain_space - space[item]], dp[item - 1][remain_space])
+            else:
+                dp[item][remain_space] = dp[item - 1][remain_space]
+    
+    return dp[-1][-1]
+    
+print(backpack(M, N, space, value))
+```
 
-## <2nd problem>
-
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
-{: .prompt-info }
-
-
-### Solution
-
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
-
-### Similar Questions
-
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
-
+#### 一维dp数组（滚动数组）
 
 
 ## Reference
-[^dmsxl]:
+[^携带研究材料]:卡码网-46 携带研究材料: [https://kamacoder.com/problempage.php?pid=1046](https://kamacoder.com/problempage.php?pid=1046).
+[^背包理论基础]:代码随想录-背包理论基础01: [https://programmercarl.com/背包理论基础01背包-1.html](https://programmercarl.com/背包理论基础01背包-1.html).
+
 
