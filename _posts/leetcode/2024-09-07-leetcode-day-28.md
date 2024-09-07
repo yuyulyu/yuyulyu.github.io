@@ -1,8 +1,8 @@
 ---
-title: Leetcode Template # Leetcode Day # - <Topic> #
+title: Leetcode 28 - Dynamic Programming
 description: # <problem> | # <Problem> 
 author: yoyo
-date: 2042-08-03 23:07:00 +0800
+date: 2024-09-07 14:46:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: []
 ---
@@ -12,6 +12,7 @@ tags: []
 ![Hard](https://img.shields.io/badge/Hard-red)
 
 ## <Topic> [^dmsxl] 
+Link to note about hash table {: .prompt-tip }
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
