@@ -9,12 +9,15 @@ tags: [dynamic programming (DP)]
 
 ## Dynamic Programming
 
+> [Link to note about Dynamic Programming](https://yuyulyu.github.io/posts/dynamic-programming/) 
+{: .prompt-tip }
+
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-|                                                                                                      | [Kama 52 Complete Knapsack](#complete-knapsack)                                          |✅      |        |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [518 Coin Change II](#coin-change-ii)                                                    |        |        |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [377 Combination Sum IV](#combination-sum-iv)                                         |        |        |
-|                                                                                                     | [Kama 57 Climbing Stairs](#climbing-stairs)                                            |        |        |
+| ![Kama](https://img.shields.io/badge/Kama-gray)                                                | [Kama 52 Complete Knapsack](#complete-knapsack)                                          |✅      |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [518 Coin Change II](#coin-change-ii)                                                             |        |        |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [377 Combination Sum IV](#combination-sum-iv)                                                  |        |        |
+|  ![Kama](https://img.shields.io/badge/Kama-gray)                                           | [Kama 57 Climbing Stairs](#climbing-stairs)                                                     |        |        |
 
 ## Complete Knapsack
 
