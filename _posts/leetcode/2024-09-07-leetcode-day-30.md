@@ -80,6 +80,31 @@ print(backpack(M, N, space, value))
 
 #### 一维dp数组（滚动数组）
 
+```python
+M, N = map(int, input().split())  
+space = list(map(int, input().split()))  
+value = list(map(int, input().split()))  
+
+def backpack(M, N, space, value):
+    if M == 0: return 0
+    
+    dp = [0] * space[0] + [value[0]] * (N - space[0] + 1)
+    
+    for item in range(1, M):
+        temp = [0] * (N + 1)
+        for remain_space in range(N + 1):
+            if remain_space == space[item]:
+                temp[remain_space] = max(value[item], dp[remain_space])
+            elif remain_space > space[item]:
+                temp[remain_space] = max(value[item] + dp[remain_space - space[item]], dp[remain_space])
+            else:
+                temp[remain_space] = dp[remain_space]
+        dp = temp.copy()
+        
+    return dp[-1]
+    
+print(backpack(M, N, space, value))
+```
 
 ## Reference
 [^携带研究材料]:卡码网-46 携带研究材料: [https://kamacoder.com/problempage.php?pid=1046](https://kamacoder.com/problempage.php?pid=1046).
