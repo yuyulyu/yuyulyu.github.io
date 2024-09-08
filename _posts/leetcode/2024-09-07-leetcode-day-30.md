@@ -62,13 +62,11 @@ value = list(map(int, input().split()))
 def backpack(M, N, space, value):
     if M == 0: return 0
     
-    dp = [[0] * space[0] + [value[0]] * (N - space[0])] + [[0] * N for _ in range (M - 1)]
+    dp = [[0] * space[0] + [value[0]] * (N - space[0] + 1)] + [[0] * (N + 1) for _ in range (M - 1)]
     
     for item in range(M):
-        for remain_space in range(N):
-            if remain_space + 1 == space[item]:
-                dp[item][remain_space] = max(value[item], dp[item - 1][remain_space])
-            elif remain_space + 1 > space[item]:
+        for remain_space in range(N + 1):
+            if remain_space >= space[item]:
                 dp[item][remain_space] = max(value[item] + dp[item - 1][remain_space - space[item]], dp[item - 1][remain_space])
             else:
                 dp[item][remain_space] = dp[item - 1][remain_space]
@@ -93,9 +91,7 @@ def backpack(M, N, space, value):
     for item in range(1, M):
         temp = [0] * (N + 1)
         for remain_space in range(N + 1):
-            if remain_space == space[item]:
-                temp[remain_space] = max(value[item], dp[remain_space])
-            elif remain_space > space[item]:
+            if remain_space >= space[item]:
                 temp[remain_space] = max(value[item] + dp[remain_space - space[item]], dp[remain_space])
             else:
                 temp[remain_space] = dp[remain_space]
