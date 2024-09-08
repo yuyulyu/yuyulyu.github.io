@@ -7,9 +7,6 @@ categories: [Data Structure and Algorithm, Leetcode]
 tags: [dynamic programming (DP)]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
 
 ## Dynamic Programming 
 
@@ -18,7 +15,7 @@ tags: [dynamic programming (DP)]
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                        | [416 Partition Equal Subset Sum](#partition-equal-subset-sum)                                    |✅      |        |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                        | [1049 Last Stone Weight II](#last-stone-weight-ii)                                                 |✅      |        |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                        | [494 Target Sum](#target-sum)                                                                       |✅      |✅      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                        | [474 Ones and Zeroes](#ones-and-zeroes)                                                          |        |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                        | [474 Ones and Zeroes](#ones-and-zeroes)                                                          |✅      |        |
 
 ## Partition Equal Subset Sum
 
@@ -272,15 +269,34 @@ Explanation: The largest subset is {"0", "1"}, so the answer is 2.
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^oazSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0474.一和零.html)[^oazSolution].
 
-[^oazSolution]:代码随想录-
+
+
+#### Python
+
+```python
+class Solution(object):
+    def findMaxForm(self, strs, m, n):
+        dp = [[0] * (n + 1) for _ in range(m + 1)]
+
+        for s in strs:
+            zeros, ones = s.count('0'), s.count('1')
+
+            for M in range(m, zeros - 1, -1):
+                for N in range(n, ones - 1, -1):
+                    dp[M][N] = max(dp[M][N], dp[M - zeros][N - ones] + 1)
+
+        return dp[m][n]
+```
 
 ### Similar Questions
 
 | Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
 |------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                                | [600 Non-negative Integers without Consecutive Ones](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/description/)[^nniwco] |        |      |
+
+
 
 
 
@@ -299,3 +315,5 @@ Explanation: The largest subset is {"0", "1"}, so the answer is 2.
 [^weisop]: Leetcode-2787 Ways to Express an Integer as Sum of Powers: [https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/description/](https://leetcode.com/problems/ways-to-express-an-integer-as-sum-of-powers/description/).
 [^eao]: Leetcode-282 Expression Add Operators: [https://leetcode.com/problems/expression-add-operators/](https://leetcode.com/problems/expression-add-operators/).
 [^oaz]:Leetcode-474 Ones and Zeroes: [https://leetcode.com/problems/ones-and-zeroes/description/](https://leetcode.com/problems/ones-and-zeroes/description/).
+[^oazSolution]:代码随想录-一和零: [https://programmercarl.com/0474.一和零.html](https://programmercarl.com/0474.一和零.html).
+[^nniwco]:Leetcode-600 Non-negative Integers without Consecutive Ones : [https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/description/](https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/description/).
