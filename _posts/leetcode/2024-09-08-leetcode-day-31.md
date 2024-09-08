@@ -10,6 +10,9 @@ tags: [dynamic programming (DP)]
 
 ## Dynamic Programming 
 
+> [Link to note about Dynamic Programming](https://yuyulyu.github.io/posts/dynamic-programming/) 
+{: .prompt-tip }
+
 | Diff                                                                                         | Problem                                                                                             | Python | C<sup>++</sup> |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|--------|--------|
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                        | [416 Partition Equal Subset Sum](#partition-equal-subset-sum)                                    |✅      |        |
