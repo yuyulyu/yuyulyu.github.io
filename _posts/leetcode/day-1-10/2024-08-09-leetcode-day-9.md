@@ -3,7 +3,7 @@ title: Leetcode Day 9 - Stack & Queue Fundamentals
 description: Focuses on basic stack and queue operations, including implementing one data structure using the other. Also covers classic stack usage in problems like validating parentheses and removing adjacent duplicates in a string.
 author: yoyo
 date: 2024-08-09 13:50:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Stack & Queue]
 tags: [stack, queue]
 ---
 
