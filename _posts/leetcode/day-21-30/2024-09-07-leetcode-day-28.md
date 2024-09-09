@@ -3,7 +3,7 @@ title: Leetcode 28 - Dynamic Programming
 description: 509 Fibonacci Number | 70 Climbing Stairs | 746 Min Cost Climbing Stairs
 author: yoyo
 date: 2024-09-07 14:46:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
 
