@@ -3,7 +3,7 @@ title: "Leetcode Day 13 - Binary Tree: Tree Balance and Paths"
 description: Examines binary tree balance (height-balanced trees), finding all root-to-leaf paths, summing left leaves, and counting nodes in complete trees.
 author: yoyo
 date: 2024-08-14 14:01:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Binary Tree]
 tags: [binary tree, DFS]
 ---
 
