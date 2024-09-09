@@ -3,7 +3,7 @@ title: "Leetcode Day 21 - Backtracking: Subsets"
 description: 93 Restore IP Addresses | 78 Subsets | 90 Subsets II
 author: yoyo
 date: 2024-08-24 17:28:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Backtracking]
 tags: [backtracking]
 ---
 ## Backtracking Algorithm 
