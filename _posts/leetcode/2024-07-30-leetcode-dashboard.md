@@ -30,3 +30,8 @@ tags: []
 | **Greedy**          | [Leetcode Day 23 - Greedy: Basic Applications](https://yuyulyu.github.io/posts/leetcode-day-23/)<br>[Leetcode Day 24 - Greedy: Stock and Jump Problems](https://yuyulyu.github.io/posts/leetcode-day-24/)<br>[Leetcode Day 25 - Greedy:  Two-Dimensional Trade-Off](https://yuyulyu.github.io/posts/leetcode-day-25/)<br>[Leetcode Day 26 - Greedy: Overlapping Intervals](https://yuyulyu.github.io/posts/leetcode-day-26/)<br>[Leetcode Day 27 - Greedy: Advanced Interval & Sequence Problems](https://yuyulyu.github.io/posts/leetcode-day-27/)             | ...             | 
 | ...          | ...             | ...             | 
 
+
+{% include category-post-list.html category="Dynamic Programming" %}
+
+{% include category-post-list.html category="Binary Tree" %}
+
