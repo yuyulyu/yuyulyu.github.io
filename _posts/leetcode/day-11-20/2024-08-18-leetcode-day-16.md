@@ -3,7 +3,7 @@ title: "Leetcode Day 16 - Binary Tree: Binary Search Tree Special Cases"
 description: Concentrates on binary search tree (BST)-specific problems, such as finding the minimum absolute difference, locating the mode, and identifying the lowest common ancestor in both binary and binary search trees.
 author: yoyo
 date: 2024-08-18 16:52:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Binary Tree]
 tags: [binary tree]
 ---
 
