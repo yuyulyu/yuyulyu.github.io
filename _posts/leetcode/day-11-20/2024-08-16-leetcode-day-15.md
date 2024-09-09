@@ -3,7 +3,7 @@ title: "Leetcode Day 15 - Binary Tree: Construction and Search Operations"
 description: Emphasizes constructing and manipulating binary trees, including building the maximum binary tree, merging trees, and performing search and validation operations in binary search trees (BST).
 author: yoyo
 date: 2024-08-16 14:19:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Binary Tree]
 tags: [binary tree]
 ---
 ## Binary Tree
