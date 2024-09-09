@@ -3,7 +3,7 @@ title: "Leetcode Day 11 - Binary Tree: Traversal Techniques"
 description: Focuses on binary tree level order traversal techniques, including regular, N-ary tree, and right-side view traversals. Also calculates averages at each tree level.
 author: yoyo
 date: 2024-08-12 14:12:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Binary Tree]
 tags: [binary tree]
 ---
 
