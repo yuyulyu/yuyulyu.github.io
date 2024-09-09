@@ -3,7 +3,7 @@ title: Leetcode Day 10 - Advanced Stack & Queue Applications
 description: "Description: Explores advanced applications of stacks and queues, such as evaluating reverse Polish notation, finding the maximum in a sliding window, and using heaps/queues to find the top K frequent elements. These problems require more sophisticated use of these data structures to solve efficiently."
 author: yoyo
 date: 2024-08-10 16:09:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Stack & Queue]
 tags: [stack, queue,sliding window]
 ---
 
