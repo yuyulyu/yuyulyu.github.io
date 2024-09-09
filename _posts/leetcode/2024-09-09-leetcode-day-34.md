@@ -1,5 +1,5 @@
 ---
-title: Leetcode Day 34 - DP: House Robber
+title: "Leetcode Day 34 - DP: House Robber"
 description: 198 House Robber | 213 House Robber II | 337 House Robber III
 author: yoyo
 date: 2024-09-09 14:30:00 +0800
