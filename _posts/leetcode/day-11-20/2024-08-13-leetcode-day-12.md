@@ -3,7 +3,7 @@ title: "Leetcode Day 12 - Binary Tree: Tree Structure and Depth"
 description: Involves manipulating binary tree structures, such as inverting a binary tree and determining symmetry. Also covers finding the maximum and minimum depth of a tree.
 author: yoyo
 date: 2024-08-13 14:58:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Binary Tree]
 tags: [binary tree, DFS, BFS]
 ---
 
