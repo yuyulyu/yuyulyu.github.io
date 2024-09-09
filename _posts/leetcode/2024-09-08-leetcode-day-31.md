@@ -3,7 +3,7 @@ title: Leetcode Day 31 - Dynamic Programming
 description: 416 Partition Equal Subset Sum | 1049 Last Stone Weight II | 494 Target Sum ｜ 474 Ones and Zeroes
 author: yoyo
 date: 2024-09-08 10:43:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
 
