@@ -4,7 +4,7 @@ description: 491 Non-decreasing Subsequences | 46 Permutations | 47 Permutations
 
 author: yoyo
 date: 2024-08-25 13:50:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Backtracking]
 tags: [backtracking]
 ---
 
