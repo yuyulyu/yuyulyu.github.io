@@ -4,7 +4,7 @@ description: Focuses on finding specific nodes or values in binary trees, such a
 author: yoyo
 date: 2024-08-15 16:27:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Binary Tree]
-tags: []
+tags: [binary tree]
 ---
 
 ## Binary Tree 
