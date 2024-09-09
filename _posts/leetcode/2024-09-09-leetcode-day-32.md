@@ -15,9 +15,9 @@ tags: [dynamic programming (DP)]
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Kama](https://img.shields.io/badge/Kama-gray)                                                | [Kama 52 Complete Knapsack](#complete-knapsack)                                          |✅      |        |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [518 Coin Change II](#coin-change-ii)                                                             |        |        |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [377 Combination Sum IV](#combination-sum-iv)                                                  |        |        |
-|  ![Kama](https://img.shields.io/badge/Kama-gray)                                           | [Kama 57 Climbing Stairs](#climbing-stairs)                                                     |        |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [518 Coin Change II](#coin-change-ii)                                                    |✅      |        |
+| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [377 Combination Sum IV](#combination-sum-iv)                                         |✅      |        |
+|  ![Kama](https://img.shields.io/badge/Kama-gray)                                           | [Kama 57 Climbing Stairs](#climbing-stairs)                                                       |✅      |        |
 
 ## Complete Knapsack
 
@@ -122,6 +122,19 @@ Output: 1
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0518.零钱兑换II.html)[^cciiSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def change(self, amount, coins):
+        dp = [0 for _ in range (amount + 1)]
+        dp[0] = 1
+        
+        for coin in coins:   
+            for m in range(coin, amount + 1):
+                if m >= coin: dp[m] += dp[m - coin]
+        return dp[amount]
+```
 
 ### Similar Questions
 
@@ -170,10 +183,24 @@ Output: 0
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0377.组合总和Ⅳ.html)[^csivSolution].
 
+#### Python
+
+```python
+class Solution(object):
+    def combinationSum4(self, nums, target):
+        dp = [0 for _ in range(target + 1)]
+        dp[0] = 1
+
+        for t in range(target + 1):
+            for num in nums:
+                if t >= num: dp[t] += dp[t - num]
+        
+        return dp[target]
+```
 
 ## Climbing Stairs
 
-> [Link to the question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^cs]
+> [Link to the question](https://kamacoder.com/problempage.php?pid=1067)[^cs]
 {: .prompt-info }
 
 **题目描述**
@@ -202,7 +229,20 @@ Output: 0
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0070.爬楼梯完全背包版本.html)[^csSolution].
 
+#### Python
 
+```python
+stairs, steps = map(int, input().split())
+
+dp = [0 for _ in range(1 + stairs)]
+dp[0] = 1 
+
+for stair in range(stairs + 1):
+    for step in range(1, steps + 1):
+        dp[stair] += dp[stair - step]
+
+print(dp[stairs])
+```
 
 
 ## Reference
