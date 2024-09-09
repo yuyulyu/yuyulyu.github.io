@@ -6,7 +6,6 @@ author: yoyo
 date: 2024-07-30 02:30:00 +0800
 categories: [Data Structure and Algorithm, Leetcode]
 tags: []
-lang: zh-CN
 ---
 
 > <details>
