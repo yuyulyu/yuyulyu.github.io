@@ -3,7 +3,7 @@ title: "Leetcode Day 17 - Binary Search Tree: Insertion, Deletion, and LCA"
 description: "Focuses on essential binary search tree (BST) operations, including finding the lowest common ancestor, inserting new nodes, and deleting nodes from a BST while maintaining its properties."
 author: yoyo
 date: 2024-08-19 14:03:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Binary Tree]
 tags: [binary tree]
 ---
 
