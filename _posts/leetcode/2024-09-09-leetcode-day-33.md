@@ -1,5 +1,5 @@
 ---
-title: “Leetcode Day 33 - DP: Multiple Knapsack Problem”
+title: "Leetcode Day 33 - DP: Multiple Knapsack Problem"
 description: 322 Coin Change | 279 Perfect Squares | 139 Word Break
 author: yoyo
 date: 2024-09-09 11:32:00 +0800
