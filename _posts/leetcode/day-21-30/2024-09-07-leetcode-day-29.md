@@ -3,7 +3,7 @@ title: Leetcode Day 29 - Dynamic Programming
 description: 62 Unique Paths | 63 Unique Paths II | 343 Integer Break | 96 Unique Binary Search Trees
 author: yoyo
 date: 2024-09-07 15:48:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
 
