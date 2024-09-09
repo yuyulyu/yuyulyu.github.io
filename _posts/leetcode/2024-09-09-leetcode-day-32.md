@@ -3,7 +3,7 @@ title: "Leetcode Day 32 - DP: Complete Knapsack Problem"
 description: Kama 52 Complete Knapsack | 518 Coin Change II | 377 Combination Sum IV | Kama 57 Climbing Stairs
 author: yoyo
 date: 2024-09-09 00:25:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
 
