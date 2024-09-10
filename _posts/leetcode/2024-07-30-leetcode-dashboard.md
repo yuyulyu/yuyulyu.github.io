@@ -12,16 +12,18 @@ tags: []
 >  <summary><strong>Navigation Tips</strong></summary>
 >  <ul>
 >    <li>Use the <strong>search feature</strong> in your browser (Ctrl + F or Command + F) to quickly find specific days or topics.> > </li>
->    <li>Bookmark this dashboard for easy access in the future.</li>
+>    <li>Bookmark this page for easy access in the future.</li>
 >  </ul>
 > </details>
 {: .prompt-info }
 
+<details>
+  <summary><strong>Full list of Leetcode questions</strong></summary>
 
 | Topic       | Link to the problem sets   | Related Notes |
 |--------------|-----------------|-----------------|------------------|
-| **Array** | [LeetCode Day 1 - Array Basics](https://yuyulyu.github.io/posts/leetcode-day-1/) <br> [LeetCode Day 2 - Advanced Array Manipulation](https://yuyulyu.github.io/posts/leetcode-day-2/)  |  |
-| **Linked List** | [LeetCode Day 3 - Linked List Basics](https://yuyulyu.github.io/posts/leetcode-day-3/) <br> [LeetCode Day 4 - Advanced Linked List Operations](https://yuyulyu.github.io/posts/leetcode-day-4/)  | |
+| **[Array](#array)** | [LeetCode Day 1 - Array Basics](https://yuyulyu.github.io/posts/leetcode-day-1/) <br> [LeetCode Day 2 - Advanced Array Manipulation](https://yuyulyu.github.io/posts/leetcode-day-2/)  |  |
+| **[Linked List](#linked-list)** | [LeetCode Day 3 - Linked List Basics](https://yuyulyu.github.io/posts/leetcode-day-3/) <br> [LeetCode Day 4 - Advanced Linked List Operations](https://yuyulyu.github.io/posts/leetcode-day-4/)  | |
 | **Hash Table** | [LeetCode Day 5 - Hash Table Basics](https://yuyulyu.github.io/posts/leetcode-day-5/) <br> [LeetCode Day 6 - Advanced Hash Table](https://yuyulyu.github.io/posts/leetcode-day-6/) |  [Hash Table](https://yuyulyu.github.io/posts/hash-table/) |
 | **String** | [LeetCode Day 7 - String Reversal and Manipulation Basics](https://yuyulyu.github.io/posts/leetcode-day-7/) <br> [LeetCode Day 8 - Advanced String Manipulations & KMP](https://yuyulyu.github.io/posts/leetcode-day-8/)  | [KMP Algorithm](https://yuyulyu.github.io/posts/kmp/) |
 | **Stack & Queue** | [LeetCode Day 9 - Stack & Queue Fundamentals](https://yuyulyu.github.io/posts/leetcode-day-9/) <br> [LeetCode Day 10 - Advanced Stack & Queue Applications](https://yuyulyu.github.io/posts/leetcode-day-10/) |  |
@@ -30,10 +32,24 @@ tags: []
 | **Greedy**          | [Leetcode Day 23 - Greedy: Basic Applications](https://yuyulyu.github.io/posts/leetcode-day-23/)<br>[Leetcode Day 24 - Greedy: Stock and Jump Problems](https://yuyulyu.github.io/posts/leetcode-day-24/)<br>[Leetcode Day 25 - Greedy:  Two-Dimensional Trade-Off](https://yuyulyu.github.io/posts/leetcode-day-25/)<br>[Leetcode Day 26 - Greedy: Overlapping Intervals](https://yuyulyu.github.io/posts/leetcode-day-26/)<br>[Leetcode Day 27 - Greedy: Advanced Interval & Sequence Problems](https://yuyulyu.github.io/posts/leetcode-day-27/)             | ...             | 
 | ...          | ...             | ...             | 
 
-{% include category-post-scroll.html category="Dynamic Programming" scroll=true %}
+</details>
+
+## Array
+
+<details>
+  <summary><strong>Array questions</strong></summary>
+{% include category-post-scroll.html category="Array" scroll=true %}
+</details>
+
+## Linked List
+
+<details>
+  <summary><strong>Linked List questions</strong></summary>
+{% include category-post-scroll.html category="Linked List" scroll=true %}
+</details>
 
 
-{% include category-post-list.html category="Dynamic Programming" %}
+
 
 
 
