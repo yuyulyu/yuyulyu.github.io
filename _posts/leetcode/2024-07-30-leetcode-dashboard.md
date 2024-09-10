@@ -4,7 +4,7 @@ description: This is a dashboard which serves as a central hub for navigating th
 pin: true
 author: yoyo
 date: 2024-07-30 02:30:00 +0800
-categories: [Data Structure and Algorithm, Leetcode]
+categories: [Data Structure and Algorithm, Leetcode, Leetcode Summary]
 tags: []
 ---
 
