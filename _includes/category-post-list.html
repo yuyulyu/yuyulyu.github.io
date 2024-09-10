@@ -6,18 +6,18 @@
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
-        {% if post.image %}
-          {% assign src = post.image.path | default: post.image %}
+        {% if image %}
+          {% assign src = image.path | default: image %}
           {% unless src contains '//' %}
             {% assign src = post.media_subpath | append: '/' | append: src | replace: '//', '/' %}
           {% endunless %}
 
-          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+          {% assign alt = image.alt | xml_escape | default: 'Preview Image' %}
 
           {% assign lqip = null %}
 
-          {% if post.image.lqip %}
-            {% capture lqip %}lqip="{{ post.image.lqip }}"{% endcapture %}
+          {% if image.lqip %}
+            {% capture lqip %}lqip="{{ image.lqip }}"{% endcapture %}
           {% endif %}
 
           <div class="col-md-5">
