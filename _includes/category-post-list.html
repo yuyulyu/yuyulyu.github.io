@@ -2,7 +2,7 @@
 {% if posts_in_category.size > 0 %}
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts_in_category %}
-    <article class="card-wrapper card">
+    <article class="card-wrapper card" style="margin-bottom: 10px; padding: 10px;">
       <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
         {% assign card_body_col = '12' %}
 
@@ -21,28 +21,20 @@
           {% endif %}
 
           <div class="col-md-5">
-            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }}>
+            <img src="{{ src }}" alt="{{ alt }}" {{ lqip }} class="img-fluid">
           </div>
 
           {% assign card_body_col = '7' %}
         {% endif %}
 
         <div class="col-md-{{ card_body_col }}">
-          <div class="card-body d-flex flex-column">
-            <h1 class="card-title my-2 mt-md-0">{{ post.title }}</h1>
+          <div class="card-body d-flex flex-column" style="padding: 10px;">
+            <p class="card-title my-2 mt-md-0" style="font-size: 1.25rem; font-weight: bold;">{{ post.title }}</p>
 
             <div class="card-text content mt-0 mb-3">
               <p>{% include post-description.html %}</p>
             </div>
 
-              {% if post.pin %}
-                <div class="pin ms-1">
-                  <i class="fas fa-thumbtack fa-fw"></i>
-                  <span>{{ site.data.locales[lang].post.pin_prompt }}</span>
-                </div>
-              {% endif %}
-            </div>
-            <!-- .post-meta -->
           </div>
           <!-- .card-body -->
         </div>
