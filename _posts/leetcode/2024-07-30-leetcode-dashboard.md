@@ -120,5 +120,5 @@ tags: []
 
 <details>
   <summary><strong>Linked List questions</strong></summary>
-{% include category-post-scroll.html category="Linked List" scroll=true image= %}
+{% include category-post-scroll.html category="Linked List" scroll=true image="/assets/image/other/Leetcode-logo.jpeg" %}
 </details>
