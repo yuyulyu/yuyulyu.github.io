@@ -19,6 +19,7 @@ tags: []
 
 <details>
   <summary><strong>Full list of Leetcode questions</strong></summary>
+  
 
 | Topic       | Link to the problem sets   | Related Notes |
 |--------------|-----------------|-----------------|------------------|
@@ -31,6 +32,7 @@ tags: []
 | **Backtracking** | [Leetcode Day 19 - Backtracking: Combination](https://yuyulyu.github.io/posts/leetcode-day-19/)<br>[Leetcode Day 20 - Backtracking: Cutting](https://yuyulyu.github.io/posts/leetcode-day-20/)<br>[Leetcode Day 21 - Backtracking: Subsets](https://yuyulyu.github.io/posts/leetcode-day-21/)<br>[Leetcode Day 22 - Backtracking: Permutation & Chessboard](https://yuyulyu.github.io/posts/leetcode-day-22/)            |              |
 | **Greedy**          | [Leetcode Day 23 - Greedy: Basic Applications](https://yuyulyu.github.io/posts/leetcode-day-23/)<br>[Leetcode Day 24 - Greedy: Stock and Jump Problems](https://yuyulyu.github.io/posts/leetcode-day-24/)<br>[Leetcode Day 25 - Greedy:  Two-Dimensional Trade-Off](https://yuyulyu.github.io/posts/leetcode-day-25/)<br>[Leetcode Day 26 - Greedy: Overlapping Intervals](https://yuyulyu.github.io/posts/leetcode-day-26/)<br>[Leetcode Day 27 - Greedy: Advanced Interval & Sequence Problems](https://yuyulyu.github.io/posts/leetcode-day-27/)             | ...             | 
 | ...          | ...             | ...             | 
+
 
 </details>
 
