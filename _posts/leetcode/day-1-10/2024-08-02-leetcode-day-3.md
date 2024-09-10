@@ -48,6 +48,8 @@ Output: []
 
 ### Solution[^rllrSolution]
 
+#### Python
+
 ```python
 class Solution(object):
     def removeElements(self, head, val):
@@ -68,7 +70,7 @@ class Solution(object):
         return head
 ```
 
-**Java**
+#### Java
 
 ```java
 /**
@@ -151,7 +153,7 @@ myLinkedList.get(1);              // return 3
 
 ### Solution[^dllSolution]
 
-**Python**
+#### Python
 
 ```python
 lass MyLinkedList(object):
@@ -297,6 +299,9 @@ Output: []
 
 ### Solution[^rllSolution]
 
+
+#### Python
+
 ```python
 class Solution(object):
     def reverseList(self, head):
@@ -317,7 +322,7 @@ class Solution(object):
             return None
 ```
 
-**Java**
+#### Java
 
 ```java
 class Solution {
