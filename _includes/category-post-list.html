@@ -1,4 +1,4 @@
-{% assign posts_in_category = site.categories[include.category] %}
+{% assign posts_in_category = site.categories[include.category] | sort: 'date' %}
 {% if posts_in_category.size > 0 %}
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in posts_in_category %}
