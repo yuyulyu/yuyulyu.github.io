@@ -12,7 +12,7 @@ Currently, I'm  working on:
 - Leetcode daily challenges.
   {% include single-post-card.html category="Leetcode Summary"%}
 - CS231n: Deep Learning for Computer Vision.
-  {% include single-post-card.html category="cs231n Summary"%}
+  {% include category-post-scroll.html category="cs231n" scroll=true %}
 
 >  Please note that the content is intended for personal use only and not for commercial purposes. If you come across any material that infringes upon copyright, please inform me so it can be addressed promptly.
 {: .prompt-warning }
