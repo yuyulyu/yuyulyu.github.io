@@ -1,0 +1,13 @@
+{% assign posts_in_category = site.categories[include.category] %}
+{% if posts_in_category.size > 0 %}
+
+<div id="post-list" class="flex-grow-1 px-xl-1" 
+     style="max-height: {% if include.scroll %}300px{% endif %}; overflow-y: {% if include.scroll %}auto{% else %}visible{% endif %};">
+
+  {% include category-post-list.html category=include.category %}
+  
+</div>
+
+{% else %}
+<p>No posts available in this category.</p>
+{% endif %}
