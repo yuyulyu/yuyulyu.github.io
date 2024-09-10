@@ -1,6 +1,6 @@
 ---
-title: Leetcode Study Dashboard
-description: This is a dashboard which serves as a central hub for navigating through my LeetCode daily study notes.
+title: LeetCode Summary by Topics
+description: Collection of summarized notes and key problem-solving techniques for various LeetCode topics. 
 pin: true
 author: yoyo
 date: 2024-07-30 02:30:00 +0800
