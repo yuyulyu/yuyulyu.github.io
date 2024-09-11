@@ -8,6 +8,44 @@ categories: [Data Structure and Algorithm, Leetcode, Leetcode Summary]
 tags: []
 ---
 
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Link to the problem sets</th>
+      <th>Related Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign topics = "Array,Linked List,Hash Table,String,Stack & Queue,Binary Tree,Backtracking,Greedy" | split: ',' %}
+    
+    {% for topic in topics %}
+    <tr>
+      <td><strong><a href="#{{ topic | downcase | replace: ' ', '-' }}">{{ topic }}</a></strong></td>
+      <td>
+        {% for post in site.posts %}
+          {% if topic == post.categories[0] %}
+            <a href="{{ post.url }}">{{ post.title }}</a> <br>
+          {% endif %}
+        {% endfor %}
+      </td>
+      <td>
+        {% assign related_notes = site.posts | where: "categories", topic %}
+        {% if related_notes.size > 0 %}
+          <a href="{{ related_notes[0].url }}">{{ related_notes[0].title }}</a>
+        {% endif %}
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+
+
+
+
+
 > <details>
 >  <summary><strong>Navigation Tips</strong></summary>
 >  <ul>
@@ -46,7 +84,7 @@ tags: []
         <td></td>
       </tr>
       <tr>
-        <td>Hash Table</td>
+        <td><strong><a href="#hash-table">Hash Table</a></strong></td>
         <td>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-5/">LeetCode Day 5 - Hash Table Basics</a> <br>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-6/">LeetCode Day 6 - Advanced Hash Table</a>
@@ -54,7 +92,7 @@ tags: []
         <td><a href="https://yuyulyu.github.io/posts/hash-table/">Hash Table</a></td>
       </tr>
       <tr>
-        <td>String</td>
+        <td><strong><a href="#string">String</a></strong></td>
         <td>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-7/">LeetCode Day 7 - String Reversal and Manipulation Basics</a> <br>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-8/">LeetCode Day 8 - Advanced String Manipulations & KMP</a>
@@ -62,7 +100,7 @@ tags: []
         <td><a href="https://yuyulyu.github.io/posts/kmp/">KMP Algorithm</a></td>
       </tr>
       <tr>
-        <td>Stack & Queue</td>
+        <td><strong><a href="#stack-and-queue">Stack & Queue</a></strong></td>
         <td>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-9/">LeetCode Day 9 - Stack & Queue Fundamentals</a> <br>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-10/">LeetCode Day 10 - Advanced Stack & Queue Applications</a>
@@ -70,7 +108,7 @@ tags: []
         <td></td>
       </tr>
       <tr>
-        <td>Binary Tree</td>
+        <td><strong><a href="#binary-tree">Binary Tree</a></strong></td>
         <td>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-11/">LeetCode Day 11 - Binary Tree: Traversal Techniques</a> <br>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-12/">LeetCode Day 12 - Binary Tree: Tree Structure and Depth</a> <br>
@@ -84,7 +122,7 @@ tags: []
         <td><a href="https://yuyulyu.github.io/posts/binary-tree/">Binary Tree</a></td>
       </tr>
       <tr>
-        <td>Backtracking</td>
+        <td><strong><a href="#backtracking">Backtracking</a></strong></td>
         <td>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-19/">Leetcode Day 19 - Backtracking: Combination</a> <br>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-20/">Leetcode Day 20 - Backtracking: Cutting</a> <br>
@@ -94,7 +132,7 @@ tags: []
         <td></td>
       </tr>
       <tr>
-        <td>Greedy</td>
+        <td><strong><a href="#greedy">Greedy</a></strong></td>
         <td>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-23/">Leetcode Day 23 - Greedy: Basic Applications</a> <br>
           <a href="https://yuyulyu.github.io/posts/leetcode-day-24/">Leetcode Day 24 - Greedy: Stock and Jump Problems</a> <br>
@@ -122,3 +160,15 @@ tags: []
   <summary><strong>Linked List questions</strong></summary>
 {% include category-post-scroll.html category="Linked List" scroll=true image="/assets/image/other/Leetcode-logo.jpeg" %}
 </details>
+
+## Hash Table
+
+## String
+
+## Stack & Queue
+
+## Binary Tree
+
+## Backtracking
+
+## Greedy
