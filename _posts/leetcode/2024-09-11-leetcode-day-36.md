@@ -1,6 +1,6 @@
 ---
 title: "Leetcode Day 36 - DP: Buy and Sell Stock Advanced"
-description: 188 Best Time to Buy and Sell Stock IV ｜ 309 Best Time to Buy and Sell Stock with Cooldown
+description: 188 Best Time to Buy and Sell Stock IV ｜ 309 Best Time to Buy and Sell Stock with Cooldown | 714 Best Time to Buy and Sell Stock with Transaction Fee
 author: yoyo
 date: 2024-09-11 20:47:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming, Buy and Sell Stock]
@@ -8,18 +8,13 @@ tags: [dynamic programming (DP)]
 math: true
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Dynamic Programming
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Hard](https://img.shields.io/badge/Hard-red)                                               | [188 Best Time to Buy and Sell Stock IV](#best-time-to-buy-and-sell-stock-iv)                                 |✅      |       |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [309 Best Time to Buy and Sell Stock with Cooldown](#best-time-to-buy-and-sell-stock-with-cooldown)      |✅      |       |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [714 Best Time to Buy and Sell Stock with Transaction Fee](#best-time-to-buy-and-sell-stock-with-transaction-fee)       |✅      |      |
 
 ## Best Time to Buy and Sell Stock IV
 
@@ -155,30 +150,72 @@ class Solution(object):
         return max(dp[-1])
 ```
 
-### Similar Questions
 
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+## Best Time to Buy and Sell Stock with Transaction Fee
 
-## <2nd problem>
-
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+> [Link to Leetcode question](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/)[^bttbasswtf]
 {: .prompt-info }
 
-[^]:Leetcode-
+You are given an array prices where `prices[i]` is the price of a given stock on the ith day, and an integer fee representing a transaction fee.
+
+Find the maximum profit you can achieve. You may complete as many transactions as you like, but you need to pay the transaction fee for each transaction.
+
+**Note**:
+
+You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+The transaction fee is only charged once for each stock purchase and sale.
+ 
+
+**Example 1**
+
+```yml
+Input: prices = [1,3,2,8,4,9], fee = 2
+Output: 8
+Explanation: The maximum profit can be achieved by:
+- Buying at prices[0] = 1
+- Selling at prices[3] = 8
+- Buying at prices[4] = 4
+- Selling at prices[5] = 9
+The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
+```
+
+**Example 2**
+
+```yml
+Input: prices = [1,3,7,5,10,3], fee = 3
+Output: 6
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0714.买卖股票的最佳时机含手续费（动态规划）.html)[^bttbasswtfSolution].
 
-[^Solution]:代码随想录-
+#### Python
 
-### Similar Questions
+```python
+class Solution(object):
+    def maxProfit(self, prices, fee):
+        dp = [[0,0] for _ in range(len(prices))]
+        dp[0][0] = -prices[0]
 
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+        for day in range(1,len(prices)):
+            dp[day][0] = max(dp[day - 1][0], dp[day - 1][1] - prices[day]) #持有股票状态
+            dp[day][1] = max(dp[day - 1][0] + prices[day] - fee, dp[day - 1][1]) #已卖出股票状态
+        
+        return max(dp[-1])
+```
+
+```python
+class Solution(object):
+    def maxProfit(self, prices, fee):
+        hold_stock = -prices[0]
+        not_hold_stock = 0
+
+        for day in range(1,len(prices)):
+            hold_stock, not_hold_stock = max(hold_stock, not_hold_stock - prices[day]), max(hold_stock + prices[day] - fee, not_hold_stock) 
+        
+        return max(hold_stock, not_hold_stock)
+```
 
 
 
@@ -189,4 +226,6 @@ class Solution(object):
 [^bttbasswc]:Leetcode-309 Best Time to Buy and Sell Stock with Cooldown: [https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/).
 [^bttbasswcSolution]:代码随想录-最佳买卖股票时机含冷冻期: [https://programmercarl.com/0309.最佳买卖股票时机含冷冻期.html
 ](https://programmercarl.com/0309.最佳买卖股票时机含冷冻期.html).
+[^bttbasswtf]:Leetcode-714 Best Time to Buy and Sell Stock with Transaction Fee: [https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/).
+[^bttbasswtfSolution]:代码随想录-买卖股票的最佳时机含手续费（动态规划）: [https://programmercarl.com/0714.买卖股票的最佳时机含手续费（动态规划）.html](https://programmercarl.com/0714.买卖股票的最佳时机含手续费（动态规划）.html).
 
