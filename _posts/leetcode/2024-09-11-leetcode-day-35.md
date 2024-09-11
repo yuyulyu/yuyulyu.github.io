@@ -13,7 +13,7 @@ tags: [dynamic programming (DP)]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                               | [121 Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)               |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [122 Best Time to Buy and Sell Stock II](#best-time-to-buy-and-sell-stock-ii)         |✅      |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [123 Best Time to Buy and Sell Stock III](#best-time-to-buy-and-sell-stock-iii)       |✅      |      |
+| ![Hard](https://img.shields.io/badge/Hard-red)                                              | [123 Best Time to Buy and Sell Stock III](#best-time-to-buy-and-sell-stock-iii)       |✅      |      |
 
 
 ## Best Time to Buy and Sell Stock
