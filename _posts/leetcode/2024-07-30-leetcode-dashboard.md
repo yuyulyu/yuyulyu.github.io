@@ -13,7 +13,6 @@ tags: []
     <tr>
       <th>Topic</th>
       <th>Link to the problem sets</th>
-      <th>Related Notes</th>
     </tr>
   </thead>
   <tbody>
@@ -24,16 +23,10 @@ tags: []
       <td><strong><a href="#{{ topic | downcase | replace: ' ', '-' }}">{{ topic }}</a></strong></td>
       <td>
         {% for post in site.posts %}
-          {% if topic == post.categories[0] %}
+          {% if topic == post.categories[-1] %}
             <a href="{{ post.url }}">{{ post.title }}</a> <br>
           {% endif %}
         {% endfor %}
-      </td>
-      <td>
-        {% assign related_notes = site.posts | where: "categories", topic %}
-        {% if related_notes.size > 0 %}
-          <a href="{{ related_notes[0].url }}">{{ related_notes[0].title }}</a>
-        {% endif %}
       </td>
     </tr>
     {% endfor %}
