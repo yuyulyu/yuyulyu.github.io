@@ -17,7 +17,7 @@ tags: []
     </tr>
   </thead>
   <tbody>
-    {% assign topics = "Array,Linked List,Hash Table,String,Stack & Queue,Binary Tree,Backtracking,Greedy" | split: ',' %}
+    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy" | split: ',' %}
     
     {% for topic in topics %}
     <tr>
@@ -165,7 +165,7 @@ tags: []
 
 ## String
 
-## Stack & Queue
+## Stack and Queue
 
 ## Binary Tree
 
