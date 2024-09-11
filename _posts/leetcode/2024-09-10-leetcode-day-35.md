@@ -4,14 +4,14 @@ description: 121 Best Time to Buy and Sell Stock
 author: yoyo
 date: 2042-08-03 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
-tags: []
+tags: [dynamic programming (DP)]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-## <Topic> [^dmsxl] 
+## Dynamic Programming
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
@@ -66,5 +66,6 @@ tags: []
 
 
 ## Reference
-[^dmsxl]:
+
+
 
