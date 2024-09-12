@@ -28,7 +28,7 @@ tags: []
     </tr>
   </thead>
   <tbody>
-    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy, Dynamic Programming" | split: ',' %}
+    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming" | split: ',' %}
     
     {% for topic in topics %}
     <tr>
@@ -138,9 +138,9 @@ tags: []
 {% include category-post-scroll.html category="Greedy" scroll=true %}
 </details>
 
-## Dynamic Pprogramming
+## Dynamic Programming
 
 <details>
   <summary><strong>Linked List questions</strong></summary>
-{% include category-post-scroll.html category="Dynamic Pprogramming" scroll=true %}
+{% include category-post-scroll.html category="Dynamic Programming" scroll=true %}
 </details>
