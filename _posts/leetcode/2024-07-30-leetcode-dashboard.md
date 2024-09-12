@@ -44,7 +44,40 @@ tags: []
     {% endfor %}
   </tbody>
 </table>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Topic</th>
+      <th>Link to the problem sets</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy, Dynamic Programming" | split: ',' %}
+    
+    {% for topic in topics %}
+      {% if topic.size > 0 %}
+      <div id="post-list" class="flex-grow-1 px-xl-1">
+          <tr>
+            <td><strong><a href="#{{ topic | downcase | replace: ' ', '-' }}">{{ topic }}</a></strong></td>
+            <td>
+              {% for post in topic %}
+                {% if topic == post.categories[-1] %}
+                  <a href="{{ post.url }}">{{ post.title }}</a> <br>
+                {% endif %}
+              {% endfor %}
+            </td>
+          </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+
+  
 </details>
+
 
 
 ## Array
