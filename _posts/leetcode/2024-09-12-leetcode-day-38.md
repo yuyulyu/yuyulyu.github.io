@@ -1,8 +1,8 @@
 ---
-title: "Leetcode Day 35 - DP: Buy and Sell Stock"
-description: 121 Best Time to Buy and Sell Stock
+title: "Leetcode Day 38 - DP: Subsequence"
+description: 1143 Longest Common Subsequence | 
 author: yoyo
-date: 2042-08-03 23:07:00 +0800
+date: 2024-09-12 15:26:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
@@ -15,26 +15,54 @@ tags: [dynamic programming (DP)]
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [121 Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [1143 Longest Common Subsequence](#best-time-to-buy-and-sell-stock)                                          |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
 
 # the link
 
-## Best Time to Buy and Sell Stock
+## 1143 Longest Common Subsequence
 
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^]
+> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^lcs]
 {: .prompt-info }
 
-[^]:Leetcode-121 Best Time to Buy and Sell Stock: 
+Given two strings `text1` and `text2`, return the length of their longest common subsequence. If there is no common subsequence, return `0`.
+
+A subsequence of a string is a new string generated from the original string with some characters (can be none) deleted without changing the relative order of the remaining characters.
+
+For example, `"ace"` is a subsequence of `"abcde"`.
+A common subsequence of two strings is a subsequence that is common to both strings.
+
+**Example 1**
+
+```
+Input: text1 = "abcde", text2 = "ace" 
+Output: 3  
+Explanation: The longest common subsequence is "ace" and its length is 3.
+```
+
+**Example 2**
+
+```
+Input: text1 = "abc", text2 = "abc"
+Output: 3
+Explanation: The longest common subsequence is "abc" and its length is 3.
+```
+
+**Example 3**
+
+```
+Input: text1 = "abc", text2 = "def"
+Output: 0
+Explanation: There is no such common subsequence, so the result is 0.
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^lcsSolution].
 
-[^Solution]:代码随想录-
-[^bttbassSolution]: 
+[^lcsSolution]:代码随想录-
 
 ### Similar Questions
 
@@ -66,6 +94,9 @@ tags: [dynamic programming (DP)]
 
 
 ## Reference
+
+[^lcs]:Leetcode-1143 Longest Common Subsequence: [https://leetcode.com/problems/longest-common-subsequence/description/
+](https://leetcode.com/problems/longest-common-subsequence/description/).
 
 
 
