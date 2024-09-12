@@ -55,7 +55,7 @@ tags: []
     </tr>
   </thead>
   <tbody>
-    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy, Dynamic Programming" | split: ',' %}
+    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming" | split: ',' %}
     
     {% for topic in topics %}
       {% if topic.size > 0 %}
