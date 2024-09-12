@@ -58,20 +58,23 @@ tags: []
     {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming" | split: ',' %}
     
     {% for topic in topics %}
-      {% if topic.size > 0 %}
-      <div id="post-list" class="flex-grow-1 px-xl-1">
-          <tr>
-            <td><strong><a href="#{{ topic | downcase | replace: ' ', '-' }}">{{ topic }}</a></strong></td>
-            <td>
-              {% for post in topic %}
-                <a href="{{ post.url }}">{{ post.title }}</a> <br>
-              {% endfor %}
-            </td>
-          </tr>
-        {% endif %}
+      {% assign posts_in_category = site.categories[topic] | sort: 'date' %}
+      <tr>
+        <td><strong><a href="#{{ topic | downcase | replace: ' ', '-' }}">{{ topic }}</a></strong></td>
+        <td>
+          {% if posts_in_category %}
+            {% for post in posts_in_category %}
+              <a href="{{ post.url }}">{{ post.title }}</a> <br>
+            {% endfor %}
+          {% else %}
+            No posts available for this topic.
+          {% endif %}
+        </td>
+      </tr>
     {% endfor %}
   </tbody>
 </table>
+
 
 
   
