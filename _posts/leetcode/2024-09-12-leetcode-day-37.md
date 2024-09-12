@@ -7,10 +7,6 @@ categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming, Subseq
 tags: [dynamic programming (DP)]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
 ## Dynamic Programming
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
