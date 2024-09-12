@@ -64,12 +64,11 @@ tags: []
             <td><strong><a href="#{{ topic | downcase | replace: ' ', '-' }}">{{ topic }}</a></strong></td>
             <td>
               {% for post in topic %}
-                {% if topic == post.categories[-1] %}
-                  <a href="{{ post.url }}">{{ post.title }}</a> <br>
-                {% endif %}
+                <a href="{{ post.url }}">{{ post.title }}</a> <br>
               {% endfor %}
             </td>
           </tr>
+        {% endif %}
     {% endfor %}
   </tbody>
 </table>
