@@ -1,9 +1,9 @@
 ---
-title: "Leetcode Day 35 - DP: "
+title: "Leetcode Day 35 - DP: Subsequence"
 description: 
 author: yoyo
-date: 2042-09-13 23:07:00 +0800
-categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
+date: 2024-09-13 23:07:00 +0800
+categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming, Subsequence]
 tags: [dynamic programming (DP)]
 ---
 
