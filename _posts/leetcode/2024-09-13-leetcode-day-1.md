@@ -1,8 +1,8 @@
 ---
-title: "Leetcode Day 35 - DP: Buy and Sell Stock"
-description: 121 Best Time to Buy and Sell Stock
+title: "Leetcode Day 35 - DP: "
+description: 
 author: yoyo
-date: 2042-08-03 23:07:00 +0800
+date: 2042-09-13 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
@@ -24,7 +24,7 @@ tags: [dynamic programming (DP)]
 
 ## Best Time to Buy and Sell Stock
 
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^]
+> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^abc]
 {: .prompt-info }
 
 [^]:Leetcode-121 Best Time to Buy and Sell Stock: 
@@ -34,14 +34,6 @@ tags: [dynamic programming (DP)]
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
 
 [^Solution]:代码随想录-
-[^bttbassSolution]: 
-
-### Similar Questions
-
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [1721 Swapping Nodes in a Linked List](https://leetcode.com/problems/swapping-nodes-in-a-linked-list/description/)[^sniall] |        |      |
-| ![Hard](https://img.shields.io/badge/Hard-red)                                                       | [25 Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)[^rnikg]          |        |      |
 
 
 ## <2nd problem>
@@ -53,15 +45,38 @@ tags: [dynamic programming (DP)]
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^rhsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
 
 [^Solution]:代码随想录-
 
-### Similar Questions
+## <3rd problem>
 
-| Diff                                                                                                 | Similar Questions                                                                                       | Python | Java |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                                | [2095 Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/)[^dtmnoall] |        |      |
+> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+{: .prompt-info }
+
+[^]:Leetcode-
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
+
+[^Solution]:代码随想录-
+
+## <4th problem>
+
+> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+{: .prompt-info }
+
+[^]:Leetcode-
+
+### Solution
+
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
+
+[^Solution]:代码随想录-
+
+
+
 
 
 
