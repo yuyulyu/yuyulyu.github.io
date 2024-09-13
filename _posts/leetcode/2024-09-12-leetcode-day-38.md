@@ -2,7 +2,7 @@
 title: "Leetcode Day 38 - DP: Subsequence"
 description: 1143 Longest Common Subsequence | 1035 Uncrossed Lines | 53 Maximum Subarray | 392 Is Subsequence
 author: yoyo
-date: 2042-09-12 15:26:00 +0800
+date: 2024-09-12 15:26:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
