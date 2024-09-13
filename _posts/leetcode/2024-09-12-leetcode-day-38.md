@@ -60,9 +60,9 @@ Explanation: There is no such common subsequence, so the result is 0.
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^lcsSolution].
+> A detailed explaination of solution can be found [here](https://programmercarl.com/1143.最长公共子序列.html)[^lcsSolution].
 
-[^lcsSolution]:代码随想录-
+
 
 
 ### Similar Questions
@@ -98,6 +98,7 @@ Explanation: There is no such common subsequence, so the result is 0.
 
 [^lcs]:Leetcode-1143 Longest Common Subsequence: [https://leetcode.com/problems/longest-common-subsequence/description/
 ](https://leetcode.com/problems/longest-common-subsequence/description/).
+[^lcsSolution]:代码随想录-最长公共子序列: [https://programmercarl.com/1143.最长公共子序列.html](https://programmercarl.com/1143.最长公共子序列.html).
 
 
 
