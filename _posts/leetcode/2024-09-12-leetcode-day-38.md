@@ -130,7 +130,7 @@ Return the maximum number of connecting lines we can draw in this way.
 
 **Example 1**
 
-[image]: uncrossed-lines-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-38/uncrossed-lines-example-1.png)
 
 ```yml
 Input: nums1 = [1,4,2], nums2 = [1,2,4]
