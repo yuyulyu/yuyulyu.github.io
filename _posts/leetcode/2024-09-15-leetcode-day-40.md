@@ -1,80 +1,82 @@
 ---
-title: "Leetcode Day 35 - DP: "
-description: 
+title: "Leetcode Day 40 - DP: Palindromic Subsequence"
+description: 647 Palindromic Substrings | 516 Longest Palindromic Subsequence
 author: yoyo
-date: 2042-09-13 23:07:00 +0800
+date: 2024-09-15 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
-
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
 
 ## Dynamic Programming
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [121 Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#the-link)                |        |      |
-| ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#the-link)               |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#the-link)                                       |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [647 Palindromic Substrings](#palindromic-substrings)                                          |        |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [516 Longest Palindromic Subsequence](#longest-palindromic-subsequence)                |        |      |
 
-# the link
+## Palindromic Substrings
 
-## Best Time to Buy and Sell Stock
-
-> [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^abc]
+> [Link to Leetcode question](https://leetcode.com/problems/palindromic-substrings/description/)[^ps]
 {: .prompt-info }
 
-[^]:Leetcode-121 Best Time to Buy and Sell Stock: 
+
+Given a string `s`, return the number of palindromic substrings in it.
+
+A string is a palindrome when it reads the same backward as forward.
+
+A substring is a contiguous sequence of characters within the string.
+
+**Example 1**
+
+```yml
+Input: s = "abc"
+Output: 3
+Explanation: Three palindromic strings: "a", "b", "c".
+```
+
+**Example 2**
+
+```yml
+Input: s = "aaa"
+Output: 6
+Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
-
-[^Solution]:代码随想录-
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0647.回文子串.html)[^psSolution].
 
 
-## <2nd problem>
 
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
+
+## Longest Palindromic Subsequence
+
+> [Link to Leetcode question](https://leetcode.com/problems/longest-palindromic-subsequence/description/)[^lps]
 {: .prompt-info }
 
-[^]:Leetcode-
+Given a string `s`, find the longest palindromic subsequence's length in `s`.
+
+A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.
+
+**Example 1**
+
+```yml
+Input: s = "bbbab"
+Output: 4
+Explanation: One possible longest palindromic subsequence is "bbbb".
+```
+
+**Example 2**
+
+```yml
+Input: s = "cbbd"
+Output: 2
+Explanation: One possible longest palindromic subsequence is "bb".
+```
 
 ### Solution
 
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
-
-[^Solution]:代码随想录-
-
-## <3rd problem>
-
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
-{: .prompt-info }
-
-[^]:Leetcode-
-
-### Solution
-
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
-
-[^Solution]:代码随想录-
-
-## <4th problem>
-
-> [Link to Leetcode question](https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/)[^rnnfeol]
-{: .prompt-info }
-
-[^]:Leetcode-
-
-### Solution
-
-> A detailed explaination of solution can be found [here](https://programmercarl.com/0151.翻转字符串里的单词.html)[^Solution].
-
-[^Solution]:代码随想录-
-
+> A detailed explaination of solution can be found [here](https://programmercarl.com/0516.最长回文子序列.html)[^lpsSolution].
 
 
 
@@ -82,5 +84,7 @@ tags: [dynamic programming (DP)]
 
 ## Reference
 
-
-
+[^ps]:Leetcode-647 Palindromic Substrings: [https://leetcode.com/problems/palindromic-substrings/description/](https://leetcode.com/problems/palindromic-substrings/description/).
+[^psSolution]:代码随想录-回文子串: [https://programmercarl.com/0647.回文子串.html](https://programmercarl.com/0647.回文子串.html).
+[^lps]:Leetcode-516 Longest Palindromic Subsequence: [https://leetcode.com/problems/longest-palindromic-subsequence/description/](https://leetcode.com/problems/longest-palindromic-subsequence/description/).
+[^lpsSolution]:代码随想录-最长回文子序列: [https://programmercarl.com/0516.最长回文子序列.html](https://programmercarl.com/0516.最长回文子序列.html).
