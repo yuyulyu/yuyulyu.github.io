@@ -2,7 +2,7 @@
 title: "Leetcode Day 40 - DP: Palindromic Subsequence"
 description: 647 Palindromic Substrings | 516 Longest Palindromic Subsequence
 author: yoyo
-date: 2024-09-15 23:07:00 +0800
+date: 2024-09-15 22:29:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
 tags: [dynamic programming (DP)]
 ---
