@@ -13,7 +13,7 @@ tags: [dynamic programming (DP)]
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
 | ![Hard](https://img.shields.io/badge/Hard-red)                                               | [115 Distinct Subsequences](#distinct-subsequences)                                          |✅      |       |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [583 Delete Operation for Two Strings](#delete-operation-for-two-strings)                   |✅      |       |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [72 Edit Distance](#edit-distance)                                                         |        |        |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                              | [72 Edit Distance](#edit-distance)                                                         |✅      |        |
 
 
 ## Distinct Subsequences
@@ -197,7 +197,56 @@ exection -> execution (insert 'u')
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0072.编辑距离.html)[^edSolution].
 
+#### 1. `dp` table and its meaning
 
+`dp[i][j]` represents the minimum edit distance between `word1[:i]` and `word2[:j]`. 
+
+#### 2. Recursive formula
+```
+if (word1[i - 1] == word2[j - 1])
+    不操作
+if (word1[i - 1] != word2[j - 1])
+    #Delete a character
+    #Insert a character
+    #Replace a character
+```
+
+** Delete a character from `word1`**
+
+At state `dp[i][j]`, a character deleted from `word1` -> 1 more operation than state `dp[i - 1=[j]`
+
+`dp[i][j] = dp[i - 1][j] + 1`
+
+** Delete a character from `word2`**
+
+At state `dp[i][j]`, a character deleted from `word2` -> 1 more operation than state `dp[i][j - 1]`
+
+`dp[i][j] = dp[i][j - 1] + 1`
+
+**Replace a chareacter in `word1`**
+
+At state `dp[i][j]`, replace chareacter `word1[i - 1]` so that it equals to `word2[j - 1]`
+
+`dp[i][j] = dp[i - 1][j - 1] + 1`
+
+#### Python
+
+```python
+class Solution(object):
+    def minDistance(self, word1, word2):
+        dp = [[0] * (len(word2)+1) for _ in range(len(word1)+1)]
+        for i in range(len(word1)+1):
+            dp[i][0] = i
+        for j in range(len(word2)+1):
+            dp[0][j] = j
+        for i in range(1, len(word1)+1):
+            for j in range(1, len(word2)+1):
+                if word1[i-1] == word2[j-1]:
+                    dp[i][j] = dp[i-1][j-1]
+                else:
+                    dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
+        return dp[-1][-1]
+```
 
 
 ## Reference
