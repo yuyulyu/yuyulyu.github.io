@@ -9,10 +9,10 @@ tags: [dynamic programming (DP)]
 
 ## Dynamic Programming
 
-| Diff                                                                                                | Problem                                                                                 | Python | Java |
-|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [647 Palindromic Substrings](#palindromic-substrings)                                          |        |      |
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [516 Longest Palindromic Subsequence](#longest-palindromic-subsequence)                |        |      |
+| Diff                                                                                                | Problem                                                                                 | Python | Java  |
+|-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|-------|
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [647 Palindromic Substrings](#palindromic-substrings)                                   |✅      |       |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [516 Longest Palindromic Subsequence](#longest-palindromic-subsequence)              |✅      |       |
 
 ## Palindromic Substrings
 
@@ -46,7 +46,27 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0647.回文子串.html)[^psSolution].
 
+#### Python
 
+```python
+class Solution(object):
+    def countSubstrings(self, s):
+        
+        result = 0
+
+        for i in range(len(s)):
+            j = 0
+            while j <= i and j + i < len(s) and s[i + j] == s[i - j]:
+                result += 1
+                j += 1
+            if i > 0 and s[i - 1] == s[i]:
+                j = 0
+                while j <= i - 1 and j + i < len(s) and s[i - 1 - j] == s[i + j]:
+                    result += 1
+                    j += 1
+        
+        return result
+```
 
 
 ## Longest Palindromic Subsequence
