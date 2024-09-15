@@ -46,7 +46,7 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 
 > A detailed explaination of solution can be found [here](https://programmercarl.com/0647.回文子串.html)[^psSolution].
 
-#### Python
+#### Solution 1: Greedy
 
 ```python
 class Solution(object):
@@ -65,6 +65,30 @@ class Solution(object):
                     result += 1
                     j += 1
         
+        return result
+```
+
+#### Solution 2: Dynamic Programming
+
+Use `dp[i][j]` to record if `s[i:j]` is palindromic, which depends on if `s[i + 1:j - 1]` ( `dp[i - 1][j - 1]`) is palindromic.
+
+When `s[i] == s[j]`:
+- Case 1: `i == j`, a charater is palindromic.
+- Case 2: `j - i == 1`, a string e.g. `"aa"` is palindromic.
+- Case 3: `j - i > 1`,` s[i:j]` is palindromic if substring between `s[i]` and `s[j]` is palindromic -> `dp[i][j] = dp[i + 1][j - 1]`
+
+In addtion: `s[i]`, `s[j]` are also palindromic.
+
+```yml
+class Solution:
+    def countSubstrings(self, s: str) -> int:
+        dp = [[False] * len(s) for _ in range(len(s))]
+        result = 0
+        for i in range(len(s)-1, -1, -1): #注意遍历顺序
+            for j in range(i, len(s)):
+                if s[i] == s[j] and (j - i <= 1 or dp[i+1][j-1]): 
+                    result += 1
+                    dp[i][j] = True
         return result
 ```
 
