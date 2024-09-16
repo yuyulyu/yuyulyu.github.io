@@ -7,6 +7,9 @@ categories: [Artificial Intelligence]
 tags: [CV, YOLO]
 mermaid: true
 math: true
+image:
+  path: /assets/covers/datawhale/datawhale-AI-CV-task-1.png
+  alt: Leetcode Day 36 Cover
 ---
 
 ## 赛题解读
