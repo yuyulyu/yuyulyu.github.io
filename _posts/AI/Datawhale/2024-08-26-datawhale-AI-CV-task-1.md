@@ -7,6 +7,9 @@ categories: [Artificial Intelligence]
 tags: [CV, YOLO]
 mermaid: true
 math: true
+image:
+  path: /assets/covers/datawhale/datawhale-AI-CV-task-1.png
+  alt: Datawhale AI CV Task 1 Cover
 ---
 
 ## 赛题解读
