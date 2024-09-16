@@ -12,7 +12,7 @@ Currently, I'm  working on:
 - Leetcode daily challenges.
   {% include single-post-card.html category="Leetcode Summary"%}
 - Machine Learning: Pumpkin Book's reading.
-  {% include category-post-scroll.html catrgory="Pumpkin" scroll=true %}
+  {% include category-post-scroll.html category="Pumpkin" scroll=true %}
 - CS231n: Deep Learning for Computer Vision.
   {% include category-post-scroll.html category="cs231n" scroll=true %}
 
