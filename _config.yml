@@ -14,7 +14,7 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Le Lyu # the main title
+title: "Le's blog" # the main title
 
 tagline: Third year CS & AI student    @ University of Bath # it will display as the sub-title
 
