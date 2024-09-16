@@ -5,6 +5,9 @@ author: yoyo
 date: 2024-09-13 23:07:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming, Subsequence]
 tags: [dynamic programming (DP)]
+image:
+  path: /assets/covers/leetcode/leetcode-day-39.jpg
+  alt: Leetcode Day 39 Cover
 ---
 
 ## Dynamic Programming
