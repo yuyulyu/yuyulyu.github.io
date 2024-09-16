@@ -9,7 +9,7 @@ mermaid: true
 math: true
 image:
   path: /assets/covers/datawhale/datawhale-AI-CV-task-1.png
-  alt: Leetcode Day 36 Cover
+  alt: Datawhale AI CV Task 1 Cover
 ---
 
 ## 赛题解读
