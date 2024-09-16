@@ -5,9 +5,6 @@ author: yoyo
 date: 2024-08-23 23:47:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Backtracking]
 tags: [backtracking]
-image:
-  path: /assets/covers/leetcode/leetcode-day-19.png
-  alt: Leetcode Day 19 Cover
 ---
 
 ## Backtracking Algorithm 
