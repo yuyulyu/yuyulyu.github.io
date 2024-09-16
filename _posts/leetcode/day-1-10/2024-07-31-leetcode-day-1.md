@@ -5,9 +5,6 @@ author: yoyo
 date: 2024-07-31 22:56:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Array]
 tags: [array, binary search, double pointers]
-image:
-  path: /assets/covers/leetcode/leetcode-day-1.png
-  alt: Leetcode Day 1 Cover
 ---
 
 ## Array 1[^dmsxl]
