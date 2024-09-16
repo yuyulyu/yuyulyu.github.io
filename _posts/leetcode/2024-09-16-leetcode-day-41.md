@@ -1,17 +1,17 @@
 ---
-title: "Leetcode Day 35 - DP: "
+title: "Leetcode Day 41 - Monotone stack "
 description: 
 author: yoyo
-date: 2042-09-13 23:07:00 +0800
-categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
-tags: [dynamic programming (DP)]
+date: 2024-09-16 20:26:00 +0800
+categories: [Data Structure and Algorithm, Leetcode, Monotone stack]
+tags: [monotone stack]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
 ![Medium](https://img.shields.io/badge/Medium-yellow)
 ![Hard](https://img.shields.io/badge/Hard-red)
 
-## Dynamic Programming
+## Monotone stack
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
@@ -27,7 +27,7 @@ tags: [dynamic programming (DP)]
 > [Link to Leetcode question](https://leetcode.com/problems/swap-nodes-in-pairs/description/)[^abc]
 {: .prompt-info }
 
-[^]:Leetcode-121 Best Time to Buy and Sell Stock: 
+[^]:Leetcode-
 
 ### Solution
 
