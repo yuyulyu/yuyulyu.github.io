@@ -5,9 +5,6 @@ author: yoyo
 date: 2024-08-01 13:26:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Array]
 tags: [array, sliding window]
-image:
-  path: /assets/covers/leetcode/leetcode-day-2.png
-  alt: Leetcode Day 2 Cover
 ---
 
 ## Array 2[^dmsxl]
