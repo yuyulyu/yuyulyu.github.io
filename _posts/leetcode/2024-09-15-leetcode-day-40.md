@@ -4,7 +4,7 @@ description: 647 Palindromic Substrings | 516 Longest Palindromic Subsequence
 author: yoyo
 date: 2024-09-15 22:29:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming]
-tags: [dynamic programming (DP)
+tags: [dynamic programming (DP)]
 ---
 
 ## Dynamic Programming
