@@ -11,6 +11,8 @@ The primary purpose of this website is to serve as a personal repository for my 
 Currently, I'm  working on:
 - Leetcode daily challenges.
   {% include single-post-card.html category="Leetcode Summary"%}
+- Machine Learning: Pumpkin Book's reading.
+  {% include category-post-scroll.html catrgory="Pumpkin" scroll=true %}
 - CS231n: Deep Learning for Computer Vision.
   {% include category-post-scroll.html category="cs231n" scroll=true %}
 
