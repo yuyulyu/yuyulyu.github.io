@@ -6,6 +6,9 @@ date: 2024-09-11 20:47:00 +0800
 categories: [Data Structure and Algorithm, Leetcode, Dynamic Programming, Buy and Sell Stock]
 tags: [dynamic programming (DP)]
 math: true
+image:
+  path: /assets/covers/leetcode/leetcode-day-36.png
+  alt: Leetcode Day 36 Cover
 ---
 
 ## Dynamic Programming
