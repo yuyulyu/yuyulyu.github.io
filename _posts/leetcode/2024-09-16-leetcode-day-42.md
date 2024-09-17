@@ -1,5 +1,5 @@
 ---
-title: "Leetcode Day 41 - Monotone stack Advanced "
+title: "Leetcode Day 42 - Monotone stack Advanced "
 description: 42 Trapping Rain Water | 84 Largest Rectangle in Histogram
 author: yoyo
 date: 2024-09-17 14:36:00 +0800
