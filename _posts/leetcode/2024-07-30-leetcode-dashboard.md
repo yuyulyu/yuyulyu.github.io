@@ -28,7 +28,7 @@ tags: []
     </tr>
   </thead>
   <tbody>
-    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming" | split: ',' %}
+    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming,Monotone stack" | split: ',' %}
     
     {% for topic in topics %}
     <tr>
@@ -99,48 +99,55 @@ tags: []
 ## Hash Table
 
 <details>
-  <summary><strong>Linked List questions</strong></summary>
+  <summary><strong>Hash Table questions</strong></summary>
 {% include category-post-scroll.html category="Hash Table" scroll=true %}
 </details>
 
 ## String
 
 <details>
-  <summary><strong>Linked List questions</strong></summary>
+  <summary><strong>String questions</strong></summary>
 {% include category-post-scroll.html category="String" scroll=true %}
 </details>
 
 ## Stack and Queue
 
 <details>
-  <summary><strong>Linked List questions</strong></summary>
+  <summary><strong>Stack and Queue questions</strong></summary>
 {% include category-post-scroll.html category="Stack and Queue" scroll=true %}
 </details>
 
 ## Binary Tree
 
 <details>
-  <summary><strong>Linked List questions</strong></summary>
+  <summary><strong>Binary Tree questions</strong></summary>
 {% include category-post-scroll.html category="Binary Tree" scroll=true %}
 </details>
 
 ## Backtracking
 
 <details>
-  <summary><strong>Linked List questions</strong></summary>
+  <summary><strong>Backtracking questions</strong></summary>
 {% include category-post-scroll.html category="Backtracking" scroll=true %}
 </details>
 
 ## Greedy
 
 <details>
-  <summary><strong>Linked List questions</strong></summary>
+  <summary><strong>Greedy questions</strong></summary>
 {% include category-post-scroll.html category="Greedy" scroll=true %}
 </details>
 
 ## Dynamic Programming
 
 <details>
-  <summary><strong>Linked List questions</strong></summary>
+  <summary><strong>Dynamic Programming questions</strong></summary>
 {% include category-post-scroll.html category="Dynamic Programming" scroll=true %}
+</details>
+
+## Monotone stack
+
+<details>
+  <summary><strong>Monotone stack questions</strong></summary>
+{% include category-post-scroll.html category="Monotone stack" scroll=true %}
 </details>
