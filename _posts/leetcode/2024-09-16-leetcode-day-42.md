@@ -23,7 +23,7 @@ Given `n` non-negative integers representing an elevation map where the width of
 
 **Example 1**
 
-[image]: trapping-rain-water-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-42/trapping-rain-water-example-1.png)
 
 ```yml
 Input: height = [0,1,0,2,1,0,1,3,2,1,2,1]
@@ -128,7 +128,7 @@ Given an array of integers `heights` representing the histogram's bar height whe
 
 **Example 1**
 
-[image]: largest-rectangle-in-histogram-example-1
+![Desktop View](/assets/image/leetcode/leetcode-day-42/largest-rectangle-in-histogram-example-1.jpeg)
 
 ```yml
 Input: heights = [2,1,5,6,2,3]
@@ -139,7 +139,7 @@ The largest rectangle is shown in the red area, which has an area = 10 units.
 
 **Example 2**
 
-[image]: largest-rectangle-in-histogram-example-2
+![Desktop View](/assets/image/leetcode/leetcode-day-42/largest-rectangle-in-histogram-example-2.jpeg)
 
 ```yml
 Input: heights = [2,4]
