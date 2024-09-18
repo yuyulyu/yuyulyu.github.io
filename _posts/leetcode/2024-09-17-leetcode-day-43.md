@@ -1,10 +1,10 @@
 ---
-title: "Leetcode Day 41 - Monotone stack "
+title: "Leetcode Day 43 - Graph Theory Basic "
 description: 
 author: yoyo
 date: 2024-09-16 20:26:00 +0800
-categories: [Data Structure and Algorithm, Leetcode, Monotone stack]
-tags: [monotone stack]
+categories: [Data Structure and Algorithm, Leetcode, Graph Theory]
+tags: [graph theory]
 ---
 
 ![Easy](https://img.shields.io/badge/Easy-brightgreen) 
