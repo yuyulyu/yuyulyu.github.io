@@ -43,41 +43,7 @@ tags: []
     </tr>
     {% endfor %}
   </tbody>
-</table>
-
-
-
-<table>
-  <thead>
-    <tr>
-      <th>Topic</th>
-      <th>Link to the problem sets</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming" | split: ',' %}
-    
-    {% for topic in topics %}
-      {% assign posts_in_category = site.categories[topic] | sort: 'date' %}
-      <tr>
-        <td><strong><a href="#{{ topic | downcase | replace: ' ', '-' }}">{{ topic }}</a></strong></td>
-        <td>
-          {% if posts_in_category %}
-            {% for post in posts_in_category %}
-              <a href="{{ post.url }}">{{ post.title }}</a> <br>
-            {% endfor %}
-          {% else %}
-            No posts available for this topic.
-          {% endif %}
-        </td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-
-
-
-  
+</table>  
 </details>
 
 
