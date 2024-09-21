@@ -28,7 +28,7 @@ tags: []
     </tr>
   </thead>
   <tbody>
-    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming,Monotone stack" | split: ',' %}
+    {% assign topics = "Array,Linked List,Hash Table,String,Stack and Queue,Binary Tree,Backtracking,Greedy,Dynamic Programming,Monotone stack,Graph Theory" | split: ',' %}
     
     {% for topic in topics %}
     <tr>
@@ -117,3 +117,11 @@ tags: []
   <summary><strong>Monotone stack questions</strong></summary>
 {% include category-post-scroll.html category="Monotone stack" scroll=true %}
 </details>
+
+## Graph Theory
+
+<details>
+  <summary><strong>Graph theory questions</strong></summary>
+{% include category-post-scroll.html category="Graph Theory" scroll=true %}
+</details>
+
