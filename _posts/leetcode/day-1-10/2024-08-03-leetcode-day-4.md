@@ -46,7 +46,8 @@ Output: [1]
 ```
 
 ### Solution[^snipSolution]
-**Python**
+
+#### Python
 
 ```python
 class Solution(object):
