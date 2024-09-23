@@ -7,11 +7,7 @@ categories: [Data Structure and Algorithm, Leetcode, Graph Theory]
 tags: [graph theory]
 ---
 
-![Easy](https://img.shields.io/badge/Easy-brightgreen) 
-![Medium](https://img.shields.io/badge/Medium-yellow)
-![Hard](https://img.shields.io/badge/Hard-red)
-
-## Graph Theoryk
+## Graph Theory
 
 | Diff                                                                                                | Problem                                                                                 | Python | Java |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
