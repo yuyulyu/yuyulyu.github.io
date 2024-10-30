@@ -9,9 +9,9 @@ tags: [linked list,recursion,double pointers,hash table]
 
 ## Linked List 2[^dmsxl] 
 
-| Diff                                                                                                | Problem                                                                                 | Python | Java |
+| Diff                                                                                                | Problem                                                                                 | Python | C++ |
 |-----------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|--------|------|
-| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |✅      |      |
+| ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [24 Swap Nodes in Pairs](#swap-nodes-in-pairs)                                          |✅      |✅    |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [19 Remove Nth Node From End of List](#remove-nth-node-from-end-of-list)                |✅      |      |
 | ![Easy](https://img.shields.io/badge/Easy-brightgreen)                                              | [160 Intersection of Two Linked Lists](#intersection-of-two-linked-lists)               |✅      |      |
 | ![Medium](https://img.shields.io/badge/Medium-yellow)                                               | [142 Linked List Cycle II](#linked-list-cycle-ii)                                       |✅      |      |
@@ -73,6 +73,43 @@ class Solution(object):
                 even = odd.next
         
         return head
+```
+
+#### C++
+
+```c++
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        ListNode dummy(0);  
+        dummy.next = head;
+        ListNode* prev = &dummy;
+
+        while (prev->next && prev->next->next) {
+            ListNode* first = prev->next;
+            ListNode* second = first->next;
+
+            first->next = second->next;
+            second->next = first;
+            prev->next = second;
+
+            prev = first;
+        }
+
+        return dummy.next;
+    }
+};
+
 ```
 
 ### Similar Questions
